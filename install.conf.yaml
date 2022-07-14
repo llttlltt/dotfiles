@@ -2,13 +2,11 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
-# - link:
-#    ~/.tmux.conf: tmux.conf
-#    ~/.vim: vim
-#    ~/.vimrc: vimrc
-
+- link:
+    #  ~/.vim: vim
+    ~/.zshrc: zshrc
 # - create:
 
 # - shell:
