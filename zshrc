@@ -1,33 +1,29 @@
-# Set Variables
-# Syntax highlighting for man (manual) pages using bat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Bypass MacOS Gatekeeper for Homebrew Cask Installs
+# SET VARIABLES
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
-# Change ZSH Options
+# CHANGE ZSH OPTIONS
 
-# Create Aliases
+# CREATE ALIASES
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 
-# Customize Prompt(s)
+# CUSTOMISE PROMPT(S)
 PROMPT='
 %1~ %L %# 
 > '
 
 RPROMPT='%*'
 
-# Add Locations to $PATH Variable
+# ADD LOCATIONS TO $PATH VARIABLE
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Write Handy Functions
+# WRITE FUNCTIONS
 function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
 
-# Use ZSH Plugins
+# USE ZSH PLUGINS
 
-# ...and Other Suprises
+# ...AND OTHER SUPRISES
