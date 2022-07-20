@@ -1,28 +1,24 @@
-# Taps
 tap "azure/functions"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
-
-# Brews (Packages)
-brew "azure/functions/azure-functions-core-tools"
 brew "bat"
+brew "openldap"
 brew "exa"
 brew "gh"
 brew "git"
+brew "xz"
 brew "httpie"
 brew "nvm"
-brew "openldap"
 brew "php"
 brew "pyenv"
 brew "rsync"
 brew "tree"
-brew "xz"
 brew "zsh-syntax-highlighting"
-
-# Casks (Applications)
+brew "azure/functions/azure-functions-core-tools"
 cask "alfred"
+cask "gitkraken"
 cask "google-chrome"
 cask "iterm2"
 cask "postman"
