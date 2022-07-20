@@ -15,3 +15,4 @@ I'm learning about dotfiles.
 - [x] .zshrc
 - [ ] Git (Config)
 - [x] Brew
+- [ ] Alfred (Turn off Spotlight shortcut and use for Alfred)
