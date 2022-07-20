@@ -2,6 +2,9 @@
 # Syntax highlighting for man (manual) pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# Bypass MacOS Gatekeeper for Homebrew Cask Installs
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 # Change ZSH Options
 
 # Create Aliases
