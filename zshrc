@@ -1,4 +1,5 @@
 # SET VARIABLES
+## Bypass MacOS Gatekeeper for Homebrew Cask Installs
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # CHANGE ZSH OPTIONS
@@ -16,7 +17,7 @@ PROMPT='
 RPROMPT='%*'
 
 # ADD LOCATIONS TO $PATH VARIABLE
-# Add Visual Studio Code (code)
+## Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # WRITE FUNCTIONS
