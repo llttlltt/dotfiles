@@ -5,7 +5,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # CHANGE ZSH OPTIONS
 
 # CREATE ALIASES
-# alias ls='ls -lAFh'
+## Coloured output for ls and git status using exa
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 
