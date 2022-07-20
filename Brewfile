@@ -1,0 +1,30 @@
+# Taps
+tap "azure/functions"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "romkatv/powerlevel10k"
+
+# Brews (Packages)
+brew "azure/functions/azure-functions-core-tools"
+brew "bat"
+brew "exa"
+brew "gh"
+brew "git"
+brew "httpie"
+brew "nvm"
+brew "openldap"
+brew "php"
+brew "pyenv"
+brew "rsync"
+brew "tree"
+brew "xz"
+brew "zsh-syntax-highlighting"
+
+# Casks (Applications)
+cask "alfred"
+cask "google-chrome"
+cask "iterm2"
+cask "postman"
+cask "powershell"
+cask "visual-studio-code"
