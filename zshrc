@@ -21,6 +21,7 @@ RPROMPT='%*'
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # WRITE FUNCTIONS
+## Make a directory, and cd into it
 function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
