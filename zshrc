@@ -10,6 +10,8 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 ## Syntax highlighting for man (manual) pages using bat-extras
 alias man=batman
+## Syntax highlighting for grep (search) using bat-extras
+alias grep=batgrep
 
 # CUSTOMISE PROMPT(S)
 PROMPT='
