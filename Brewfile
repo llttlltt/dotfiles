@@ -47,3 +47,19 @@ cask "postman"
 cask "powershell"
 # Open-source code editor
 cask "visual-studio-code"
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Apple Configurator", id: 1037126344
+mas "BetterSnapTool", id: 417375580
+mas "Compressor", id: 424390742
+mas "Disk Speed Test", id: 425264550
+mas "Final Cut Pro", id: 424389933
+mas "Ground News", id: 1324203419
+mas "Kindle", id: 405399194
+mas "Microsoft To Do", id: 1274495053
+mas "Motion", id: 434290957
+mas "OverPicture", id: 1188020834
+mas "The Unarchiver", id: 425424353
+mas "Todoist", id: 585829637
+mas "Userscripts", id: 1463298887
+mas "Xcode", id: 497799835
