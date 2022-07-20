@@ -8,6 +8,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 ## Coloured output for ls and git status using exa
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
+## Syntax highlighting for man (manual) pages using batman
+alias man=batman
 
 # CUSTOMISE PROMPT(S)
 PROMPT='
