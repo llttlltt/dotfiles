@@ -17,6 +17,8 @@ brew "git"
 brew "xz"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Mac App Store command-line interface
+brew "mas"
 # Manage multiple Node.js versions
 brew "nvm"
 # General-purpose scripting language
