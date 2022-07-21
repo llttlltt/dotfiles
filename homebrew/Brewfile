@@ -38,6 +38,8 @@ brew "azure/functions/azure-functions-core-tools"
 brew "eth-p/software/bat-extras"
 # Application launcher and productivity software
 cask "alfred"
+# Records audio from any application
+cask "audio-hijack"
 # Draw.io is free online diagram software
 cask "drawio"
 # Web browser
