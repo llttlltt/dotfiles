@@ -16,7 +16,7 @@
       path: dotfiles/gitconfig
     ~/.config/bat:
       create: true
-      path: config/bat
+      path: dotfiles/config/bat
 
 # - create:
 
