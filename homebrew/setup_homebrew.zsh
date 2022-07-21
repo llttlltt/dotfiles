@@ -15,4 +15,4 @@ fi
 # export HOMEBREW_CASK_OPTS="--no-quarantine"
 # https://github.com/Homebrew/homebrew-bundle/issues/474
 
-brew bundle --verbose
+brew bundle --verbose --file=./homebrew/Brewfile
