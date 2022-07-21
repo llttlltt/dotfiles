@@ -46,6 +46,8 @@ cask "google-chrome"
 cask "iterm2"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Visual communication software
+cask "omnigraffle"
 # Project planning and management software
 cask "omniplan"
 # Collaboration platform for API development
