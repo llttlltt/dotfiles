@@ -46,6 +46,8 @@ cask "google-chrome"
 cask "iterm2"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Project planning and management software
+cask "omniplan"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
