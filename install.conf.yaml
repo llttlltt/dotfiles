@@ -6,8 +6,14 @@
 
 - link:
     ~/.zshrc:
+      create: true
+      path: dotfiles/zshrc
     ~/.zshenv:
+      create: true
+      path: dotfiles/zshenv
     ~/.gitconfig:
+      create: true
+      path: dotfiles/gitconfig
     ~/.config/bat:
       create: true
       path: config/bat
