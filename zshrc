@@ -14,11 +14,10 @@ alias man=batman
 alias grep=batgrep
 
 # CUSTOMISE PROMPT(S)
-PROMPT='
-%B%F{green}%n%f%b @ %F{cyan}%m%f in %B%F{yellow}%~%f%b
-> '
-
-RPROMPT='%* | %B%F{red}%L%f%b'
+precmd() { print "" }
+PROMPT="%B%F{green}%n%f%b at %F{cyan}%m%f in %B%F{yellow}%~%f%b
+> "
+RPROMPT="%* | %B%F{red}%L%f%b"
 
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
