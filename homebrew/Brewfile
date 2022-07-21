@@ -44,6 +44,8 @@ cask "gitkraken"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Interface for reading and syncing eBooks
+cask "kindle"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
@@ -60,7 +62,6 @@ mas "Compressor", id: 424390742
 mas "Disk Speed Test", id: 425264550
 mas "Final Cut Pro", id: 424389933
 mas "Ground News", id: 1324203419
-mas "Kindle", id: 405399194
 mas "Microsoft To Do", id: 1274495053
 mas "Motion", id: 434290957
 mas "OverPicture", id: 1188020834
