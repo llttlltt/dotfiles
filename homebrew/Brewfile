@@ -50,6 +50,8 @@ cask "kindle"
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# Screen recorder with audio
+cask "screenflick"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # To-do list
