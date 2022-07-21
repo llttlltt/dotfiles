@@ -46,6 +46,8 @@ cask "google-chrome"
 cask "iterm2"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Cable-free audio router
+cask "loopback"
 # Web browser
 cask "microsoft-edge"
 # Knowledge base that works on top of a local folder of plain text Markdown files
