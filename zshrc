@@ -6,8 +6,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # CREATE ALIASES
 ## Coloured output for ls and git status using exa
-alias ls='exa -laFh --git'
-alias exa='exa -laFh --git'
+alias ls="exa -laFh --git"
+alias exa="exa -laFh --git"
 ## Syntax highlighting for man (manual) pages using bat-extras
 alias man=batman
 ## Syntax highlighting for grep (search) using bat-extras
