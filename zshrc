@@ -15,10 +15,10 @@ alias grep=batgrep
 
 # CUSTOMISE PROMPT(S)
 PROMPT='
-%1~ %L %# 
+%B%F{green}%n%f%b @ %F{cyan}%m%f in %B%F{yellow}%~%f%b
 > '
 
-RPROMPT='%*'
+RPROMPT='%* | %B%F{red}%L%f%b'
 
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
