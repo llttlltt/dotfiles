@@ -50,6 +50,8 @@ cask "postman"
 cask "powershell"
 # Open-source code editor
 cask "visual-studio-code"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
