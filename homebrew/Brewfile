@@ -50,6 +50,8 @@ cask "kindle"
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# Text editor for code, markup and prose
+cask "sublime-text"
 # To-do list
 cask "todoist"
 # Open-source code editor
