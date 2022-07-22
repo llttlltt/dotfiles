@@ -43,6 +43,8 @@ cask "alfred"
 cask "anki"
 # Records audio from any application
 cask "audio-hijack"
+# Voice and text chat software
+cask "discord"
 # Draw.io is free online diagram software
 cask "drawio"
 # Web browser
