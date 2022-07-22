@@ -68,6 +68,8 @@ cask "microsoft-excel"
 cask "microsoft-outlook"
 # Presentation software
 cask "microsoft-powerpoint"
+# Remote desktop client
+cask "microsoft-remote-desktop"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Word processor
