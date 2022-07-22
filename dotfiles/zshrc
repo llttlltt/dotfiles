@@ -2,6 +2,7 @@
 ## Bypass MacOS Gatekeeper for Homebrew Cask Installs
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
+export NVM_PREFIX="/opt/homebrew/opt/nvm"
 
 # CHANGE ZSH OPTIONS
 
@@ -25,6 +26,11 @@ RPROMPT="%* | %B%F{red}%L%f%b"
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+## nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_PREFIX/nvm.sh" ] && \. "$NVM_PREFIX/nvm.sh"  # This loads nvm
+  [ -s "$NVM_PREFIX/etc/bash_completion.d/nvm" ] && \. "$NVM_PREFIX/etc/bash_completion.d/nvm"
 
 # WRITE FUNCTIONS
 ## Make a directory, and cd into it
