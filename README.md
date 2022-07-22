@@ -15,4 +15,14 @@ I'm learning about dotfiles.
 - [x] .zshrc
 - [ ] Git (Config)
 - [x] Brew
+  - [ ] Create Cask(s):
+    - [ ] Microsoft To Do
+    - [ ] Sublab
+    - [ ] Nuendo
+    - [ ] iZotope
+    - [ ] Soundtoys
+    - [ ] Melodyne
+    - [ ] Cyclop
+    - [ ] FabFilter
+    - [ ] Other VSTs...
 - [ ] Alfred (Turn off Spotlight shortcut and use for Alfred)
