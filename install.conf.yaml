@@ -3,6 +3,11 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: ./homebrew/cleanup_homebrew.zsh
+      stdin: true
+      stdout: true
+      stderr: true
+
 - defaults:
     link:
       relink: true
