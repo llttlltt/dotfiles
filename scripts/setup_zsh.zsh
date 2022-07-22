@@ -20,6 +20,10 @@ echo "Enter user password to change login shell"
   chsh -s ${ZSH_PATH}
 fi
 
+if sh --version | grep zsh; then
+  echo "/private/var/select/sh already symlinked to /bin/zsh, skipping step..."
+else
 # Looked promising, might remove later
 echo "Enter superuser (sudo) password to symlink sh to zsh"
 sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
+fi
