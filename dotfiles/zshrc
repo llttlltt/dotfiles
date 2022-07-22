@@ -1,6 +1,7 @@
 # SET VARIABLES
 ## Bypass MacOS Gatekeeper for Homebrew Cask Installs
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 # CHANGE ZSH OPTIONS
 
