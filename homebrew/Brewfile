@@ -90,6 +90,8 @@ cask "screenflick"
 cask "sublime-text"
 # To-do list
 cask "todoist"
+# Tool for creating dynamic digital art
+cask "touchdesigner"
 # Open-source code editor
 cask "visual-studio-code"
 # Lossless audio decoder
