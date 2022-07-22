@@ -94,6 +94,8 @@ cask "todoist"
 cask "touchdesigner"
 # Open-source code editor
 cask "visual-studio-code"
+# Desktop client for WhatsApp
+cask "whatsapp"
 # Lossless audio decoder
 cask "xld"
 # Video communication and virtual meeting platform
