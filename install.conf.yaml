@@ -7,6 +7,10 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: ./scripts/setup_zsh.zsh
+      stdin: true
+      stdout: true
+      stderr: true
 
 - defaults:
     link:
