@@ -20,3 +20,6 @@ echo "Enter user password to change login shell"
   chsh -s ${ZSH_PATH}
 fi
 
+# Looked promising, might remove later
+echo "Enter superuser (sudo) password to symlink sh to zsh"
+sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
