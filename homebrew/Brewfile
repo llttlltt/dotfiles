@@ -60,6 +60,8 @@ cask "kindle"
 cask "loopback"
 # Web browser
 cask "microsoft-edge"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Visual communication software
