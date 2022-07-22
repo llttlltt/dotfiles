@@ -12,7 +12,7 @@ if grep -Fxq ${ZSH_PATH} '/etc/shells'; then
   echo "${ZSH_PATH} already exists in /etc/shells, skipping step..."
 else
   echo "Adding ${ZSH_PATH} to /etc/shells\n"
-echo "Enter superuser (sudo) password to edit /etc/shells"
+  echo "Enter superuser (sudo) password to edit /etc/shells"
   echo $ZSH_PATH | sudo tee -a '/etc/shells' > /dev/null
 fi
 echo ""
@@ -22,7 +22,7 @@ if [ "$SHELL" = $ZSH_PATH ]; then
   echo "SHELL is already $ZSH_PATH, skipping step..."
 else
   echo "Setting ${ZSH_PATH} as default login shell"
-echo "Enter user password to change login shell"
+  echo "Enter user password to change login shell"
   chsh -s $ZSH_PATH
 fi
 echo ""
@@ -33,8 +33,8 @@ if sh --version | grep -q zsh; then
 else
   # Looked promising, might remove later.
   echo "Symlinking sh to zsh..."
-echo "Enter superuser (sudo) password to symlink sh to zsh"
-sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
+  echo "Enter superuser (sudo) password to symlink sh to zsh"
+  sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
   
   # I'd prefer to use the Homebrew updated version instead of default MacOS version.
   # sudo ln -sfv ${ZSH_PATH} '/private/var/select/sh'
