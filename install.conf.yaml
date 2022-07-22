@@ -1,3 +1,8 @@
+- shell:
+    - command: ./homebrew/setup_homebrew.zsh
+      stdin: true
+      stdout: true
+      stderr: true
 - defaults:
     link:
       relink: true
@@ -17,11 +22,4 @@
     ~/.config/bat:
       create: true
       path: dotfiles/config/bat
-
 # - create:
-
-- shell:
-    - command: ./homebrew/setup_homebrew.zsh
-      stdin: true
-      stdout: true
-      stderr: true
