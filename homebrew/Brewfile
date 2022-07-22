@@ -58,10 +58,20 @@ cask "iterm2"
 cask "kindle"
 # Cable-free audio router
 cask "loopback"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Web browser
 cask "microsoft-edge"
+# Spreadsheet software
+cask "microsoft-excel"
+# Email client
+cask "microsoft-outlook"
+# Presentation software
+cask "microsoft-powerpoint"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Word processor
+cask "microsoft-word"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Visual communication software
