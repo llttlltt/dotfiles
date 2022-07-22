@@ -85,6 +85,8 @@ cask "omnigraffle"
 cask "omniplan"
 # Cloud storage client
 cask "onedrive"
+# Desktop virtualization software
+cask "parallels"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
