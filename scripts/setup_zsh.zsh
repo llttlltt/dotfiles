@@ -27,10 +27,16 @@ echo "Enter user password to change login shell"
 fi
 echo ""
 
-if sh --version | grep zsh; then
+# Symlink sh to zsh
+if sh --version | grep -q zsh; then
   echo "/private/var/select/sh already symlinked to /bin/zsh, skipping step..."
 else
-# Looked promising, might remove later
+  # Looked promising, might remove later.
+  echo "Symlinking sh to zsh..."
 echo "Enter superuser (sudo) password to symlink sh to zsh"
 sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
+  
+  # I'd prefer to use the Homebrew updated version instead of default MacOS version.
+  # sudo ln -sfv ${ZSH_PATH} '/private/var/select/sh'
 fi
+echo ""
