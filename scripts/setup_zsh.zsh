@@ -13,5 +13,10 @@ echo "Enter superuser (sudo) password to edit /etc/shells"
   echo $ZSH_PATH | sudo tee -a '/etc/shells' > /dev/null
 fi
 
+if [ "$SHELL" = ${ZSH_PATH} ]; then
+  echo "$SHELL is already ${ZSH_PATH}"
+else
 echo "Enter user password to change login shell"
-chsh -s "/opt/homebrew/bin/zsh"
+  chsh -s ${ZSH_PATH}
+fi
+
