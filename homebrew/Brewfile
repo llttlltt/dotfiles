@@ -35,6 +35,8 @@ brew "pyenv"
 brew "rsync"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Azure Functions Core Tools 2.0
