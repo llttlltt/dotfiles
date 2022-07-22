@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-echo "<<< STARTING HOMEBREW INSTALL >>>"
+echo "<<< STARTING HOMEBREW SETUP >>>"
 
 if exists brew; then
   echo "Homebrew already exists, skipping install.\n"
