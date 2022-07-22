@@ -4,6 +4,7 @@ echo "\n<<< STARTING ZSH SETUP >>>"
 
 # Installation unnecessary; it's in the brewfile.
 
+ZSH_PATH=/opt/homebrew/bin/zsh
 echo "Enter superuser (sudo) password to edit /etc/shells"
 echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells' > /dev/null
 
