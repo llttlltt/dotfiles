@@ -95,6 +95,8 @@ cask "powershell"
 cask "screenflick"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# VPN client for secure internet access and private browsing
+cask "surfshark"
 # To-do list
 cask "todoist"
 # Tool for creating dynamic digital art
