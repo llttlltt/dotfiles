@@ -61,6 +61,8 @@ cask "iterm2"
 cask "kicad"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Software for Logitech devices
+cask "logi-options-plus"
 # Cable-free audio router
 cask "loopback"
 # Provides updates to various Microsoft products
