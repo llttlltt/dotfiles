@@ -13,6 +13,8 @@ alias exa="exa -laFh --git"
 alias man=batman
 ## Syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
+## Shows the path variable, split by newline, in bat (default: cat)
+alias trail='<<<${(F)path}'
 
 # CUSTOMISE PROMPT(S)
 precmd() { print "" }
