@@ -16,6 +16,8 @@ alias man=batman
 alias grep=batgrep
 ## Shows the path variable, split by newline, in bat (default: cat)
 alias trail='<<<${(F)path}'
+## Remove to system trash
+alias rm=trash
 
 # CUSTOMISE PROMPT(S)
 precmd() { print "" }
