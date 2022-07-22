@@ -18,3 +18,15 @@ else
   echo ""
 fi
 echo ""
+
+# INSTALL GLOBAL NPM PACKAGES
+npm install --global firebase-tools
+npm install --global @angular/cli
+npm install --global @ionic/cli
+npm install --global typescript
+npm install --global json-server
+npm install --global http-server
+
+echo ""
+echo "Global NPM Packages Installed:"
+npm list --global --depth=0
