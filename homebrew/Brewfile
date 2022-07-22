@@ -80,6 +80,8 @@ cask "obsidian"
 cask "omnigraffle"
 # Project planning and management software
 cask "omniplan"
+# Cloud storage client
+cask "onedrive"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
