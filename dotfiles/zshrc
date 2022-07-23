@@ -39,6 +39,15 @@ precmd() {
   print ""
 }
 
+## MAIN PROMPT
+prompt () {
+  NEWLINE="
+"
+  PS1="%K{black} %F{green}%B%n%b%f %k%K{black}%F{white}%f %F{yellow}%B$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%b%f%B${vcs_info_msg_0_}%b%k%K{black} %k%F{black}%f${NEWLINE}%F{green}❱%f "
+}
+precmd_functions+=(prompt)
+RPROMPT="%F{black}%f%K{black} %*  %F{red}%L%f %k"
+
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

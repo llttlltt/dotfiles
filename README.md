@@ -31,3 +31,4 @@ I'm learning about dotfiles.
     - [ ] Turn on timezone support
     - [ ] Show events in year view
     - [ ] Show week numbers
+- [ ] Ensure "MesloLGS NF" font is installed by Dotbot.
