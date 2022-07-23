@@ -26,3 +26,8 @@ I'm learning about dotfiles.
     - [ ] FabFilter
     - [ ] Other VSTs...
 - [ ] Alfred (Turn off Spotlight shortcut and use for Alfred)
+- [ ] Calendar:
+  - [ ] Advanced Preferences:
+    - [ ] Turn on timezone support
+    - [ ] Show events in year view
+    - [ ] Show week numbers
