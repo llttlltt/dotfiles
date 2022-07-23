@@ -18,10 +18,48 @@ alias grep=batgrep
 alias trail='<<<${(F)path}'
 
 # CUSTOMISE PROMPT(S)
-precmd() { print "" }
-PROMPT="%B%F{green}%n%f%b at %F{cyan}%m%f in %B%F{yellow}%~%f%b
-> "
-RPROMPT="%* | %B%F{red}%L%f%b"
+## Enable substitution in the prompt.
+setopt prompt_subst
+## Autoload zsh add-zsh-hook and vcs_info functions (-U autoload w/o substition, -z use zsh style)
+autoload -Uz add-zsh-hook vcs_info
+## Run vcs_info just before a prompt is displayed (precmd)
+add-zsh-hook precmd vcs_info
+## Enable checking for (un)staged changes, enabling use of %u and %c
+zstyle ':vcs_info:*' check-for-changes true
+## Set the format of the Git information for vcs_info
+zstyle ":vcs_info:git:*" formats " %F{white}%f %F{cyan}%b%u%c%f"
+zstyle ":vcs_info:git:*" actionformats " %F{white}%f %F{cyan}%b|%a%u%c%f"
+## Set custom strings for an unstaged vcs repo changes (*) and staged change (+)
+zstyle ':vcs_info:*' unstagedstr ' %F{red}✱%f'
+zstyle ':vcs_info:*' stagedstr ' %F{green}✚%f'
+
+precmd() {
+  vcs_info
+  print ""
+  NEWLINE="
+"
+  if [[ -n ${vcs_info_msg_0_} ]]; then
+    # vcs_info found nothing so we have more space. Let's print a longer part of $PWD...
+    CUSTOM_PROMPT="%K{black} %F{green}%B%n%b%f %k%K{black}%F{white}%f %F{yellow}%B$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%b%f%B${vcs_info_msg_0_}%b%k%K{black} %k%F{black}%f${NEWLINE}%(?.%F{green}.%F{red})❱%f "
+    
+  else
+    # vcs_info found something that needs space, a shorter $PWD makes sense.
+    CUSTOM_PROMPT="%K{black} %F{green}%B%n%b%f %k%K{black}%F{white}%f %F{yellow}%B%~%b%f %k%F{black}%f${NEWLINE}%(?.%F{green}.%F{red})❱%f "
+  fi
+}
+
+prompt () {
+  PS1=${CUSTOM_PROMPT}
+}
+
+rprompt () {
+  RPROMPT="%F{black}%f%K{black} %B%(?.%F{green}✔.%F{red}✘)%f%b %F{white}%f %F{white}%*%f %F{white}%f %F{magenta}%B%L%b%f %k"
+}
+
+precmd_functions+=(
+  prompt
+  rprompt
+)
 
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
