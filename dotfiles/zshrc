@@ -43,10 +43,17 @@ precmd() {
 prompt () {
   NEWLINE="
 "
-  PS1="%K{black} %F{green}%B%n%b%f %k%K{black}%F{white}%f %F{yellow}%B$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%b%f%B${vcs_info_msg_0_}%b%k%K{black} %k%F{black}%f${NEWLINE}%F{green}❱%f "
+  PS1="%K{black} %F{green}%B%n%b%f %k%K{black}%F{white}%f %F{yellow}%B$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%b%f%B${vcs_info_msg_0_}%b%k%K{black} %k%F{black}%f${NEWLINE}%(?.%F{green}.%F{red})❱%f "
 }
-precmd_functions+=(prompt)
-RPROMPT="%F{black}%f%K{black} %*  %F{red}%L%f %k"
+
+rprompt () {
+  RPROMPT="%F{black}%f%K{black} %(?.%F{green}✔.%F{red}✘)%f %F{white}%f %F{white}%*%f %F{white}%f %F{magenta}%L%f %k"
+}
+
+precmd_functions+=(
+  prompt
+  rprompt
+)
 
 # ADD LOCATIONS TO $PATH VARIABLE
 ## Add Visual Studio Code (code)
