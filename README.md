@@ -1,8 +1,18 @@
-# dotfiles
+# 🔧 .dotfiles
 
-🔧 .dotfiles
+I'm learning about dotfiles. This is a work in progress!
 
-I'm learning about dotfiles.
+## No More Configuration 🛠️
+
+It's good practice to reload your system periodically; the thing that puts me off doing this is how much work is requried redownloading and reconfiguring everything each time. This is a perfect case for automation!
+
+> idempotent
+> > denoting an element of a set which is unchanged in value when multiplied or otherwise operated on by itself.
+
+My journey began with a @fireship-io video ([~/.dotfiles in 100 Seconds](https://youtu.be/r_MpUP6aKiQ)), and a course by @eieioxyz on [Udemy course](https://www.udemy.com/share/1043Ta3@hjXwP3uCJlmKqwco8k_3tBHNY9Sue8EcuuWg63c0ROr8UpThvqBfxhlE4IT4CTK_/).
+
+A preview of what is to come...
+![iTerm Screenshot](/resources/images/iTerm.gif)
 
 ## TODO ✅
 
