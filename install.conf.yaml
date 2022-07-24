@@ -28,6 +28,9 @@
     ~/.zshenv:
       create: true
       path: dotfiles/zshenv
+    ~/.zprofile:
+      create: true
+      path: dotfiles/zprofile
     ~/.hushlogin:
       create: true
       path: dotfiles/hushlogin
