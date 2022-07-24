@@ -89,5 +89,7 @@ function mkcd() {
 }
 
 # USE ZSH PLUGINS
+## zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ...AND OTHER SUPRISES
