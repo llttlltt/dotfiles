@@ -30,6 +30,7 @@ RPROMPT="%* | %B%F{red}%L%f%b"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 ## nvm
+local NVM_PREFIX="/opt/homebrew/opt/nvm"
 export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_PREFIX/nvm.sh" ] && \. "$NVM_PREFIX/nvm.sh"  # This loads nvm
   [ -s "$NVM_PREFIX/etc/bash_completion.d/nvm" ] && \. "$NVM_PREFIX/etc/bash_completion.d/nvm"
