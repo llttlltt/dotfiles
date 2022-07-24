@@ -18,14 +18,10 @@ A preview of what is to come...
 ## TODO ✅
 
 - [ ] Terminal Preferences
-- [x] Change Shell to ZSH
 - [ ] Dock Preferences
 - [ ] Mission Control Preference (Don't Rearrange Spaces)
 - [ ] Finder (Show Path Bar)
 - [ ] Finder (As List)
-- [x] .zshrc
-- [x] Git (Config)
-- [x] Brew
   - [ ] Create Cask(s):
     - [ ] Microsoft To Do
     - [ ] Sublab
@@ -43,3 +39,5 @@ A preview of what is to come...
     - [ ] Show events in year view
     - [ ] Show week numbers
 - [ ] Ensure "MesloLGS NF" font is installed by Dotbot.
+- [ ] Uninstall Brew node instance after setup_homebrew.zsh has run (`brew uninstall --ignore-dependencies nod`).
+- [ ] Add `lporg` setup to configure Launchpad automatically.
