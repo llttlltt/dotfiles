@@ -2,11 +2,11 @@ apps:
   pages:
   - number: 1
     items:
-    - Mail
     - Contacts
     - Calendar
     - Notes
     - FaceTime
+    - Mail
     - Messages
     - Photos
     - Spotify
@@ -199,6 +199,7 @@ apps:
       pages:
       - number: 1
         items:
+        - ACCFinderBundleLoader
         - Creative Cloud Helper
         - Creative Cloud Installer
         - Creative Cloud Desktop App
@@ -208,11 +209,6 @@ apps:
         - Contact Sheets
         - Make Calendar
         - Web Gallery
-    - folder: Other
-      pages:
-      - number: 1
-        items:
-        - ACCFinderBundleLoader
 widgets:
   pages: []
 dock_items:
