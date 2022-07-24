@@ -1,8 +1,8 @@
 # SET VARIABLES
 ## Bypass MacOS Gatekeeper for Homebrew Cask Installs
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+## Set null to use bat instead of cat
 export NULLCMD=bat
-export NVM_PREFIX="/opt/homebrew/opt/nvm"
 
 # CHANGE ZSH OPTIONS
 
@@ -16,6 +16,8 @@ alias man=batman
 alias grep=batgrep
 ## Shows the path variable, split by newline, in bat (default: cat)
 alias trail='<<<${(F)path}'
+## Remove to system trash
+alias rm=trash
 
 # CUSTOMISE PROMPT(S)
 ## Enable substitution in the prompt.
@@ -61,11 +63,15 @@ precmd_functions+=(
   rprompt
 )
 
-# ADD LOCATIONS TO $PATH VARIABLE
-## Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# ADD LOCATIONS TO $path Array VARIABLE
+typeset -U path
+path=(
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 ## nvm
+local NVM_PREFIX="/opt/homebrew/opt/nvm"
 export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_PREFIX/nvm.sh" ] && \. "$NVM_PREFIX/nvm.sh"  # This loads nvm
   [ -s "$NVM_PREFIX/etc/bash_completion.d/nvm" ] && \. "$NVM_PREFIX/etc/bash_completion.d/nvm"
