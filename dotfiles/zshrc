@@ -93,3 +93,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ...AND OTHER SUPRISES
+## Some useful options (man zshoptions)
+zle_highlight=('paste:none')
+
