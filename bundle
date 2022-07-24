@@ -4,3 +4,6 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "<<< STARTING BREW BUNDLE >>>\n"
 brew bundle dump --force --describe --file=./homebrew/brewfile --no-lock && echo "Homebrew dumped a bundle in $BASEDIR/homebrew/brewfile.\n" || echo "Homebrew failed to dump a bundle.\n"
+
+echo "<<< STARTING LPORG >>>\n"
+lporg save --config $BASEDIR/preferences/lporg_launchpad.yaml && echo "\nlporg saved a launchpad snapshot in $BASEDIR/preferences/lporg_launchpad.yaml." || echo "\nlporg failed to save a launchpad snapshot."

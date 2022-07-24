@@ -11,6 +11,9 @@
     - command: ./scripts/setup_node.zsh
       stdout: true
       stderr: true
+    - command: ./scripts/setup_lporg.zsh
+      stdout: true
+      stderr: true
 
 - defaults:
     link:

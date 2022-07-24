@@ -40,4 +40,4 @@ A preview of what is to come...
     - [ ] Show week numbers
 - [ ] Ensure "MesloLGS NF" font is installed by Dotbot.
 - [ ] Uninstall Brew node instance after setup_homebrew.zsh has run (`brew uninstall --ignore-dependencies nod`).
-- [ ] Add `lporg` setup to configure Launchpad automatically.
+- [x] Add `lporg` setup to configure Launchpad automatically.

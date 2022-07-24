@@ -1,0 +1,3 @@
+tap "blacktop/tap"
+# Organize Your macOS Launchpad Apps
+brew "blacktop/tap/lporg"

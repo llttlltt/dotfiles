@@ -1,0 +1,225 @@
+apps:
+  pages:
+  - number: 1
+    items:
+    - Mail
+    - Contacts
+    - Calendar
+    - Notes
+    - FaceTime
+    - Messages
+    - Photos
+    - Spotify
+    - folder: Adobe
+      pages:
+      - number: 1
+        items:
+        - Adobe Acrobat
+        - Acrobat Distiller
+        - Adobe Photoshop 2022
+        - Adobe Illustrator 2022
+        - Creative Cloud
+    - folder: Apple Stock
+      pages:
+      - number: 1
+        items:
+        - App Store
+        - Books
+        - Calculator
+        - Dictionary
+        - Find My
+        - Home
+        - Maps
+        - Mission Control
+        - Music
+        - News
+        - Photo Booth
+        - Podcasts
+        - Preview
+        - QuickTime Player
+        - Reminders
+        - Siri
+        - Stocks
+        - System Preferences
+        - TV
+        - Voice Memos
+    - folder: Apple Utilities
+      pages:
+      - number: 1
+        items:
+        - Activity Monitor
+        - AirPort Utility
+        - Audio MIDI Setup
+        - Automator
+        - Bluetooth File Exchange
+        - Chess
+        - ColorSync Utility
+        - Console
+        - Digital Colour Meter
+        - Disk Utility
+        - Font Book
+        - Grapher
+        - Image Capture
+        - Keychain Access
+        - Migration Assistant
+        - Screenshot
+        - Script Editor
+        - Shortcuts
+        - Stickies
+        - System Information
+        - TextEdit
+        - Terminal
+        - Time Machine
+        - VoiceOver Utility
+    - folder: Audio
+      pages:
+      - number: 1
+        items:
+        - Ableton Live 11 Suite
+        - Absynth 5
+        - Audio Hijack
+        - Battery 4
+        - Cyclop
+        - eLicenser Control Center
+        - FM8
+        - Guitar Rig 5
+        - iLok License Manager
+        - iZotope Product Portal
+        - Kontakt
+        - Loopback
+        - Massive
+        - Melodyne
+        - Native Access
+        - Nuendo 12
+        - Reaktor 6
+        - Remove Soundtoys
+        - Steinberg Activation Manager
+        - Steinberg Download Assistant
+        - Steinberg Library Manager
+        - SubLab
+        - XLD
+    - folder: Communication
+      pages:
+      - number: 1
+        items:
+        - Discord
+        - WhatsApp
+        - zoom.us
+    - folder: Development
+      pages:
+      - number: 1
+        items:
+        - Apple Configurator
+        - GitKraken
+        - Postman
+        - PowerShell
+        - iTerm
+        - Sublime Text
+        - Visual Studio Code
+        - Xcode
+    - folder: Electronics
+      pages:
+      - number: 1
+        items:
+        - Bitmap2Component
+        - Eeschema
+        - GerbView
+        - KiCad
+        - Page Layout Editor
+        - PCB Calculator
+        - Pcbnew
+    - folder: Games
+      pages:
+      - number: 1
+        items:
+        - Steam
+        - Hades
+    - folder: Productivity
+      pages:
+      - number: 1
+        items:
+        - 1Password
+        - 1Password for Safari
+        - Amphetamine
+        - Anki
+        - draw.io
+        - Ground News
+        - Kindle
+        - Obsidian
+        - OmniGraffle
+        - OmniPlan
+        - Todoist
+    - folder: Media
+      pages:
+      - number: 1
+        items:
+        - Compressor
+        - Final Cut Pro
+        - Motion
+        - TouchDesigner
+    - folder: Microsoft
+      pages:
+      - number: 1
+        items:
+        - Microsoft Excel
+        - Microsoft OneNote
+        - Microsoft PowerPoint
+        - Microsoft Outlook
+        - Microsoft Remote Desktop
+        - Microsoft Teams
+        - Microsoft To Do
+        - Microsoft Word
+        - OneDrive
+    - folder: Utilities
+      pages:
+      - number: 1
+        items:
+        - Alfred 5
+        - BetterSnapTool
+        - Google Drive
+        - Logi Options+
+        - OverPicture
+        - Parallels Desktop
+        - Screenflick
+        - Surfshark
+        - The Unarchiver
+        - Userscripts
+    - folder: Web
+      pages:
+      - number: 1
+        items:
+        - Google Chrome
+        - Firefox
+        - Microsoft Edge
+        - Safari
+    - Blackmagic Disk Speed Test
+  - number: 2
+    items:
+    - folder: Adobe Utilities
+      pages:
+      - number: 1
+        items:
+        - Creative Cloud Helper
+        - Creative Cloud Installer
+        - Creative Cloud Desktop App
+        - CCXProcess
+        - CC Troubleshooter
+        - Core Sync
+        - Contact Sheets
+        - Make Calendar
+        - Web Gallery
+    - folder: Other
+      pages:
+      - number: 1
+        items:
+        - ACCFinderBundleLoader
+widgets:
+  pages: []
+dock_items:
+- Launchpad
+- iTerm
+- ============
+- Applications
+- Windows 11 Pro Applications
+- Downloads
+desktop: {}
