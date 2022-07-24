@@ -25,9 +25,12 @@ PROMPT="%B%F{green}%n%f%b at %F{cyan}%m%f in %B%F{yellow}%~%f%b
 > "
 RPROMPT="%* | %B%F{red}%L%f%b"
 
-# ADD LOCATIONS TO $PATH VARIABLE
-## Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# ADD LOCATIONS TO $path Array VARIABLE
+typeset -U path
+path=(
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 ## nvm
 local NVM_PREFIX="/opt/homebrew/opt/nvm"
