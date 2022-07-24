@@ -25,6 +25,9 @@
     ~/.zshenv:
       create: true
       path: dotfiles/zshenv
+    ~/.hushlogin:
+      create: true
+      path: dotfiles/hushlogin
     ~/.gitconfig:
       create: true
       path: dotfiles/gitconfig
