@@ -12,15 +12,16 @@ local ZSH_THEME_COLOR_DEPTH="magenta"
 
 ## GIT
 
-local ZSH_THEME_GIT_PROMPT_PREFIX="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%}%{$reset_color%}%{$bg[$ZSH_THEME_COLOR_BG]%} %{$fg_bold[$ZSH_THEME_COLOR_GIT]%}"
+local ZSH_THEME_GIT_PROMPT_PREFIX="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%}%{$reset_color%}%{$bg[$ZSH_THEME_COLOR_BG]%} "
 local ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_AHEAD="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[cyan]%}%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_BEHIND="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[magenta]%}%{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_AHEAD="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[cyan]%} %{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_BEHIND="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[magenta]%} %{$reset_color%}"
 local ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[red]%} %{$reset_color%}"
 local ZSH_THEME_GIT_PROMPT_UNMERGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} %{$reset_color%}"
 local ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[yellow]%} %{$reset_color%}"
 local ZSH_THEME_GIT_PROMPT_STAGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} %{$reset_color%}"
 local ZSH_THEME_GIT_PROMPT_CLEAN="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} ⚡%{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_STASHED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[white]%} %{$reset_color%}"
 
 git_info () {
   local ref
@@ -69,7 +70,7 @@ git_status() {
     result+="$ZSH_THEME_GIT_PROMPT_STASHED"
   fi
 
-  echo $result
+  echo $result | xargs
 }
 
 git_prompt() {
@@ -85,7 +86,7 @@ git_prompt() {
   # check git status
   local gitstatus=$(git_status)
   if [[ -n "$gitstatus" ]]; then
-    output+=" $gitstatus"
+    output+="$gitstatus"
   fi
 
   echo "${ZSH_THEME_GIT_PROMPT_PREFIX}${output}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
