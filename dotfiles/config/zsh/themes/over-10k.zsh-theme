@@ -101,7 +101,7 @@ local ZSH_THEME_BLOCKLEFT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 local ZSH_THEME_BLOCKRIGHT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 
 local ZSH_THEME_USER="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[$ZSH_THEME_COLOR_USER]%}%n%{$reset_color%}"
-local ZSH_THEME_PATH="%{$fg_bold[$ZSH_THEME_COLOR_TEXT]%}$PWD%{$reset_color%}"
+local ZSH_THEME_PATH="$(dynamic_path)"
 local ZSH_THEME_PATHSHORT="%{$fg_bold[$ZSH_THEME_COLOR_TEXT]%}$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%{$reset_color%}"
 local ZSH_THEME_POINTER="%(?.%{$fg[green]%}.%{$fg[red]%})❱ %{$reset_color%}"
 
@@ -109,7 +109,7 @@ local ZSH_THEME_EXITSTATUS="%{$bg[$ZSH_THEME_COLOR_BG]%}%(?.%{$fg_bold[green]%}�
 local ZSH_THEME_TIME="%{$bg[$ZSH_THEME_COLOR_BG]%}%F{$ZSH_THEME_COLOR_TIME}%*%f"
 local ZSH_THEME_DEPTH="%{$bg[$ZSH_THEME_COLOR_BG]%}%F{$ZSH_THEME_COLOR_DEPTH}%B%L%b%f"
 
-dynamic_path_length() {
+dynamic_path() {
   if [[ -n $(git_prompt) ]]; then
     local DYNAMIC_PATH
     # vcs_info found nothing so we have more space. Let's print a longer part of $PWD...
@@ -131,7 +131,7 @@ build_header_prompt() {
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
   CUSTOM_HEADER+="${ZSH_THEME_LEFT}"
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
-  CUSTOM_HEADER+="$(dynamic_path_length)"
+  CUSTOM_HEADER+="${ZSH_THEME_PATH}"
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
   CUSTOM_HEADER+="${ZSH_THEME_BLOCKRIGHT}"
   echo "${CUSTOM_HEADER}"
