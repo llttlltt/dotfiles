@@ -6,71 +6,160 @@ local ZSH_THEME_COLOR_BG="black"
 local ZSH_THEME_COLOR_TEXT="white"
 local ZSH_THEME_COLOR_USER="green"
 local ZSH_THEME_COLOR_PATH="yellow"
-local ZSH_THEME_COLOR_GIT="blue"
+local ZSH_THEME_COLOR_GIT="white"
 local ZSH_THEME_COLOR_TIME="white"
 local ZSH_THEME_COLOR_DEPTH="magenta"
 
-local ZSH_THEME_LEFT="%{$fg[$ZSH_THEME_COLOR_TEXT]%}%{$reset_color%}"
-local ZSH_THEME_RIGHT="%{$fg[$ZSH_THEME_COLOR_TEXT]%}%{$reset_color%}"
+## GIT
+
+local ZSH_THEME_GIT_PROMPT_PREFIX="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%}%{$reset_color%}%{$bg[$ZSH_THEME_COLOR_BG]%} %{$fg_bold[$ZSH_THEME_COLOR_GIT]%}"
+local ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_AHEAD="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[cyan]%}%{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_BEHIND="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[magenta]%}%{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[red]%} %{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_UNMERGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} %{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[yellow]%} %{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_STAGED="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} %{$reset_color%}"
+local ZSH_THEME_GIT_PROMPT_CLEAN="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[green]%} ⚡%{$reset_color%}"
+
+git_info () {
+  local ref
+  ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
+  echo "${ref#refs/heads/}"
+}
+
+git_status() {
+  local result gitstatus
+  gitstatus="$(command git status --porcelain -b 2>/dev/null)"
+
+  # check status of local repository
+  local gitbranch="$(head -n 1 <<< "$gitstatus")"
+  if [[ "$gitbranch" =~ '^## .*ahead' ]]; then
+    result+="$ZSH_THEME_GIT_PROMPT_AHEAD"
+  fi
+  if [[ "$gitbranch" =~ '^## .*behind' ]]; then
+    result+="$ZSH_THEME_GIT_PROMPT_BEHIND"
+  fi
+  if [[ "$gitbranch" =~ '^## .*diverged' ]]; then
+    result+="$ZSH_THEME_GIT_PROMPT_DIVERGED"
+  fi
+
+  # check status of files
+  local gitfiles="$(tail -n +2 <<< "$gitstatus")"
+  if [[ -n "$gitfiles" ]]; then
+    if [[ "$gitfiles" =~ $'(^|\n)\\?\\? ' ]]; then
+      result+="$ZSH_THEME_GIT_PROMPT_UNTRACKED"
+    fi
+    if [[ "$gitfiles" =~ $'(^|\n).[MTD] ' ]]; then
+      result+="$ZSH_THEME_GIT_PROMPT_UNSTAGED"
+    fi
+    if [[ "$gitfiles" =~ $'(^|\n)UU ' ]]; then
+      result+="$ZSH_THEME_GIT_PROMPT_UNMERGED"
+    fi
+    if [[ "$gitfiles" =~ $'(^|\n)[AMRD]. ' ]]; then
+      result+="$ZSH_THEME_GIT_PROMPT_STAGED"
+    fi
+  else
+    result+="$ZSH_THEME_GIT_PROMPT_CLEAN"
+  fi
+
+  # check if there are stashed changes
+  if command git rev-parse --verify refs/stash &> /dev/null; then
+    result+="$ZSH_THEME_GIT_PROMPT_STASHED"
+  fi
+
+  echo $result
+}
+
+git_prompt() {
+  # check git information
+  local gitinfo=$(git_info)
+  if [[ -z "$gitinfo" ]]; then
+    return
+  fi
+
+  # quote % in git information
+  local output="${gitinfo:gs/%/%%}"
+
+  # check git status
+  local gitstatus=$(git_status)
+  if [[ -n "$gitstatus" ]]; then
+    output+=" $gitstatus"
+  fi
+
+  echo "${ZSH_THEME_GIT_PROMPT_PREFIX}${output}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
+}
+
+## PROMPT
+
+local ZSH_THEME_SPACER="%{$bg[$ZSH_THEME_COLOR_BG]%} %{$reset_color%}"
+local ZSH_THEME_LEFT="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg[$ZSH_THEME_COLOR_TEXT]%}%{$reset_color%}"
+local ZSH_THEME_RIGHT="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg[$ZSH_THEME_COLOR_TEXT]%}%{$reset_color%}"
 local ZSH_THEME_BLOCKLEFT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 local ZSH_THEME_BLOCKRIGHT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
-local ZSH_THEME_BLOCKRIGHT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 
+local ZSH_THEME_USER="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[$ZSH_THEME_COLOR_USER]%}%n%{$reset_color%}"
 local ZSH_THEME_PATH="%{$fg_bold[$ZSH_THEME_COLOR_TEXT]%}$PWD%{$reset_color%}"
 local ZSH_THEME_PATHSHORT="%{$fg_bold[$ZSH_THEME_COLOR_TEXT]%}$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%{$reset_color%}"
 local ZSH_THEME_POINTER="%(?.%{$fg[green]%}.%{$fg[red]%})❱ %{$reset_color%}"
 
-local ZSH_THEME_EXITSTATUS="%(?.%{$fg_bold[green]%}✔.%{$fg_bold[red]%}✘)%{$reset_color%}"
-local ZSH_THEME_TIME="%F{$ZSH_THEME_COLOR_TIME}%*%f"
-local ZSH_THEME_DEPTH="%F{$ZSH_THEME_COLOR_DEPTH}%B%L%b%f"
+local ZSH_THEME_EXITSTATUS="%{$bg[$ZSH_THEME_COLOR_BG]%}%(?.%{$fg_bold[green]%}✔.%{$fg_bold[red]%}✘)%{$reset_color%}"
+local ZSH_THEME_TIME="%{$bg[$ZSH_THEME_COLOR_BG]%}%F{$ZSH_THEME_COLOR_TIME}%*%f"
+local ZSH_THEME_DEPTH="%{$bg[$ZSH_THEME_COLOR_BG]%}%F{$ZSH_THEME_COLOR_DEPTH}%B%L%b%f"
 
-## GIT
-
-local ZSH_THEME_GIT_PROMPT_PREFIX="[%{$fg_bold[green]%}±%{$reset_color%}%{$fg_bold[white]%}"
-local ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}]"
-local ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%}"
-local ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%}"
-
-autoload -Uz add-zsh-hook vcs_info
-add-zsh-hook precmd vcs_info
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ":vcs_info:git:*" formats "${ZSH_THEME_LEFT} %F{cyan}%b%u%c%f"
-zstyle ":vcs_info:git:*" actionformats "${ZSH_THEME_LEFT} %F{cyan}%b|%a%u%c%f"
-zstyle ':vcs_info:*' unstagedstr ' $ZSH_THEME_GIT_PROMPT_UNSTAGED'
-zstyle ':vcs_info:*' stagedstr ' $ZSH_THEME_GIT_PROMPT_STAGED'
-
-## PROMPT
-
-build_prompt_header() {
-  CUSTOM_PROMPT="%F{green}%B%n%b%f ${ZSH_THEME_LEFT} "
-  if [[ -n ${vcs_info_msg_0_} ]]; then
+dynamic_path_length() {
+  if [[ -n $(git_prompt) ]]; then
+    local DYNAMIC_PATH
     # vcs_info found nothing so we have more space. Let's print a longer part of $PWD...
-    CUSTOM_PROMPT+="%F{yellow}%B$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%b%f $(git_prompt)"
-    
+    DYNAMIC_PATH+="%{$fg_bold[$ZSH_THEME_COLOR_PATH]%}$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%{$reset_color%}"
+    DYNAMIC_PATH+="${ZSH_THEME_SPACER}"
+    DYNAMIC_PATH+="${ZSH_THEME_LEFT}"
+    DYNAMIC_PATH+="${ZSH_THEME_SPACER}"
+    DYNAMIC_PATH+="$(git_prompt)"
   else
     # vcs_info found something that needs space, a shorter $PWD makes sense.
-    CUSTOM_PROMPT+="%F{yellow}%B%~%b%f"
+    DYNAMIC_PATH+="%{$fg_bold[$ZSH_THEME_COLOR_PATH]%}%~%{$reset_color%}"
   fi
-  CUSTOM_PROMPT+=" ${ZSH_THEME_BLOCKRIGHT}"
+  echo "%{$bg[$ZSH_THEME_COLOR_BG]%}$DYNAMIC_PATH%{$reset_color%}"
 }
 
-precmd() {
-  vcs_info
-  build_prompt_header
+build_header_prompt() {
+  CUSTOM_HEADER="${ZSH_THEME_SPACER}"
+  CUSTOM_HEADER+="${ZSH_THEME_USER}"
+  CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
+  CUSTOM_HEADER+="${ZSH_THEME_LEFT}"
+  CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
+  CUSTOM_HEADER+="$(dynamic_path_length)"
+  CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
+  CUSTOM_HEADER+="${ZSH_THEME_BLOCKRIGHT}"
+  echo "${CUSTOM_HEADER}"
+}
+
+build_rprompt() {
+  CUSTOM_RPROMPT="${ZSH_THEME_BLOCKLEFT}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_EXITSTATUS}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_RIGHT}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_TIME}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_RIGHT}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_DEPTH}"
+  CUSTOM_RPROMPT+="${ZSH_THEME_SPACER}"
+  echo "${CUSTOM_RPROMPT}"
 }
 
 over10k_precmd() {
   print
-  print -rP "$CUSTOM_PROMPT"
+  print -rP $(build_header_prompt)
 }
 
 setopt prompt_subst
-PROMPT="$ZSH_THEME_POINTER"
-RPROMPT="${ZSH_THEME_BLOCKLEFT} ${ZSH_THEME_EXITSTATUS} ${ZSH_THEME_RIGHT} ${ZSH_THEME_TIME} ${ZSH_THEME_RIGHT} ${ZSH_THEME_DEPTH} "
+PROMPT="${ZSH_THEME_POINTER}"
+RPROMPT="$(build_rprompt)"
 
 autoload -U add-zsh-hook
 add-zsh-hook precmd over10k_precmd
