@@ -70,12 +70,6 @@ path=(
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
-## nvm
-local NVM_PREFIX="/opt/homebrew/opt/nvm"
-export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_PREFIX/nvm.sh" ] && \. "$NVM_PREFIX/nvm.sh"  # This loads nvm
-  [ -s "$NVM_PREFIX/etc/bash_completion.d/nvm" ] && \. "$NVM_PREFIX/etc/bash_completion.d/nvm"
-
 ## pyenv
 ### TODO: This currently seems irrelevant as it does not add anything to $PATH.
 # local pyenv_path="$HOME/.pyenv"
@@ -94,6 +88,7 @@ function cdls() {
 # USE ZSH PLUGINS
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.dotfiles/dotfiles/config/zsh/plugins/nvm.zsh
 
 # ...AND OTHER SUPRISES
 ## Some useful options (man zshoptions)
