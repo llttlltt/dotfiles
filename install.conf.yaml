@@ -24,13 +24,13 @@
 - link:
     ~/.zshrc:
       create: true
-      path: dotfiles/zsh/zshrc
+      path: dotfiles/config/zsh/zshrc
     ~/.zshenv:
       create: true
-      path: dotfiles/zsh/zshenv
+      path: dotfiles/config/zsh/zshenv
     ~/.zprofile:
       create: true
-      path: dotfiles/zsh/zprofile
+      path: dotfiles/config/zsh/zprofile
     ~/.hushlogin:
       create: true
       path: dotfiles/hushlogin
