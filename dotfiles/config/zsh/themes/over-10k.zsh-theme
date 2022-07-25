@@ -101,8 +101,6 @@ local ZSH_THEME_BLOCKLEFT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 local ZSH_THEME_BLOCKRIGHT="%{$fg[$ZSH_THEME_COLOR_BG]%}%{$reset_color%}"
 
 local ZSH_THEME_USER="%{$bg[$ZSH_THEME_COLOR_BG]%}%{$fg_bold[$ZSH_THEME_COLOR_USER]%}%n%{$reset_color%}"
-local ZSH_THEME_PATH="$(dynamic_path)"
-local ZSH_THEME_PATHSHORT="%{$fg_bold[$ZSH_THEME_COLOR_TEXT]%}$(echo $PWD | perl -pe "s/(\w)[^\/]+\//\1\//g")%{$reset_color%}"
 local ZSH_THEME_POINTER="%(?.%{$fg[green]%}.%{$fg[red]%})❱ %{$reset_color%}"
 
 local ZSH_THEME_EXITSTATUS="%{$bg[$ZSH_THEME_COLOR_BG]%}%(?.%{$fg_bold[green]%}✔.%{$fg_bold[red]%}✘)%{$reset_color%}"
@@ -131,7 +129,7 @@ build_header_prompt() {
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
   CUSTOM_HEADER+="${ZSH_THEME_LEFT}"
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
-  CUSTOM_HEADER+="${ZSH_THEME_PATH}"
+  CUSTOM_HEADER+="$(dynamic_path)"
   CUSTOM_HEADER+="${ZSH_THEME_SPACER}"
   CUSTOM_HEADER+="${ZSH_THEME_BLOCKRIGHT}"
   echo "${CUSTOM_HEADER}"
