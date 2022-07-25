@@ -38,6 +38,6 @@ A preview of what is to come...
     - [ ] Turn on timezone support
     - [ ] Show events in year view
     - [ ] Show week numbers
-- [ ] Ensure "MesloLGS NF" font is installed by Dotbot.
+- [x] Ensure "MesloLGS NF" font is installed by Dotbot.
 - [ ] Uninstall Brew node instance after setup_homebrew.zsh has run (`brew uninstall --ignore-dependencies nod`).
 - [x] Add `lporg` setup to configure Launchpad automatically.

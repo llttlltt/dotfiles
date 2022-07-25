@@ -4,6 +4,7 @@ tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -34,6 +35,8 @@ brew "php"
 brew "pyenv"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# Version control system designed to be a better CVS
+brew "subversion"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # UNIX shell (command interpreter)
@@ -60,6 +63,19 @@ cask "discord"
 cask "drawio"
 # Web browser
 cask "firefox"
+cask "font-anton"
+cask "font-droid-sans-mono-nerd-font"
+# Icon set and toolkit
+cask "font-fontawesome"
+cask "font-hack-nerd-font"
+cask "font-heebo"
+cask "font-lato"
+cask "font-meslo-lg-nerd-font"
+cask "font-montserrat"
+cask "font-open-dyslexic-nerd-font"
+cask "font-oswald"
+# Font with a mechanical skeleton and the forms are largely geometric
+cask "font-roboto"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
