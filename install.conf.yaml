@@ -24,13 +24,13 @@
 - link:
     ~/.zshrc:
       create: true
-      path: dotfiles/zshrc
+      path: dotfiles/zsh/zshrc
     ~/.zshenv:
       create: true
-      path: dotfiles/zshenv
+      path: dotfiles/zsh/zshenv
     ~/.zprofile:
       create: true
-      path: dotfiles/zprofile
+      path: dotfiles/zsh/zprofile
     ~/.hushlogin:
       create: true
       path: dotfiles/hushlogin
@@ -40,4 +40,3 @@
     ~/.config/bat:
       create: true
       path: dotfiles/config/bat
-# - create:
