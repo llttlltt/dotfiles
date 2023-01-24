@@ -59,6 +59,8 @@ cask "alfred"
 cask "anki"
 # Records audio from any application
 cask "audio-hijack"
+# Menu bar icon organizer
+cask "bartender"
 # Voice and text chat software
 cask "discord"
 # Draw.io is free online diagram software
