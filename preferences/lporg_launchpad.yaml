@@ -2,11 +2,11 @@ apps:
   pages:
   - number: 1
     items:
+    - Mail
     - Contacts
     - Calendar
     - Notes
     - FaceTime
-    - Mail
     - Messages
     - Photos
     - Spotify
@@ -14,11 +14,15 @@ apps:
       pages:
       - number: 1
         items:
+        - Creative Cloud
         - Adobe Acrobat
+        - Adobe After Effects 2022
         - Acrobat Distiller
         - Adobe Photoshop 2022
         - Adobe Illustrator 2022
-        - Creative Cloud
+        - Adobe InDesign 2022
+        - Adobe Lightroom
+        - Adobe Media Encoder 2022
     - folder: Apple Stock
       pages:
       - number: 1
@@ -38,11 +42,11 @@ apps:
         - Preview
         - QuickTime Player
         - Reminders
-        - Siri
         - Stocks
         - System Preferences
         - TV
         - Voice Memos
+        - Siri
     - folder: Apple Utilities
       pages:
       - number: 1
@@ -76,28 +80,33 @@ apps:
       - number: 1
         items:
         - Ableton Live 11 Suite
-        - Absynth 5
+        - Antelope Launcher
         - Audio Hijack
-        - Battery 4
         - Cyclop
         - eLicenser Control Center
-        - FM8
-        - Guitar Rig 5
         - iLok License Manager
+        - iZotope Ozone 9
         - iZotope Product Portal
-        - Kontakt
+        - iZotope RX 7 Audio Editor
+        - Logic Pro
         - Loopback
-        - Massive
         - Melodyne
-        - Native Access
-        - Nuendo 12
-        - Reaktor 6
+        - MuseScore 3
+        - QuNeo Editor
+        - QuNeo MPE
+        - QuNeome
         - Remove Soundtoys
+        - Spitfire Audio
+        - Splice
         - Steinberg Activation Manager
         - Steinberg Download Assistant
         - Steinberg Library Manager
         - SubLab
+        - SubLabXL
+        - Vienna Ensemble Pro AU3
+        - Vienna Ensemble Pro Server
         - XLD
+        - Nuendo 12
     - folder: Communication
       pages:
       - number: 1
@@ -110,6 +119,7 @@ apps:
       - number: 1
         items:
         - Apple Configurator
+        - Docker
         - GitKraken
         - Postman
         - PowerShell
@@ -121,10 +131,10 @@ apps:
       pages:
       - number: 1
         items:
+        - KiCad
         - Bitmap2Component
         - Eeschema
         - GerbView
-        - KiCad
         - Page Layout Editor
         - PCB Calculator
         - Pcbnew
@@ -133,6 +143,8 @@ apps:
       - number: 1
         items:
         - Steam
+        - Steam
+        - Steam Support Center
         - Hades
     - folder: Productivity
       pages:
@@ -145,6 +157,8 @@ apps:
         - draw.io
         - Ground News
         - Kindle
+        - MacFamilyTree 9
+        - Notion
         - Obsidian
         - OmniGraffle
         - OmniPlan
@@ -153,10 +167,22 @@ apps:
       pages:
       - number: 1
         items:
+        - Edit
+        - Remote
+        - Viewer
+      - number: 2
+        items:
+        - CameraBag Pro
+        - Blender
+        - Cinema 4D
         - Compressor
+        - Figma
         - Final Cut Pro
         - Motion
+        - OBS
         - TouchDesigner
+        - Imaging Edge Desktop
+        - VLC
     - folder: Microsoft
       pages:
       - number: 1
@@ -175,8 +201,12 @@ apps:
       - number: 1
         items:
         - Alfred 5
+        - Bartender 4
+        - Be Focused Pro
         - BetterSnapTool
+        - CrossOver
         - Google Drive
+        - iStat Menus
         - Logi Options+
         - OverPicture
         - Parallels Desktop
@@ -188,8 +218,8 @@ apps:
       pages:
       - number: 1
         items:
-        - Google Chrome
         - Firefox
+        - Google Chrome
         - Microsoft Edge
         - Safari
     - Blackmagic Disk Speed Test
@@ -199,21 +229,79 @@ apps:
       pages:
       - number: 1
         items:
-        - ACCFinderBundleLoader
+        - Creative Cloud Desktop App
+        - Adobe After Effects Render Engine 2022
+        - CC Troubleshooter
+        - CCXProcess
+        - Cinema 4D Team Render Client
+        - Cinema 4D Team Render Server
+        - Cineware
         - Creative Cloud Helper
         - Creative Cloud Installer
-        - Creative Cloud Desktop App
-        - CCXProcess
-        - CC Troubleshooter
+        - Commandline
+        - c4dpy
         - Core Sync
         - Contact Sheets
-        - Make Calendar
         - Web Gallery
+        - Make Calendar
+    - folder: Arturia
+      pages:
+      - number: 1
+        items:
+        - Arturia Software Center
+        - ARP 2600 V3
+        - Analog Lab V
+        - Augmented STRINGS
+        - Augmented VOICES
+        - B-3 V2
+        - Buchla Easel V
+        - CMI V
+        - CS-80 V4
+        - CZ V
+        - Clavinet V
+        - DX7 V
+        - Emulator II V
+        - Farfisa V
+        - Jun-6 V
+        - Jup-8 V4
+        - KORG MS-20 V
+        - Matrix-12 V2
+        - Mellotron V
+        - Mini V3
+        - Modular V3
+        - OP-Xa V
+        - Piano V3
+        - Pigments
+        - Prophet-5 V
+        - Prophet-VS V
+        - SEM V2
+        - SQ80 V
+        - Solina V2
+        - Stage-73 V2
+        - Synclavier V
+        - Synthi V
+        - VOX Continental V2
+        - Vocoder V
+        - Wurli V2
+    - folder: Native Instruments
+      pages:
+      - number: 1
+        items:
+        - Native Access
+        - Absynth 5
+        - Battery 4
+        - FM8
+        - Guitar Rig 5
+        - Kontakt
+        - Massive
+        - Reaktor 6
 widgets:
   pages: []
 dock_items:
 - Launchpad
 - iTerm
+- Safari
+- Todoist
 - ============
 - Applications
 - Windows 11 Pro Applications
