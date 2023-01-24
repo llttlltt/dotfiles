@@ -171,6 +171,8 @@ cask "powershell"
 cask "screenflick"
 # Download manager for Spitfire audio libraries
 cask "spitfire-audio"
+# Cloud-based music creation and collaboration platform
+cask "splice"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # VPN client for secure internet access and private browsing
