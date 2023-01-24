@@ -88,6 +88,8 @@ cask "gitkraken"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
+# System monitoring app
+cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Electronics design automation suite
