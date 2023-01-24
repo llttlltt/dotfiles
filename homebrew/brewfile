@@ -63,6 +63,8 @@ cask "audio-hijack"
 cask "bartender"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
 # Web browser
