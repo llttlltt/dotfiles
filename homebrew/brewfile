@@ -19,8 +19,8 @@ brew "exa"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# General-purpose data compression with high compression ratio
-brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
