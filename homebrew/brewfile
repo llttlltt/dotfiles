@@ -51,6 +51,8 @@ brew "azure/functions/azure-functions-core-tools"
 brew "blacktop/tap/lporg"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# Sound and music editor
+cask "ableton-live-suite"
 # Application launcher and productivity software
 cask "alfred"
 # Memory training application
