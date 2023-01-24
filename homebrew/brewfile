@@ -121,6 +121,8 @@ cask "google-drive"
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Professional audio software for audio recording, mixing, broadcast and others
+cask "izotope-product-portal"
 # Electronics design automation suite
 cask "kicad"
 # Interface for reading and syncing eBooks
