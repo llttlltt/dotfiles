@@ -63,6 +63,8 @@ cask "anki"
 cask "audio-hijack"
 # Menu bar icon organizer
 cask "bartender"
+# Tool to run Windows software
+cask "crossover"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
