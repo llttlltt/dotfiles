@@ -139,6 +139,8 @@ cask "microsoft-remote-desktop"
 cask "microsoft-teams"
 # Word processor
 cask "microsoft-word"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # NewTek NDI integration for OBS Studio
