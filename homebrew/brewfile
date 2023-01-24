@@ -73,6 +73,8 @@ cask "discord"
 cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
+# Collaborative team software
+cask "figma"
 # Web browser
 cask "firefox"
 cask "font-anton"
