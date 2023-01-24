@@ -63,6 +63,8 @@ cask "anki"
 cask "audio-hijack"
 # Menu bar icon organizer
 cask "bartender"
+# 3D creation suite
+cask "blender"
 # Tool to run Windows software
 cask "crossover"
 # Voice and text chat software
