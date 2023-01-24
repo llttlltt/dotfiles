@@ -72,18 +72,39 @@ cask "drawio"
 # Web browser
 cask "firefox"
 cask "font-anton"
+cask "font-archivo"
+cask "font-archivo-black"
+cask "font-archivo-narrow"
+# Font with greater legibility and readability for low vision readers
+cask "font-atkinson-hyperlegible"
 cask "font-droid-sans-mono-nerd-font"
 # Icon set and toolkit
 cask "font-fontawesome"
+# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-heebo"
+cask "font-inter"
+cask "font-inter-tight"
 cask "font-lato"
+# Expanded by font bureau with a range of 8 weights
+cask "font-lexend"
+# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 cask "font-montserrat"
 cask "font-open-dyslexic-nerd-font"
 cask "font-oswald"
+cask "font-red-hat-display"
+cask "font-red-hat-mono"
+cask "font-red-hat-text"
 # Font with a mechanical skeleton and the forms are largely geometric
 cask "font-roboto"
+cask "font-sora"
+# Typeface originally designed for the art center Synesthésie
+cask "font-syne"
+# Another take on letting go of control
+cask "font-syne-mono"
+# Originally designed for the Art Center 'Synesthésie'
+cask "font-syne-tactile"
 # Git client focusing on productivity
 cask "gitkraken"
 # Web browser
