@@ -20,6 +20,7 @@ A preview of what is to come...
 - [ ] Terminal Preferences
 - [ ] Dock Preferences
 - [ ] Mission Control Preference (Don't Rearrange Spaces)
+- [ ] Add ~/Library/Spelling/LocationDictionary
 - [ ] Finder (Show Path Bar)
 - [ ] Finder (As List)
   - [ ] Create Cask(s):
