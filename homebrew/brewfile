@@ -39,6 +39,8 @@ brew "php@7.4"
 brew "pyenv"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Version control system designed to be a better CVS
 brew "subversion"
 # Display directories as trees (with optional color/HTML output)
