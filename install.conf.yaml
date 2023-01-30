@@ -37,6 +37,9 @@
     ~/.gitconfig:
       create: true
       path: dotfiles/gitconfig
+    ~/.config/starship.toml:
+      create: true
+      path: dotfiles/config/starship/starship.toml
     ~/.config/bat:
       create: true
       path: dotfiles/config/bat
