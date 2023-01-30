@@ -33,6 +33,8 @@ brew "nano"
 brew "nvm"
 # General-purpose scripting language
 brew "php"
+# General-purpose scripting language
+brew "php@7.4"
 # Python version management
 brew "pyenv"
 # Utility that provides fast incremental file transfer
