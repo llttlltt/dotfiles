@@ -1,3 +1,5 @@
 [user]
 	name = Elliott-Liu
 	email = 16389800+Elliott-Liu@users.noreply.github.com
+[core]
+	excludesfile = ~/.dotfiles/dotfiles/gitignore_global
