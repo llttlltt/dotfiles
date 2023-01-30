@@ -1731,13 +1731,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-					<real>0.0</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-					<real>0.0</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-					<real>0.0</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1870,15 +1870,15 @@
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-				<string> </string>
+			<string> </string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-				<string></string>
+			<string></string>
 			<key>HotKey Key Code</key>
 			<integer>49</integer>
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
-				<integer>786432</integer>
+			<integer>786432</integer>
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
@@ -1890,7 +1890,7 @@
 			<key>HotKey Window Reopens On Activation</key>
 			<false/>
 			<key>Icon</key>
-				<integer>1</integer>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
@@ -2694,15 +2694,15 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.59999999999999998</real>
 	<key>StatusBarPosition</key>
-		<integer>0</integer>
+	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
-		<key>TabViewType</key>
-		<integer>0</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>TimeBetweenTips</key>
 	<real>604800</real>
-		<key>UIElementRequiresHotkeys</key>
-		<true/>
+	<key>UIElementRequiresHotkeys</key>
+	<true/>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
