@@ -11,6 +11,8 @@ tap "romkatv/powerlevel10k"
 brew "xz"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Convert CD images from .bin/.cue to .iso/.cdr
+brew "bchunk"
 # Open source suite of directory software
 brew "openldap"
 # Modern replacement for 'ls'
