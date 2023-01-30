@@ -91,6 +91,7 @@ cask "font-archivo-black"
 cask "font-archivo-narrow"
 # Font with greater legibility and readability for low vision readers
 cask "font-atkinson-hyperlegible"
+# Developer targeted fonts with a high number of glyphs
 cask "font-droid-sans-mono-nerd-font"
 # Icon set and toolkit
 cask "font-fontawesome"
@@ -105,6 +106,7 @@ cask "font-lexend"
 # Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 cask "font-montserrat"
+# Developer targeted fonts with a high number of glyphs
 cask "font-open-dyslexic-nerd-font"
 cask "font-oswald"
 cask "font-red-hat-display"
