@@ -20,9 +20,9 @@ alias trail='<<<${(F)path}'
 alias rm=trash
 
 # CUSTOMISE PROMPT(S)
-autoload colors
-colors
-source ~/.dotfiles/dotfiles/config/zsh/themes/over-10k.zsh-theme
+# autoload colors
+# colors
+# source ~/.dotfiles/dotfiles/config/zsh/themes/over-10k.zsh-theme
 
 # ADD LOCATIONS TO $path Array VARIABLE
 typeset -U path
@@ -30,6 +30,9 @@ path=(
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
+
+## starship
+eval "$(starship init zsh)"
 
 ## pyenv
 ### TODO: This currently seems irrelevant as it does not add anything to $PATH.
