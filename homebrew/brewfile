@@ -71,6 +71,8 @@ cask "audio-hijack"
 cask "bartender"
 # 3D creation suite
 cask "blender"
+# Free and open-source web browser
+cask "chromium"
 # Tool to run Windows software
 cask "crossover"
 # Voice and text chat software
