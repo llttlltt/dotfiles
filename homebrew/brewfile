@@ -7,12 +7,12 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Open source suite of directory software
 brew "openldap"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Modern replacement for 'ls'
 brew "exa"
 # GitHub command-line tool
