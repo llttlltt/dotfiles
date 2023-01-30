@@ -1,0 +1,99 @@
+
+# # Get editor completions based on the config schema
+# '$schema' = 'https://starship.rs/config-schema.json'
+
+format = """
+$time\
+$os\
+$all\
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the default prompt symbols
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+[os]
+format = "[$symbol]($style)"
+style = "bold white"
+disabled = false
+
+[time]
+disabled = false
+style = "bold bright-black"
+format = "[$time]($style) "
+
+[directory]
+disabled = false
+truncation_length = 2
+truncate_to_repo = true
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = 'bold cyan'
+read_only = ' '
+read_only_style = 'red'
+truncation_symbol = '…/'
+repo_root_style = 'bold #F1502F'
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
+home_symbol = ""
+
+[git_branch]
+disabled = false
+symbol = ' '
+format = 'on [$symbol$branch(:$remote_branch)](bold #F1502F) '
+
+[git_status]
+disabled = false
+
+[git_metrics]
+disabled = false
+
+[nodejs]
+disabled = false
+format = 'via [$symbol($version)](bold #215732) '
+symbol = ' '
+
+[cmd_duration]
+disabled = false
+format = "took [$duration]($style) "
+min_time = 1
+
+[os.symbols]
+Alpine = ' '
+Amazon = ' '
+Android = ' '
+Arch = ' '
+CentOS = ' '
+Debian = ' '
+DragonFly = ' '
+Emscripten = ' '
+EndeavourOS = ' '
+Fedora = ' '
+FreeBSD = ' '
+Garuda = '﯑ '
+Gentoo = ' '
+HardenedBSD = 'ﲊ '
+Illumos = ' '
+Linux = ' '
+Macos = ' '
+Manjaro = ' '
+Mariner = ' '
+MidnightBSD = ' '
+Mint = ' '
+NetBSD = ' '
+NixOS = ' '
+OpenBSD = ' '
+openSUSE = ' '
+OracleLinux = ' '
+Pop = ' '
+Raspbian = ' '
+Redhat = ' '
+RedHatEnterprise = ' '
+Redox = ' '
+Solus = 'ﴱ '
+SUSE = ' '
+Ubuntu = ' '
+Unknown = ' '
+Windows = ' '
