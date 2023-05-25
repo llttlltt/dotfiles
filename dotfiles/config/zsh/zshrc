@@ -44,6 +44,16 @@ eval "$(starship init zsh)"
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
 
+## llvm
+# Add the LLVM binary directory to the system's PATH for easy access
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# Set the LDFLAGS environment variable to specify the LLVM library directory
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+
+# Set the CPPFLAGS environment variable to specify the LLVM include directory
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
 # WRITE FUNCTIONS
 function mkcd() {
   mkdir -p "$@" && cd "$_"
