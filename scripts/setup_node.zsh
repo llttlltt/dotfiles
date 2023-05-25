@@ -27,6 +27,9 @@ npm install --global typescript
 npm install --global json-server
 npm install --global http-server
 npm install --global trash-cli
+npm install --global nodemon
+npm install --global corepack
+npm install --global postman-to-openapi
 
 echo ""
 echo "Global NPM Packages Installed:"
