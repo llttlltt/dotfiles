@@ -18,6 +18,8 @@ alias grep=batgrep
 alias trail='<<<${(F)path}'
 ## Remove to system trash
 alias rm=trash
+## neovim
+alias vim=nvim
 
 # CUSTOMISE PROMPT(S)
 # autoload colors
