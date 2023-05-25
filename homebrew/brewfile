@@ -1,3 +1,4 @@
+tap "1password/tap"
 tap "azure/functions"
 tap "blacktop/tap"
 tap "eth-p/software"
@@ -7,40 +8,80 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
+# JPEG image codec that aids compression and decompression
+brew "jpeg-turbo"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Companion library to apr, the Apache Portable Runtime library
+brew "apr-util"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
 brew "bchunk"
+# Asynchronous DNS library
+brew "c-ares"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
 # Open source suite of directory software
 brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
 brew "less"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Lightning memory-mapped database: key-value data store
+brew "lmdb"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Platform built on V8 to build network applications
+brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # General-purpose scripting language
 brew "php"
 # General-purpose scripting language
 brew "php@7.4"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
+# Implementation of Telnet and SSH
+brew "putty"
 # Python version management
 brew "pyenv"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# Experimental Rust compiler front-end for IDEs
+brew "rust-analyzer"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Version control system designed to be a better CVS
@@ -63,18 +104,26 @@ brew "azure/functions/azure-functions-core-tools@4"
 brew "blacktop/tap/lporg"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# Command-line helper for the 1Password password manager
+cask "1password-cli"
 # Sound and music editor
 cask "ableton-live-suite"
 # Application launcher and productivity software
 cask "alfred"
 # Memory training application
 cask "anki"
+# Chromium based browser
+cask "arc"
 # Records audio from any application
 cask "audio-hijack"
 # Menu bar icon organizer
 cask "bartender"
+# Universal chat app powered by Matrix
+cask "beeper"
 # 3D creation suite
 cask "blender"
+# Open-source browser prompter
+cask "browserosaurus"
 # Free and open-source web browser
 cask "chromium"
 # Tool to run Windows software
@@ -83,7 +132,7 @@ cask "crossover"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Draw.io is free online diagram software
+# Online diagram software
 cask "drawio"
 # Collaborative team software
 cask "figma"
@@ -104,6 +153,8 @@ cask "font-hack-nerd-font"
 cask "font-heebo"
 cask "font-inter"
 cask "font-inter-tight"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
 cask "font-lato"
 # Expanded by font bureau with a range of 8 weights
 cask "font-lexend"
@@ -183,6 +234,8 @@ cask "parallels"
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# Free Dj app to prepare and manage your music files
+cask "rekordbox"
 # Screen recorder with audio
 cask "screenflick"
 # Download manager for Spitfire audio libraries
@@ -219,6 +272,7 @@ mas "Instapaper Save", id: 1481302432
 mas "Logic Pro", id: 634148309
 mas "MacFamilyTree 9", id: 1458866808
 mas "Microsoft To Do", id: 1274495053
+mas "MODALapp", id: 1187314855
 mas "Motion", id: 434290957
 mas "OverPicture", id: 1188020834
 mas "The Unarchiver", id: 425424353
