@@ -14,6 +14,9 @@
     - command: ./scripts/setup_lporg.zsh
       stdout: true
       stderr: true
+    - command: ./scripts/setup_rust.zsh
+      stdout: true
+      stderr: true
 
 - defaults:
     link:
