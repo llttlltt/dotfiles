@@ -84,3 +84,26 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'm:{a-zA-Z}={A-Za-z} l:|=* r:|=*'
 zmodload zsh/complist
 _comp_options+=(globdots)
+
+# OS FIXES
+## mac
+### not all terminals set the $TERM_PROGRAM variable used by neovim
+
+get_term_program() {
+  local list=("Apple_Terminal" "iTerm2")
+  local current_program="$TERM_PROGRAM"
+
+  if [[ -z "$current_program" || ! "${list[*]}" =~ (^|[[:space:]])"$current_program"($|[[:space:]]) ]]; then
+    current_program="$(osascript -e 'tell application "System Events" to name of the first process whose frontmost is true')"
+    export TERM_PROGRAM="$current_program"
+  fi
+
+  echo "$current_program"
+}
+
+# Call the function to set the initial value and export it
+TERM_PROGRAM=$(get_term_program)
+export TERM_PROGRAM
+
+# Define an alias for the function to be called when accessing $TERM_PROGRAM
+alias TERM_PROGRAM=get_term_program
