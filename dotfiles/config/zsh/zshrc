@@ -38,6 +38,13 @@ path=(
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
+# USE ZSH PLUGINS
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.dotfiles/dotfiles/config/zsh/plugins/nvm.zsh
+source /opt/homebrew/etc/profile.d/z.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 ## starship
 eval "$(starship init zsh)"
 
@@ -107,11 +114,6 @@ function mkcd() {
 function cdls() {
   cd "$@" && command exa
 }
-
-# USE ZSH PLUGINS
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.dotfiles/dotfiles/config/zsh/plugins/nvm.zsh
 
 # ...AND OTHER SUPRISES
 ## Some useful options (man zshoptions)
