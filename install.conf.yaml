@@ -58,3 +58,6 @@
     ~/.config/powershell/profile.ps1:
       create: true
       path: dotfiles/config/powershell/profile.ps1
+    ~/.amethyst.yml:
+      create: true
+      path: dotfiles/amethyst.yml

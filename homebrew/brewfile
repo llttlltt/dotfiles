@@ -121,6 +121,8 @@ cask "ableton-live-suite"
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
 # Memory training application
 cask "anki"
 # Chromium based browser
