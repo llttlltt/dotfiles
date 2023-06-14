@@ -62,6 +62,8 @@ brew "lmdb"
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
