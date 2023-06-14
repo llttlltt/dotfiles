@@ -98,10 +98,6 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Azure Functions Core Tools 2.0
-brew "azure/functions/azure-functions-core-tools"
-# Azure Functions Core Tools 2.0
-brew "azure/functions/azure-functions-core-tools@2", link: false
 # Azure Functions Core Tools 4.0
 brew "azure/functions/azure-functions-core-tools@4"
 # Organize Your macOS Launchpad Apps
