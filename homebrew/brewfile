@@ -276,7 +276,8 @@ mas "MODALapp", id: 1187314855
 mas "Motion", id: 434290957
 mas "OverPicture", id: 1188020834
 mas "The Unarchiver", id: 425424353
-mas "Userscripts", id: 1463298887
+mas "Userscripts-Mac-App", id: 1463298887
+mas "Velja", id: 1607635845
 mas "Xcode", id: 497799835
 vscode "aaron-bond.better-comments"
 vscode "Azurite.azurite"
