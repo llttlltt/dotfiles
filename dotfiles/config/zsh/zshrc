@@ -41,6 +41,11 @@ path=(
 ## starship
 eval "$(starship init zsh)"
 
+## iterm2
+bindkey "^X^_" redo
+bindkey "^X\x7f" backward-kill-line
+bindkey "^U" backward-kill-line
+
 ## pyenv
 ### TODO: This currently seems irrelevant as it does not add anything to $PATH.
 # local pyenv_path="$HOME/.pyenv"
