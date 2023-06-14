@@ -1,0 +1,12 @@
+shell = "bash -c '{}'"
+
+# [[item]]
+# file = "~/.config/nvim/colors/base16.vim"
+# template = "vim"
+# rewrite = true
+# hook = "reloadnvim"
+
+[[item]]
+file = "~/.config/alacritty/alacritty.yml"
+template = "alacritty"
+subtemplate = "default-256"

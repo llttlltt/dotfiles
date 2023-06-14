@@ -52,6 +52,9 @@
     ~/.config/nvim/lua/custom:
       create: true
       path: dotfiles/config/nvim/lua/custom
+    ~/.config/flavours:
+      create: true
+      path: dotfiles/config/flavours
     ~/.config/powershell/profile.ps1:
       create: true
       path: dotfiles/config/powershell/profile.ps1

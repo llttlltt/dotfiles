@@ -1,0 +1,19 @@
+scheme: "Poimandres"
+author: "Oliver Cederborg"
+base00: "1B1E28" # ----
+base01: "FFFFFF" # ---
+base02: "FFFFFF" # --
+base03: "A6ACCD" # -
+base04: "FFFFFF" # +
+base05: "FFFFFF" # ++
+base06: "FFFFFF" # +++
+base07: "FFFFFF" # ++++
+base08: "D0679D" # red
+base09: "000000" # orange
+base0A: "FFFAC2" # yellow
+base0B: "5DE4C7" # green
+base0C: "89DDFF" # cyan
+base0D: "89DDFF" # blue
+base0E: "FCC5E9" # purple
+base0F: "000000"
+

@@ -49,6 +49,8 @@ brew "openjpeg"
 brew "leptonica"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Easy to use base16 scheme manager that integrates with any workflow
+brew "flavours"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
