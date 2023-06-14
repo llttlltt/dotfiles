@@ -40,6 +40,9 @@
     ~/.gitconfig:
       create: true
       path: dotfiles/gitconfig
+    ~/.config/alacritty/alacritty.yml:
+      create: true
+      path: dotfiles/config/alacritty/alacritty.yml
     ~/.config/starship.toml:
       create: true
       path: dotfiles/config/starship/starship.toml
