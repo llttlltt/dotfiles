@@ -2,6 +2,7 @@ local M = {}
 
 M.general = {
     n = {
+        [";"] = { ":", "Enter command mode", opts = { nowait = true } },
         ["<C-h>"] = {"<cmd> TmuxNavigateLeft<CR>", "Window left"},
         ["<C-l>"] = {"<cmd> TmuxNavigateRight<CR>", "Window right"},
         ["<C-j>"] = {"<cmd> TmuxNavigateDown<CR>", "Window down"},
@@ -35,6 +36,18 @@ M.crates = {
             require('crates').upgrade_all_crates()
         end, "Update crates"}
     }
+}
+
+M.shade = {
+  n = {
+    ["<Bslash>"] = {
+      function()
+        require("shade").toggle()
+      end,
+
+      "Toggle shade.nvim plugin",
+    },
+  },
 }
 
 return M
