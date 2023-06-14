@@ -23,6 +23,8 @@ alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 export EDITOR=nvim
+## zshrc
+alias zshrc="vim ~/.zshrc && source ~/.zshrc"
 
 # CUSTOMISE PROMPT(S)
 # autoload colors
