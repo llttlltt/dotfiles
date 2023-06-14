@@ -54,6 +54,8 @@ brew "gh"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Pager program similar to more
 brew "less"
 # Next-gen compiler infrastructure
