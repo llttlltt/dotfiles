@@ -56,7 +56,8 @@ bindkey "^U" backward-kill-line
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
 
-## ssh
+## 1password
+source /Users/elliott/.config/op/plugins.sh
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 ## llvm
