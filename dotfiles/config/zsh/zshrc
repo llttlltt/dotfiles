@@ -69,6 +69,10 @@ export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 # Set the CPPFLAGS environment variable to specify the LLVM include directory
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
+## azure-functions-core-tools
+### Opt-out of telemetry (data collection by Microsoft)
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
+
 ## nvm
 ### place this after nvm initialization!
 ### https://github.com/nvm-sh/nvm#zsh
