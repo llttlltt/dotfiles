@@ -19,7 +19,10 @@ alias trail='<<<${(F)path}'
 ## Remove to system trash
 alias rm=trash
 ## neovim
-alias vim=nvim
+alias vi='nvim'
+alias vim='nvim'
+alias vimdiff='nvim -d'
+export EDITOR=nvim
 
 # CUSTOMISE PROMPT(S)
 # autoload colors
