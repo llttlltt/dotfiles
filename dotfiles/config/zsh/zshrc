@@ -148,3 +148,14 @@ export TERM_PROGRAM
 
 # Define an alias for the function to be called when accessing $TERM_PROGRAM
 alias TERM_PROGRAM=get_term_program
+
+### find the id of a program
+function findappid() {
+  local app_list=$(find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | sed 's/\.app$//')
+  app_list+=("Finder")
+  local selected_app=$(printf '%s\n' "${app_list[@]}" | sort -r | fzf --query="$(IFS=' '; echo "$*")" -1)
+
+  if [ -n "$selected_app" ]; then
+    osascript -e "id of app \"$selected_app\""
+  fi
+}
