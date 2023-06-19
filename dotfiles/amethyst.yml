@@ -93,6 +93,9 @@ floating:
     "com.codeweavers.CrossOver",
     "com.valvesoftware.steam",
     "com.apple.ActivityMonitor",
+    "com.1password.1password",
+    "com.1password.safari",
+    "com.apple.finder",
   ]
 
 ## true to display some optional debug information in the layout HUD (default false).
