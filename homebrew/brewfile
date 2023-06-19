@@ -37,10 +37,14 @@ brew "bchunk"
 brew "c-ares"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Open source suite of directory software
 brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Modern replacement for 'ls'
 brew "exa"
 # Library for JPEG-2000 image manipulation
@@ -57,10 +61,14 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
 # Pager program similar to more
 brew "less"
 # Next-gen compiler infrastructure
@@ -79,6 +87,8 @@ brew "neovim"
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # General-purpose scripting language
 brew "php"
 # General-purpose scripting language
@@ -97,6 +107,8 @@ brew "rust-analyzer"
 brew "starship"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Tracks most-used directories to make cd smarter

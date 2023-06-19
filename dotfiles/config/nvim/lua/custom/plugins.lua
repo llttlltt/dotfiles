@@ -140,9 +140,9 @@ local plugins = {
     end,
   },
 
-  -- {
-  --   "christoomey/vim-tmux-navigator",
-  --   lazy = false,
-  -- },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 }
 return plugins
