@@ -129,6 +129,12 @@ brew "eth-p/software/bat-extras"
 cask "1password-cli"
 # Sound and music editor
 cask "ableton-live-suite"
+# Professional graphic design software
+cask "affinity-designer"
+# Professional image editing software
+cask "affinity-photo"
+# Professional desktop publishing software
+cask "affinity-publisher"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application launcher and productivity software
