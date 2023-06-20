@@ -14,6 +14,8 @@ alias exa="exa --header --all --long --git --icons --classify"
 alias man=batman
 ## Syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
+## Default diff highlighting for batdiff using delta
+export BATDIFF_USE_DELTA=true
 ## Shows the path variable, split by newline, in bat (default: cat)
 alias trail='<<<${(F)path}'
 ## Remove to system trash
@@ -169,7 +171,10 @@ alias TERM_PROGRAM=get_term_program
 function findappid() {
   local app_list=$(find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | sed 's/\.app$//')
   app_list+=("Finder")
-  local selected_app=$(printf '%s\n' "${app_list[@]}" | sort -r | fzf --query="$(IFS=' '; echo "$*")" -1)
+  local selected_app=$(printf '%s\n' "${app_list[@]}" | sort -r | fzf --query="$(
+    IFS=' '
+    echo "$*"
+  )" -1)
 
   if [ -n "$selected_app" ]; then
     osascript -e "id of app \"$selected_app\""
