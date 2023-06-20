@@ -116,6 +116,14 @@ function cdls() {
   cd "$@" && command exa --all
 }
 
+function lscd() {
+  local ls_dir=$(command exa "$@" --header --all --long --git --classify | command awk 'NR==1 || $NF ~ /\/$/' | command fzf --header-lines=1 --nth=-1 --ansi --color=16 --layout=default | command awk '{print $NF}')
+
+  if [ -n "$ls_dir" ]; then
+    cd "$@/$ls_dir"
+  fi
+}
+
 # ...AND OTHER SUPRISES
 ## Some useful options (man zshoptions)
 zle_highlight=('paste:none')
