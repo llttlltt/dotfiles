@@ -25,6 +25,8 @@ alias vimdiff='nvim -d'
 export EDITOR=nvim
 ## zshrc
 alias zshrc="vim ~/.zshrc && source ~/.zshrc"
+## fzf
+alias fzf="command fzf --preview 'command bat {..} --color=always'"
 
 # CUSTOMISE PROMPT(S)
 # autoload colors
