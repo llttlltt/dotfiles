@@ -1,20 +1,21 @@
-
 # # Get editor completions based on the config schema
 # '$schema' = 'https://starship.rs/config-schema.json'
 
 format = """
-$time\
-$os\
-$all\
+[╭┤](bright-black)$shlvl$time$os$all
+[╰](bright-black)$shlvl$character
 """
 
 # Inserts a blank line between shell prompts
 add_newline = true
 
+[line_break]
+disabled = true
+
 # Replace the default prompt symbols
 [character]
-success_symbol = '[❯](bold green)'
-error_symbol = '[❯](bold red)'
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
 
 [os]
 format = "[$symbol]($style)"
@@ -25,6 +26,14 @@ disabled = false
 disabled = false
 style = "bold bright-black"
 format = "[$time]($style) "
+
+[shlvl]
+disabled = false
+symbol = '─'
+repeat = true
+style = "bright-black"
+format = "[$symbol]($style)"
+threshold = 2
 
 [directory]
 disabled = false
@@ -71,7 +80,7 @@ symbol = ' '
 
 [cmd_duration]
 disabled = false
-format = "took [$duration]($style) "
+format = "[$duration]($style) "
 min_time = 1
 
 [os.symbols]
