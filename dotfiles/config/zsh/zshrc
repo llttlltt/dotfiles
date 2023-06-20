@@ -8,8 +8,8 @@ export NULLCMD=bat
 
 # CREATE ALIASES
 ## Coloured output for ls and git status using exa
-alias ls="exa -laFh --git --icons"
-alias exa="exa -laFh --git --icons"
+alias ls="exa --header --all --long --git --icons --classify"
+alias exa="exa --header --all --long --git --icons --classify"
 ## Syntax highlighting for man (manual) pages using bat-extras
 alias man=batman
 ## Syntax highlighting for grep (search) using bat-extras
@@ -111,7 +111,7 @@ function mkcd() {
 }
 
 function cdls() {
-  cd "$@" && command exa
+  cd "$@" && command exa --all
 }
 
 # ...AND OTHER SUPRISES
