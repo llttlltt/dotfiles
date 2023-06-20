@@ -2009,8 +2009,14 @@
 			<string>/Volumes/GoogleDrive/Shared drives/Development/Projects/0002 Personal</string>
 		</dict>
 	</array>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
 	<key>OpenBookmark</key>
 	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<true/>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>2</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PerPaneBackgroundImage</key>
