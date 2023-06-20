@@ -153,6 +153,11 @@ get_term_program() {
   echo "$current_program"
 }
 
+git_fzf_adder() {
+  git ls-files -m -o --exclude-standard | command fzf --ansi --preview="command batdiff {..} --color=always --delta=true" --preview-window=top:75%,border:sharp --bind "enter:execute(git add {1})" --bind "load:reload(git ls-files -m -o --exclude-standard)" --bind="ctrl-p:execute:(git add -p {1})" --header "Press Enter to add the entire file, or CTRL + p to patch the file" --bind="zero:abort"
+
+}
+
 # Call the function to set the initial value and export it
 TERM_PROGRAM=$(get_term_program)
 export TERM_PROGRAM
