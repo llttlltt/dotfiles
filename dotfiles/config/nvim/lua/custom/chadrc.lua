@@ -1,4 +1,4 @@
----@type ChadrcConfig 
+---@type ChadrcConfig
 local M = {}
 
 -- Path to overriding theme and highlights files
@@ -24,10 +24,12 @@ M.ui = {
   },
 
   statusline = {
-    theme = "vscode",
-    separator_style = "default"
+    theme = "vscode_colored",
+    separator_style = "default",
+    overriden_modules = nil,
   },
 }
+
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
 return M

@@ -4,11 +4,11 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    -- defaults 
+    -- defaults
     "vim",
     "lua",
 
-    -- web dev 
+    -- web dev
     "html",
     "css",
     "javascript",
@@ -60,11 +60,12 @@ M.mason = {
     "yamllint",
 
     -- web dev
+    "tsfmt", -- for prettier
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
     "prettier",
-    "eslint_d",
+    "eslint_lsp",
     "json-lsp",
     "tailwindcss-language-server",
 

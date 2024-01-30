@@ -2,7 +2,7 @@
 # '$schema' = 'https://starship.rs/config-schema.json'
 
 format = """
-[╭┤](bright-black)$shlvl$time$os$all
+[╭](bright-black)$shlvl[┤](bright-black)$time$os$all
 [╰](bright-black)$shlvl$character
 """
 
