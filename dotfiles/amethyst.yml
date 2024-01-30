@@ -20,22 +20,22 @@
 # new-windows-to-main: false
 
 ## true to automatically move to a space when throwing a window to it (default true).
-# follow-space-thrown-windows: true
+follow-space-thrown-windows: true
 
 ## Boolean flag for whether or not to add margins between windows (default false).
-window-margins: true
+window-margins: false
 
 ## The size of the margins between windows (in px, default 0).
-window-margin-size: 10
+window-margin-size: 0
 
 ## Boolean flag for whether or not to set window margins if there is only one window on the screen, assuming window margins are enabled (default false).
 smart-window-margins: true
 
 ## true to display the name of the layout when a new layout is selected (default true).
-# enables-layout-hud: true
+enables-layout-hud: true
 
 ## true to display the name of the layout when moving to a new space (default true).
-enables-layout-hud-on-space-change: false
+enables-layout-hud-on-space-change: true
 
 ## true to maintain layout state across application executions (default true).
 # restore-layouts-on-launch: true
@@ -79,23 +79,25 @@ mouse-resizes-windows: true
 # float-small-windows: true
 
 ## Boolean flag determining behavior of the floating list. true if the applications should be floating and all others tiled. false if the applications should be tiled and all others floating (default true).
-# floating-is-blacklist: true
+floating-is-blacklist: false
 
 ## List of bundle identifiers for applications to either be automatically floating or automatically tiled based on floating-is-blacklist (default []).
 floating:
   [
-    "com.apple.systempreferences",
-    "com.if.Amphetamine",
-    "com.sindresorhus.Velja",
-    "com.surfshark.vpnclient.macos.direct",
-    "com.araeliumgroup.screenflick",
-    "com.italomandara.Crossover-patcher",
-    "com.codeweavers.CrossOver",
-    "com.valvesoftware.steam",
-    "com.apple.ActivityMonitor",
-    "com.1password.1password",
-    "com.1password.safari",
-    "com.apple.finder",
+##    "com.apple.systempreferences",
+##    "com.if.Amphetamine",
+##    "com.sindresorhus.Velja",
+##    "com.surfshark.vpnclient.macos.direct",
+##    "com.araeliumgroup.screenflick",
+##    "com.italomandara.Crossover-patcher",
+##    "com.codeweavers.CrossOver",
+##    "com.valvesoftware.steam",
+##    "com.apple.ActivityMonitor",
+##    "com.1password.1password",
+##    "com.1password.safari",
+##    "com.apple.finder",
+##    "com.runningwithcrayons.Alfred",
+##    "com.runningwithcrayons.Alfred-Preferences",
   ]
 
 ## true to display some optional debug information in the layout HUD (default false).
@@ -103,10 +105,10 @@ floating:
 
 ## First mod (default option + shift).
 # mod1:
-#   - option
-#   - shift
-#   - control
-#   - command
+  # - option
+  # - shift
+  # - control
+  # - command
 
 ## Second mod (default option + shift + control).
 # mod2:
@@ -180,8 +182,8 @@ floating:
 
 ## Focus the next window in the list going counter-clockwise.
 # focus-ccw:
-#   mod: mod1
-#   key: j
+  # mod: mod1
+  # key: j
 
 ## Focus the next window in the list going clockwise.
 # focus-cw:
@@ -225,8 +227,8 @@ floating:
 
 ## Swap the position of the currently focused window with the main window in the list.
 # swap-main:
-#   mod: mod1
-#   key: enter
+  # mod: mod1
+  # key: "`"
 
 ## Move focus to the n-th screen in the list; e.g., focus-screen-3 will move mouse focus to the 3rd screen. Note that the main window in the given screen will be focused.
 # focus-screen-n:
