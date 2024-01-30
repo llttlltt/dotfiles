@@ -1,11 +1,16 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< CLEANING HOMEBREW >>>\n"
+echo "📦 Starting Homebrew maintenance..."
 
-if exists brew; then
-  echo "Cleaning up Homebrew.\n"
-  brew cleanup
+# Check if Homebrew is installed
+if command -v brew >/dev/null 2>&1; then
+  echo "🔧 Cleaning up Homebrew...\n"
+  brew cleanup && echo "\n✅ Homebrew cleanup complete.\n" || echo "\n⚠️ Warning: Homebrew cleanup encountered an issue.\n"
 else
-  echo "Homebrew doesn't exist, switching to install.\n"
-  ./homebrew/setup_homebrew.zsh
+  echo "🔧 Homebrew not found. Initiating installation..."
+  if [ -f ./homebrew/setup_homebrew.zsh ]; then
+    ./homebrew/setup_homebrew.zsh
+  else
+    echo "⚠️ Error: Homebrew installation script not found."
+  fi
 fi
