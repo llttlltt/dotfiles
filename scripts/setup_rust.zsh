@@ -1,14 +1,14 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< STARTING RUST SETUP >>>\n"
+echo "📦 Starting Rust setup..."
 
-# Setup Rust
-
-if exists rustup; then
-  echo "Rust already exist, skipping install... "
+# Check if Rust is installed
+if command -v rustup >/dev/null 2>&1; then
+  echo "✅ Rust already installed, skipping installation..."
   rustup --version
 else
-  echo "Installing Rust..."
+  echo "🔧 Installing Rust..."
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  echo "✅ Rust installation complete."
 fi
 echo ""

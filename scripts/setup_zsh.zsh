@@ -2,41 +2,35 @@
 
 ZSH_PATH=/opt/homebrew/bin/zsh
 
-echo "\n<<< STARTING ZSH SETUP >>>"
-echo ""
-
-# Installation unnecessary; it's in the brewfile.
+echo "📦 Starting ZSH setup..."
 
 # Add ZSH to the list of shells
-if grep -Fxq ${ZSH_PATH} '/etc/shells'; then
-  echo "${ZSH_PATH} already exists in /etc/shells, skipping step..."
+if grep -Fxq "${ZSH_PATH}" '/etc/shells'; then
+  echo "✅ ${ZSH_PATH} already exists in /etc/shells, skipping addition."
 else
-  echo "Adding ${ZSH_PATH} to /etc/shells\n"
-  echo "Enter superuser (sudo) password to edit /etc/shells"
-  echo $ZSH_PATH | sudo tee -a '/etc/shells' > /dev/null
+  echo "🔧 Adding ${ZSH_PATH} to /etc/shells..."
+  echo "🔑 Enter superuser (sudo) password to edit /etc/shells"
+  echo "${ZSH_PATH}" | sudo tee -a '/etc/shells' >/dev/null && echo "✅ ${ZSH_PATH} added to /etc/shells."
 fi
-echo ""
 
 # Change the default shell to ZSH
-if [ "$SHELL" = $ZSH_PATH ]; then
-  echo "SHELL is already $ZSH_PATH, skipping step..."
+if [ "$SHELL" = "${ZSH_PATH}" ]; then
+  echo "✅ SHELL is already ${ZSH_PATH}, no change needed."
 else
-  echo "Setting ${ZSH_PATH} as default login shell"
-  echo "Enter user password to change login shell"
-  chsh -s $ZSH_PATH
+  echo "🔧 Setting ${ZSH_PATH} as default login shell..."
+  echo "🔑 Enter user password to change login shell"
+  chsh -s "${ZSH_PATH}" && echo "✅ Default shell set to ${ZSH_PATH}."
 fi
-echo ""
 
 # Symlink sh to zsh
 if sh --version | grep -q zsh; then
-  echo "/private/var/select/sh already symlinked to /bin/zsh, skipping step..."
+  echo "✅ /private/var/select/sh already symlinked to zsh, no action required."
 else
-  # Looked promising, might remove later.
-  echo "Symlinking sh to zsh..."
-  echo "Enter superuser (sudo) password to symlink sh to zsh"
-  sudo ln -sfv '/bin/zsh' '/private/var/select/sh'
-  
-  # I'd prefer to use the Homebrew updated version instead of default MacOS version.
-  # sudo ln -sfv ${ZSH_PATH} '/private/var/select/sh'
+  echo "🔧 Symlinking sh to zsh..."
+  echo "🔑 Enter superuser (sudo) password to symlink sh to zsh"
+  sudo ln -sfv '/bin/zsh' '/private/var/select/sh' && echo "✅ sh symlinked to zsh."
+
+  # Uncomment the following line to use Homebrew's ZSH instead of the default macOS version
+  # sudo ln -sfv "${ZSH_PATH}" '/private/var/select/sh' && echo "✅ sh symlinked to Homebrew's zsh."
 fi
 echo ""

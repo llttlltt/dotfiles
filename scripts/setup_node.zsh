@@ -1,36 +1,50 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< STARTING NODE SETUP >>>"
-echo ""
+echo "📦 Starting Node.js setup..."
 
-# Node versions are managed with `nvm`, which is in the brewfile.
-# See zshrc for NVM_DIR (this moves the install location out of Homebrew).
+# Function to check and install NPM packages
+check_and_install_npm_package() {
+  local package=$1
+  if npm list --global "$package" >/dev/null 2>&1; then
+    echo "✅ $package already installed, skipping..."
+  else
+    echo "🔧 Installing $package..."
+    npm install --global "$package"
+  fi
+}
 
-if exists node; then
-  echo "Node $(node --version) & NPM $(npm --version) already exist, skipping install... "
+# Array of NPM packages to install
+npm_packages=(
+  "firebase-tools"
+  "@angular/cli"
+  "@ionic/cli"
+  "typescript"
+  "json-server"
+  "http-server"
+  "trash-cli"
+  "nodemon"
+  "corepack"
+  "postman-to-openapi"
+)
+
+# Check if Node.js is installed
+if command -v node >/dev/null 2>&1; then
+  echo "✅ Node $(node --version) & NPM $(npm --version) already installed, skipping Node installation..."
 else
-  echo "Installing Node & NPM with nvm..."
-  echo "Installing LTS.."
+  echo "🔧 Installing Node & NPM with nvm..."
+  echo "🔧 Installing LTS version..."
   nvm install --lts
-  echo ""
-  echo "Installing Latest..."
+  echo "🔧 Installing latest version..."
   nvm install node --default
-  echo ""
 fi
 echo ""
 
-# INSTALL GLOBAL NPM PACKAGES
-npm install --global firebase-tools
-npm install --global @angular/cli
-npm install --global @ionic/cli
-npm install --global typescript
-npm install --global json-server
-npm install --global http-server
-npm install --global trash-cli
-npm install --global nodemon
-npm install --global corepack
-npm install --global postman-to-openapi
-
+echo "🔧 Installing global NPM packages...\n"
+for package in "${npm_packages[@]}"; do
+  check_and_install_npm_package "$package"
+done
+echo "\n✅ Global NPM packages installation complete."
 echo ""
-echo "Global NPM Packages Installed:"
+
+echo "🔧 Global NPM Package List:"
 npm list --global --depth=0
