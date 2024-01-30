@@ -169,9 +169,9 @@ alias TERM_PROGRAM=get_term_program
 
 ### find the id of a program
 function findappid() {
-  local app_list=$(find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | sed 's/\.app$//')
+  local app_list=$(command find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | command sed 's/\.app$//')
   app_list+=("Finder")
-  local selected_app=$(printf '%s\n' "${app_list[@]}" | sort -r | fzf --query="$(
+  local selected_app=$(command printf '%s\n' "${app_list[@]}" | command sort -r | command fzf --query="$(
     IFS=' '
     echo "$*"
   )" -1)
