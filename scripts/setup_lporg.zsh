@@ -1,16 +1,25 @@
 #!/usr/bin/env zsh
 
-echo "\n<<< STARTING LPORG (LAUNCHPAD) SETUP >>>\n"
+echo "📦 Starting LPORG (Launchpad) setup..."
 
+# Define base directory
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Setup Launchpad using lporg.
+# Path to the configuration file
+CONFIG_FILE="$BASEDIR/preferences/lporg_launchpad.yaml"
+BACKUP_FILE="$BASEDIR/preferences/lporg_launchpad_backup.yaml"
 
-if exists lporg; then
-  echo "lporg detected, continuing... "
-  echo "Loading lporg configuration from $BASEDIR/preferences/lporg_launchpad.yaml.\n"
-  lporg load $BASEDIR/preferences/lporg_launchpad.yaml --backup
-  mv ~/.launchpad.yaml $BASEDIR/preferences/lporg_launchpad_backup.yaml && echo "Launchpad backed up to $BASEDIR/preferences/lporg_launchpad_backup.yaml.\n" || echo "Could not locate lporg launchpad.yaml file.\n"
+# Check if lporg is installed and the configuration file exists
+if command -v lporg >/dev/null 2>&1 && [ -f "$CONFIG_FILE" ]; then
+  echo "🔧 lporg detected. Loading configuration from $CONFIG_FILE."
+  # TODO load --backup has been replaced, fix this!
+  if lporg load --backup "$CONFIG_FILE"; then
+    mv "$HOME/.launchpad.yaml" "$BACKUP_FILE" && echo "✅ Launchpad configuration loaded and backed up to $BACKUP_FILE."
+  else
+    echo "⚠️ Warning: Could not load configuration from $CONFIG_FILE."
+  fi
+elif [ ! -f "$CONFIG_FILE" ]; then
+  echo "⚠️ Configuration file not found at $CONFIG_FILE."
 else
-  echo "lporg was not found, skipping step...\n"
+  echo "⚠️ lporg not found, skipping Launchpad setup."
 fi
