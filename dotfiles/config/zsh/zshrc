@@ -80,10 +80,6 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
-## tmux
-### 256 colours
-export TERM=xterm-256color
-
 ## azure-functions-core-tools
 ### Opt-out of telemetry (data collection by Microsoft)
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
@@ -119,7 +115,7 @@ load-nvmrc
 export PATH=$HOME/anaconda3/bin:$PATH
 
 ## conda
-export CONDA_VERBOSE=1  # Low verbosity (default) = 1 / Minimal verbosity (no debug messages) = 1
+export CONDA_VERBOSE=1 # Low verbosity (default) = 1 / Minimal verbosity (no debug messages) = 1
 
 # WRITE FUNCTIONS
 function mkcd() {
@@ -195,16 +191,15 @@ function findappid() {
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
+  eval "$__conda_setup"
 else
-    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
-    fi
+  if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+    . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+  else
+    export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+  fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
