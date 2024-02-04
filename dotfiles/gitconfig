@@ -1,31 +1,31 @@
 [user]
-	name = Elliott-Liu
-	email = 16389800+Elliott-Liu@users.noreply.github.com
+name = Elliott-Liu
+email = 16389800+Elliott-Liu@users.noreply.github.com
+
 [core]
-  excludesfile = ~/.dotfiles/dotfiles/gitignore_global
-  pager = delta
+excludesfile = ~/.dotfiles/dotfiles/gitignore_global
+pager = delta
 
 [gpg]
-  format = ssh
+format = ssh
 
 [gpg "ssh"]
-  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 
 [commit]
-  gpgsign = true
+gpgsign = true
 
 [interactive]
-  diffFilter = delta --color-only
+diffFilter = delta --color-only
 
 [delta]
-  navigate = true    # use n and N to move between diff sections
-  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
-  line-numbers = true
-  true-color = always
-
+navigate = true # use n and N to move between diff sections
+light = false   # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+line-numbers = true
+true-color = always
 
 [merge]
-  conflictstyle = diff3
+conflictstyle = diff3
 
 [diff]
-  colorMoved = default
+colorMoved = default
