@@ -1,3 +1,5 @@
+# https://alacritty.org/config-alacritty.html
+
 live_config_reload = true
 
 [[colors.indexed_colors]]
@@ -75,20 +77,7 @@ style = "Italic"
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
-[[keyboard.bindings]]
-action = "ResetFontSize"
-key = "Key0"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Equals"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Plus"
-mods = "Command"
+# https://alacritty.org/config-alacritty-bindings.html
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -101,25 +90,8 @@ key = "C"
 mods = "Command"
 
 [[keyboard.bindings]]
-action = "CreateNewWindow"
-key = "N"
-mods = "Command"
-
-[[keyboard.bindings]]
 action = "SpawnNewInstance"
 key = "N"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-action = "SearchForward"
-key = "F"
-mode = "~Search"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "SearchBackward"
-key = "B"
-mode = "~Search"
 mods = "Command"
 
 [[keyboard.bindings]]
@@ -152,9 +124,19 @@ chars = "\u001B\u007F"
 key = "Back"
 mods = "Alt"
 
+[[hints.enabled]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+hyperlinks = true
+post_processing = true
+persist = false
+action = "Select"                                                                                                                                         # "Copy" | "Paste" | "Select" | "MoveViModeCursor"
+command = { program = "open", args = [] }
+binding = { key = "U", mods = "Control|Shift" }
+mouse = { mods = "Command", enabled = true }
+
 [scrolling]
-history = 10000
-multiplier = 10
+history = 100000
+multiplier = 1
 
 [selection]
 save_to_clipboard = true
@@ -164,17 +146,22 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
+[terminal]
+osc52 = "CopyPaste" # "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
+
 [window]
-decorations = "none"
+decorations = "Buttonless" # "Full" | "None" | "Transparent" | "Buttonless"
 dynamic_padding = true
 dynamic_title = true
-opacity = 1.0
+opacity = 0.75
+blur = true                # true | false # (works on macOS/KDE Wayland)
 title = "Alacritty"
+startup_mode = "Windowed"  # "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
 
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 10
+x = 5
 y = 5
