@@ -2,308 +2,329 @@ apps:
   pages:
   - number: 1
     items:
+    - App Store
+    - Safari
     - Mail
     - Contacts
     - Calendar
+    - Reminders
     - Notes
     - FaceTime
     - Messages
+    - Maps
+    - Find My
+    - Photo Booth
     - Photos
-    - Spotify
-    - folder: Adobe
+    - Preview
+    - Music
+    - Podcasts
+    - TV
+    - Voice Memos
+    - Weather
+    - News
+    - Stocks
+    - Books
+    - Dictionary
+    - Calculator
+    - Freeform
+    - Home
+    - Clock
+    - Siri
+    - System Settings
+    - folder: Other
       pages:
       - number: 1
         items:
-        - Creative Cloud
-        - Adobe Acrobat
-        - Adobe After Effects 2022
-        - Acrobat Distiller
-        - Adobe Photoshop 2022
-        - Adobe Illustrator 2022
-        - Adobe InDesign 2022
-        - Adobe Lightroom
-        - Adobe Media Encoder 2022
-    - folder: Apple Stock
-      pages:
-      - number: 1
-        items:
-        - App Store
-        - Books
-        - Calculator
-        - Dictionary
-        - Find My
-        - Home
-        - Maps
-        - Mission Control
-        - Music
-        - News
-        - Photo Booth
-        - Podcasts
-        - Preview
-        - QuickTime Player
-        - Reminders
-        - Stocks
-        - System Preferences
-        - TV
-        - Voice Memos
-        - Siri
-    - folder: Apple Utilities
-      pages:
-      - number: 1
-        items:
-        - Activity Monitor
-        - AirPort Utility
-        - Audio MIDI Setup
-        - Automator
-        - Bluetooth File Exchange
-        - Chess
-        - ColorSync Utility
-        - Console
-        - Digital Colour Meter
-        - Disk Utility
-        - Font Book
-        - Grapher
-        - Image Capture
-        - Keychain Access
-        - Migration Assistant
-        - Screenshot
-        - Script Editor
         - Shortcuts
-        - Stickies
-        - System Information
+        - QuickTime Player
         - TextEdit
-        - Terminal
+        - Grapher
         - Time Machine
+        - Font Book
+        - Mission Control
+        - Stickies
+        - Image Capture
         - VoiceOver Utility
-    - folder: Audio
-      pages:
-      - number: 1
-        items:
-        - Ableton Live 11 Suite
-        - Antelope Launcher
-        - Audio Hijack
-        - Cyclop
-        - eLicenser Control Center
-        - iLok License Manager
-        - iZotope Ozone 9
-        - iZotope Product Portal
-        - iZotope RX 7 Audio Editor
-        - Logic Pro
-        - Loopback
-        - Melodyne
-        - MuseScore 3
-        - QuNeo Editor
-        - QuNeo MPE
-        - QuNeome
-        - Remove Soundtoys
-        - Spitfire Audio
-        - Splice
-        - Steinberg Activation Manager
-        - Steinberg Download Assistant
-        - Steinberg Library Manager
-        - SubLab
-        - SubLabXL
-        - Vienna Ensemble Pro AU3
-        - Vienna Ensemble Pro Server
-        - XLD
-        - Nuendo 12
-    - folder: Communication
-      pages:
-      - number: 1
-        items:
-        - Discord
-        - WhatsApp
-        - zoom.us
-    - folder: Development
-      pages:
-      - number: 1
-        items:
-        - Apple Configurator
-        - Docker
-        - GitKraken
-        - Postman
-        - PowerShell
-        - iTerm
-        - Sublime Text
-        - Visual Studio Code
-        - Xcode
-    - folder: Electronics
-      pages:
-      - number: 1
-        items:
-        - KiCad
-        - Bitmap2Component
-        - Eeschema
-        - GerbView
-        - Page Layout Editor
-        - PCB Calculator
-        - Pcbnew
+        - AirPort Utility
+        - Migration Assistant
+        - Terminal
+        - Activity Monitor
+        - Console
+        - Keychain Access
+        - System Information
+        - Automator
+        - Script Editor
+        - Disk Utility
+        - Digital Colour Meter
+        - ColorSync Utility
+        - Screenshot
+        - Bluetooth File Exchange
+        - Audio MIDI Setup
+        - Feedback Assistant
+    - Xcode
     - folder: Games
       pages:
       - number: 1
         items:
-        - Steam
-        - Steam
-        - Steam Support Center
+        - Chess
+        - Batman Arkham City GOTY
+        - Dome Keeper
+        - FTL Faster Than Light
         - Hades
-    - folder: Productivity
-      pages:
-      - number: 1
-        items:
-        - 1Password
-        - 1Password for Safari
-        - Amphetamine
-        - Anki
-        - draw.io
-        - Ground News
-        - Kindle
-        - MacFamilyTree 9
-        - Notion
-        - Obsidian
-        - OmniGraffle
-        - OmniPlan
-        - Todoist
-    - folder: Media
-      pages:
-      - number: 1
-        items:
-        - Edit
-        - Remote
-        - Viewer
-      - number: 2
-        items:
-        - CameraBag Pro
-        - Blender
-        - Cinema 4D
-        - Compressor
-        - Figma
-        - Final Cut Pro
-        - Motion
-        - OBS
-        - TouchDesigner
-        - Imaging Edge Desktop
-        - VLC
-    - folder: Microsoft
-      pages:
-      - number: 1
-        items:
-        - Microsoft Excel
-        - Microsoft OneNote
-        - Microsoft PowerPoint
-        - Microsoft Outlook
-        - Microsoft Remote Desktop
-        - Microsoft Teams
-        - Microsoft To Do
-        - Microsoft Word
-        - OneDrive
-    - folder: Utilities
-      pages:
-      - number: 1
-        items:
-        - Alfred 5
-        - Bartender 4
-        - Be Focused Pro
-        - BetterSnapTool
-        - CrossOver
-        - Google Drive
-        - iStat Menus
-        - Logi Options+
-        - OverPicture
-        - Parallels Desktop
-        - Screenflick
-        - Surfshark
-        - The Unarchiver
-        - Userscripts
-    - folder: Web
-      pages:
-      - number: 1
-        items:
-        - Firefox
-        - Google Chrome
-        - Microsoft Edge
-        - Safari
-    - Blackmagic Disk Speed Test
+        - League of Legends
+        - Metro 2033 Redux
+        - No Man's Sky
+        - Papers, Please
+        - Sid Meier's Civilization Beyond Earth
+        - Space Haven
+        - Steam
+        - Steredenn
+    - Affinity Designer 2
+    - Affinity Photo 2
+    - Affinity Publisher 2
   - number: 2
     items:
-    - folder: Adobe Utilities
+    - Nuendo 12
+    - Visual Studio Code
+    - folder: Native Instruments (Other)
       pages:
       - number: 1
         items:
-        - Creative Cloud Desktop App
-        - Adobe After Effects Render Engine 2022
-        - CC Troubleshooter
-        - CCXProcess
-        - Cinema 4D Team Render Client
-        - Cinema 4D Team Render Server
-        - Cineware
-        - Creative Cloud Helper
-        - Creative Cloud Installer
-        - Commandline
-        - c4dpy
-        - Core Sync
-        - Contact Sheets
-        - Web Gallery
-        - Make Calendar
-    - folder: Arturia
-      pages:
-      - number: 1
-        items:
-        - Arturia Software Center
-        - ARP 2600 V3
-        - Analog Lab V
-        - Augmented STRINGS
-        - Augmented VOICES
-        - B-3 V2
-        - Buchla Easel V
-        - CMI V
-        - CS-80 V4
-        - CZ V
-        - Clavinet V
-        - DX7 V
-        - Emulator II V
-        - Farfisa V
-        - Jun-6 V
-        - Jup-8 V4
-        - KORG MS-20 V
-        - Matrix-12 V2
-        - Mellotron V
-        - Mini V3
-        - Modular V3
-        - OP-Xa V
-        - Piano V3
-        - Pigments
-        - Prophet-5 V
-        - Prophet-VS V
-        - SEM V2
-        - SQ80 V
-        - Solina V2
-        - Stage-73 V2
-        - Synclavier V
-        - Synthi V
-        - VOX Continental V2
-        - Vocoder V
-        - Wurli V2
-    - folder: Native Instruments
-      pages:
-      - number: 1
-        items:
-        - Native Access
         - Absynth 5
         - Battery 4
         - FM8
         - Guitar Rig 5
         - Kontakt
+        - Kontakt 7
         - Massive
         - Reaktor 6
+    - Parallels Toolbox
+    - VLC
+    - Beeper
+    - SubLab
+    - OmniPlan
+    - CrossOver
+    - CameraBag Pro
+    - QuNeo MPE
+    - folder: Soundtoys (Other)
+      pages:
+      - number: 1
+        items:
+        - Remove Soundtoys
+    - Soundpaint Downloader
+    - Crossover patcher
+    - MacFamilyTree 9
+    - Dolphin Updater
+    - Soundpaint
+    - Steinberg Activation Manager
+    - 1Password
+    - BetterSnapTool
+    - Link WIDE
+    - Todoist
+    - Antelope Launcher
+    - Figma
+    - Blackmagic Disk Speed Test
+    - Native Access
+    - Origin
+    - Velja
+    - Google Chrome
+    - Anki
+    - AetherSX2
+    - Bartender 4
+    - Be Focused Pro
+    - Melodyne
+    - Parallels Desktop
+  - number: 3
+    items:
+    - Notion
+    - Splice
+    - Adobe Creative Cloud
+    - Microsoft Remote Desktop
+    - PowerShell
+    - OneDrive
+    - Spotify
+    - Microsoft Word
+    - Steinberg Library Manager
+    - Ableton Live 11 Suite
+    - Adobe InDesign 2022
+    - Dolphin
+    - MODALapp
+    - OverPicture
+    - Google Drive
+    - Instapaper Save
+    - Adobe Lightroom
+    - Docker
+    - Obsidian
+    - Bitmap2Component
+    - Eeschema
+    - GerbView
+    - KiCad
+    - Page Layout Editor
+    - PCB Calculator
+    - Pcbnew
+    - Logi Options+
+    - eLicenser Control Center
+    - Amphetamine
+    - Arc
+    - rekordbox
+    - Kindle
+    - Loopback
+    - Microsoft Excel
+    - Blender
+  - number: 4
+    items:
+    - c4dpy
+    - Cinema 4D
+    - Cinema 4D Team Render Client
+    - Cinema 4D Team Render Server
+    - Cineware
+    - Commandline
+    - zoom.us
+    - Instapaper
+    - WhatsApp
+    - Microsoft Outlook
+    - iZotope Ozone 9
+    - QuNeo Editor
+    - folder: QuNeo Editor (Other)
+      pages:
+      - number: 1
+        items:
+        - QuNeome
+    - folder: Adobe Illustrator 2023 (Other)
+      pages:
+      - number: 1
+        items:
+        - Contact Sheets
+        - Make Calendar
+        - Web Gallery
+    - Apple Configurator
+    - iStat Menus
+    - Steinberg Download Assistant
+    - Google Docs
+    - Analog Lab V
+    - ARP 2600 V3
+    - Arturia Software Center
+    - Augmented STRINGS
+    - Augmented VOICES
+    - B-3 V2
+    - Buchla Easel V
+    - Clavinet V
+    - CMI V
+    - CS-80 V4
+    - CZ V
+    - DX7 V
+    - Emulator II V
+    - Farfisa V
+    - Jun-6 V
+    - Jup-8 V4
+  - number: 5
+    items:
+    - KORG MS-20 V
+    - Matrix-12 V2
+    - Mellotron V
+    - Mini V3
+    - Modular V3
+    - OP-Xa V
+    - Piano V3
+    - Pigments
+    - Prophet-5 V
+    - Prophet-VS V
+    - SEM V2
+    - Solina V2
+    - SQ80 V
+    - Stage-73 V2
+    - Synclavier V
+    - Synthi V
+    - Vocoder V
+    - VOX Continental V2
+    - Wurli V2
+    - 1Password for Safari
+    - Audio Hijack
+    - Google Sheets
+    - Scriptable
+    - Google Slides
+    - OmniGraffle
+    - Amethyst
+    - Microsoft To Do
+    - RyuSAK
+    - Microsoft Edge
+    - The Unarchiver
+    - Microsoft OneNote
+    - MuseScore 3
+    - XLD
+  - number: 6
+    items:
+    - SubLabXL
+    - Browserosaurus
+    - folder: Pioneer (Other)
+      pages:
+      - number: 1
+        items:
+        - Firmware Update Manager
+        - INTERFACE2 Setting Utility
+    - Final Cut Pro
+    - Chromium
+    - iTerm
+    - iZotope RX 7 Audio Editor
+    - GitKraken
+    - iZotope Product Portal
+    - Userscripts
+    - iLok License Manager
+    - Developer
+    - Soundpaint Editor
+    - Imaging Edge Desktop
+    - TouchDesigner
+    - Firefox
+    - Ryujinx
+    - Alacritty
+    - Edit
+    - Remote
+    - Viewer
+    - Alfred 5
+    - Postman
+    - OBS
+    - Vienna Ensemble Pro AU3
+    - Vienna Ensemble Pro Server
+    - Surfshark
+    - Microsoft PowerPoint
+    - folder: Sugar Bytes (Other)
+      pages:
+      - number: 1
+        items:
+        - Cyclop
+    - draw.io
+    - Screenflick
+    - Adobe After Effects Render Engine 2022
+    - Ground News
+  - number: 7
+    items:
+    - Acrobat Distiller
+    - Adobe Acrobat
+    - Microsoft Teams
+    - Spitfire Audio
+    - Compressor
+    - Motion
+    - Logic Pro
+    - Discord
+    - Sublime Text
+    - Web Server for Chrome
+    - folder: CrossOver (Other)
+      pages:
+      - number: 1
+        items:
+        - Haven
+        - LEGO® Star Wars™ The Skywalker Saga
+        - Pharaoh A New Era
+        - PHOGS!
+        - Steam
+        - Steam Support Center
+        - Yu-Gi-Oh!  Master Duel
+    - Riot Client
 widgets:
   pages: []
 dock_items:
-- Launchpad
-- iTerm
-- Safari
-- Todoist
+- Obsidian
+- Arc
+- Microsoft To Do
 - ============
-- Applications
-- Windows 11 Pro Applications
-- Downloads
 desktop: {}
