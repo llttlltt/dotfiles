@@ -2,6 +2,76 @@
 
 live_config_reload = true
 
+[[hints.enabled]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+hyperlinks = true
+post_processing = true
+persist = false
+# action: "Copy" | "Paste" | "Select" | "MoveViModeCursor"
+action = "Select"
+command = { program = "open", args = [] }
+binding = { key = "U", mods = "Control|Shift" }
+mouse = { mods = "Command", enabled = true }
+
+[scrolling]
+history = 100000
+multiplier = 1
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/bin/zsh"
+
+[terminal]
+# osc52: "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
+osc52 = "CopyPaste"
+
+[window]
+# decorations: "Full" | "None" | "Transparent" | "Buttonless"
+decorations = "Buttonless"
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.75
+# blur: true | false # (works on macOS/KDE Wayland)
+blur = true
+title = "Alacritty"
+# startup_mode: "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
+startup_mode = "Windowed"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 5
+y = 5
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[font]
+size = 16.0
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
 [[colors.indexed_colors]]
 color = "0xf8bd96"
 index = 16
@@ -54,114 +124,49 @@ yellow = "0xfae3b0"
 background = "0x1e1d2d"
 foreground = "0xbfc6d4"
 
-[cursor]
-blink_interval = 500
-
-[cursor.style]
-blinking = "Always"
-shape = "Block"
-
-[font]
-size = 16.0
-
-[font.bold]
-style = "Bold"
-
-[font.bold_italic]
-style = "Bold Italic"
-
-[font.italic]
-style = "Italic"
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
-
 # https://alacritty.org/config-alacritty-bindings.html
 
 [[keyboard.bindings]]
-action = "Paste"
 key = "V"
 mods = "Command"
+action = "Paste"
 
 [[keyboard.bindings]]
-action = "Copy"
 key = "C"
 mods = "Command"
+action = "Copy"
 
 [[keyboard.bindings]]
-action = "SpawnNewInstance"
 key = "N"
 mods = "Command"
+action = "SpawnNewInstance"
 
 [[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
 chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
 
 [[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
 chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "\u0001"
 key = "Left"
 mods = "Command"
+chars = "\u0001"
 
 [[keyboard.bindings]]
-chars = "\u0005"
 key = "Right"
 mods = "Command"
+chars = "\u0005"
 
 [[keyboard.bindings]]
-chars = "\u0015"
 key = "Back"
 mods = "Command"
+chars = "\u0015"
 
 [[keyboard.bindings]]
-chars = "\u001B\u007F"
 key = "Back"
 mods = "Alt"
-
-[[hints.enabled]]
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
-hyperlinks = true
-post_processing = true
-persist = false
-action = "Select"                                                                                                                                         # "Copy" | "Paste" | "Select" | "MoveViModeCursor"
-command = { program = "open", args = [] }
-binding = { key = "U", mods = "Control|Shift" }
-mouse = { mods = "Command", enabled = true }
-
-[scrolling]
-history = 100000
-multiplier = 1
-
-[selection]
-save_to_clipboard = true
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-
-[shell]
-args = ["-l", "-c", "tmux attach || tmux"]
-program = "/bin/zsh"
-
-[terminal]
-osc52 = "CopyPaste" # "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
-
-[window]
-decorations = "Buttonless" # "Full" | "None" | "Transparent" | "Buttonless"
-dynamic_padding = true
-dynamic_title = true
-opacity = 0.75
-blur = true                # true | false # (works on macOS/KDE Wayland)
-title = "Alacritty"
-startup_mode = "Windowed"  # "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
-
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
-
-[window.padding]
-x = 5
-y = 5
+chars = "\u001B\u007F"
