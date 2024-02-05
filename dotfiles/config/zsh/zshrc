@@ -59,7 +59,7 @@ bindkey "^U" backward-kill-line
 
 ## flavours
 export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
-export FLAVOURS_CONFIG_FILE="$HOME/.config/flavours/config.toml"
+export FLAVOURS_CONFIG_FILE="$HOME/Library/Preferences/flavours/config.toml"
 
 ## pyenv
 ### TODO: This currently seems irrelevant as it does not add anything to $PATH.

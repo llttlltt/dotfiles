@@ -52,9 +52,6 @@
     ~/.config/nvim/lua/custom:
       create: true
       path: dotfiles/config/nvim/lua/custom
-    ~/.config/flavours:
-      create: true
-      path: dotfiles/config/flavours
     ~/Library/Preferences/flavours:
       create: true
       path: dotfiles/config/flavours
