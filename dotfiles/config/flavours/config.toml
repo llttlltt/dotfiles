@@ -9,4 +9,4 @@ shell = "zsh -c '{}'"
 [[item]]
 file = "~/.config/alacritty/alacritty.toml"
 template = "alacritty"
-subtemplate = "default-256"
+subtemplate = "poimandres-256"

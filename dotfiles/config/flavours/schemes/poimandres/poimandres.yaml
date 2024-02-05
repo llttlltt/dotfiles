@@ -1,18 +1,18 @@
 scheme: "Poimandres"
 author: "Oliver Cederborg"
-base00: "1b1e28" # Normal black or primary background
-base01: "a6accd" # Bright black or less emphasized foreground
-base02: "303340" # Selection background
-base03: "525f78" # Midpoint between primary foreground and background for contrast (calculated placeholder)
-base04: "818ba3" # Dark foreground (calculated placeholder)
-base05: "a6accd" # Primary foreground
-base06: "cfd8e3" # Light foreground (calculated placeholder)
-base07: "ffffff" # White from the bright colors
-base08: "d0679d" # Normal red
-base09: "5de4c7" # Normal green
-base0A: "fffac2" # Normal yellow
-base0B: "89ddff" # Normal blue
-base0C: "add7ff" # Normal cyan
-base0D: "fcc5e9" # Normal magenta
-base0E: "d0679d" # Bright red
-base0F: "89ddff" # Bright cyan
+base00: "1b1e28" # [colors.normal].black & [colors.cursor].text
+base01: "717cb4" # [colors.selection].background & [colors.indexed_colors][19].color
+base02: "272c3c" # [colors.selection].background
+base03: "a6accd" # [colors.bright].black & [colors.primary].foreground
+base04: "303340" # NOT USED
+base05: "ffffff" # [colors.normal].white & [colors.bright].white
+base06: "818ba3" # [colors.indexed_colors][20].color
+base07: "0000ff" # NOT USED
+base08: "d0679d" # [colors.normal].red & [colors.bright].red
+base09: "cfd8e3" # [colors.indexed_colors][21].color
+base0A: "fffac2" # [colors.normal].yellow & [colors.bright].yellow
+base0B: "5de4c7" # [colors.normal].green & [colors.bright].green
+base0C: "add7ff" # [colors.bright].cyan & [colors.bright].blue
+base0D: "89ddff" # [colors.normal].blue & [colors.normal].cyan
+base0E: "f087bd" # [colors.normal].magenta & [colors.bright].magenta
+base0F: "f087bd" # NOT USED
