@@ -72,6 +72,49 @@ style = "Italic"
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
+# https://alacritty.org/config-alacritty-bindings.html
+
+[[keyboard.bindings]]
+key = "c"
+mods = "Control"
+chars = "\u001Bc"
+
+[[keyboard.bindings]]
+key = "N"
+mods = "Command"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001Bb"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001Bf"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Command"
+chars = "\u0001"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Command"
+chars = "\u0005"
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Command"
+chars = "\u0015"
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Alt"
+chars = "\u001B\u007F"
+
+# Start flavours
 [[colors.indexed_colors]]
 color = "0xf8bd96"
 index = 16
@@ -123,40 +166,4 @@ yellow = "0xfae3b0"
 [colors.primary]
 background = "0x1e1d2d"
 foreground = "0xbfc6d4"
-
-# https://alacritty.org/config-alacritty-bindings.html
-
-[[keyboard.bindings]]
-key = "N"
-mods = "Command"
-action = "SpawnNewInstance"
-
-[[keyboard.bindings]]
-key = "Left"
-mods = "Alt"
-chars = "\u001Bb"
-
-[[keyboard.bindings]]
-key = "Right"
-mods = "Alt"
-chars = "\u001Bf"
-
-[[keyboard.bindings]]
-key = "Left"
-mods = "Command"
-chars = "\u0001"
-
-[[keyboard.bindings]]
-key = "Right"
-mods = "Command"
-chars = "\u0005"
-
-[[keyboard.bindings]]
-key = "Back"
-mods = "Command"
-chars = "\u0015"
-
-[[keyboard.bindings]]
-key = "Back"
-mods = "Alt"
-chars = "\u001B\u007F"
+# End flavours
