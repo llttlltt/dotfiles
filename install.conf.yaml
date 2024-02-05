@@ -55,6 +55,9 @@
     ~/.config/flavours:
       create: true
       path: dotfiles/config/flavours
+    ~/Library/Preferences/flavours:
+      create: true
+      path: dotfiles/config/flavours
     ~/.config/powershell/profile.ps1:
       create: true
       path: dotfiles/config/powershell/profile.ps1
