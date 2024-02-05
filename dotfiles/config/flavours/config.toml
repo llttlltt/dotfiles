@@ -1,4 +1,4 @@
-shell = "bash -c '{}'"
+shell = "zsh -c '{}'"
 
 # [[item]]
 # file = "~/.config/nvim/colors/base16.vim"
@@ -7,6 +7,6 @@ shell = "bash -c '{}'"
 # hook = "reloadnvim"
 
 [[item]]
-file = "~/.config/alacritty/alacritty.yml"
+file = "~/.config/alacritty/alacritty.toml"
 template = "alacritty"
 subtemplate = "default-256"
