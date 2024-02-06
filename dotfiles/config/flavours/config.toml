@@ -10,3 +10,9 @@ shell = "zsh -c '{}'"
 file = "~/.config/alacritty/alacritty.toml"
 template = "alacritty"
 subtemplate = "poimandres-256"
+
+[[item]]
+file = "~/.config/tmux/tmux.conf"
+template = "tmux"
+subtemplate = "default"
+hook = "tmux source ~/.config/tmux/tmux.conf"
