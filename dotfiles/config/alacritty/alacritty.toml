@@ -22,8 +22,8 @@ save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
 [shell]
-args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
 
 [terminal]
 # osc52: "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
