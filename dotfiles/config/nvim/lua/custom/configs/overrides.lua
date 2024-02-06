@@ -1,80 +1,53 @@
 -- overriding default plugin configs!
-
 local M = {}
 
 M.treesitter = {
-  ensure_installed = {
-    -- defaults
-    "vim",
-    "lua",
-
-    -- web dev
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
-    "json",
+  ensure_installed = { --
+  "vim", "lua", -- defaults
+  "html", "css", "javascript", "typescript", "tsx", "json" -- web
   },
 
   highlight = {
-    enable = true,
+    enable = true
   },
 
   rainbow = {
     enable = true,
     extended_mode = true,
-    max_file_lines = nil,
-  },
+    max_file_lines = nil
+  }
 }
 
 M.nvimtree = {
   filters = {
     dotfiles = true,
-    custom = { "node_modules" },
+    custom = {"node_modules"}
   },
 
   git = {
-    enable = true,
+    enable = true
   },
 
   renderer = {
     highlight_git = true,
     icons = {
       show = {
-        git = true,
-      },
-    },
-  },
+        git = true
+      }
+    }
+  }
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
-
-    -- config files
-    "taplo",
-    "yaml-language-server",
-    "yamllint",
-
-    -- web dev
-    "tsfmt", -- for prettier
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "prettier",
-    "eslint_lsp",
-    "json-lsp",
-    "tailwindcss-language-server",
-
-    -- shell
-    "shfmt",
-    ":shellcheck",
-    "bash-language-server",
-
-  },
+  ensure_installed = { --
+  "lua-language-server", "stylua", -- lua
+  "taplo", "yaml-language-server", "yamllint", -- config files
+  "shfmt", ":shellcheck", "bash-language-server", -- shell
+  "html-lsp", "tsfmt", "typescript-language-server", -- web
+  "tailwindcss-language-server", "css-lsp", -- styling
+  "json-lsp", -- data
+  "prettier", "eslint_lsp" -- prettier | eslint
+  }
 }
 
 M.nvimcmp = {
@@ -87,9 +60,9 @@ M.nvimcmp = {
         -- ["<C-n>"] = cmp.mapping.select_next_item(),
         -- ["<C-y>"] = cmp.mapping.select_confirm({ select = true }),
         -- ["<C-Space>"] = cmp.mapping.complete(),
-      },
+      }
     }
-  end,
+  end
 }
 
 return M

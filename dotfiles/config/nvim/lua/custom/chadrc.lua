@@ -1,11 +1,10 @@
----@type ChadrcConfig
 local M = {}
 
 -- Path to overriding theme and highlights files
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = 'catppuccin',
+  theme = "catppuccin",
   transparency = true,
 
   hl_override = highlights.override,
@@ -26,8 +25,8 @@ M.ui = {
   statusline = {
     theme = "vscode_colored",
     separator_style = "default",
-    overriden_modules = nil,
-  },
+    overriden_modules = nil
+  }
 }
 
 M.plugins = "custom.plugins"
