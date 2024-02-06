@@ -75,16 +75,6 @@ style = "Regular"
 # https://alacritty.org/config-alacritty-bindings.html
 
 [[keyboard.bindings]]
-key = "c"
-mods = "Control"
-chars = "\u001Bc"
-
-[[keyboard.bindings]]
-key = "N"
-mods = "Command"
-action = "SpawnNewInstance"
-
-[[keyboard.bindings]]
 key = "Left"
 mods = "Alt"
 chars = "\u001Bb"
