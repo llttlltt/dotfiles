@@ -46,6 +46,9 @@
     ~/.config/starship.toml:
       create: true
       path: dotfiles/config/starship/starship.toml
+    ~/.config/tmux:
+      create: true
+      path: dotfiles/config/tmux
     ~/.config/bat:
       create: true
       path: dotfiles/config/bat
