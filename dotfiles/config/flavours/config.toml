@@ -12,7 +12,7 @@ template = "alacritty"
 subtemplate = "poimandres-256"
 
 [[item]]
-file = "~/.config/tmux/tmux.conf"
+file = "~/.config/tmux/tmux-ostentus.conf"
 template = "tmux"
-subtemplate = "default"
+subtemplate = "ostentus-poimandres"
 hook = "tmux source ~/.config/tmux/tmux.conf"
