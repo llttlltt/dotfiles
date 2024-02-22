@@ -3,7 +3,7 @@
 live_config_reload = true
 
 [[hints.enabled]]
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+regex = '(?i)(?:~\/|\B(?<!\…)\/[a-z.]+|\B[.]\/|https?:\/\/|ipfs:|ipns:|magnet:|mailto:|gemini:\/\/|gopher:\/\/|news:|file:|git:\/\/|ssh:|ftp:\/\/)[^\s<>\"^⟨⟩()`|]+'
 hyperlinks = true
 post_processing = true
 persist = false
