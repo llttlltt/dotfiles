@@ -84,7 +84,7 @@ function default() {
 	fi
 
 	if [ "$mode" == "prompt" ]; then
-		tmux command-prompt -p "Command to run for \`${selected_item}\`:" "run-shell 'source '$SCRIPT_DIR/$SCRIPT_NAME' && run_tmux_command '%%' '$selected_item'"
+		tmux command-prompt -p "Command to run for \`${selected_item}\`:" "run-shell 'source '$SCRIPT_DIR/$SCRIPT_NAME' && run_tmux_command '%%%' '$selected_item'"
 	else
 		tmux run-shell "xargs -I {} open '{}' <<< '$selected_item'"
 	fi
