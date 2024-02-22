@@ -57,8 +57,10 @@ function default() {
 	matches=$(echo "$text" | perl -nle "print $& while m{$regex}g")
 
 	# Filter out duplicates
+	unique_matches=() # Ensure the array is initially empty
 	while IFS= read -r line; do
-		if [[ ! ${unique_matches[*]} =~ $line ]]; then
+		# Check if line is not empty and not already in the array
+		if [[ -n $line && ! " ${unique_matches[*]} " =~ $line ]]; then
 			unique_matches+=("$line")
 		fi
 	done < <(echo "$matches")
