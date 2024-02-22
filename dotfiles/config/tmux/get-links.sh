@@ -34,7 +34,7 @@ function run_tmux_command() {
 }
 
 function default() {
-	local mode current_path text regex matches selected_item unique_matches
+	local mode current_path text regex matches selected_item clean_line unique_matches
 	mode="open"
 	current_path="$2"                                         # TMUX current pane path
 	text="$(cat | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')" # Capture piped data
@@ -59,9 +59,12 @@ function default() {
 	# Filter out duplicates
 	unique_matches=() # Ensure the array is initially empty
 	while IFS= read -r line; do
+		clean_line=${line#"${line%%[!\'\"\`]*}"}             # Remove from start
+		clean_line=${clean_line%"${clean_line##*[!\'\"\`]}"} # Remove from end
+
 		# Check if line is not empty and not already in the array
 		if [[ -n $line && ! " ${unique_matches[*]} " =~ $line ]]; then
-			unique_matches+=("$line")
+			unique_matches+=("$clean_line")
 		fi
 	done < <(echo "$matches")
 
