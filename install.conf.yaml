@@ -1,69 +1,47 @@
-- shell:
-    - command: ./homebrew/setup_homebrew.zsh
-      stdout: true
-      stderr: true
-    - command: ./homebrew/cleanup_homebrew.zsh
-      stdout: true
-      stderr: true
-    - command: ./scripts/setup_zsh.zsh
-      stdout: true
-      stderr: true
-    - command: ./scripts/setup_node.zsh
-      stdout: true
-      stderr: true
-    - command: ./scripts/setup_lporg.zsh
-      stdout: true
-      stderr: true
-    - command: ./scripts/setup_rust.zsh
-      stdout: true
-      stderr: true
-
 - defaults:
     link:
       relink: true
+      create: true
+    shell:
+      stdout: true
+      stderr: true
+
+- shell:
+    - command: ./homebrew/setup_homebrew.zsh
+    - command: ./homebrew/cleanup_homebrew.zsh
+    - command: ./scripts/setup_zsh.zsh
+    - command: ./scripts/setup_node.zsh
+    - command: ./scripts/setup_lporg.zsh
+    - command: ./scripts/setup_rust.zsh
 
 - clean: ["~"]
 
 - link:
     ~/.zshrc:
-      create: true
       path: dotfiles/config/zsh/zshrc
     ~/.zshenv:
-      create: true
       path: dotfiles/config/zsh/zshenv
     ~/.zprofile:
-      create: true
       path: dotfiles/config/zsh/zprofile
     ~/.hushlogin:
-      create: true
       path: dotfiles/hushlogin
     ~/.gitconfig:
-      create: true
       path: dotfiles/gitconfig
     ~/.config/alacritty/alacritty.toml:
-      create: true
       path: dotfiles/config/alacritty/alacritty.toml
     ~/.config/starship.toml:
-      create: true
       path: dotfiles/config/starship/starship.toml
     ~/.config/tmux:
-      create: true
       path: dotfiles/config/tmux
     ~/.config/bat:
-      create: true
       path: dotfiles/config/bat
     ~/.config/nvim/lua/custom:
-      create: true
       path: dotfiles/config/nvim/lua/custom
     ~/.config/powershell/profile.ps1:
-      create: true
       path: dotfiles/config/powershell/profile.ps1
     ~/.config/amethyst/amethyst.yml:
-      create: true
       path: dotfiles/config/amethyst/amethyst.yml
     ~/Library/Preferences/flavours:
-      create: true
       path: dotfiles/Library/Preferences/flavours
     ~/Library/Preferences/com.lwouis.alt-tab-macos.plist:
-      create: true
       path: dotfiles/Library/Preferences/com.lwouis.alt-tab-macos.plist
