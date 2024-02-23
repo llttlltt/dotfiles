@@ -1,7 +1,10 @@
 apps:
   pages:
     - number: 1
+    - number: 2
       items:
+        - MacFamilyTree 9
+        - Parallels Desktop
         - App Store
         - Mail
         - Contacts
@@ -25,10 +28,6 @@ apps:
         - Dictionary
         - Calculator
         - Freeform
-        - Home
-        - Clock
-        - Siri
-        - System Settings
         - folder: Browsers
           pages:
             - number: 1
@@ -39,106 +38,14 @@ apps:
                 - Google Chrome
                 - Microsoft Edge
                 - Safari
-        - folder: Other
-          pages:
-            - number: 1
-              items:
-                - Activity Monitor
-                - AirPort Utility
-                - Audio MIDI Setup
-                - Automator
-                - Bluetooth File Exchange
-                - ColorSync Utility
-                - Console
-                - Digital Colour Meter
-                - Disk Utility
-                - Feedback Assistant
-                - Font Book
-                - Grapher
-                - Image Capture
-                - Keychain Access
-                - Migration Assistant
-                - Mission Control
-                - QuickTime Player
-                - Screenshot
-                - Script Editor
-                - Shortcuts
-                - Stickies
-                - System Information
-                - Terminal
-                - TextEdit
-                - Time Machine
-                - VoiceOver Utility
-                - MacFamilyTree 9
-                - Parallels Desktop
-        - folder: Development
-          pages:
-            - number: 1
-              items:
-                - Alacritty
-                - Anaconda-Navigator
-                - Developer
-                - Docker
-                - GitKraken
-                - iTerm
-                - Postman
-                - PowerShell
-                - Scriptable
-                - Sublime Text
-                - Visual Studio Code
-                - Web Server for Chrome
-                - Xcode
-                - Apple Configurator
-                - XrmToolBox
-        - folder: CrossOver
-          pages:
-            - number: 1
-              items:
-                - CrossOver
-                - Risk of Rain Returns
-                - Steam
-                - Steam Support Center
-        - folder: Games
-          pages:
-            - number: 1
-              items:
-                - AetherSX2
-                - Baldur's Gate 3
-                - Celeste
-                - Chess
-                - Dolphin
-                - Dolphin Updater
-                - FTL Faster Than Light
-                - Hades
-                - Hollow Knight
-                - League of Legends
-                - Melatonin
-                - No Man's Sky
-                - Origin
-                - Papers, Please
-                - Riot Client
-                - Shadow PC
-                - Steam
-        - folder: Media
-          pages:
-            - number: 1
-              items:
-                - Spotify
-                - VLC
-    - number: 2
+    - number: 3
       items:
-        - folder: Productivity
+        - folder: Adobe
           pages:
             - number: 1
               items:
-                - Anki
-                - Todoist
-        - folder: OmniGroup
-          pages:
-            - number: 1
-              items:
-                - OmniGraffle
-                - OmniPlan
+                - Adobe Creative Cloud
+                - Adobe Lightroom
         - folder: Creative
           pages:
             - number: 1
@@ -154,29 +61,78 @@ apps:
                 - Link WIDE
                 - Motion
                 - TouchDesigner
-        - folder: Adobe
+        - folder: Media
           pages:
             - number: 1
               items:
-                - Adobe Creative Cloud
-                - Adobe Lightroom
-        - folder: Sony
+                - Spotify
+                - VLC
+        - folder: Games
           pages:
             - number: 1
               items:
-                - Edit
-                - Imaging Edge Desktop
-                - Remote
-                - Viewer
-        - folder: Reading
-    - number: 3
-      items:
+                - AetherSX2
+                - Baldur's Gate 3
+                - Celeste
+                - Chess
+                - Dolphin
+                - Dolphin Updater
+                - Hades
+                - Hollow Knight
+                - League of Legends
+                - Melatonin
+                - No Man's Sky
+                - Origin
+                - Riot Client
+                - Shadow PC
+                - Steam
+                - FTL Faster Than Light
+                - Papers, Please
+        - folder: CrossOver
+          pages:
+            - number: 1
+              items:
+                - CrossOver
+                - Risk of Rain Returns
+                - Steam Support Center
+        - folder: Development
+          pages:
+            - number: 1
+              items:
+                - Alacritty
+                - Anaconda-Navigator
+                - Developer
+                - Docker
+                - GitKraken
+                - iTerm
+                - Postman
+                - PowerShell
+                - Scriptable
+                - Sublime Text
+                - Steam
+                - Visual Studio Code
+                - Xcode
+                - Apple Configurator
+                - XrmToolBox
+                - Web Server for Chrome
+        - folder: Productivity
+          pages:
+            - number: 1
+              items:
+                - Anki
+                - Todoist
         - folder: Writing
           pages:
             - number: 1
               items:
                 - Notion
                 - Obsidian
+        - folder: OmniGroup
+          pages:
+            - number: 1
+              items:
+                - OmniGraffle
+                - OmniPlan
         - folder: Reading
           pages:
             - number: 1
@@ -201,6 +157,48 @@ apps:
                 - Instapaper Save
                 - OverPicture
                 - Userscripts
+        - folder: Sony
+          pages:
+            - number: 1
+              items:
+                - Edit
+                - Imaging Edge Desktop
+                - Remote
+                - Viewer
+        - Home
+        - Clock
+        - Siri
+        - System Settings
+        - Shortcuts
+        - QuickTime Player
+        - TextEdit
+        - Time Machine
+        - Font Book
+        - Mission Control
+        - Stickies
+        - Image Capture
+        - Automator
+        - folder: Other
+          pages:
+            - number: 1
+              items:
+                - Grapher
+                - VoiceOver Utility
+                - AirPort Utility
+                - Migration Assistant
+                - Terminal
+                - Activity Monitor
+                - Console
+                - Keychain Access
+                - System Information
+                - Script Editor
+                - Disk Utility
+                - Digital Colour Meter
+                - ColorSync Utility
+                - Screenshot
+                - Bluetooth File Exchange
+                - Audio MIDI Setup
+                - Feedback Assistant
     - number: 4
       items:
         - Blender
@@ -250,8 +248,8 @@ apps:
                 - Microsoft PowerPoint
                 - Microsoft Remote Desktop
                 - Microsoft Teams (work or school)
-                - Microsoft Teams classic
                 - Microsoft To Do
+                - Microsoft Teams classic
                 - Microsoft Word
                 - OneDrive
     - number: 6
@@ -296,11 +294,11 @@ apps:
                 - eLicenser Control Center
                 - Groove Agent SE
                 - HALion Sonic
-                - Nuendo 12
                 - SpectraLayers 9
                 - Steinberg Activation Manager
                 - Steinberg Download Assistant
                 - Steinberg Library Manager
+                - Nuendo 12
         - folder: Pioneer
           pages:
             - number: 1

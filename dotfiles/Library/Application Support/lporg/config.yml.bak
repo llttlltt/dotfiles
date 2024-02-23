@@ -3,27 +3,21 @@ apps:
     - number: 1
       items:
         - App Store
-        - Safari
         - Mail
         - Contacts
         - Calendar
         - Reminders
-        - Notes
         - FaceTime
         - Messages
         - Maps
-        - Find My
-        - Photo Booth
         - Photos
         - Preview
-        - Music
         - Podcasts
         - TV
         - Voice Memos
-        - Weather
         - News
         - Stocks
-        - Books
+        - Siri
         - Dictionary
         - Calculator
         - Freeform
@@ -35,18 +29,17 @@ apps:
             - number: 1
               items:
                 - Shortcuts
-                - QuickTime Player
                 - TextEdit
                 - Grapher
                 - Time Machine
                 - Font Book
                 - Mission Control
                 - Stickies
-                - Image Capture
                 - VoiceOver Utility
                 - AirPort Utility
                 - Migration Assistant
                 - Terminal
+                - Image Capture
                 - Activity Monitor
                 - Console
                 - Keychain Access
@@ -60,40 +53,82 @@ apps:
                 - Bluetooth File Exchange
                 - Audio MIDI Setup
                 - Feedback Assistant
+                - QuickTime Player
         - Xcode
+        - folder: Arturia
+          pages:
+            - number: 1
+              items:
+                - Analog Lab V
+                - ARP 2600 V3
+                - Arturia Software Center
+                - Augmented STRINGS
+                - Augmented VOICES
+                - B-3 V2
+                - Buchla Easel V
+                - Clavinet V
+                - CMI V
+                - CS-80 V4
+                - CZ V
+                - DX7 V
+                - Emulator II V
+                - Farfisa V
+                - Jun-6 V
+                - Jup-8 V4
+                - KORG MS-20 V
+                - Matrix-12 V2
+                - Mellotron V
+                - Mini V3
+                - Modular V3
+                - OP-Xa V
+                - Piano V3
+                - Pigments
+                - Prophet-5 V
+                - Prophet-VS V
+                - SEM V2
+                - Solina V2
+                - SQ80 V
+                - Stage-73 V2
+                - Synclavier V
+                - Synthi V
+                - Vocoder V
+                - VOX Continental V2
+                - Wurli V2
         - folder: Games
           pages:
             - number: 1
               items:
-                - Chess
-                - Baldur's Gate 3
                 - Celeste
-                - FTL Faster Than Light
                 - Hades
-                - Hollow Knight
                 - League of Legends
                 - Melatonin
-                - No Man's Sky
                 - Papers, Please
-        - Siri
+                - FTL Faster Than Light
+                - Hollow Knight
+                - No Man's Sky
+                - Chess
+                - Baldur's Gate 3
+        - Music
+        - Find My
+        - Photo Booth
+        - Books
+        - Weather
+        - Notes
+        - Safari
     - number: 2
       items:
-        - Nuendo 12
-        - Microsoft Teams classic
-        - Visual Studio Code
         - folder: Native Instruments (Other)
           pages:
             - number: 1
               items:
-                - Absynth 5
                 - Battery 4
+                - Kontakt 7
+                - Reaktor 6
                 - Guitar Rig 5
                 - Kontakt
-                - Kontakt 7
-                - Massive
-                - Reaktor 6
-                - Steam
+                - Absynth 5
                 - FM8
+                - Massive
         - VLC
         - Beeper
         - SubLab
@@ -101,6 +136,8 @@ apps:
         - CrossOver
         - CameraBag Pro
         - QuNeo MPE
+        - Steam
+        - Nuendo 12
         - folder: Soundtoys (Other)
           pages:
             - number: 1
@@ -128,8 +165,12 @@ apps:
         - AetherSX2
         - FM3-Edit
         - Bartender 4
-        - Dropbox
+        - Microsoft Teams classic
+        - Visual Studio Code
     - number: 3
+      items:
+        - Dropbox
+    - number: 4
       items:
         - Be Focused Pro
         - Melodyne
@@ -166,7 +207,7 @@ apps:
         - Sonic Charge Authenticator
         - Synplant
         - eLicenser Control Center
-    - number: 4
+    - number: 5
       items:
         - Amphetamine
         - Arc
@@ -189,43 +230,8 @@ apps:
         - Apple Configurator
         - iStat Menus
         - Steinberg Download Assistant
-        - Analog Lab V
-        - ARP 2600 V3
-        - Arturia Software Center
-        - Augmented STRINGS
-        - Augmented VOICES
-        - B-3 V2
-        - Buchla Easel V
-        - Clavinet V
-        - CMI V
-        - CS-80 V4
-        - CZ V
-        - DX7 V
-        - Emulator II V
-        - Farfisa V
-        - Jun-6 V
-        - Jup-8 V4
-        - KORG MS-20 V
-        - Matrix-12 V2
-    - number: 5
+    - number: 6
       items:
-        - Mellotron V
-        - Mini V3
-        - Modular V3
-        - OP-Xa V
-        - Piano V3
-        - Pigments
-        - Prophet-5 V
-        - Prophet-VS V
-        - SEM V2
-        - Solina V2
-        - SQ80 V
-        - Stage-73 V2
-        - Synclavier V
-        - Synthi V
-        - Vocoder V
-        - VOX Continental V2
-        - Wurli V2
         - 1Password for Safari
         - Audio Hijack
         - Scriptable
@@ -248,9 +254,9 @@ apps:
         - Final Cut Pro
         - Chromium
         - iTerm
-        - iZotope RX 7 Audio Editor
-    - number: 6
+    - number: 7
       items:
+        - iZotope RX 7 Audio Editor
         - GitKraken
         - Max
         - iZotope Product Portal
@@ -289,20 +295,20 @@ apps:
         - Logic Pro
         - Discord
         - AlDente
-        - SpectraLayers 9
-    - number: 7
+    - number: 8
       items:
+        - SpectraLayers 9
         - Sublime Text
-        - Web Server for Chrome
-        - XrmToolBox
         - folder: CrossOver (Other)
           pages:
             - number: 1
               items:
-                - Risk of Rain Returns
                 - Steam
+                - Risk of Rain Returns
                 - Steam Support Center
         - Riot Client
+        - XrmToolBox
+        - Web Server for Chrome
 widgets:
   pages: []
 dock_items:
