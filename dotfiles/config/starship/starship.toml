@@ -1,10 +1,7 @@
 # # Get editor completions based on the config schema
 # '$schema' = 'https://starship.rs/config-schema.json'
 
-format = """
-[╭](bright-black)$shlvl[┤](bright-black)$time$os$all
-[╰](bright-black)$shlvl$character
-"""
+format = "$time$os$sudo$all$shlvl$character"
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -29,11 +26,18 @@ format = "[$time]($style) "
 
 [shlvl]
 disabled = false
-symbol = '─'
+symbol = '❯'
 repeat = true
 style = "bright-black"
+repeat_offset = 1
 format = "[$symbol]($style)"
-threshold = 2
+threshold = 0
+
+[sudo]
+style = 'bold red'
+format = '[$symbol]($style)'
+symbol = ''
+disabled = false
 
 [directory]
 disabled = false
