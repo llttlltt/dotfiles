@@ -64,3 +64,6 @@
     ~/Library/Preferences/flavours:
       create: true
       path: dotfiles/Library/Preferences/flavours
+    ~/Library/Preferences/com.lwouis.alt-tab-macos.plist:
+      create: true
+      path: dotfiles/Library/Preferences/com.lwouis.alt-tab-macos.plist

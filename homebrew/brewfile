@@ -159,6 +159,8 @@ cask "affinity-publisher"
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # Distribution of the Python and R programming languages for scientific computing
