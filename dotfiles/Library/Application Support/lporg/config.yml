@@ -1,6 +1,7 @@
 apps:
   pages:
     - number: 1
+    - number: 2
       items:
         - Contacts
         - Calendar
@@ -29,7 +30,7 @@ apps:
                 - Stocks
                 - Voice Memos
                 - Weather
-        - folder: MacOS (Other)
+        - folder: Other
           pages:
             - number: 1
               items:
@@ -139,7 +140,6 @@ apps:
               items:
                 - CrossOver
                 - Risk of Rain Returns
-                - Steam
                 - Steam Support Center
         - folder: Productivity
           pages:
@@ -203,7 +203,7 @@ apps:
                 - Google Chrome
                 - Microsoft Edge
                 - Safari
-    - number: 2
+    - number: 3
       items:
         - Blender
         - folder: KiCad
@@ -239,7 +239,7 @@ apps:
                 - Instapaper Save
                 - OverPicture
                 - Userscripts
-    - number: 3
+    - number: 4
       items:
         - Ableton Live 11 Suite
         - Logic Pro
