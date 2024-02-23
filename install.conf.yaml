@@ -41,6 +41,8 @@
       path: dotfiles/config/powershell/profile.ps1
     ~/.config/amethyst/amethyst.yml:
       path: dotfiles/config/amethyst/amethyst.yml
+    ~/Library/Application Support/lporg:
+      path: dotfiles/Library/Application Support/lporg
     ~/Library/Preferences/flavours:
       path: dotfiles/Library/Preferences/flavours
     ~/Library/Preferences/com.lwouis.alt-tab-macos.plist:
