@@ -55,12 +55,12 @@
     ~/.config/nvim/lua/custom:
       create: true
       path: dotfiles/config/nvim/lua/custom
-    ~/Library/Preferences/flavours:
-      create: true
-      path: dotfiles/config/flavours
     ~/.config/powershell/profile.ps1:
       create: true
       path: dotfiles/config/powershell/profile.ps1
-    ~/.amethyst.yml:
+    ~/.config/amethyst/amethyst.yml:
       create: true
-      path: dotfiles/amethyst.yml
+      path: dotfiles/config/amethyst/amethyst.yml
+    ~/Library/Preferences/flavours:
+      create: true
+      path: dotfiles/Library/Preferences/flavours
