@@ -29,7 +29,6 @@ apps:
         - Freeform
         - Home
         - Clock
-        - Siri
         - System Settings
         - folder: Other
           pages:
@@ -76,7 +75,7 @@ apps:
                 - Melatonin
                 - No Man's Sky
                 - Papers, Please
-                - Steam
+        - Siri
     - number: 2
       items:
         - Nuendo 12
@@ -88,12 +87,13 @@ apps:
               items:
                 - Absynth 5
                 - Battery 4
-                - FM8
                 - Guitar Rig 5
                 - Kontakt
                 - Kontakt 7
                 - Massive
                 - Reaktor 6
+                - Steam
+                - FM8
         - VLC
         - Beeper
         - SubLab
