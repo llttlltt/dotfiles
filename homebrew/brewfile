@@ -259,6 +259,8 @@ cask "izotope-product-portal"
 cask "kicad"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# NDI SDK
+cask "libndi"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Cable-free audio router
@@ -281,11 +283,11 @@ cask "microsoft-teams"
 cask "microsoft-word"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# NewTek NDI integration for OBS Studio
+# NDI integration for OBS Studio
 cask "obs-ndi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
@@ -321,7 +323,7 @@ cask "todoist"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Desktop client for WhatsApp
+# Native desktop client for WhatsApp
 cask "whatsapp"
 # Lossless audio decoder
 cask "xld"
