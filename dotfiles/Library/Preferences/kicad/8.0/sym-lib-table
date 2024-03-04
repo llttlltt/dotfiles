@@ -1,4 +1,5 @@
 (sym_lib_table
+  (version 7)
   (lib (name "4xxx")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/4xxx.kicad_sym")(options "")(descr "4xxx series symbols"))
   (lib (name "4xxx_IEEE")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/4xxx_IEEE.kicad_sym")(options "")(descr "4xxx series IEEE symbols"))
   (lib (name "74xGxx")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/74xGxx.kicad_sym")(options "")(descr "74xGxx symbols"))
@@ -220,4 +221,5 @@
   (lib (name "Triac_Thyristor")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/Triac_Thyristor.kicad_sym")(options "")(descr "TRIAC and thyristor symbols"))
   (lib (name "Valve")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/Valve.kicad_sym")(options "")(descr "Valve symbols"))
   (lib (name "Video")(type "KiCad")(uri "${KICAD8_SYMBOL_DIR}/Video.kicad_sym")(options "")(descr "Video symbols"))
+  (lib (name "user_Library.pretty")(type "KiCad")(uri "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/user/symbols/user_Library.pretty.kicad_sym")(options "")(descr ""))
 )

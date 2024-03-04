@@ -22,7 +22,9 @@
     "zone_fill_warning": false
   },
   "environment": {
-    "vars": null
+    "vars": {
+      "KICAD8_3RD_PARTY": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/3rdparty"
+    }
   },
   "git": {
     "authorEmail": "",
