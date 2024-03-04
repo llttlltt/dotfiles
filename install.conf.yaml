@@ -45,5 +45,7 @@
       path: dotfiles/Library/Application Support/lporg
     ~/Library/Preferences/flavours:
       path: dotfiles/Library/Preferences/flavours
+    ~/Library/Preferences/kicad:
+      path: dotfiles/Library/Preferences/kicad
     ~/Library/Preferences/com.lwouis.alt-tab-macos.plist:
       path: dotfiles/Library/Preferences/com.lwouis.alt-tab-macos.plist
