@@ -23,7 +23,11 @@
   },
   "environment": {
     "vars": {
-      "KICAD8_3RD_PARTY": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/3rdparty"
+      "KICAD8_3RD_PARTY": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/3rdparty",
+      "USER_3DMODEL_DIR": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/user/3dmodels",
+      "USER_FOOTPRINT_DIR": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/user/footprints",
+      "USER_SYMBOL_DIR": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/user/symbols",
+      "USER_TEMPLATE_DIR": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/cad/kicad/kicad-config/user/templates"
     }
   },
   "git": {

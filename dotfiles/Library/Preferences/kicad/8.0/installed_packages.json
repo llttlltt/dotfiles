@@ -2,7 +2,7 @@
     "packages": [
         {
             "current_version": "2022.11.18",
-            "install_timestamp": 1709561246,
+            "install_timestamp": 1710012149,
             "package": {
                 "author": {
                     "contact": {
@@ -43,8 +43,8 @@
             "repository_name": "KiCad official repository"
         },
         {
-            "current_version": "0.1",
-            "install_timestamp": 1709560984,
+            "current_version": "0.2",
+            "install_timestamp": 1710012127,
             "package": {
                 "author": {
                     "contact": {
@@ -64,6 +64,15 @@
                 },
                 "type": "plugin",
                 "versions": [
+                    {
+                        "download_sha256": "f0ac36a2cfef71f0f5756ae74011a4bc7e849fcb7f59f75172036ff93b1bc101",
+                        "download_size": 8605,
+                        "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.2/kicad_git-0.2.zip",
+                        "install_size": 7797,
+                        "kicad_version": "7.0",
+                        "status": "stable",
+                        "version": "0.2"
+                    },
                     {
                         "download_sha256": "a5e3135204c562e216cfce92cd13714a89287c5a63cc5a6f24835ceef6484061",
                         "download_size": 16807,

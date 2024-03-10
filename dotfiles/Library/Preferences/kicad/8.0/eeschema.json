@@ -30,7 +30,7 @@
     "show_erc_exclusions": false,
     "show_erc_warnings": true,
     "show_hidden_fields": false,
-    "show_hidden_pins": false,
+    "show_hidden_pins": true,
     "show_illegal_symbol_lib_dialog": true,
     "show_op_currents": true,
     "show_op_voltages": true,
@@ -88,7 +88,7 @@
     "selected_plugin": ""
   },
   "color_picker": {
-    "default_tab": 0
+    "default_tab": 1
   },
   "cross_probing": {
     "auto_highlight": true,
@@ -178,9 +178,7 @@
       "Item",
       "Description"
     ],
-    "open_libs": [
-      "power"
-    ]
+    "open_libs": []
   },
   "lib_view": {
     "cmp_list_width": 150,
