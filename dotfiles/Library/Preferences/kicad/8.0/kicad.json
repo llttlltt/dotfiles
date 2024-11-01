@@ -1,7 +1,7 @@
 {
   "appearance": {
     "color_theme": "_builtin_default",
-    "left_frame_width": 250
+    "left_frame_width": 279
   },
   "color_picker": {
     "default_tab": 0
@@ -62,19 +62,25 @@
   "system": {
     "check_for_kicad_updates": true,
     "file_history": [
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pro",
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.1)/Replicator (1.1).kicad_pro",
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2) copy/Replicator (1.2).kicad_pro",
-      "/Users/elliott/Downloads/keysboard-2/keyboard.kicad_pro",
-      "/Users/elliott/Downloads/layout/keyboard.kicad_pro"
+      "/Users/elliott/Downloads/RNA/Dock 6/KiCad/35.0.0 V3 100k 10k/Dock 6/Dock 6.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pro",
+      "/Users/elliott/Downloads/RNA/Oogenesis EQ/Oogenisis/Oogenisis.kicad_pro",
+      "/Users/elliott/Downloads/Dock 6/KiCad/Dock 6.kicad_pro",
+      "/Users/elliott/Downloads/Dock 6/35.0.0 V3 100k 10k/35.0.0 V3 100k 10k.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/Dock 2/Dock 2.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/control/Thonkiconn LED/Thonkiconn LED.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/riboswitch/hardware/Narmerio Riboswitch.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/spore/hardware/RNA Spore.kicad_pro"
     ],
     "first_run_shown": false,
     "last_imperial_units": 0,
     "last_metric_units": 1,
     "last_received_update": "",
-    "last_update_check_time": "2024-03-04T13:19:05",
+    "last_update_check_time": "2024-03-12T16:05:24",
     "max_undo_items": 0,
-    "open_projects": [],
+    "open_projects": [
+      "/Users/elliott/Downloads/RNA/Dock 6/KiCad/35.0.0 V3 100k 10k/Dock 6/Dock 6.kicad_pro"
+    ],
     "units": 1
   },
   "window": {
@@ -219,12 +225,12 @@
       "user_grid_x": "10 mil",
       "user_grid_y": "10 mil"
     },
-    "maximized": true,
-    "mru_path": "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/",
-    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=227;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=Project Files;state=1532;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=250;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Launcher;caption=Editors;state=508;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=519;besth=560;minw=519;minh=560;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,2,0)=227|dock_size(4,1,0)=250|dock_size(5,0,0)=519|",
-    "pos_x": 439,
-    "pos_y": 307,
-    "size_x": 850,
+    "maximized": false,
+    "mru_path": "/Users/elliott/Downloads/RNA/Dock 6/KiCad/35.0.0 V3 100k 10k/Dock 6/",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=227;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=Project Files;state=1532;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=279;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Launcher;caption=Editors;state=508;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=519;besth=560;minw=519;minh=560;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,2,0)=34|dock_size(4,1,0)=279|dock_size(5,0,0)=519|",
+    "pos_x": 864,
+    "pos_y": 577,
+    "size_x": 864,
     "size_y": 540,
     "zoom_factors": []
   }

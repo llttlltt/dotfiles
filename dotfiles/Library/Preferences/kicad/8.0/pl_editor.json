@@ -50,7 +50,9 @@
   },
   "properties_frame_width": 150,
   "system": {
-    "file_history": [],
+    "file_history": [
+      "/Users/elliott/Downloads/Dock 6/35.0.0 V3 100k 10k/empty.kicad_wks"
+    ],
     "first_run_shown": false,
     "last_imperial_units": 5,
     "last_metric_units": 1,

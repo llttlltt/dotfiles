@@ -565,16 +565,19 @@
   },
   "system": {
     "file_history": [
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pcb",
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.1)/Replicator (1.1).kicad_pcb",
-      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2) copy/Replicator (1.2).kicad_pcb",
-      "/Users/elliott/Downloads/keysboard-2/keyboard.kicad_pcb",
-      "/Users/elliott/Downloads/layout/keyboard.kicad_pcb",
-      "/Volumes/GoogleDrive/Shared drives/Electronics/projects/midi/DLMK Faderbank+/Euro Fader PCB/Euro Fader PCB.kicad_pcb"
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/control/Thonkiconn LED/Thonkiconn LED.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/riboswitch/hardware/Narmerio Riboswitch.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/spore/hardware/RNA Spore.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/stereo_insert_fx/hardware/stereo_insert_fx.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/microarrays-step_sequencer/hardware/microarrays.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/rotational_sequencer/hardware/Eurorack - Rotational Sequencer (0.1).kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/2-ready/transnuclear/hardware_design/pcb/transnuclear_v1.0.1.kicad_pcb",
+      "/Volumes/GoogleDrive-106786714001159559820/Shared drives/Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pcb"
     ],
     "first_run_shown": true,
-    "last_footprint3d_dir": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/",
-    "last_footprint_lib_dir": "",
+    "last_footprint3d_dir": "${KICAD8_3RD_PARTY}/AudioJacks/AudioJacks.3dshapes",
+    "last_footprint_lib_dir": "/Users/elliott/Documents/KiCad/8.0/footprints",
     "last_imperial_units": 0,
     "last_metric_units": 1,
     "max_undo_items": 0,
