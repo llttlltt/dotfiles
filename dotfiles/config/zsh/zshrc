@@ -8,8 +8,8 @@ export NULLCMD=bat
 
 # CREATE ALIASES
 ## Coloured output for ls and git status using exa
-alias ls="exa --header --all --long --git --icons --classify"
-alias exa="exa --header --all --long --git --icons --classify"
+alias ls="eza --header --all --long --git --icons --classify"
+alias exa="eza --header --all --long --git --icons --classify"
 ## Syntax highlighting for man (manual) pages using bat-extras
 alias man=batman
 ## Syntax highlighting for grep (search) using bat-extras
