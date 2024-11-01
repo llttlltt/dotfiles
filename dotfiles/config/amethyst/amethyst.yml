@@ -38,7 +38,7 @@ enables-layout-hud: true
 enables-layout-hud-on-space-change: true
 
 ## true to maintain layout state across application executions (default true).
-# restore-layouts-on-launch: true
+restore-layouts-on-launch: true
 
 ## The integer percentage of the screen dimension to increment and decrement main pane ratios by (default 5).
 # window-resize-step: 5
@@ -84,6 +84,7 @@ floating-is-blacklist: false
 ## List of bundle identifiers for applications to either be automatically floating or automatically tiled based on floating-is-blacklist (default []).
 floating:
   [
+##    Previous config for `blacklist: true`
 ##    "com.apple.systempreferences",
 ##    "com.if.Amphetamine",
 ##    "com.sindresorhus.Velja",
@@ -98,16 +99,22 @@ floating:
 ##    "com.apple.finder",
 ##    "com.runningwithcrayons.Alfred",
 ##    "com.runningwithcrayons.Alfred-Preferences",
+##
+##    New config for `blacklist: false`
+
+    "org.alacritty",
+    "com.microsoft.VSCode",
+    "org.mozilla.firefox"
   ]
 
 ## true to display some optional debug information in the layout HUD (default false).
 # debug-layout-info: false
 
 ## First mod (default option + shift).
-# mod1:
+mod1:
   # - option
-  # - shift
-  # - control
+  - shift
+  - control
   # - command
 
 ## Second mod (default option + shift + control).
