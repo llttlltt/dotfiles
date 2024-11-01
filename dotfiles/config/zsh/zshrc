@@ -84,6 +84,11 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 ### Opt-out of telemetry (data collection by Microsoft)
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
 
+## opam (ocaml)
+[[ ! -r /Users/elliott/.opam/opam-init/init.zsh ]] || source /Users/elliott/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
+eval $(opam env --switch=default)
+
+
 ## nvm
 ### place this after nvm initialization!
 ### https://github.com/nvm-sh/nvm#zsh
