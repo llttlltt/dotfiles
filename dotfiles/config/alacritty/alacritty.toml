@@ -1,5 +1,6 @@
 # https://alacritty.org/config-alacritty.html
 
+[general]
 live_config_reload = true
 
 [scrolling]
@@ -10,7 +11,7 @@ multiplier = 1
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 args = ["-l", "-c", "tmux attach || tmux"]
 
@@ -29,7 +30,6 @@ blur = true
 title = "Alacritty"
 # startup_mode: "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
 startup_mode = "Windowed"
-option_as_alt = "Both"
 
 [window.class]
 general = "Alacritty"
