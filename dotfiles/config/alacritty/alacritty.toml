@@ -2,17 +2,6 @@
 
 live_config_reload = true
 
-[[hints.enabled]]
-regex = '(?i)(?:~\/|\B(?<!\…)\/[a-z.]+|\B[.]\/|https?:\/\/|ipfs:|ipns:|magnet:|mailto:|gemini:\/\/|gopher:\/\/|news:|file:|git:\/\/|ssh:|ftp:\/\/)[^\s<>\"^⟨⟩()`|]+'
-hyperlinks = true
-post_processing = true
-persist = false
-# action: "Copy" | "Paste" | "Select" | "MoveViModeCursor"
-action = "Select"
-command = { program = "open", args = [] }
-binding = { key = "U", mods = "Control|Shift" }
-mouse = { mods = "Command", enabled = true }
-
 [scrolling]
 history = 100000
 multiplier = 1
@@ -34,12 +23,13 @@ osc52 = "CopyPaste"
 decorations = "Buttonless"
 dynamic_padding = true
 dynamic_title = true
-opacity = 0.75
+opacity = 0.90
 # blur: true | false # (works on macOS/KDE Wayland)
 blur = true
 title = "Alacritty"
 # startup_mode: "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
 startup_mode = "Windowed"
+option_as_alt = "Both"
 
 [window.class]
 general = "Alacritty"
