@@ -80,6 +80,9 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
+## rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 ## azure-functions-core-tools
 ### Opt-out of telemetry (data collection by Microsoft)
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
