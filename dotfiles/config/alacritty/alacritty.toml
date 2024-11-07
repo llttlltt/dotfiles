@@ -22,13 +22,13 @@ multiplier = 1
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
-[terminal.shell]
-program = "/bin/zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
-
 [terminal]
 # osc52: "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
 osc52 = "CopyPaste"
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
 
 [window]
 # decorations: "Full" | "None" | "Transparent" | "Buttonless"
