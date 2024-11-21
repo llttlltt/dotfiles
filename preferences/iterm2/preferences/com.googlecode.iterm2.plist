@@ -848,6 +848,10 @@
 	<integer>786721</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
+	<key>NeverWarnAboutShortLivedSessions_74118BB6-418A-447D-8FCC-375537296236</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_74118BB6-418A-447D-8FCC-375537296236_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
