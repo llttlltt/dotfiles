@@ -11,7 +11,13 @@ export NULLCMD=bat
 alias ls="eza --header --all --long --git --icons --classify"
 alias exa="eza --header --all --long --git --icons --classify"
 ## Syntax highlighting for man (manual) pages using bat-extras
-alias man=batman
+# alias man=batman
+## Use nvim as the manpager
+if [[ "$(command -v nvim)" ]]; then
+  export EDITOR='nvim'
+  export MANPAGER='nvim +Man!'
+  export MANWIDTH=999
+fi
 ## Syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
 ## Default diff highlighting for batdiff using delta
