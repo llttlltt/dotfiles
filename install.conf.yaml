@@ -35,8 +35,8 @@
       path: dotfiles/config/tmux
     ~/.config/bat:
       path: dotfiles/config/bat
-    ~/.config/nvim/lua/custom:
-      path: dotfiles/config/nvim/lua/custom
+    ~/.config/nvim:
+      path: dotfiles/config/nvim
     ~/.config/powershell/profile.ps1:
       path: dotfiles/config/powershell/profile.ps1
     ~/.config/amethyst/amethyst.yml:
