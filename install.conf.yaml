@@ -27,20 +27,22 @@
       path: dotfiles/hushlogin
     ~/.gitconfig:
       path: dotfiles/gitconfig
-    ~/.config/alacritty/alacritty.toml:
-      path: dotfiles/config/alacritty/alacritty.toml
+    ~/.config/alacritty:
+      path: dotfiles/config/alacritty
     ~/.config/starship.toml:
-      path: dotfiles/config/starship/starship.toml
+      path: dotfiles/config/starship.toml
+    ~/.config/aerospace:
+      path: dotfiles/config/aerospace
     ~/.config/tmux:
       path: dotfiles/config/tmux
     ~/.config/bat:
       path: dotfiles/config/bat
     ~/.config/nvim:
       path: dotfiles/config/nvim
-    ~/.config/powershell/profile.ps1:
-      path: dotfiles/config/powershell/profile.ps1
-    ~/.config/amethyst/amethyst.yml:
-      path: dotfiles/config/amethyst/amethyst.yml
+    ~/.config/powershell:
+      path: dotfiles/config/powershell
+    ~/.config/amethyst:
+      path: dotfiles/config/amethyst
     ~/Library/Application Support/lporg:
       path: dotfiles/Library/Application Support/lporg
     ~/Library/Preferences/flavours:
