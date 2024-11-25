@@ -251,6 +251,14 @@ if.app-id = 'com.sindresorhus.Velja' # Velja
 run = 'layout floating'
 
 [[on-window-detected]]
+if.window-title-regex-substring = ' - WhatsApp video call' # WhatsApp (Video Call)
+run = 'layout floating'
+
+[[on-window-detected]]
+if.window-title-regex-substring = ' - WhatsApp voice call' # WhatsApp (Voice Call)
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.microsoft.teams2' # Microsoft Teams
 run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
 
@@ -289,6 +297,14 @@ run = 'move-node-to-workspace C' # mnemonics C - Chat
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode' # Visual Studio Code
+run = 'move-node-to-workspace I' # mnemonics I - IDE
+
+[[on-window-detected]]
+if.app-id = 'com.apple.dt.Xcode' # Xcode
+run = 'move-node-to-workspace I' # mnemonics I - IDE
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ScriptEditor2' # Script Editor
 run = 'move-node-to-workspace I' # mnemonics I - IDE
 
 [[on-window-detected]]
