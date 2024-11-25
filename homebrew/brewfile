@@ -10,6 +10,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "ngrok/ngrok"
+tap "nikitabobko/tap"
 tap "romkatv/powerlevel10k"
 # JPEG image codec that aids compression and decompression
 brew "jpeg-turbo"
@@ -149,6 +150,8 @@ brew "eth-p/software/bat-extras"
 cask "1password-cli"
 # Sound and music editor
 cask "ableton-live-suite"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # Professional graphic design software
 cask "affinity-designer"
 # Professional image editing software
