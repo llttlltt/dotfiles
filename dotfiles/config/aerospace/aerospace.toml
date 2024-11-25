@@ -185,6 +185,10 @@ alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
+# https://nikitabobko.github.io/AeroSpace/commands#workspace
+alt-backtick = ['exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace next --wrap-around']
+alt-shift-backtick = ['exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace prev --wrap-around']
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
