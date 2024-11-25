@@ -2,6 +2,7 @@ tap "1password/tap"
 tap "azure/functions"
 tap "blacktop/tap"
 tap "eth-p/software"
+tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -146,6 +147,8 @@ brew "azure/functions/azure-functions-core-tools@4"
 brew "blacktop/tap/lporg"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+# A window border system for macOS
+brew "felixkratz/formulae/borders"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Sound and music editor
