@@ -12,7 +12,7 @@ after-login-command = []
 after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 hidpi=on'
+    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 hidpi=on',
 ]
 
 # Start AeroSpace at login
@@ -61,11 +61,11 @@ preset = 'qwerty'
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
 inner.horizontal = 10
-inner.vertical =   10
-outer.left =       10
-outer.bottom =     10
-outer.top =        10
-outer.right =      10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -181,15 +181,22 @@ alt-tab = 'workspace-back-and-forth'
 alt-shift-semicolon = 'mode service'
 
 # https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-backtick = ['exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace next --wrap-around']
-alt-shift-backtick = ['exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace prev --wrap-around']
+alt-backtick = [
+    'exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace next --wrap-around',
+]
+alt-shift-backtick = [
+    'exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace prev --wrap-around',
+]
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+f = [
+    'layout floating tiling',
+    'mode main',
+] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
@@ -259,45 +266,45 @@ if.window-title-regex-substring = ' - WhatsApp voice call' # WhatsApp (Voice Cal
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.teams2' # Microsoft Teams
+if.app-id = 'com.microsoft.teams2'                    # Microsoft Teams
 run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
 
 [[on-window-detected]]
 # if.app-id = 'com.microsoft.edgemac' # Microsoft Edge
 if.window-title-regex-substring = '.* - Microsoft Edge - Finevalley(?: \(Admin\))?$'
+run = ['layout floating', 'move-node-to-workspace B']                                # mnemonics B - Business
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Word'                      # Microsoft Word
 run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.Word' # Microsoft Word
+if.app-id = 'com.microsoft.Excel'                     # Microsoft Excel
 run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.Excel' # Microsoft Excel
-run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.Powerpoint' # Microsoft PowerPoint
+if.app-id = 'com.microsoft.Powerpoint'                # Microsoft PowerPoint
 run = ['layout floating', 'move-node-to-workspace B'] # mnemonics B - Business
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp' # WhatsApp
-run = 'move-node-to-workspace C' # mnemonics C - Chat
+run = 'move-node-to-workspace C'    # mnemonics C - Chat
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS' # Messages
-run = 'move-node-to-workspace C' # mnemonics C - Chat
+run = 'move-node-to-workspace C'  # mnemonics C - Chat
 
 [[on-window-detected]]
-if.app-id = 'im.beeper' # Beep
+if.app-id = 'im.beeper'          # Beep
 run = 'move-node-to-workspace C' # mnemonics C - Chat
 
 [[on-window-detected]]
 if.app-id = 'com.codeux.apps.textual' # Textual
-run = 'move-node-to-workspace C' # mnemonics C - Chat
+run = 'move-node-to-workspace C'      # mnemonics C - Chat
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode' # Visual Studio Code
-run = 'move-node-to-workspace I' # mnemonics I - IDE
+run = 'move-node-to-workspace I'   # mnemonics I - IDE
 
 [[on-window-detected]]
 if.app-id = 'com.apple.dt.Xcode' # Xcode
@@ -305,18 +312,18 @@ run = 'move-node-to-workspace I' # mnemonics I - IDE
 
 [[on-window-detected]]
 if.app-id = 'com.apple.ScriptEditor2' # Script Editor
-run = 'move-node-to-workspace I' # mnemonics I - IDE
+run = 'move-node-to-workspace I'      # mnemonics I - IDE
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client' # Spotify
 run = 'move-node-to-workspace M' # mnemonics M - Media player (music / video)
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Music' # Music
+if.app-id = 'com.apple.Music'    # Music
 run = 'move-node-to-workspace M' # mnemonics M - Media player (music / video)
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty' # Alacritty
+if.app-id = 'org.alacritty'      # Alacritty
 run = 'move-node-to-workspace T' # mnemonics T - Terminal
 
 [[on-window-detected]]
@@ -325,16 +332,19 @@ if.app-id = 'company.thebrowser.Browser' # Arc
 run = 'layout floating' # Figure out how to split 
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari' # Safari
+if.app-id = 'com.apple.Safari'   # Safari
 run = 'move-node-to-workspace W' # mnemonics W - Web browser
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox' # Firefox
+run = 'move-node-to-workspace W'  # mnemonics W - Web browser
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'  # Chrome
 run = 'move-node-to-workspace W' # mnemonics W - Web browser
 
 [[on-window-detected]]
-if.app-id = 'com.google.Chrome' # Chrome
-run = 'move-node-to-workspace W' # mnemonics W - Web browser
-
-[[on-window-detected]]
-run = ['layout floating', 'move-node-to-workspace D'] # by default float all windows not specified above
+run = [
+    'layout floating',
+    'move-node-to-workspace D',
+] # by default float all windows not specified above
