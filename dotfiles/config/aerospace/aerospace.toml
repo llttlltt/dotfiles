@@ -321,7 +321,8 @@ run = 'move-node-to-workspace T' # mnemonics T - Terminal
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser' # Arc
-run = 'move-node-to-workspace W' # mnemonics W - Web browser
+# run = 'move-node-to-workspace W' # mnemonics W - Web browser
+run = 'layout floating' # Figure out how to split 
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari' # Safari
