@@ -100,6 +100,7 @@ outer.right = 10
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
+alt-z = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
@@ -116,6 +117,7 @@ alt-shift-l = 'move right'
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
+alt-shift-0 = 'balance-sizes'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 # alt-1 = 'workspace 1' # In your config, you can drop workspace bindings that you don't need
@@ -255,6 +257,10 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.sindresorhus.Velja' # Velja
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.1password.1password' # 1Password
 run = 'layout floating'
 
 [[on-window-detected]]
