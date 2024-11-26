@@ -10,14 +10,6 @@ export NULLCMD=bat
 ## Coloured output for ls and git status using exa
 alias ls="eza --header --all --long --git --icons --classify"
 alias exa="eza --header --all --long --git --icons --classify"
-## Syntax highlighting for man (manual) pages using bat-extras
-# alias man=batman
-## Use nvim as the manpager
-if [[ "$(command -v nvim)" ]]; then
-  export EDITOR='nvim'
-  export MANPAGER='nvim +Man!'
-  export MANWIDTH=999
-fi
 ## Syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
 ## Default diff highlighting for batdiff using delta
@@ -27,10 +19,14 @@ alias trail='<<<${(F)path}'
 ## Remove to system trash
 alias rm=trash
 ## neovim
-alias vi='nvim'
-alias vim='nvim'
-alias vimdiff='nvim -d'
-export EDITOR=nvim
+if [[ "$(command -v nvim)" ]]; then
+  export EDITOR='nvim'
+  export MANPAGER='nvim +Man!'
+  export MANWIDTH=999
+  alias vi='nvim'
+  alias vim='nvim'
+  alias vimdiff='nvim -d'
+fi
 ## zshrc
 alias zshrc="vim ~/.zshrc && source ~/.zshrc"
 ## fzf
