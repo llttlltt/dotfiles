@@ -10,9 +10,9 @@ command = "open" # On macOS
 hyperlinks = true
 post_processing = true
 persist = false
-mouse = { enabled = true, mods = "Shift|Command" }
+mouse = { enabled = true, mods = "Command" }
 binding = { key = "U", mods = "Control|Shift" }
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://|www.)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
 
 [scrolling]
 history = 100000
@@ -28,7 +28,11 @@ osc52 = "CopyPaste"
 
 [terminal.shell]
 program = "/bin/zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
+args = [
+	"-l",
+	"-c",
+	"tmux attach-session -t $(tmux list-sessions | command grep -v attached | head -n 1 | cut -d: -f1) || tmux",
+]
 
 [window]
 # decorations: "Full" | "None" | "Transparent" | "Buttonless"
