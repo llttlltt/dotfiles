@@ -3,11 +3,6 @@ apps:
     - number: 1
     - number: 2
       items:
-        - Contacts
-        - Calendar
-        - Home
-        - Clock
-        - System Settings
         - folder: MacOS
           pages:
             - number: 1
@@ -16,49 +11,20 @@ apps:
                 - Books
                 - Calculator
                 - Dictionary
-                - Find My
                 - Freeform
                 - Maps
                 - News
                 - Notes
-                - Photo Booth
                 - Photos
                 - Podcasts
                 - Preview
                 - Reminders
-                - Siri
                 - Stocks
                 - Voice Memos
                 - Weather
-        - folder: Other
-          pages:
-            - number: 1
-              items:
-                - Activity Monitor
-                - AirPort Utility
-                - Audio MIDI Setup
-                - Automator
-                - Bluetooth File Exchange
-                - ColorSync Utility
-                - Console
-                - Digital Colour Meter
-                - Disk Utility
-                - Feedback Assistant
-                - Font Book
-                - Grapher
-                - Image Capture
-                - Keychain Access
-                - Migration Assistant
-                - Mission Control
-                - QuickTime Player
-                - Screenshot
-                - Script Editor
-                - Stickies
-                - System Information
-                - Terminal
-                - TextEdit
-                - Time Machine
-                - VoiceOver Utility
+                - Siri
+                - Find My
+                - Photo Booth
         - folder: Communication
           pages:
             - number: 1
@@ -74,10 +40,10 @@ apps:
           pages:
             - number: 1
               items:
-                - Music
                 - Spotify
                 - TV
                 - VLC
+                - Music
         - folder: Developer
           pages:
             - number: 1
@@ -94,10 +60,10 @@ apps:
                 - Scriptable
                 - Shortcuts
                 - Sublime Text
-                - Visual Studio Code
-                - Web Server for Chrome
                 - Xcode
                 - XrmToolBox
+                - Web Server for Chrome
+                - Visual Studio Code
         - folder: Creative
           pages:
             - number: 1
@@ -118,22 +84,23 @@ apps:
             - number: 1
               items:
                 - AetherSX2
-                - Baldur's Gate 3
-                - Celeste
-                - Chess
                 - Dolphin
                 - Dolphin Updater
-                - FTL Faster Than Light
-                - Hades
-                - Hollow Knight
-                - League of Legends
-                - Melatonin
-                - No Man's Sky
                 - Origin
-                - Papers, Please
                 - Riot Client
                 - Shadow PC
+                - Melatonin
+                - Hades
+                - Celeste
                 - Steam
+                - Minecraft
+                - Steam
+                - Hollow Knight
+                - Papers, Please
+                - No Man's Sky
+                - Chess
+                - Baldur's Gate 3
+                - FTL Faster Than Light
         - folder: CrossOver
           pages:
             - number: 1
@@ -148,7 +115,6 @@ apps:
                 - Anki
                 - Ground News
                 - Instapaper
-                - Kindle
                 - Notion
                 - Obsidian
                 - OmniGraffle
@@ -165,7 +131,7 @@ apps:
                 - AltTab
                 - Amethyst
                 - Amphetamine
-                - Bartender 4
+                - Bartender 5
                 - Be Focused Pro
                 - BetterSnapTool
                 - Blackmagic Disk Speed Test
@@ -186,13 +152,12 @@ apps:
                 - Microsoft OneNote
                 - Microsoft Outlook
                 - Microsoft PowerPoint
-                - Microsoft Remote Desktop
-                - Microsoft Teams (work or school)
-                - Microsoft Teams classic
+                - Microsoft Teams
                 - Microsoft To Do
                 - Microsoft Word
                 - OneDrive
         - MacFamilyTree 9
+        - QuickTime Player
         - folder: Browsers
           pages:
             - number: 1
@@ -203,25 +168,58 @@ apps:
                 - Google Chrome
                 - Microsoft Edge
                 - Safari
-    - number: 3
-      items:
-        - Blender
-        - folder: KiCad
+        - Contacts
+        - Calendar
+        - Home
+        - Clock
+        - System Settings
+        - TextEdit
+        - Time Machine
+        - Font Book
+        - Mission Control
+        - Stickies
+        - Image Capture
+        - Automator
+        - folder: Other
           pages:
             - number: 1
               items:
-                - Bitmap2Component
-                - Eeschema
-                - GerbView
-                - KiCad
-                - Page Layout Editor
-                - PCB Calculator
-                - Pcbnew
+                - Grapher
+                - VoiceOver Utility
+                - AirPort Utility
+                - Migration Assistant
+                - Terminal
+                - Activity Monitor
+                - Console
+                - Keychain Access
+                - System Information
+                - Script Editor
+                - Disk Utility
+                - Digital Colour Meter
+                - ColorSync Utility
+                - Screenshot
+                - Bluetooth File Exchange
+                - Audio MIDI Setup
+                - Feedback Assistant
+                - Screen Sharing
+                - Print Centre
+                - LogiPluginService
+        - Send to Kindle
+        - MusicBrainz Picard
+        - GerbView
+        - Image Converter
+        - KiCad
+        - Page Layout Editor
+        - PCB Calculator
+        - PCB Editor
+        - Schematic Editor
+    - number: 3
+      items:
         - folder: Adobe
           pages:
             - number: 1
               items:
-                - Adobe Creative Cloud
+                - Creative Cloud
                 - Adobe Lightroom
         - folder: Sony
           pages:
@@ -239,14 +237,47 @@ apps:
                 - Instapaper Save
                 - OverPicture
                 - Userscripts
+        - Jayson
+        - Raspberry Pi Imager
+        - PrusaSlicer
+        - Chatpad AI
+        - Hex Fiend
+        - Ledger Live
+        - Ukelele
+        - RocketSim
+        - TablePlus
+        - DBngin
+        - Opal
+        - Autodesk Fusion
+        - Autodesk Fusion Service Utility
+        - Remove Autodesk Fusion
+        - rekordbox
+        - Meshtastic
+        - Playgrounds
+        - Teensy
+        - PluginDoctor
+        - VCV Rack 2 Pro
+        - Softube Central
+        - Chroma
+        - Textual
+        - folder: Adobe Creative Cloud (Other)
+          pages:
+            - number: 1
+              items:
+                - Adobe Creative Cloud Diagnostics
+        - Adobe Photoshop 2025
+        - Kindle
+        - Harmony Bloom
+        - Arduino IDE
+        - Blender
+        - calibre
+        - KeyClu
+        - Logic Pro
     - number: 4
       items:
-        - Ableton Live 11 Suite
-        - Logic Pro
+        - Ableton Live 12 Suite
         - Max
         - MuseScore 3
-        - Nuendo 12
-        - rekordbox
         - folder: Audio (Utilities)
           pages:
             - number: 1
@@ -330,11 +361,11 @@ apps:
                 - Absynth 5
                 - Battery 4
                 - FM8
-                - Guitar Rig 5
-                - Kontakt
                 - Kontakt 7
                 - Massive
                 - Reaktor 6
+                - Kontakt
+                - Guitar Rig 5
         - folder: Pioneer
           pages:
             - number: 1
@@ -377,17 +408,22 @@ apps:
               items:
                 - Vienna Ensemble Pro AU3
                 - Vienna Ensemble Pro Server
+        - Slack
+        - AeroSpace
+        - Nuendo 12
 widgets:
   pages: []
 dock_items:
   apps:
+    - /Applications/Todoist.app
+    - /System/Applications/Calendar.app
+    - /Applications/Obsidian.app
     - /Applications/Arc.app
     - /Applications/Beeper.app
-    - /Applications/Spotify.app
+    - /Applications/WhatsApp.app
+    - /Applications/Textual.app
     - /Applications/Visual Studio Code.app
     - /Applications/Alacritty.app
-    - /Applications/Todoist.app
-    - /Applications/Obsidian.app
   settings:
     autohide: true
     largesize: 128
@@ -395,5 +431,5 @@ dock_items:
     minimize-to-application: false
     mru-spaces: false
     show-recents: false
-    tilesize: 57
+    tilesize: 66
 desktop: {}
