@@ -352,5 +352,5 @@ run = 'move-node-to-workspace W' # mnemonics W - Web browser
 [[on-window-detected]]
 run = [
     'layout floating',
-    'move-node-to-workspace D',
+    # 'move-node-to-workspace D',
 ] # by default float all windows not specified above
