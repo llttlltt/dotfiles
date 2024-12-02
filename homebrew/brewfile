@@ -3,10 +3,9 @@ tap "azure/functions"
 tap "blacktop/tap"
 tap "eth-p/software"
 tap "felixkratz/formulae"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
@@ -29,14 +28,10 @@ brew "aom"
 brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # C library implementing the SSH2 protocol
 brew "libssh2"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
@@ -47,12 +42,14 @@ brew "btop"
 brew "c-ares"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
-# Open source suite of directory software
-brew "openldap"
+# Cross-platform make
+brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Modern replacement for 'ls'
-brew "exa"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
+# Modern, maintained replacement for ls
+brew "eza"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Library for JPEG-2000 image manipulation
@@ -77,8 +74,12 @@ brew "gpgme"
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@75"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Compiler for generating binary data parsers
+brew "kaitai-struct-compiler"
 # Network authentication protocol
 brew "krb5"
 # Pager program similar to more
@@ -87,24 +88,32 @@ brew "less"
 brew "llvm"
 # Lightning memory-mapped database: key-value data store
 brew "lmdb"
+# Powerful, lightweight programming language
+brew "lua"
+# Package manager for the Lua programming language
+brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
+# OCaml package manager
+brew "opam"
+# Open source suite of directory software
+brew "openldap"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # General-purpose scripting language
 brew "php", restart_service: true
-# General-purpose scripting language
-brew "php@7.4"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
@@ -115,8 +124,12 @@ brew "putty"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
+# Tools for Multiple Arcade Machine Emulator
+brew "rom-tools"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Experimental Rust compiler front-end for IDEs
@@ -127,6 +140,10 @@ brew "shellcheck"
 brew "starship"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
+# Change macOS audio source from the command-line
+brew "switchaudio-osx"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -149,6 +166,8 @@ brew "blacktop/tap/lporg"
 brew "eth-p/software/bat-extras"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
+# Packer
+brew "hashicorp/tap/packer"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Sound and music editor
@@ -175,8 +194,12 @@ cask "anaconda"
 cask "anki"
 # Chromium based browser
 cask "arc"
+# Electronics prototyping platform
+cask "arduino-ide"
 # Records audio from any application
 cask "audio-hijack"
+# Integrated CAD, CAM, CAE, and PCB software
+cask "autodesk-fusion"
 # Menu bar icon organiser
 cask "bartender"
 # Universal chat app powered by Matrix
@@ -185,14 +208,20 @@ cask "beeper"
 cask "blender"
 # Open-source browser prompter
 cask "browserosaurus"
+# E-books management software
+cask "calibre"
 # Free and open-source web browser
 cask "chromium"
 # Tool to run Windows software
 cask "crossover"
 # Flexible space to create your own interactive software
 cask "cycling74-max"
+# Database version management tool
+cask "dbngin"
 # Voice and text chat software
 cask "discord"
+# NDI integration for OBS Studio
+cask "distroav"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Online diagram software
@@ -216,40 +245,27 @@ cask "font-anton"
 cask "font-archivo"
 cask "font-archivo-black"
 cask "font-archivo-narrow"
-# Font with greater legibility and readability for low vision readers
 cask "font-atkinson-hyperlegible"
-# Developer targeted fonts with a high number of glyphs
 cask "font-droid-sans-mono-nerd-font"
-# Icon set and toolkit
 cask "font-fontawesome"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-heebo"
-# Variable font designed for display
 cask "font-inter"
 cask "font-inter-tight"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 cask "font-lato"
-# Expanded by font bureau with a range of 8 weights
 cask "font-lexend"
-# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 cask "font-montserrat"
-# Developer targeted fonts with a high number of glyphs
 cask "font-open-dyslexic-nerd-font"
 cask "font-oswald"
 cask "font-red-hat-display"
 cask "font-red-hat-mono"
 cask "font-red-hat-text"
-# Font with a mechanical skeleton and the forms are largely geometric
 cask "font-roboto"
 cask "font-sora"
-# Typeface originally designed for the art center Synesthésie
 cask "font-syne"
-# Another take on letting go of control
 cask "font-syne-mono"
-# Originally designed for the Art Center 'Synesthésie'
 cask "font-syne-tactile"
 # Git client focusing on productivity
 cask "gitkraken"
@@ -257,25 +273,27 @@ cask "gitkraken"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Hex editor focussing on speed
+cask "hex-fiend"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Professional audio software for audio recording, mixing, broadcast and others
 cask "izotope-product-portal"
+# Find shortcuts for any installed application
+cask "keyclu"
 # Electronics design automation suite
 cask "kicad"
-# Interface for reading and syncing eBooks
-cask "kindle"
 # NDI SDK
 cask "libndi"
 # Software for Logitech devices
-cask "logi-options-plus"
+cask "logi-options+"
 # Cable-free audio router
 cask "loopback"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Web browser
+# Multi-platform web browser
 cask "microsoft-edge"
 # Spreadsheet software
 cask "microsoft-excel"
@@ -283,20 +301,18 @@ cask "microsoft-excel"
 cask "microsoft-outlook"
 # Presentation software
 cask "microsoft-powerpoint"
-# Remote desktop client
-cask "microsoft-remote-desktop"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Word processor
 cask "microsoft-word"
+# Music tagger
+cask "musicbrainz-picard"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# NDI integration for OBS Studio
-cask "obs-ndi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Visual communication software
@@ -313,10 +329,16 @@ cask "parallels"
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+cask "prusaslicer"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
 # Free Dj app to prepare and manage your music files
 cask "rekordbox"
 # Screen recorder with audio
 cask "screenflick"
+# Team communication and collaboration software
+cask "slack"
 # Download manager for Spitfire audio libraries
 cask "spitfire-audio"
 # Cloud-based music creation and collaboration platform
@@ -325,8 +347,16 @@ cask "splice"
 cask "sublime-text"
 # VPN client for secure internet access and private browsing
 cask "surfshark"
+# Native GUI tool for relational databases
+cask "tableplus"
+# Firmware flashing utility
+cask "teensy"
+# Application for interacting with Internet Relay Chat (IRC) chatrooms
+cask "textual"
 # To-do list
 cask "todoist"
+# Unicode keyboard layout editor
+cask "ukelele"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -365,7 +395,6 @@ vscode "azurite.azurite"
 vscode "bencoleman.armview"
 vscode "blinkshellinc.blink-fs"
 vscode "bradlc.vscode-tailwindcss"
-vscode "bungcip.better-toml"
 vscode "catppuccin.catppuccin-vsc"
 vscode "christian-kohler.npm-intellisense"
 vscode "davidanson.vscode-markdownlint"
@@ -376,9 +405,12 @@ vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
+vscode "fabianlauer.vs-code-xml-format"
+vscode "fill-labs.dependi"
 vscode "firefox-devtools.vscode-firefox-debug"
 vscode "formulahendry.auto-rename-tag"
 vscode "foxundermoon.shell-format"
+vscode "fudgepops.kaitai-struct-vscode"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "gruntfuggly.todo-tree"
@@ -390,6 +422,7 @@ vscode "maciejdems.add-to-gitignore"
 vscode "malmaud.tmux"
 vscode "mermade.openapi-lint"
 vscode "mkoeppen.generate-data"
+vscode "moalamri.inline-fold"
 vscode "ms-azure-devops.azure-pipelines"
 vscode "ms-azuretools.azure-dev"
 vscode "ms-azuretools.vscode-azureappservice"
@@ -417,13 +450,18 @@ vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.azure-account"
 vscode "ms-vscode.azurecli"
+vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.hexeditor"
 vscode "ms-vscode.powershell"
 vscode "ms-vscode.vscode-node-azure-pack"
 vscode "msazurermtools.azurerm-vscode-tools"
+vscode "ocamllabs.ocaml-platform"
 vscode "oderwat.indent-rainbow"
 vscode "orta.vscode-twoslash-queries"
+vscode "parallelsdesktop.parallels-desktop"
 vscode "pkief.material-icon-theme"
 vscode "pmndrs.pmndrs"
 vscode "postman.postman-for-vscode"
@@ -431,22 +469,26 @@ vscode "prisma.prisma"
 vscode "quicktype.quicktype"
 vscode "rangav.vscode-thunder-client"
 vscode "redhat.vscode-yaml"
+vscode "richie5um2.vscode-sort-json"
 vscode "ritwickdey.liveserver"
 vscode "rkoubou.ksp"
 vscode "rust-lang.rust-analyzer"
-vscode "serayuzgur.crates"
 vscode "simonsiefke.svg-preview"
+vscode "sswg.swift-lang"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "sukumo28.wav-preview"
 vscode "tamasfe.even-better-toml"
+vscode "tauri-apps.tauri-vscode"
 vscode "timonwong.shellcheck"
+vscode "twxs.cmake"
 vscode "tyriar.lorem-ipsum"
 vscode "unifiedjs.vscode-mdx"
+vscode "vadimcn.vscode-lldb"
 vscode "vue.volar"
-vscode "vue.vscode-typescript-vue-plugin"
 vscode "wallabyjs.quokka-vscode"
 vscode "yinfei.luahelper"
 vscode "yoavbls.pretty-ts-errors"
+vscode "yutengjing.open-in-external-app"
 vscode "yzhang.markdown-all-in-one"
 vscode "zainchen.json"
 vscode "zignd.html-css-class-completion"
