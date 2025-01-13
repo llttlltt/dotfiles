@@ -32,6 +32,8 @@ brew "apr-util"
 brew "azure-cli"
 # C library implementing the SSH2 protocol
 brew "libssh2"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
@@ -46,8 +48,6 @@ brew "fontconfig"
 brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Modern, maintained replacement for ls
 brew "eza"
 # GNU Transport Layer Security (TLS) Library
@@ -92,14 +92,16 @@ brew "lmdb"
 brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
+# Platform built on V8 to build network applications
+brew "node"
+# CLI for Node.js style checker and lint tool for Markdown files
+brew "markdownlint-cli"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
-brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # OCaml package manager
@@ -111,7 +113,7 @@ brew "openvino"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php", restart_service: :changed
 # Fast, disk space efficient package manager
 brew "pnpm"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -128,8 +130,6 @@ brew "python@3.10"
 brew "python@3.11"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Tools for Multiple Arcade Machine Emulator
-brew "rom-tools"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Experimental Rust compiler front-end for IDEs
@@ -144,6 +144,8 @@ brew "subversion"
 brew "swiftlint"
 # Change macOS audio source from the command-line
 brew "switchaudio-osx"
+# TOML toolkit written in Rust
+brew "taplo"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -204,8 +206,6 @@ cask "bartender"
 cask "beeper"
 # 3D creation suite
 cask "blender"
-# Open-source browser prompter
-cask "browserosaurus"
 # E-books management software
 cask "calibre"
 # Free and open-source web browser
@@ -265,8 +265,6 @@ cask "font-sora"
 cask "font-syne"
 cask "font-syne-mono"
 cask "font-syne-tactile"
-# Git client focusing on productivity
-cask "gitkraken"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -281,8 +279,6 @@ cask "istat-menus"
 cask "iterm2"
 # Professional audio software for audio recording, mixing, broadcast and others
 cask "izotope-product-portal"
-# Find shortcuts for any installed application
-cask "keyclu"
 # Electronics design automation suite
 cask "kicad"
 # NDI SDK
@@ -379,16 +375,22 @@ mas "Final Cut Pro", id: 424389933
 mas "Ground News", id: 1324203419
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
+mas "Jayson", id: 1468691718
+mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
 mas "MacFamilyTree 9", id: 1458866808
+mas "Meshtastic", id: 1586432531
 mas "Microsoft To Do", id: 1274495053
 mas "MODALapp", id: 1187314855
 mas "Motion", id: 434290957
 mas "OverPicture", id: 1188020834
+mas "Playgrounds", id: 1496833156
+mas "RocketSim", id: 1504940162
 mas "The Unarchiver", id: 425424353
 mas "Userscripts-Mac-App", id: 1463298887
 mas "Velja", id: 1607635845
 mas "Xcode", id: 497799835
+mas "‎WhatsApp", id: 310633997
 vscode "aaron-bond.better-comments"
 vscode "ambar.bundle-size"
 vscode "azurite.azurite"

@@ -8,23 +8,23 @@ apps:
             - number: 1
               items:
                 - App Store
-                - Books
                 - Calculator
                 - Dictionary
                 - Freeform
                 - Maps
                 - News
-                - Notes
                 - Photos
                 - Podcasts
                 - Preview
                 - Reminders
                 - Stocks
                 - Voice Memos
-                - Weather
-                - Siri
                 - Find My
+                - Siri
                 - Photo Booth
+                - Weather
+                - Books
+                - Notes
         - folder: Communication
           pages:
             - number: 1
@@ -53,7 +53,6 @@ apps:
                 - Apple Configurator
                 - Developer
                 - Docker
-                - GitKraken
                 - iTerm
                 - Postman
                 - PowerShell
@@ -62,8 +61,8 @@ apps:
                 - Sublime Text
                 - Xcode
                 - XrmToolBox
-                - Web Server for Chrome
                 - Visual Studio Code
+                - Web Server for Chrome
         - folder: Creative
           pages:
             - number: 1
@@ -87,27 +86,26 @@ apps:
                 - Dolphin
                 - Dolphin Updater
                 - Origin
-                - Riot Client
                 - Shadow PC
                 - Melatonin
                 - Hades
                 - Celeste
                 - Steam
                 - Minecraft
-                - Steam
                 - Hollow Knight
                 - Papers, Please
                 - No Man's Sky
                 - Chess
                 - Baldur's Gate 3
                 - FTL Faster Than Light
+                - Steam
         - folder: CrossOver
           pages:
             - number: 1
               items:
                 - CrossOver
-                - Risk of Rain Returns
                 - Steam Support Center
+                - Risk of Rain Returns
         - folder: Productivity
           pages:
             - number: 1
@@ -157,7 +155,6 @@ apps:
                 - Microsoft Word
                 - OneDrive
         - MacFamilyTree 9
-        - QuickTime Player
         - folder: Browsers
           pages:
             - number: 1
@@ -173,12 +170,12 @@ apps:
         - Home
         - Clock
         - System Settings
+        - Image Capture
         - TextEdit
         - Time Machine
         - Font Book
         - Mission Control
         - Stickies
-        - Image Capture
         - Automator
         - folder: Other
           pages:
@@ -213,6 +210,7 @@ apps:
         - PCB Calculator
         - PCB Editor
         - Schematic Editor
+        - QuickTime Player
     - number: 3
       items:
         - folder: Adobe
@@ -244,7 +242,6 @@ apps:
         - Hex Fiend
         - Ledger Live
         - Ukelele
-        - RocketSim
         - TablePlus
         - DBngin
         - Opal
@@ -271,8 +268,8 @@ apps:
         - Arduino IDE
         - Blender
         - calibre
-        - KeyClu
         - Logic Pro
+        - MetaSynth CTX 1.5
     - number: 4
       items:
         - Ableton Live 12 Suite
@@ -318,7 +315,6 @@ apps:
           pages:
             - number: 1
               items:
-                - Analog Lab V
                 - ARP 2600 V3
                 - Augmented STRINGS
                 - Augmented VOICES
@@ -358,14 +354,14 @@ apps:
           pages:
             - number: 1
               items:
-                - Absynth 5
                 - Battery 4
-                - FM8
                 - Kontakt 7
                 - Massive
                 - Reaktor 6
-                - Kontakt
                 - Guitar Rig 5
+                - Kontakt
+                - FM8
+                - Absynth 5
         - folder: Pioneer
           pages:
             - number: 1
@@ -410,6 +406,20 @@ apps:
                 - Vienna Ensemble Pro Server
         - Slack
         - AeroSpace
+        - XLN Online Installer
+        - Acid V
+        - Augmented BRASS
+        - Augmented GRAND PIANO
+        - Augmented WOODWINDS
+        - CP-70 V
+        - Mini V4
+        - MiniFreak V
+        - Wurli V3
+        - MiniMeters
+        - XX CTX 1.5
+        - OsmoseUpdater_v2.1.14_apple-silicon
+        - Analog Lab V
+        - Ghostty
         - Nuendo 12
 widgets:
   pages: []
@@ -422,8 +432,10 @@ dock_items:
     - /Applications/Beeper.app
     - /Applications/WhatsApp.app
     - /Applications/Textual.app
-    - /Applications/Visual Studio Code.app
     - /Applications/Alacritty.app
+    - /Applications/Visual Studio Code.app
+    - /Applications/Microsoft Edge.app
+    - /Applications/Microsoft Teams.app
   settings:
     autohide: true
     largesize: 128
@@ -431,5 +443,5 @@ dock_items:
     minimize-to-application: false
     mru-spaces: false
     show-recents: false
-    tilesize: 66
+    tilesize: 64
 desktop: {}
