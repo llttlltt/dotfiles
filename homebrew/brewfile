@@ -269,6 +269,8 @@ cask "font-syne-mono"
 cask "font-syne-tactile"
 # Git client focusing on productivity
 cask "gitkraken"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service

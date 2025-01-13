@@ -29,6 +29,8 @@
       path: dotfiles/gitconfig
     ~/.config/alacritty:
       path: dotfiles/config/alacritty
+    ~/.config/ghostty:
+      path: dotfiles/config/ghostty
     ~/.config/starship.toml:
       path: dotfiles/config/starship.toml
     ~/.config/aerospace:

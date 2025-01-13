@@ -1,0 +1,19 @@
+confirm-close-surface = false
+
+macos-titlebar-style = "tabs"
+
+theme = "poimandres"
+
+font-family = "JetBrainsMono Nerd Font"
+font-size = 16
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+bold-is-bright = true
+
+background-opacity = 0.9
+background-blur-radius = 20
+
+window-padding-x = 10
+window-padding-y = 0
+window-padding-balance = true
