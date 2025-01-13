@@ -164,8 +164,6 @@ brew "azure/functions/azure-functions-core-tools@4"
 brew "blacktop/tap/lporg"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
-# A window border system for macOS
-brew "felixkratz/formulae/borders"
 # Packer
 brew "hashicorp/tap/packer"
 # Command-line interface for 1Password
