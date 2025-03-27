@@ -10,8 +10,8 @@ export NULLCMD=bat
 
 # CREATE ALIASES
 ## Coloured output for ls and git status using exa
-alias ls="eza --header --all --long --git --icons --classify"
-alias exa="eza --header --all --long --git --icons --classify"
+alias ls="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
+alias exa="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
 ## Syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
 ## Default diff highlighting for batdiff using delta
