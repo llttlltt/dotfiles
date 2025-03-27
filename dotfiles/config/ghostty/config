@@ -17,3 +17,8 @@ background-blur-radius = 20
 window-padding-x = 10
 window-padding-y = 0
 window-padding-balance = true
+
+macos-icon = "official"
+macos-icon-frame = "aluminum"
+macos-icon-ghost-color = "#A6ACCD"
+macos-icon-screen-color = "#5DE4C7"
