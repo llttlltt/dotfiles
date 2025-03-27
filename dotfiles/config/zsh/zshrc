@@ -1,6 +1,8 @@
 # SET VARIABLES
 ## Bypass MacOS Gatekeeper for Homebrew Cask Installs
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+## Homebrew Path
+export PATH="/opt/homebrew/bin:$PATH"
 ## Set null to use bat instead of cat
 export NULLCMD=bat
 
