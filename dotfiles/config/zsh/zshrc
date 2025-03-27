@@ -92,6 +92,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 ## rust
 export PATH="$HOME/.cargo/bin:$PATH"
+source "$HOME/.cargo/env"
 
 ## azure-functions-core-tools
 ### Opt-out of telemetry (data collection by Microsoft)
