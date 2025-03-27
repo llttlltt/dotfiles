@@ -1,0 +1,101 @@
+{
+    "packages": [
+        {
+            "current_version": "2022.11.18",
+            "install_timestamp": 1741169945,
+            "package": {
+                "author": {
+                    "contact": {
+                        "web": "https://thea.codes"
+                    },
+                    "name": "Alethea Katherine Flowers"
+                },
+                "description": "Dark theme designed by @theacodes",
+                "description_full": "Dark theme designed by @theacodes",
+                "identifier": "codes.thea.witchhazel",
+                "license": "Apache-2.0",
+                "maintainer": {
+                    "contact": {
+                        "web": "https://thea.codes"
+                    },
+                    "name": "Alethea Katherine Flowers"
+                },
+                "name": "Witch Hazel",
+                "resources": {
+                    "Github": "https://github.com/theacodes/witchhazel",
+                    "Website": "https://witchhazel.thea.codes"
+                },
+                "type": "colortheme",
+                "versions": [
+                    {
+                        "download_sha256": "bac5022d0b7c83b865a446eeb77466dc34f7c0a47035bb653ef5dbe414105721",
+                        "download_size": 7281,
+                        "download_url": "https://github.com/theacodes/witchhazel/releases/download/2022.11.18/kicad-witchhazel.zip",
+                        "install_size": 13890,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2022.11.18"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "0.3",
+            "install_timestamp": 1741169943,
+            "package": {
+                "author": {
+                    "contact": {
+                        "web": "https://adamws.github.io"
+                    },
+                    "name": "adamws"
+                },
+                "description": "KiCad plugin for git",
+                "description_full": "Git actions directly from KiCad's PCB editor window",
+                "identifier": "com.github.adamws.kicad-git",
+                "license": "GPL-3.0",
+                "name": "Git plugin",
+                "resources": {
+                    "Bug Tracker": "https://github.com/adamws/kicad-git/issues",
+                    "Homepage": "https://github.com/adamws/kicad-git",
+                    "Sponsor": "https://ko-fi.com/adamws"
+                },
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "54a0a5882e5bc4c557424f352f88877303c6bc95e86d6a66cd804f2cf17cdf7d",
+                        "download_size": 8755,
+                        "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.3/kicad_git-0.3.zip",
+                        "install_size": 7947,
+                        "kicad_version": "7.0",
+                        "status": "stable",
+                        "version": "0.3"
+                    },
+                    {
+                        "download_sha256": "f0ac36a2cfef71f0f5756ae74011a4bc7e849fcb7f59f75172036ff93b1bc101",
+                        "download_size": 8605,
+                        "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.2/kicad_git-0.2.zip",
+                        "install_size": 7797,
+                        "kicad_version": "7.0",
+                        "status": "stable",
+                        "version": "0.2"
+                    },
+                    {
+                        "download_sha256": "a5e3135204c562e216cfce92cd13714a89287c5a63cc5a6f24835ceef6484061",
+                        "download_size": 16807,
+                        "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.1/kicad_git-0.1.zip",
+                        "install_size": 15885,
+                        "kicad_version": "7.0",
+                        "status": "stable",
+                        "version": "0.1"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        }
+    ]
+}
