@@ -59,6 +59,12 @@ bindkey "^X^_" redo
 bindkey "^X\x7f" backward-kill-line
 bindkey "^U" backward-kill-line
 
+## ghostty
+# Manually load ghostty zsh integration
+if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+  source $GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration
+fi
+
 ## flavours
 export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
 export FLAVOURS_CONFIG_FILE="$HOME/Library/Preferences/flavours/config.toml"
