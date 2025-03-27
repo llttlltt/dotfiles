@@ -31,13 +31,16 @@ require("lazy").setup({
 		-- Load plugins from 'lua/custom/plugins/' folder
 		{ import = "custom/plugins" },
 	},
-	-- Automatically check for plugin updates
-	checker = { enabled = true },
+	checker = {
+		-- Automatically check for plugin updates
+		enabled = true,
+		notify = true,
+		frequency = 604800, -- check for updates once a week
+	},
 	change_detection = {
 		-- Automatically check for config file changes and reload the ui
 		enabled = true,
-		-- Get a notification when changes are found
-		notify = true,
+		notify = true, -- Get a notification when changes are found
 	},
 	ui = {
 		-- If you are using a Nerd Font: set icons to an empty table which will use the
