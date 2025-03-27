@@ -8,7 +8,9 @@ apps:
             - number: 1
               items:
                 - App Store
+                - Books
                 - Calculator
+                - Find My
                 - Dictionary
                 - Freeform
                 - Maps
@@ -19,11 +21,9 @@ apps:
                 - Reminders
                 - Stocks
                 - Voice Memos
-                - Find My
                 - Siri
                 - Photo Booth
                 - Weather
-                - Books
                 - Notes
         - folder: Communication
           pages:
@@ -52,7 +52,6 @@ apps:
                 - Anaconda-Navigator
                 - Apple Configurator
                 - Developer
-                - Docker
                 - iTerm
                 - Postman
                 - PowerShell
@@ -60,9 +59,8 @@ apps:
                 - Shortcuts
                 - Sublime Text
                 - Xcode
-                - XrmToolBox
-                - Visual Studio Code
                 - Web Server for Chrome
+                - Visual Studio Code
         - folder: Creative
           pages:
             - number: 1
@@ -92,20 +90,17 @@ apps:
                 - Celeste
                 - Steam
                 - Minecraft
-                - Hollow Knight
                 - Papers, Please
+                - FTL Faster Than Light
+                - Hollow Knight
                 - No Man's Sky
                 - Chess
                 - Baldur's Gate 3
-                - FTL Faster Than Light
-                - Steam
         - folder: CrossOver
           pages:
             - number: 1
               items:
                 - CrossOver
-                - Steam Support Center
-                - Risk of Rain Returns
         - folder: Productivity
           pages:
             - number: 1
@@ -170,7 +165,6 @@ apps:
         - Home
         - Clock
         - System Settings
-        - Image Capture
         - TextEdit
         - Time Machine
         - Font Book
@@ -211,6 +205,7 @@ apps:
         - PCB Editor
         - Schematic Editor
         - QuickTime Player
+        - Image Capture
     - number: 3
       items:
         - folder: Adobe
@@ -250,7 +245,6 @@ apps:
         - Remove Autodesk Fusion
         - rekordbox
         - Meshtastic
-        - Playgrounds
         - Teensy
         - PluginDoctor
         - VCV Rack 2 Pro
@@ -270,7 +264,18 @@ apps:
         - calibre
         - Logic Pro
         - MetaSynth CTX 1.5
+        - Antelope Launcher
+        - Swift Playground
     - number: 4
+      items:
+        - Jomo
+        - DaisyDisk
+        - iZotope Product Portal
+        - Leader Key
+        - Rectangle Pro
+        - Cursor
+        - Aseprite
+    - number: 5
       items:
         - Ableton Live 12 Suite
         - Max
@@ -286,7 +291,6 @@ apps:
           pages:
             - number: 1
               items:
-                - Antelope Launcher
                 - FM3-Edit
         - folder: Audio (Authorisation)
           pages:
@@ -294,7 +298,6 @@ apps:
               items:
                 - Arturia Software Center
                 - iLok License Manager
-                - iZotope Product Portal
                 - Native Access
                 - Sonic Charge Authenticator
                 - Spitfire Audio
@@ -316,8 +319,6 @@ apps:
             - number: 1
               items:
                 - ARP 2600 V3
-                - Augmented STRINGS
-                - Augmented VOICES
                 - B-3 V2
                 - Buchla Easel V
                 - Clavinet V
@@ -358,8 +359,8 @@ apps:
                 - Kontakt 7
                 - Massive
                 - Reaktor 6
-                - Guitar Rig 5
                 - Kontakt
+                - Guitar Rig 5
                 - FM8
                 - Absynth 5
         - folder: Pioneer
@@ -408,9 +409,6 @@ apps:
         - AeroSpace
         - XLN Online Installer
         - Acid V
-        - Augmented BRASS
-        - Augmented GRAND PIANO
-        - Augmented WOODWINDS
         - CP-70 V
         - Mini V4
         - MiniFreak V
@@ -420,6 +418,9 @@ apps:
         - OsmoseUpdater_v2.1.14_apple-silicon
         - Analog Lab V
         - Ghostty
+        - Dorico 5
+        - WiFiman Desktop
+        - Zen Browser
         - Nuendo 12
 widgets:
   pages: []
@@ -429,10 +430,10 @@ dock_items:
     - /System/Applications/Calendar.app
     - /Applications/Obsidian.app
     - /Applications/Arc.app
+    - /Applications/Textual.app
     - /Applications/Beeper.app
     - /Applications/WhatsApp.app
-    - /Applications/Textual.app
-    - /Applications/Alacritty.app
+    - /Applications/Ghostty.app
     - /Applications/Visual Studio Code.app
     - /Applications/Microsoft Edge.app
     - /Applications/Microsoft Teams.app
@@ -443,5 +444,5 @@ dock_items:
     minimize-to-application: false
     mru-spaces: false
     show-recents: false
-    tilesize: 64
+    tilesize: 54
 desktop: {}
