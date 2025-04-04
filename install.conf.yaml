@@ -47,6 +47,8 @@
       path: dotfiles/config/amethyst
     ~/Library/Application Support/lporg:
       path: dotfiles/Library/Application Support/lporg
+    ~/Library/Application Support/Leader Key:
+      path: dotfiles/Library/Application Support/Leader Key
     ~/Library/Preferences/flavours:
       path: dotfiles/Library/Preferences/flavours
     ~/Library/Preferences/kicad:
