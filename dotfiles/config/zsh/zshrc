@@ -1,26 +1,128 @@
 # SET VARIABLES
-## Bypass MacOS Gatekeeper for Homebrew Cask Installs
-export HOMEBREW_CASK_OPTS="--no-quarantine"
-## Homebrew Path
-export PATH="/opt/homebrew/bin:$PATH"
-## Set null to use bat instead of cat
+
+# -----------------------------
+# ------ GLOBAL VARIABLES -----
+# -----------------------------
+
+# set null to use bat instead of cat
 export NULLCMD=bat
 
-# CHANGE ZSH OPTIONS
+# -----------------------------
+# -------- ZSH OPTIONS --------
+# -----------------------------
 
-# CREATE ALIASES
-## Coloured output for ls and git status using exa
-alias ls="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
-alias exa="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
-## Syntax highlighting for grep (search) using bat-extras
+# add locations TO $path Array VARIABLE
+typeset -U path
+
+# USE ZSH PLUGINS
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## some useful options (man zshoptions)
+zle_highlight=('paste:none')
+setopt AUTO_CD
+
+# basic auto/tab complete:
+ZSH_DISABLE_COMPFIX=true
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'm:{a-zA-Z}={A-Za-z} l:|=* r:|=*'
+zmodload zsh/complist
+_comp_options+=(globdots)
+
+# -----------------------------
+# ---------- ALIASES ----------
+# -----------------------------
+
+# syntax highlighting for grep (search) using bat-extras
 alias grep=batgrep
-## Default diff highlighting for batdiff using delta
-export BATDIFF_USE_DELTA=true
-## Shows the path variable, split by newline, in bat (default: cat)
-alias trail='<<<${(F)path}'
-## Remove to system trash
+
+# coloured ls and git status using eza
+alias ls="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
+
+# alias of eza to exa for backwards compatibility
+alias exa="eza --header --all --long --time-style=long-iso --git --icons=always --classify=always"
+
+## remove to system trash
 alias rm=trash
-## neovim
+
+# source and edit zshrc
+alias zshrc="nvim $HOME/.zshrc && source $HOME/.zshrc"
+
+# shows the path variable, split by newline, in bat (default: cat)
+alias trail='<<<${(F)path}'
+
+# make directory and cd into it
+function mkcd() {
+  mkdir -p "$@" && cd "$_"
+}
+
+# cd into a directory and list contents
+function cdls() {
+  cd "$@" && command eza --all
+}
+
+# fzf list directories and cd into selected
+function lscd() {
+  local ls_dir=$(command eza "$@" --header --all --long --git --classify | command awk 'NR==1 || $NF ~ /\/$/' | command fzf --header-lines=1 --nth=-1 --ansi --color=16 --layout=default | command awk '{print $NF}')
+
+  if [ -n "$ls_dir" ]; then
+    cd "$@/$ls_dir"
+  fi
+}
+
+# add git files using fzf (work in progress)
+git_fzf_adder() {
+  git ls-files -m -o --exclude-standard | command fzf --ansi --preview="command batdiff {..} --color=always --delta=true" --preview-window=top:75%,border:sharp --bind "enter:execute(git add {1})" --bind "load:reload(git ls-files -m -o --exclude-standard)" --bind="ctrl-p:execute:(git add -p {1})" --header "Press Enter to add the entire file, or CTRL + p to patch the file" --bind="zero:abort"
+}
+
+# find the id of a program
+function findappid() {
+  local app_list=$(command find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | command sed 's/\.app$//')
+  app_list+=("Finder")
+  local selected_app=$(command printf '%s\n' "${app_list[@]}" | command sort -r | command fzf --query="$(
+    IFS=' '
+    echo "$*"
+  )" -1)
+
+  if [ -n "$selected_app" ]; then
+    osascript -e "id of app \"$selected_app\""
+  fi
+}
+
+# -----------------------------
+# --------- OSX FIXES ---------
+# -----------------------------
+
+# not all terminals set the $TERM_PROGRAM variable used by neovim
+get_term_program() {
+  local list=("Apple_Terminal" "iTerm2")
+  local current_program="$TERM_PROGRAM"
+
+  if [[ -z "$current_program" || ! "${list[*]}" =~ (^|[[:space:]])"$current_program"($|[[:space:]]) ]]; then
+    current_program="$(osascript -e 'tell application "System Events" to name of the first process whose frontmost is true')"
+    export TERM_PROGRAM="$current_program"
+  fi
+
+  echo "$current_program"
+}
+
+# call the function to set the initial value and export it
+TERM_PROGRAM=$(get_term_program)
+export TERM_PROGRAM
+
+# define an alias for the function to be called when accessing $TERM_PROGRAM
+alias TERM_PROGRAM=get_term_program
+
+# -----------------------------
+# ---------- PLUGINS ----------
+# -----------------------------
+
+# homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+export HOMEBREW_CASK_OPTS="--no-quarantine" # bypass MacOS Gatekeeper for cask installs
+
+# neovim
 if [[ "$(command -v nvim)" ]]; then
   export EDITOR='nvim'
   export MANPAGER='nvim +Man!'
@@ -29,84 +131,65 @@ if [[ "$(command -v nvim)" ]]; then
   alias vim='nvim'
   alias vimdiff='nvim -d'
 fi
-## zshrc
-alias zshrc="vim ~/.zshrc && source ~/.zshrc"
-## fzf
+
+# vscode
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# batdiff
+export BATDIFF_USE_DELTA=true
+
+# zoxide
+source /opt/homebrew/etc/profile.d/z.sh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias fzf="command fzf --preview 'command bat {..} --color=always'"
 
-# CUSTOMISE PROMPT(S)
-# autoload colors
-# colors
-# source ~/.dotfiles/dotfiles/config/zsh/themes/over-10k.zsh-theme
-
-# ADD LOCATIONS TO $path Array VARIABLE
-typeset -U path
-path=(
-  $path
-  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-)
-
-# USE ZSH PLUGINS
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.dotfiles/dotfiles/config/zsh/plugins/nvm.zsh
-source /opt/homebrew/etc/profile.d/z.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-## starship
+# starship
 eval "$(starship init zsh)"
 
-## iterm2
-bindkey "^X^_" redo
-bindkey "^X\x7f" backward-kill-line
-bindkey "^U" backward-kill-line
-
-## ghostty
-# Manually load ghostty zsh integration
-if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
-  source $GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration
-fi
-
-## flavours
+# flavours
 export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
 export FLAVOURS_CONFIG_FILE="$HOME/Library/Preferences/flavours/config.toml"
 
-## pyenv
-### TODO: This currently seems irrelevant as it does not add anything to $PATH.
-# local pyenv_path="$HOME/.pyenv"
-# export PYENV_ROOT="$HOME/.pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# ghostty
+if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+  source $GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration # load zsh integration
+fi
 
-## puppeteer
+# iterm
+# bindkey "^X^_" redo
+# bindkey "^X\x7f" backward-kill-line
+# bindkey "^U" backward-kill-line
+
+# puppeteer
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
 
-## 1password
+# 1password
 source /Users/elliott/.config/op/plugins.sh
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
-## llvm (rust and tmux)
+# llvm
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
-## rust
+# rust
 export PATH="$HOME/.cargo/bin:$PATH"
 source "$HOME/.cargo/env"
 
-## azure-functions-core-tools
-### Opt-out of telemetry (data collection by Microsoft)
-export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
+# azure-functions-core-tools
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true # opt-out data collection
 
 ## opam (ocaml)
 [[ ! -r /Users/elliott/.opam/opam-init/init.zsh ]] || source /Users/elliott/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
 eval $(opam env --switch=default)
 
-## nvm
-### place this after nvm initialization!
-### https://github.com/nvm-sh/nvm#zsh
-autoload -U add-zsh-hook
+# nvm
+source ~/.dotfiles/dotfiles/config/zsh/plugins/nvm.zsh
 
+autoload -U add-zsh-hook # place this after nvm initialization https://github.com/nvm-sh/nvm#zsh
 load-nvmrc() {
   local nvmrc_path="$(nvm_find_nvmrc)"
 
@@ -123,89 +206,14 @@ load-nvmrc() {
     nvm use default
   fi
 }
-
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-## anaconda
-# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
-# export PATH="/opt/homebrew/anaconda3/bin:$PATH"  # commented out by conda initialize
+# anaconda
 export PATH=$HOME/anaconda3/bin:$PATH
 
-## conda
+# conda
 export CONDA_VERBOSE=1 # Low verbosity (default) = 1 / Minimal verbosity (no debug messages) = 1
-
-# WRITE FUNCTIONS
-function mkcd() {
-  mkdir -p "$@" && cd "$_"
-}
-
-function cdls() {
-  cd "$@" && command exa --all
-}
-
-function lscd() {
-  local ls_dir=$(command exa "$@" --header --all --long --git --classify | command awk 'NR==1 || $NF ~ /\/$/' | command fzf --header-lines=1 --nth=-1 --ansi --color=16 --layout=default | command awk '{print $NF}')
-
-  if [ -n "$ls_dir" ]; then
-    cd "$@/$ls_dir"
-  fi
-}
-
-# ...AND OTHER SUPRISES
-## Some useful options (man zshoptions)
-zle_highlight=('paste:none')
-setopt AUTO_CD
-
-## Basic auto/tab complete:
-ZSH_DISABLE_COMPFIX=true
-autoload -Uz compinit && compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'm:{a-zA-Z}={A-Za-z} l:|=* r:|=*'
-zmodload zsh/complist
-_comp_options+=(globdots)
-
-# OS FIXES
-## mac
-### not all terminals set the $TERM_PROGRAM variable used by neovim
-
-get_term_program() {
-  local list=("Apple_Terminal" "iTerm2")
-  local current_program="$TERM_PROGRAM"
-
-  if [[ -z "$current_program" || ! "${list[*]}" =~ (^|[[:space:]])"$current_program"($|[[:space:]]) ]]; then
-    current_program="$(osascript -e 'tell application "System Events" to name of the first process whose frontmost is true')"
-    export TERM_PROGRAM="$current_program"
-  fi
-
-  echo "$current_program"
-}
-
-git_fzf_adder() {
-  git ls-files -m -o --exclude-standard | command fzf --ansi --preview="command batdiff {..} --color=always --delta=true" --preview-window=top:75%,border:sharp --bind "enter:execute(git add {1})" --bind "load:reload(git ls-files -m -o --exclude-standard)" --bind="ctrl-p:execute:(git add -p {1})" --header "Press Enter to add the entire file, or CTRL + p to patch the file" --bind="zero:abort"
-
-}
-
-# Call the function to set the initial value and export it
-TERM_PROGRAM=$(get_term_program)
-export TERM_PROGRAM
-
-# Define an alias for the function to be called when accessing $TERM_PROGRAM
-alias TERM_PROGRAM=get_term_program
-
-### find the id of a program
-function findappid() {
-  local app_list=$(command find /Applications -iname '*.app' -maxdepth 1 -exec basename {} \; | command sed 's/\.app$//')
-  app_list+=("Finder")
-  local selected_app=$(command printf '%s\n' "${app_list[@]}" | command sort -r | command fzf --query="$(
-    IFS=' '
-    echo "$*"
-  )" -1)
-
-  if [ -n "$selected_app" ]; then
-    osascript -e "id of app \"$selected_app\""
-  fi
-}
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
