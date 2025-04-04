@@ -141,7 +141,7 @@ if [[ "$(command -v nvim)" ]]; then
 fi
 
 # vscode
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # batdiff
 export BATDIFF_USE_DELTA=true
