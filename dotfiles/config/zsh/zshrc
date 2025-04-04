@@ -126,6 +126,9 @@ alias TERM_PROGRAM=get_term_program
 # ---------- PLUGINS ----------
 # -----------------------------
 
+# starship
+eval "$(starship init zsh)"
+
 # homebrew
 export PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--no-quarantine" # bypass MacOS Gatekeeper for cask installs
@@ -152,9 +155,6 @@ source /opt/homebrew/etc/profile.d/z.sh
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias fzf="command fzf --preview 'command bat {..} --color=always'"
-
-# starship
-eval "$(starship init zsh)"
 
 # flavours
 export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
