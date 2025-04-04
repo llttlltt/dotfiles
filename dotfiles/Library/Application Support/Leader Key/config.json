@@ -43,6 +43,49 @@
 			"value": "open -a \"/Applications/Obsidian.app\" && open -g \"obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed\""
 		},
 		{
+			"actions": [
+				{
+					"key": "0",
+					"label": "Volume 0",
+					"type": "command",
+					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 0"
+				},
+				{
+					"key": "1",
+					"label": "Volume 100%",
+					"type": "command",
+					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 100"
+				},
+				{
+					"key": "-",
+					"label": "Volume -5%",
+					"type": "command",
+					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh -5"
+				},
+				{
+					"key": "=",
+					"label": "Volume +5%",
+					"type": "command",
+					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh +5"
+				},
+				{
+					"key": "m",
+					"label": "",
+					"type": "application",
+					"value": "/System/Applications/Music.app"
+				},
+				{
+					"key": "s",
+					"label": "",
+					"type": "application",
+					"value": "/Applications/Spotify.app"
+				}
+			],
+			"key": "m",
+			"label": "Music",
+			"type": "group"
+		},
+		{
 			"key": "p",
 			"label": "Passwords",
 			"type": "application",
@@ -128,25 +171,6 @@
 					],
 					"key": "c",
 					"label": "Chat",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "m",
-							"label": "",
-							"type": "application",
-							"value": "/System/Applications/Music.app"
-						},
-						{
-							"key": "s",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/Spotify.app"
-						}
-					],
-					"key": "m",
-					"label": "Music",
 					"type": "group"
 				},
 				{
