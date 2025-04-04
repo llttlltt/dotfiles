@@ -1,4 +1,9 @@
-# SET VARIABLES
+# -----------------------------
+# ------ LOCAL VARIABLES ------
+# -----------------------------
+
+local dotfiles_dir="$HOME/.dotfiles/dotfiles/config/zsh"
+local scripts_dir="$dotfiles_dir/custom/scripts"
 
 # -----------------------------
 # ------ GLOBAL VARIABLES -----
@@ -51,6 +56,9 @@ alias zshrc="nvim $HOME/.zshrc && source $HOME/.zshrc"
 
 # shows the path variable, split by newline, in bat (default: cat)
 alias trail='<<<${(F)path}'
+
+# control volume from cli
+alias vol="$scripts_dir/vol.sh"
 
 # make directory and cd into it
 function mkcd() {
