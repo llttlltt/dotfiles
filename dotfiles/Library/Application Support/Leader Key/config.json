@@ -1,418 +1,416 @@
 {
-  "actions" : [
-    {
-      "key" : "`",
-      "label" : "Terminal",
-      "type" : "application",
-      "value" : "/Applications/Ghostty.app"
-    },
-    {
-      "key" : "b",
-      "label" : "Browser",
-      "type" : "application",
-      "value" : "/Applications/Arc.app"
-    },
-    {
-      "key" : "B",
-      "label" : "Browser (Dev)",
-      "type" : "application",
-      "value" : "/Applications/Firefox.app"
-    },
-    {
-      "key" : "e",
-      "label" : "Email",
-      "type" : "application",
-      "value" : "/System/Applications/Mail.app"
-    },
-    {
-      "key" : "f",
-      "label" : "",
-      "type" : "application",
-      "value" : "/System/Library/CoreServices/Finder.app"
-    },
-    {
-      "key" : "i",
-      "label" : "IDE",
-      "type" : "application",
-      "value" : "/Applications/Visual Studio Code.app"
-    },
-    {
-      "key" : "n",
-      "label" : "Note - Obsidian Quick Add Note",
-      "type" : "command",
-      "value" : "open -a \"/Applications/Obsidian.app\" && open -g \"obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed\""
-    },
-    {
-      "key" : "p",
-      "label" : "Passwords",
-      "type" : "application",
-      "value" : "/Applications/1Password.app"
-    },
-    {
-      "key" : "t",
-      "label" : "Task - Todoist Quick Add Task",
-      "type" : "url",
-      "value" : "todoist://openquickadd"
-    },
-    {
-      "actions" : [
-        {
-          "actions" : [
-            {
-              "key" : "a",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/Arc.app"
-            },
-            {
-              "key" : "c",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/Google Chrome.app"
-            },
-            {
-              "key" : "e",
-              "label" : "Edge",
-              "type" : "application",
-              "value" : "/Applications/Microsoft Edge.app"
-            },
-            {
-              "key" : "f",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/Firefox.app"
-            },
-            {
-              "key" : "s",
-              "label" : "",
-              "type" : "application",
-              "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-            }
-          ],
-          "key" : "b",
-          "label" : "Browser",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "b",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/Beeper.app"
-            },
-            {
-              "key" : "i",
-              "label" : "IRC",
-              "type" : "application",
-              "value" : "/Applications/Textual.app"
-            },
-            {
-              "key" : "m",
-              "label" : "",
-              "type" : "application",
-              "value" : "/System/Applications/Messages.app"
-            },
-            {
-              "key" : "t",
-              "label" : "Teams",
-              "type" : "application",
-              "value" : "/Applications/Microsoft Teams.app"
-            },
-            {
-              "key" : "w",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/WhatsApp.app"
-            }
-          ],
-          "key" : "c",
-          "label" : "Chat",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "m",
-              "label" : "",
-              "type" : "application",
-              "value" : "/System/Applications/Music.app"
-            },
-            {
-              "key" : "s",
-              "label" : "",
-              "type" : "application",
-              "value" : "/Applications/Spotify.app"
-            }
-          ],
-          "key" : "m",
-          "label" : "Music",
-          "type" : "group"
-        },
-        {
-          "key" : "o",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/Obsidian.app"
-        },
-        {
-          "key" : "t",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/Todoist.app"
-        }
-      ],
-      "key" : "o",
-      "label" : "Open",
-      "type" : "group"
-    },
-    {
-      "actions" : [
-        {
-          "key" : "f",
-          "label" : "Fullscreen (Maximize)",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=maximize"
-        },
-        {
-          "key" : "c",
-          "label" : "Center",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=center"
-        },
-        {
-          "key" : "h",
-          "label" : "Left half",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=left-half"
-        },
-        {
-          "key" : "l",
-          "label" : "Right half",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=right-half"
-        },
-        {
-          "key" : "k",
-          "label" : "Top half",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=top-half"
-        },
-        {
-          "key" : "j",
-          "label" : "Bottom half",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=bottom-half"
-        },
-        {
-          "actions" : [
-
-          ],
-          "key" : "2",
-          "label" : "Resize: Two columns",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "1",
-              "label" : "First third",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=first-third"
-            },
-            {
-              "key" : "2",
-              "label" : "Center third",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=center-third"
-            },
-            {
-              "key" : "3",
-              "label" : "Last third",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=last-third"
-            },
-            {
-              "key" : "h",
-              "label" : "First two-thirds",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=first-two-thirds"
-            },
-            {
-              "key" : "l",
-              "label" : "Last two-thirds",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=last-two-thirds"
-            }
-          ],
-          "key" : "3",
-          "label" : "Resize: Three columns",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "1",
-              "label" : "Top-left",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=top-left"
-            },
-            {
-              "key" : "2",
-              "label" : "Top-right",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=top-right"
-            },
-            {
-              "key" : "3",
-              "label" : "Bottom-left",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=bottom-left"
-            },
-            {
-              "key" : "4",
-              "label" : "Bottom-right",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=bottom-right"
-            }
-          ],
-          "key" : "4",
-          "label" : "Resize: Four columns",
-          "type" : "group"
-        },
-        {
-          "key" : "p",
-          "label" : "Pin",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=pin"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "l",
-              "label" : "Next Display",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=next-display"
-            },
-            {
-              "key" : "h",
-              "label" : "Previous Display",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=previous-display"
-            },
-            {
-              "key" : "L",
-              "label" : "App Next Display",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=app-next-display"
-            },
-            {
-              "key" : "H",
-              "label" : "App Previous Display",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=app-prev-display"
-            },
-            {
-              "key" : "n",
-              "label" : "Next Display Ratio",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=next-display-ratio"
-            },
-            {
-              "key" : "p",
-              "label" : "Previous Display Ratio",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=prev-display-ratio"
-            }
-          ],
-          "key" : "d",
-          "label" : "Display",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "h",
-              "label" : "Stash Left",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash-left"
-            },
-            {
-              "key" : "k",
-              "label" : "Stash Up",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash-up"
-            },
-            {
-              "key" : "l",
-              "label" : "Stash Right",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash-right"
-            },
-            {
-              "key" : "j",
-              "label" : "Stash Down",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash-down"
-            },
-            {
-              "key" : "-",
-              "label" : "Unstash",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=unstash"
-            },
-            {
-              "key" : "_",
-              "label" : "Unstash All",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=unstash-all"
-            },
-            {
-              "key" : "=",
-              "label" : "Stash",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash"
-            },
-            {
-              "key" : "+",
-              "label" : "Stash All",
-              "type" : "url",
-              "value" : "rectangle-pro://execute-action?name=stash-all"
-            }
-          ],
-          "key" : "s",
-          "label" : "Stash",
-          "type" : "group"
-        },
-        {
-          "key" : "w",
-          "label" : "Close",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=close"
-        },
-        {
-          "key" : "q",
-          "label" : "Quit App",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=quit-app"
-        },
-        {
-          "key" : "F",
-          "label" : "Fullscreen",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=fullscreen"
-        },
-        {
-          "key" : "m",
-          "label" : "Minimize",
-          "type" : "url",
-          "value" : "rectangle-pro://execute-action?name=minimize"
-        }
-      ],
-      "key" : "w",
-      "label" : "Window",
-      "type" : "group"
-    }
-  ],
-  "type" : "group"
+	"actions": [
+		{
+			"key": "`",
+			"label": "Terminal",
+			"type": "application",
+			"value": "/Applications/Ghostty.app"
+		},
+		{
+			"key": "b",
+			"label": "Browser",
+			"type": "application",
+			"value": "/Applications/Arc.app"
+		},
+		{
+			"key": "B",
+			"label": "Browser (Dev)",
+			"type": "application",
+			"value": "/Applications/Firefox.app"
+		},
+		{
+			"key": "e",
+			"label": "Email",
+			"type": "application",
+			"value": "/System/Applications/Mail.app"
+		},
+		{
+			"key": "f",
+			"label": "",
+			"type": "application",
+			"value": "/System/Library/CoreServices/Finder.app"
+		},
+		{
+			"key": "i",
+			"label": "IDE",
+			"type": "application",
+			"value": "/Applications/Visual Studio Code.app"
+		},
+		{
+			"key": "n",
+			"label": "Note - Obsidian Quick Add Note",
+			"type": "command",
+			"value": "open -a \"/Applications/Obsidian.app\" && open -g \"obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed\""
+		},
+		{
+			"key": "p",
+			"label": "Passwords",
+			"type": "application",
+			"value": "/Applications/1Password.app"
+		},
+		{
+			"key": "t",
+			"label": "Task - Todoist Quick Add Task",
+			"type": "url",
+			"value": "todoist://openquickadd"
+		},
+		{
+			"actions": [
+				{
+					"actions": [
+						{
+							"key": "a",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/Arc.app"
+						},
+						{
+							"key": "c",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/Google Chrome.app"
+						},
+						{
+							"key": "e",
+							"label": "Edge",
+							"type": "application",
+							"value": "/Applications/Microsoft Edge.app"
+						},
+						{
+							"key": "f",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/Firefox.app"
+						},
+						{
+							"key": "s",
+							"label": "",
+							"type": "application",
+							"value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+						}
+					],
+					"key": "b",
+					"label": "Browser",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "b",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/Beeper.app"
+						},
+						{
+							"key": "i",
+							"label": "IRC",
+							"type": "application",
+							"value": "/Applications/Textual.app"
+						},
+						{
+							"key": "m",
+							"label": "",
+							"type": "application",
+							"value": "/System/Applications/Messages.app"
+						},
+						{
+							"key": "t",
+							"label": "Teams",
+							"type": "application",
+							"value": "/Applications/Microsoft Teams.app"
+						},
+						{
+							"key": "w",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/WhatsApp.app"
+						}
+					],
+					"key": "c",
+					"label": "Chat",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "m",
+							"label": "",
+							"type": "application",
+							"value": "/System/Applications/Music.app"
+						},
+						{
+							"key": "s",
+							"label": "",
+							"type": "application",
+							"value": "/Applications/Spotify.app"
+						}
+					],
+					"key": "m",
+					"label": "Music",
+					"type": "group"
+				},
+				{
+					"key": "o",
+					"label": "",
+					"type": "application",
+					"value": "/Applications/Obsidian.app"
+				},
+				{
+					"key": "t",
+					"label": "",
+					"type": "application",
+					"value": "/Applications/Todoist.app"
+				}
+			],
+			"key": "o",
+			"label": "Open",
+			"type": "group"
+		},
+		{
+			"actions": [
+				{
+					"key": "f",
+					"label": "Fullscreen (Maximize)",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=maximize"
+				},
+				{
+					"key": "c",
+					"label": "Center",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=center"
+				},
+				{
+					"key": "h",
+					"label": "Left half",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=left-half"
+				},
+				{
+					"key": "l",
+					"label": "Right half",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=right-half"
+				},
+				{
+					"key": "k",
+					"label": "Top half",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=top-half"
+				},
+				{
+					"key": "j",
+					"label": "Bottom half",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=bottom-half"
+				},
+				{
+					"actions": [],
+					"key": "2",
+					"label": "Resize: Two columns",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "1",
+							"label": "First third",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=first-third"
+						},
+						{
+							"key": "2",
+							"label": "Center third",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=center-third"
+						},
+						{
+							"key": "3",
+							"label": "Last third",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=last-third"
+						},
+						{
+							"key": "h",
+							"label": "First two-thirds",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=first-two-thirds"
+						},
+						{
+							"key": "l",
+							"label": "Last two-thirds",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=last-two-thirds"
+						}
+					],
+					"key": "3",
+					"label": "Resize: Three columns",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "1",
+							"label": "Top-left",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-left"
+						},
+						{
+							"key": "2",
+							"label": "Top-right",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-right"
+						},
+						{
+							"key": "3",
+							"label": "Bottom-left",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-left"
+						},
+						{
+							"key": "4",
+							"label": "Bottom-right",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-right"
+						}
+					],
+					"key": "4",
+					"label": "Resize: Four columns",
+					"type": "group"
+				},
+				{
+					"key": "p",
+					"label": "Pin",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=pin"
+				},
+				{
+					"actions": [
+						{
+							"key": "l",
+							"label": "Next Display",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=next-display"
+						},
+						{
+							"key": "h",
+							"label": "Previous Display",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=previous-display"
+						},
+						{
+							"key": "L",
+							"label": "App Next Display",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=app-next-display"
+						},
+						{
+							"key": "H",
+							"label": "App Previous Display",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=app-prev-display"
+						},
+						{
+							"key": "n",
+							"label": "Next Display Ratio",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=next-display-ratio"
+						},
+						{
+							"key": "p",
+							"label": "Previous Display Ratio",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=prev-display-ratio"
+						}
+					],
+					"key": "d",
+					"label": "Display",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "h",
+							"label": "Stash Left",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash-left"
+						},
+						{
+							"key": "k",
+							"label": "Stash Up",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash-up"
+						},
+						{
+							"key": "l",
+							"label": "Stash Right",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash-right"
+						},
+						{
+							"key": "j",
+							"label": "Stash Down",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash-down"
+						},
+						{
+							"key": "-",
+							"label": "Unstash",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=unstash"
+						},
+						{
+							"key": "_",
+							"label": "Unstash All",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=unstash-all"
+						},
+						{
+							"key": "=",
+							"label": "Stash",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash"
+						},
+						{
+							"key": "+",
+							"label": "Stash All",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=stash-all"
+						}
+					],
+					"key": "s",
+					"label": "Stash",
+					"type": "group"
+				},
+				{
+					"key": "w",
+					"label": "Close",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=close"
+				},
+				{
+					"key": "q",
+					"label": "Quit App",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=quit-app"
+				},
+				{
+					"key": "F",
+					"label": "Fullscreen",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=fullscreen"
+				},
+				{
+					"key": "m",
+					"label": "Minimize",
+					"type": "url",
+					"value": "rectangle-pro://execute-action?name=minimize"
+				}
+			],
+			"key": "w",
+			"label": "Window",
+			"type": "group"
+		}
+	],
+	"type": "group"
 }
