@@ -19,6 +19,12 @@
 			"value": "/Applications/Firefox.app"
 		},
 		{
+			"key": "d",
+			"label": "Dictate",
+			"type": "command",
+			"value": "'/Users/elliott/.dotfiles/dotfiles/Library/Application Support/Leader Key/scripts/global_keyboard_shortcut_for_app.sh' MacWhisper d command,control,option,shift"
+		},
+		{
 			"key": "e",
 			"label": "Email",
 			"type": "application",
