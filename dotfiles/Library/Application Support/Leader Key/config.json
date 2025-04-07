@@ -46,7 +46,7 @@
 			"key": "n",
 			"label": "Note - Obsidian Quick Add Note",
 			"type": "command",
-			"value": "open -a \"/Applications/Obsidian.app\" && open -g \"obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed\""
+			"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
 		},
 		{
 			"actions": [
@@ -54,25 +54,25 @@
 					"key": "0",
 					"label": "Volume 0",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 0"
+					"value": "'$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh' 0"
 				},
 				{
 					"key": "1",
 					"label": "Volume 100%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 100"
+					"value": "'$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh' 100"
 				},
 				{
 					"key": "-",
 					"label": "Volume -5%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh -5"
+					"value": "'$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh' -5"
 				},
 				{
 					"key": "=",
 					"label": "Volume +5%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh +5"
+					"value": "'$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh' +5"
 				},
 				{
 					"key": "m",
