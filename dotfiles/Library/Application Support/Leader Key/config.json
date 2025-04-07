@@ -211,31 +211,32 @@
 					"value": "rectangle-pro://execute-action?name=center"
 				},
 				{
-					"key": "h",
-					"label": "Left half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=left-half"
-				},
-				{
-					"key": "l",
-					"label": "Right half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=right-half"
-				},
-				{
-					"key": "k",
-					"label": "Top half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=top-half"
-				},
-				{
-					"key": "j",
-					"label": "Bottom half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=bottom-half"
-				},
-				{
-					"actions": [],
+					"actions": [
+						{
+							"key": "h",
+							"label": "Left half",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=left-half"
+						},
+						{
+							"key": "l",
+							"label": "Right half",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=right-half"
+						},
+						{
+							"key": "k",
+							"label": "Top half",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-half"
+						},
+						{
+							"key": "j",
+							"label": "Bottom half",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-half"
+						}
+					],
 					"key": "2",
 					"label": "Resize: Two columns",
 					"type": "group"
