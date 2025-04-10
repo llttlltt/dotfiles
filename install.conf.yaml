@@ -35,6 +35,8 @@
       path: dotfiles/config/starship.toml
     ~/.config/aerospace:
       path: dotfiles/config/aerospace
+    ~/.config/karabiner:
+      path: dotfiles/config/karabiner
     ~/.config/tmux:
       path: dotfiles/config/tmux
     ~/.config/bat:
