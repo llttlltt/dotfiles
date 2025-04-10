@@ -19,8 +19,14 @@
 			"value": "/Applications/Firefox.app"
 		},
 		{
+			"key": "c",
+			"label": "",
+			"type": "application",
+			"value": "/System/Applications/Calendar.app"
+		},
+		{
 			"key": "d",
-			"label": "Dictate",
+			"label": "Dictate - MacWhisper",
 			"type": "command",
 			"value": "'/Users/elliott/.dotfiles/dotfiles/Library/Application Support/Leader Key/scripts/global_keyboard_shortcut_for_app.sh' MacWhisper d command,control,option,shift"
 		},
