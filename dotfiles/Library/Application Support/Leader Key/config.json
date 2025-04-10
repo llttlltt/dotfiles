@@ -216,8 +216,6 @@
 					"type": "url",
 					"value": "rectangle-pro://execute-action?name=center"
 				},
-				{
-					"actions": [
 						{
 							"key": "h",
 							"label": "Left half",
@@ -241,11 +239,6 @@
 							"label": "Bottom half",
 							"type": "url",
 							"value": "rectangle-pro://execute-action?name=bottom-half"
-						}
-					],
-					"key": "2",
-					"label": "Resize: Two columns",
-					"type": "group"
 				},
 				{
 					"actions": [
@@ -272,6 +265,12 @@
 							"label": "First two-thirds",
 							"type": "url",
 							"value": "rectangle-pro://execute-action?name=first-two-thirds"
+						},
+						{
+							"key": "c",
+							"label": "Center two-thirds",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=center-two-thirds"
 						},
 						{
 							"key": "l",
@@ -309,10 +308,163 @@
 							"label": "Bottom-right",
 							"type": "url",
 							"value": "rectangle-pro://execute-action?name=bottom-right"
+						},
+						{
+							"actions": [
+								{
+									"key": "1",
+									"label": "First fourth",
+									"type": "url",
+									"value": "rectangle-pro://execute-action?name=first-fourth"
+								},
+								{
+									"key": "2",
+									"label": "Second fourth",
+									"type": "url",
+									"value": "rectangle-pro://execute-action?name=second-fourth"
+								},
+								{
+									"key": "3",
+									"label": "Third fourth",
+									"type": "url",
+									"value": "rectangle-pro://execute-action?name=third-fourth"
+								},
+								{
+									"key": "4",
+									"label": "Last fourth",
+									"type": "url",
+									"value": "rectangle-pro://execute-action?name=last-fourth"
+								}
+							],
+							"key": "c",
+							"label": "Columns",
+							"type": "group"
+						},
+						{
+							"key": "h",
+							"label": "First three-fourths",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=first-three-fourths"
+						},
+						{
+							"key": "l",
+							"label": "Last three-fourths",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=last-three-fourths"
 						}
 					],
 					"key": "4",
-					"label": "Resize: Four columns",
+					"label": "Resize: Fourths",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "1",
+							"label": "Top-left sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-left-sixth"
+						},
+						{
+							"key": "2",
+							"label": "Top-center sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-center-sixth"
+						},
+						{
+							"key": "3",
+							"label": "Top-right sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-right-sixth"
+						},
+						{
+							"key": "4",
+							"label": "Bottom-left sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-left-sixth"
+						},
+						{
+							"key": "5",
+							"label": "Bottom-center sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-center-sixth"
+						},
+						{
+							"key": "6",
+							"label": "Bottom-right sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-right-sixth"
+						},
+						{
+							"key": "h",
+							"label": "First sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=first-sixth"
+						},
+						{
+							"key": "l",
+							"label": "Last sixth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=last-sixth"
+						}
+					],
+					"key": "6",
+					"label": "Resize: Sixths",
+					"type": "group"
+				},
+				{
+					"actions": [
+						{
+							"key": "1",
+							"label": "Top-left eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-left-eighth"
+						},
+						{
+							"key": "2",
+							"label": "Top-center-left eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-center-left-eighth"
+						},
+						{
+							"key": "3",
+							"label": "Top-center-right eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-center-right-eighth"
+						},
+						{
+							"key": "4",
+							"label": "Top-right eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=top-right-eighth"
+						},
+						{
+							"key": "5",
+							"label": "Bottom-left eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-left-eighth"
+						},
+						{
+							"key": "6",
+							"label": "Bottom-center-left eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-center-left-eighth"
+						},
+						{
+							"key": "7",
+							"label": "Bottom-center-right eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-center-right-eighth"
+						},
+						{
+							"key": "8",
+							"label": "Bottom-right eighth",
+							"type": "url",
+							"value": "rectangle-pro://execute-action?name=bottom-right-eighth"
+						}
+					],
+					"key": "8",
+					"label": "Resize: Eighths",
 					"type": "group"
 				},
 				{
