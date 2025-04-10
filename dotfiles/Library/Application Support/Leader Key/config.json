@@ -112,6 +112,12 @@
 		{
 			"actions": [
 				{
+					"key": "1",
+					"label": "1Password",
+					"type": "application",
+					"value": "/Applications/1Password.app"
+				},
+				{
 					"actions": [
 						{
 							"key": "a",
