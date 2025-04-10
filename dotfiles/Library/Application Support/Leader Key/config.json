@@ -75,7 +75,7 @@
 		},
 		{
 			"key": "p",
-			"label": "Passwords",
+			"label": "Passwords - 1Password Quick Access",
 			"type": "command",
 			"value": "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
 		},
