@@ -11,13 +11,16 @@ font-feature = -liga
 font-feature = -dlig
 bold-is-bright = true
 
-background-opacity = 0.9
-background-blur-radius = 20
+adjust-underline-position = 10
+
+background-opacity = 0.95
+background-blur-radius = 30
 
 window-padding-x = 10
 window-padding-y = 0
 window-padding-balance = true
 
+macos-option-as-alt = left
 macos-icon = "official"
 macos-icon-frame = "aluminum"
 macos-icon-ghost-color = "#A6ACCD"
