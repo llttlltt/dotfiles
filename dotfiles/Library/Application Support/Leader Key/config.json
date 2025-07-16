@@ -1,28 +1,50 @@
 {
 	"actions": [
 		{
-			"key": "`",
-			"label": "Terminal",
+			"key": "a",
+			"label": "Zen Tour",
 			"type": "application",
-			"value": "/Applications/Ghostty.app"
+			"value": "/Users/Shared/.AntelopeAudio/zentour/panels/2.3.25/zentour.app"
 		},
 		{
 			"key": "b",
 			"label": "Browser",
 			"type": "application",
-			"value": "/Applications/Arc.app"
+			"value": "/Applications/Zen Browser.app"
 		},
 		{
-			"key": "B",
-			"label": "Browser (Dev)",
-			"type": "application",
-			"value": "/Applications/Firefox.app"
-		},
-		{
+			"actions": [
+				{
+					"key": "b",
+					"type": "application",
+					"value": "/Applications/Beeper.app"
+				},
+				{
+					"key": "i",
+					"label": "IRC",
+					"type": "application",
+					"value": "/Applications/Textual.app"
+				},
+				{
+					"key": "m",
+					"type": "application",
+					"value": "/System/Applications/Messages.app"
+				},
+				{
+					"key": "t",
+					"label": "Teams",
+					"type": "application",
+					"value": "/Applications/Microsoft Teams.app"
+				},
+				{
+					"key": "w",
+					"type": "application",
+					"value": "/Applications/WhatsApp.app"
+				}
+			],
 			"key": "c",
-			"label": "",
-			"type": "application",
-			"value": "/System/Applications/Calendar.app"
+			"label": "Chat",
+			"type": "group"
 		},
 		{
 			"key": "d",
@@ -38,7 +60,6 @@
 		},
 		{
 			"key": "f",
-			"label": "",
 			"type": "application",
 			"value": "/System/Library/CoreServices/Finder.app"
 		},
@@ -49,22 +70,14 @@
 			"value": "/Applications/Visual Studio Code.app"
 		},
 		{
-			"key": "n",
-			"label": "Note - Obsidian Quick Add Note",
-			"type": "command",
-			"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
-		},
-		{
 			"actions": [
 				{
 					"key": "m",
-					"label": "",
 					"type": "application",
 					"value": "/System/Applications/Music.app"
 				},
 				{
 					"key": "s",
-					"label": "",
 					"type": "application",
 					"value": "/Applications/Spotify.app"
 				}
@@ -74,10 +87,93 @@
 			"type": "group"
 		},
 		{
+			"key": "n",
+			"label": "Note - Obsidian Quick Add Note",
+			"type": "command",
+			"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
+		},
+		{
+			"actions": [
+				{
+					"key": "1",
+					"label": "1Password",
+					"type": "application",
+					"value": "/Applications/1Password.app"
+				},
+				{
+					"actions": [
+						{
+							"key": "a",
+							"type": "application",
+							"value": "/Applications/Arc.app"
+						},
+						{
+							"key": "c",
+							"type": "application",
+							"value": "/Applications/Google Chrome.app"
+						},
+						{
+							"key": "e",
+							"label": "Edge",
+							"type": "application",
+							"value": "/Applications/Microsoft Edge.app"
+						},
+						{
+							"key": "f",
+							"type": "application",
+							"value": "/Applications/Firefox.app"
+						},
+						{
+							"key": "s",
+							"type": "application",
+							"value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+						},
+						{
+							"key": "z",
+							"type": "application",
+							"value": "/Applications/Zen Browser.app"
+						}
+					],
+					"key": "b",
+					"label": "Browser",
+					"type": "group"
+				},
+				{
+					"key": "c",
+					"type": "application",
+					"value": "/System/Applications/Calendar.app"
+				},
+				{
+					"key": "i",
+					"type": "application",
+					"value": "/System/Applications/iPhone Mirroring.app"
+				},
+				{
+					"key": "o",
+					"type": "application",
+					"value": "/Applications/Obsidian.app"
+				},
+				{
+					"key": "t",
+					"type": "application",
+					"value": "/Applications/Todoist.app"
+				}
+			],
+			"key": "o",
+			"label": "Open",
+			"type": "group"
+		},
+		{
 			"key": "p",
 			"label": "Passwords - 1Password Quick Access",
 			"type": "command",
 			"value": "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
+		},
+		{
+			"key": "r",
+			"label": "Reader - Instapaper",
+			"type": "application",
+			"value": "/Applications/Instapaper.app"
 		},
 		{
 			"actions": [
@@ -149,7 +245,6 @@
 				},
 				{
 					"key": "a",
-					"label": "",
 					"type": "application",
 					"value": "/System/Applications/Utilities/Audio MIDI Setup.app"
 				},
@@ -231,103 +326,10 @@
 			"value": "todoist://openquickadd"
 		},
 		{
-			"actions": [
-				{
-					"key": "1",
-					"label": "1Password",
-					"type": "application",
-					"value": "/Applications/1Password.app"
-				},
-				{
-					"actions": [
-						{
-							"key": "a",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/Arc.app"
-						},
-						{
-							"key": "c",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/Google Chrome.app"
-						},
-						{
-							"key": "e",
-							"label": "Edge",
-							"type": "application",
-							"value": "/Applications/Microsoft Edge.app"
-						},
-						{
-							"key": "f",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/Firefox.app"
-						},
-						{
-							"key": "s",
-							"label": "",
-							"type": "application",
-							"value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-						}
-					],
-					"key": "b",
-					"label": "Browser",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "b",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/Beeper.app"
-						},
-						{
-							"key": "i",
-							"label": "IRC",
-							"type": "application",
-							"value": "/Applications/Textual.app"
-						},
-						{
-							"key": "m",
-							"label": "",
-							"type": "application",
-							"value": "/System/Applications/Messages.app"
-						},
-						{
-							"key": "t",
-							"label": "Teams",
-							"type": "application",
-							"value": "/Applications/Microsoft Teams.app"
-						},
-						{
-							"key": "w",
-							"label": "",
-							"type": "application",
-							"value": "/Applications/WhatsApp.app"
-						}
-					],
-					"key": "c",
-					"label": "Chat",
-					"type": "group"
-				},
-				{
-					"key": "o",
-					"label": "",
-					"type": "application",
-					"value": "/Applications/Obsidian.app"
-				},
-				{
-					"key": "t",
-					"label": "",
-					"type": "application",
-					"value": "/Applications/Todoist.app"
-				}
-			],
-			"key": "o",
-			"label": "Open",
-			"type": "group"
+			"key": "v",
+			"label": "Browser (Dev)",
+			"type": "application",
+			"value": "/Applications/Google Chrome.app"
 		},
 		{
 			"actions": [
@@ -726,6 +728,12 @@
 			"key": "w",
 			"label": "Window",
 			"type": "group"
+		},
+		{
+			"key": "x",
+			"label": "Terminal",
+			"type": "application",
+			"value": "/Applications/Ghostty.app"
 		},
 		{
 			"key": "-",
