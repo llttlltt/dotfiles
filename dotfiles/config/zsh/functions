@@ -1,0 +1,17 @@
+# ---------
+# FUNCTIONS
+# ---------
+
+# find the id of a program
+function findappid() {
+    local app_list=$(command find /Applications -iname "*.app" -maxdepth 1 -exec basename {} \; | command sed "s/\.app$//")
+    app_list+=("Finder")
+    local selected_app=$(command printf "%s\n" "${app_list[@]}" | command sort -r | command fzf --query="$(
+            IFS=" "
+            echo "$*"
+    )" -1)
+    
+    if [ -n "$selected_app" ]; then
+        osascript -e "id of app \"$selected_app\""
+    fi
+}

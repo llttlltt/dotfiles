@@ -1,0 +1,31 @@
+# ----
+# INIT
+# ----
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/bin:$PATH"
+
+if command -v mise &> /dev/null; then
+    eval "$(mise activate zsh)"
+fi
+
+if command -v starship &> /dev/null; then
+    eval "$(starship init zsh)"
+fi
+
+if command -v zoxide &> /dev/null; then
+    eval "$(zoxide init zsh)"
+fi
+
+if command -v fzf &> /dev/null; then
+    source <(fzf --zsh)
+fi
+
+if command -v nvim &> /dev/null; then
+    export EDITOR="nvim"
+    export MANPAGER="nvim +Man!"
+    export MANWIDTH=999
+    alias vi="nvim"
+    alias vim="nvim"
+    alias vimdiff="nvim -d"
+fi

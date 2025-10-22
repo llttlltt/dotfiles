@@ -1,0 +1,8 @@
+# -----------
+# ENVIRONMENT
+# -----------
+
+export SUDO_EDITOR="$EDITOR"
+export NULLCMD=bat
+export BAT_THEME=ansi
+export BATDIFF_USE_DELTA=true

@@ -1,0 +1,9 @@
+# ------
+# SOURCE
+# ------
+
+source ~/.dotfiles/dotfiles/config/zsh/shell
+source ~/.dotfiles/dotfiles/config/zsh/aliases
+source ~/.dotfiles/dotfiles/config/zsh/functions
+source ~/.dotfiles/dotfiles/config/zsh/prompt
+source ~/.dotfiles/dotfiles/config/zsh/init
