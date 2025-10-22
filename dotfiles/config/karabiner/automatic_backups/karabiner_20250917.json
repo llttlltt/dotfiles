@@ -1,0 +1,45 @@
+{
+	"profiles": [
+		{
+			"complex_modifications": {
+				"rules": [
+					{
+						"description": "Disable Application Switcher (command+tab)",
+						"manipulators": [
+							{
+								"from": {
+									"key_code": "tab",
+									"modifiers": { "mandatory": ["command"] }
+								},
+								"to": [{ "key_code": "vk_none" }],
+								"type": "basic"
+							}
+						]
+					},
+					{
+						"description": "Hyper Key + F12: Right Command → left shift + left control + left option + left command + F12 (⌃⇧⌥⌘F12)",
+						"manipulators": [
+							{
+								"from": {
+									"key_code": "right_command",
+									"modifiers": { "optional": ["any"] }
+								},
+								"to": [
+									{
+										"key_code": "f12",
+										"modifiers": ["fn", "left_shift", "left_option", "left_command"]
+									}
+								],
+								"to_after_key_up": [{ "key_code": "vk_none" }],
+								"type": "basic"
+							}
+						]
+					}
+				]
+			},
+			"name": "Default profile",
+			"selected": true,
+			"virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+		}
+	]
+}
