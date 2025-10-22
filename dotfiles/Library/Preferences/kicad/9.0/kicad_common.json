@@ -38,7 +38,9 @@
   "git": {
     "authorEmail": "",
     "authorName": "",
+    "enableGit": true,
     "repositories": null,
+    "updatInterval": 5,
     "useDefaultAuthor": true
   },
   "graphics": {
@@ -92,6 +94,6 @@
     "pdf_viewer_name": "",
     "text_editor": "/usr/bin/open -e",
     "use_system_pdf_viewer": true,
-    "working_dir": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/riboswitch/hardware"
+    "working_dir": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/adapters/DB37 to DB25"
   }
 }
