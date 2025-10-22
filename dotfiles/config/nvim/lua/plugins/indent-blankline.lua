@@ -71,6 +71,7 @@ return {
 				char = "│",
 				tab_char = "│",
 			},
+			whitespace = {},
 			scope = {
 				highlight = rainbow_highlight_groups,
 			},

@@ -1,5 +1,11 @@
 return {
-
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		opts = {
+			enable = true,
+		},
+	},
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
@@ -18,6 +24,9 @@ return {
 				"query",
 				"vim",
 				"vimdoc",
+				"javascript",
+				"typescript",
+				"rust",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,

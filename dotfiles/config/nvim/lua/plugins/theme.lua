@@ -53,6 +53,14 @@ return {
 					NavicIconsTypeParameter = { link = "CmpItemKindTypeParameter" },
 					-- NavicText = { link = "Normal" },
 					NavicSeparator = { link = "StatusLine" },
+					-- which-key
+					WhichKeyBorder = { link = "NotifyINFOBorder" },
+					-- nvim-cmp
+					FloatBorder = { link = "NotifyDEBUGBorder" },
+					-- blink.cmp
+					BlinkCmpSignatureHelpActiveParameter = { link = "Visual" },
+					BlinkCmpSignatureHelpBorder = { link = "TelescopeBorder" },
+					-- BlinkCmpSignatureHelp = { link = "PmenuSel" },
 				},
 			})
 		end,

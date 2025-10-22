@@ -41,7 +41,6 @@ vim.opt.colorcolumn = "100" -- Show column at 100 characters
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 2 -- How long to show matching bracket
 vim.opt.cmdheight = 1 -- Command line height
-vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options
 vim.opt.showmode = false -- Don't show mode in command line
 vim.opt.pumheight = 10 -- Popup menu height
 vim.opt.pumblend = 0 -- Popup menu transparency
@@ -52,8 +51,13 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 vim.opt.synmaxcol = 300 -- Syntax highlighting limit
 
 -- Whitespace characters
-vim.opt.list = true --  See `:help 'list'`
-vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣" } --  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = {
+	tab = "→ ",
+	trail = "·",
+	nbsp = "␣",
+	space = "·",
+} --  and `:help 'listchars'`
 
 -- File handling
 vim.opt.backup = false -- Don't create backup files
@@ -88,7 +92,7 @@ vim.schedule(function()
 end)
 
 vim.diagnostic.config({
-	virtual_text = true,
+	virtual_text = false,
 	virtual_lines = true,
 	update_in_insert = false, -- Don't show diagnostics while in insert mode
 	severity_sort = true, -- Sort diagnostics by severity
