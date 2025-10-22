@@ -2,9 +2,8 @@
 	"actions": [
 		{
 			"key": "a",
-			"label": "Zen Tour",
 			"type": "application",
-			"value": "/Users/Shared/.AntelopeAudio/zentour/panels/2.3.25/zentour.app"
+			"value": "/Applications/Totalmix.app"
 		},
 		{
 			"key": "b",
@@ -17,7 +16,7 @@
 				{
 					"key": "b",
 					"type": "application",
-					"value": "/Applications/Beeper.app"
+					"value": "/Applications/Beeper Desktop.app"
 				},
 				{
 					"key": "i",
@@ -87,19 +86,7 @@
 			"type": "group"
 		},
 		{
-			"key": "n",
-			"label": "Note - Obsidian Quick Add Note",
-			"type": "command",
-			"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
-		},
-		{
 			"actions": [
-				{
-					"key": "1",
-					"label": "1Password",
-					"type": "application",
-					"value": "/Applications/1Password.app"
-				},
 				{
 					"actions": [
 						{
@@ -141,7 +128,7 @@
 				{
 					"key": "c",
 					"type": "application",
-					"value": "/System/Applications/Calendar.app"
+					"value": "/Applications/Fantastical.app"
 				},
 				{
 					"key": "i",
@@ -152,11 +139,6 @@
 					"key": "o",
 					"type": "application",
 					"value": "/Applications/Obsidian.app"
-				},
-				{
-					"key": "t",
-					"type": "application",
-					"value": "/Applications/Todoist.app"
 				}
 			],
 			"key": "o",
@@ -165,9 +147,34 @@
 		},
 		{
 			"key": "p",
-			"label": "Passwords - 1Password Quick Access",
-			"type": "command",
-			"value": "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
+			"label": "1Password",
+			"type": "application",
+			"value": "/Applications/1Password.app"
+		},
+		{
+			"actions": [
+				{
+					"key": "n",
+					"label": "Note - Obsidian Quick Add Note",
+					"type": "command",
+					"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
+				},
+				{
+					"key": "p",
+					"label": "Passwords - 1Password Quick Access",
+					"type": "command",
+					"value": "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
+				},
+				{
+					"key": "t",
+					"label": "Task - Todoist Quick Add Task",
+					"type": "url",
+					"value": "todoist://openquickadd"
+				}
+			],
+			"key": "q",
+			"label": "Quick",
+			"type": "group"
 		},
 		{
 			"key": "r",
@@ -321,9 +328,8 @@
 		},
 		{
 			"key": "t",
-			"label": "Task - Todoist Quick Add Task",
-			"type": "url",
-			"value": "todoist://openquickadd"
+			"type": "application",
+			"value": "/Applications/Todoist.app"
 		},
 		{
 			"key": "v",
@@ -699,12 +705,6 @@
 					"key": "s",
 					"label": "Stash",
 					"type": "group"
-				},
-				{
-					"key": "w",
-					"label": "Close",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=close"
 				},
 				{
 					"key": "q",
