@@ -11,6 +11,7 @@ tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "ngrok/ngrok"
 tap "nikitabobko/tap"
+tap "probe-rs/probe-rs"
 tap "romkatv/powerlevel10k"
 # JPEG image codec that aids compression and decompression
 brew "jpeg-turbo"
@@ -26,8 +27,6 @@ brew "jpeg-xl"
 brew "aom"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Companion library to apr, the Apache Portable Runtime library
-brew "apr-util"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # C library implementing the SSH2 protocol
@@ -36,8 +35,6 @@ brew "libssh2"
 brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Convert CD images from .bin/.cue to .iso/.cdr
-brew "bchunk"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Asynchronous DNS library
@@ -46,8 +43,8 @@ brew "c-ares"
 brew "fontconfig"
 # Cross-platform make
 brew "cmake"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
+# View disk space usage and delete unwanted data, fast
+brew "dua-cli"
 # Modern, maintained replacement for ls
 brew "eza"
 # GNU Transport Layer Security (TLS) Library
@@ -60,6 +57,8 @@ brew "leptonica"
 brew "ffmpeg"
 # Easy to use base16 scheme manager that integrates with any workflow
 brew "flavours"
+# Terminal JSON viewer
+brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -68,92 +67,62 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Library access to GnuPG
-brew "gpgme"
-# Improved top (interactive process viewer)
-brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c@75"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Compiler for generating binary data parsers
-brew "kaitai-struct-compiler"
-# Network authentication protocol
-brew "krb5"
 # Pager program similar to more
 brew "less"
 # Next-gen compiler infrastructure
 brew "llvm"
-# Lightning memory-mapped database: key-value data store
-brew "lmdb"
 # Powerful, lightweight programming language
 brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
-# Platform built on V8 to build network applications
-brew "node"
-# CLI for Node.js style checker and lint tool for Markdown files
-brew "markdownlint-cli"
 # Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Manage multiple Node.js versions
-brew "nvm"
+# Port scanning utility for large networks
+brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
+# Utility that provides fast incremental file transfer
+brew "rsync"
 # OCaml package manager
 brew "opam"
-# Open source suite of directory software
-brew "openldap"
-# Open Visual Inference And Optimization toolkit for AI inference
-brew "openvino"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# General-purpose scripting language
-brew "php", restart_service: :changed
 # Fast, disk space efficient package manager
 brew "pnpm"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Implementation of Telnet and SSH
 brew "putty"
-# Python version management
-brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Utility that provides fast incremental file transfer
-brew "rsync"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Version control system designed to be a better CVS
-brew "subversion"
-# Tool to enforce Swift style and conventions
-brew "swiftlint"
-# Change macOS audio source from the command-line
-brew "switchaudio-osx"
 # TOML toolkit written in Rust
 brew "taplo"
 # Terminal multiplexer
 brew "tmux"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # Command-line interface for Vercel
 brew "vercel-cli"
-# Tracks most-used directories to make cd smarter
-brew "z"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -162,58 +131,48 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Azure Functions Core Tools 4.0
 brew "azure/functions/azure-functions-core-tools@4"
-# Organize Your macOS Launchpad Apps
-brew "blacktop/tap/lporg"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
-# Packer
-brew "hashicorp/tap/packer"
+# A collection of on chip debugging tools to communicate with microchips.
+brew "probe-rs/probe-rs/probe-rs"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Sound and music editor
 cask "ableton-live-suite"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
 # Professional graphic design software
 cask "affinity-designer"
 # Professional image editing software
 cask "affinity-photo"
 # Professional desktop publishing software
 cask "affinity-publisher"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
-# Enable Windows-like alt-tab
-cask "alt-tab"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# Distribution of the Python and R programming languages for scientific computing
-cask "anaconda"
-# Memory training application
-cask "anki"
-# Chromium based browser
-cask "arc"
 # Electronics prototyping platform
 cask "arduino-ide"
 # Records audio from any application
 cask "audio-hijack"
 # Integrated CAD, CAM, CAE, and PCB software
 cask "autodesk-fusion"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
 # Universal chat app powered by Matrix
 cask "beeper"
+# Display management tool
+cask "betterdisplay"
 # 3D creation suite
 cask "blender"
 # E-books management software
 cask "calibre"
 # Free and open-source web browser
 cask "chromium"
-# Tool to run Windows software
-cask "crossover"
 # Flexible space to create your own interactive software
 cask "cycling74-max"
+# Disk space visualiser
+cask "daisydisk"
 # Database version management tool
 cask "dbngin"
 # Voice and text chat software
@@ -221,7 +180,9 @@ cask "discord"
 # NDI integration for OBS Studio
 cask "distroav"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
+# Developer platform
+cask "dotnet-runtime"
 # Online diagram software
 cask "drawio"
 # Collaborative team software
@@ -269,8 +230,6 @@ cask "font-syne-tactile"
 cask "ghostty"
 # Web browser
 cask "google-chrome"
-# Client for the Google Drive storage service
-cask "google-drive"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # System monitoring app
@@ -279,22 +238,28 @@ cask "istat-menus"
 cask "iterm2"
 # Professional audio software for audio recording, mixing, broadcast and others
 cask "izotope-product-portal"
+# Keyboard customiser
+cask "karabiner-elements"
 # Electronics design automation suite
 cask "kicad"
+# Application launcher
+cask "leader-key"
 # NDI SDK
 cask "libndi"
 # Software for Logitech devices
 cask "logi-options+"
 # Cable-free audio router
 cask "loopback"
+# 2D game framework for Lua
+cask "love"
+# Speech recognition tool
+cask "macwhisper"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Multi-platform web browser
 cask "microsoft-edge"
 # Spreadsheet software
 cask "microsoft-excel"
-# Email client
-cask "microsoft-outlook"
 # Presentation software
 cask "microsoft-powerpoint"
 # Meet, chat, call, and collaborate in just one place
@@ -317,24 +282,22 @@ cask "omnigraffle"
 cask "omniplan"
 # Cloud storage client
 cask "onedrive"
-# Play PC games and connect with your friends
-cask "origin"
 # Desktop virtualization software
 cask "parallels"
+# Home media player
+cask "plex"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
-# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
-cask "prusaslicer"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# Window snapping tool
+cask "rectangle-pro"
 # Free Dj app to prepare and manage your music files
 cask "rekordbox"
 # Screen recorder with audio
 cask "screenflick"
-# Team communication and collaboration software
-cask "slack"
 # Download manager for Spitfire audio libraries
 cask "spitfire-audio"
 # Cloud-based music creation and collaboration platform
@@ -350,7 +313,7 @@ cask "teensy"
 # Application for interacting with Internet Relay Chat (IRC) chatrooms
 cask "textual"
 # To-do list
-cask "todoist"
+cask "todoist-app"
 # Unicode keyboard layout editor
 cask "ukelele"
 # Open-source code editor
@@ -361,21 +324,26 @@ cask "vlc"
 cask "whatsapp"
 # Lossless audio decoder
 cask "xld"
+# Gecko based web browser
+cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
+# Collect, organise, cite, and share research sources
+cask "zotero"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
 mas "Be Focused Pro", id: 961632517
 mas "BetterSnapTool", id: 417375580
+mas "Blackmagic Disk Speed Test", id: 425264550
 mas "Compressor", id: 424390742
 mas "Developer", id: 640199958
-mas "Disk Speed Test", id: 425264550
 mas "Final Cut Pro", id: 424389933
 mas "Ground News", id: 1324203419
 mas "Instapaper", id: 288545208
 mas "Instapaper Save", id: 1481302432
 mas "Jayson", id: 1468691718
+mas "Jomo", id: 1609960918
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
 mas "MacFamilyTree 9", id: 1458866808
@@ -384,13 +352,12 @@ mas "Microsoft To Do", id: 1274495053
 mas "MODALapp", id: 1187314855
 mas "Motion", id: 434290957
 mas "OverPicture", id: 1188020834
-mas "Playgrounds", id: 1496833156
-mas "RocketSim", id: 1504940162
+mas "Swift Playground", id: 1496833156
 mas "The Unarchiver", id: 425424353
-mas "Userscripts-Mac-App", id: 1463298887
+mas "Userscripts", id: 1463298887
 mas "Velja", id: 1607635845
+mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
-mas "‎WhatsApp", id: 310633997
 vscode "aaron-bond.better-comments"
 vscode "ambar.bundle-size"
 vscode "azurite.azurite"
@@ -398,9 +365,11 @@ vscode "bencoleman.armview"
 vscode "blinkshellinc.blink-fs"
 vscode "bradlc.vscode-tailwindcss"
 vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
 vscode "christian-kohler.npm-intellisense"
 vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
 vscode "dotjoshjohnson.xml"
 vscode "dustypomerleau.rust-syntax"
 vscode "eamodio.gitlens"
@@ -413,20 +382,27 @@ vscode "firefox-devtools.vscode-firefox-debug"
 vscode "formulahendry.auto-rename-tag"
 vscode "foxundermoon.shell-format"
 vscode "fudgepops.kaitai-struct-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "gruntfuggly.todo-tree"
+vscode "heaths.vscode-guid"
 vscode "hediet.vscode-drawio"
 vscode "irongeek.vscode-env"
 vscode "jeandeaual.scheme"
 vscode "jock.svg"
+vscode "johnnymorganz.stylua"
+vscode "llvm-vs-code-extensions.lldb-dap"
 vscode "maciejdems.add-to-gitignore"
 vscode "malmaud.tmux"
 vscode "mermade.openapi-lint"
 vscode "mkoeppen.generate-data"
-vscode "moalamri.inline-fold"
 vscode "ms-azure-devops.azure-pipelines"
+vscode "ms-azure-load-testing.microsoft-testing"
 vscode "ms-azuretools.azure-dev"
+vscode "ms-azuretools.vscode-azure-github-copilot"
+vscode "ms-azuretools.vscode-azure-mcp-server"
 vscode "ms-azuretools.vscode-azureappservice"
 vscode "ms-azuretools.vscode-azurecontainerapps"
 vscode "ms-azuretools.vscode-azurefunctions"
@@ -435,8 +411,10 @@ vscode "ms-azuretools.vscode-azurestaticwebapps"
 vscode "ms-azuretools.vscode-azurestorage"
 vscode "ms-azuretools.vscode-azurevirtualmachines"
 vscode "ms-azuretools.vscode-bicep"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-cosmosdb"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-edgedevtools.vscode-edge-devtools"
 vscode "ms-python.autopep8"
@@ -444,13 +422,13 @@ vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
 vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.azure-account"
 vscode "ms-vscode.azurecli"
 vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpptools"
@@ -459,11 +437,11 @@ vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.hexeditor"
 vscode "ms-vscode.powershell"
 vscode "ms-vscode.vscode-node-azure-pack"
-vscode "msazurermtools.azurerm-vscode-tools"
+vscode "ms-windows-ai-studio.windows-ai-studio"
 vscode "ocamllabs.ocaml-platform"
 vscode "oderwat.indent-rainbow"
 vscode "orta.vscode-twoslash-queries"
-vscode "parallelsdesktop.parallels-desktop"
+vscode "peymanslh.blueberry-dark-theme"
 vscode "pkief.material-icon-theme"
 vscode "pmndrs.pmndrs"
 vscode "postman.postman-for-vscode"
@@ -475,12 +453,16 @@ vscode "richie5um2.vscode-sort-json"
 vscode "ritwickdey.liveserver"
 vscode "rkoubou.ksp"
 vscode "rust-lang.rust-analyzer"
+vscode "sashabusinaro.yaml-compose-sorter"
+vscode "shakram02.bash-beautify"
 vscode "simonsiefke.svg-preview"
-vscode "sswg.swift-lang"
+vscode "stivo.tailwind-fold"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "sukumo28.wav-preview"
+vscode "swiftlang.swift-vscode"
 vscode "tamasfe.even-better-toml"
 vscode "tauri-apps.tauri-vscode"
+vscode "teamsdevapp.vscode-ai-foundry"
 vscode "timonwong.shellcheck"
 vscode "twxs.cmake"
 vscode "tyriar.lorem-ipsum"
@@ -488,6 +470,7 @@ vscode "unifiedjs.vscode-mdx"
 vscode "vadimcn.vscode-lldb"
 vscode "vue.volar"
 vscode "wallabyjs.quokka-vscode"
+vscode "wokwi.wokwi-vscode"
 vscode "yinfei.luahelper"
 vscode "yoavbls.pretty-ts-errors"
 vscode "yutengjing.open-in-external-app"
