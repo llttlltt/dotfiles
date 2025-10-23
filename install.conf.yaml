@@ -11,7 +11,6 @@
     - command: ./homebrew/cleanup_homebrew.zsh
     - command: ./scripts/setup_zsh.zsh
     - command: ./scripts/setup_node.zsh
-    - command: ./scripts/setup_lporg.zsh
     - command: ./scripts/setup_rust.zsh
 
 - clean: ["~"]
@@ -41,8 +40,6 @@
       path: home/config/nvim
     ~/.config/powershell:
       path: home/config/powershell
-    ~/Library/Application Support/lporg:
-      path: home/Library/Application Support/lporg
     ~/Library/Application Support/Leader Key:
       path: home/Library/Application Support/Leader Key
     ~/Library/Preferences/flavours:
