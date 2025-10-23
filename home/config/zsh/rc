@@ -1,81 +1,9 @@
 # -----------------------------
-# --------- DEFAULTS ----------
+# ---------- SOURCE -----------
 # -----------------------------
-source ~/.dotfiles/home/config/zsh/rc
-
-# -----------------------------
-# ---------- CUSTOM -----------
-# -----------------------------
-
-local dotfiles_dir="$HOME/.dotfiles/home/config/zsh"
-local scripts_dir="$dotfiles_dir/custom/scripts"
-
-# bypass MacOS Gatekeeper for cask installs
-export HOMEBREW_CASK_OPTS="--no-quarantine"
-
-# puppeteer
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
-
-# azure-functions-core-tools
-export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true # opt-out data collection
-
-# vscode
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# syntax highlighting for grep (search) using bat-extras
-alias grep=batgrep
-
-# shows the path variable, split by newline
-alias trail="<<<${(F)path}"
-
-# control volume from cli
-alias vol="$scripts_dir/vol.sh"
-
-# -----------------------------
-# ---------- PLUGINS ----------
-# -----------------------------
-
-# flavours
-export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
-export FLAVOURS_CONFIG_FILE="$HOME/Library/Preferences/flavours/config.toml"
-
-# ghostty
-if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
-    source $GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration # load zsh integration
-fi
-
-# 1password
-if command -v op &> /dev/null; then
-    source ~/.config/op/plugins.sh
-fi
-
-# ngrok
-if command -v ngrok &>/dev/null; then
-    eval "$(ngrok completion)"
-fi
-
-# llvm
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-
-# rust
-if command -v rustup &> /dev/null; then
-    export PATH="$HOME/.cargo/bin:$PATH"
-    source "$HOME/.cargo/env"
-fi
-
-## ocaml
-if command -v opam &> /dev/null; then
-    eval $(opam env --switch=default --set-switch)
-    if [[ ! -r "~/.opam/opam-init/init.zsh" ]]; then
-        source "~/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
-    fi
-fi
-
-# pnpm
-export PNPM_HOME="~/Library/pnpm"
-if [[ "$PATH" != *":$PNPM_HOME:"* ]]; then
-    export PATH="$PNPM_HOME:$PATH"
-fi
+source ~/.dotfiles/home/config/zsh/shell
+source ~/.dotfiles/home/config/zsh/aliases
+source ~/.dotfiles/home/config/zsh/functions
+source ~/.dotfiles/home/config/zsh/prompt
+source ~/.dotfiles/home/config/zsh/init
+source ~/.dotfiles/home/config/zsh/envs
