@@ -27,8 +27,6 @@
       path: dotfiles/hushlogin
     ~/.gitconfig:
       path: dotfiles/gitconfig
-    ~/.config/alacritty:
-      path: dotfiles/config/alacritty
     ~/.config/ghostty:
       path: dotfiles/config/ghostty
     ~/.config/starship.toml:
