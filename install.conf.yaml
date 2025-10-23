@@ -19,10 +19,10 @@
       path: home/hushlogin
     ~/.gitconfig:
       path: home/gitconfig
-    ~/.config/ghostty:
-      path: home/config/ghostty
     ~/.config/starship.toml:
       path: home/config/starship.toml
+    ~/.config/ghostty:
+      path: home/config/ghostty
     ~/.config/karabiner:
       path: home/config/karabiner
     ~/.config/tmux:
