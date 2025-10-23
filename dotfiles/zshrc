@@ -50,6 +50,11 @@ if command -v op &> /dev/null; then
     source ~/.config/op/plugins.sh
 fi
 
+# ngrok
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
+
 # llvm
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"

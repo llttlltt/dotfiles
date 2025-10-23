@@ -18,11 +18,11 @@
 
 - link:
     ~/.zshrc:
-      path: dotfiles/config/zsh/zshrc
+      path: dotfiles/zshrc
     ~/.zshenv:
-      path: dotfiles/config/zsh/zshenv
+      path: dotfiles/zshenv
     ~/.zprofile:
-      path: dotfiles/config/zsh/zprofile
+      path: dotfiles/zprofile
     ~/.hushlogin:
       path: dotfiles/hushlogin
     ~/.gitconfig:
