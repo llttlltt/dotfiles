@@ -13,6 +13,9 @@ These are my personal dotfiles, using zsh and various tools to set up my develop
   - [eza](https://eza.rocks/)
   - [fd](https://github.com/sharkdp/fd)
   - [jq](https://jqlang.org/)
+  - [flavours](https://github.com/Misterio77/flavours)
+  - [httpie](https://httpie.io/)
+  - [trash](https://github.com/andreafrancia/trash-cli)
 - **development**
   - [neovim](https://neovim.io/) : [kickstart.nvim](https://neovim.io/)
   - [ghostty](https://ghostty.org/)
@@ -23,9 +26,12 @@ These are my personal dotfiles, using zsh and various tools to set up my develop
   - [btop](https://github.com/aristocratos/btop)
   - [fx](https://fx.wtf/)
 - **extras**
-  - [trash](https://github.com/andreafrancia/trash-cli)
-  - [flavours](https://github.com/Misterio77/flavours)
-  - [httpie](https://httpie.io/)
+  - [leader-key](https://github.com/mikker/LeaderKey.app)
+  - [karabiner-elements](https://karabiner-elements.pqrs.org/)
+- **premium**
+  - [velja](https://sindresorhus.com/velja)
+  - [rectangle-pro](https://rectangleapp.com/pro)
+  - [macwhisper](https://goodsnooze.gumroad.com/l/macwhisper)
 
 ## Installation
 
