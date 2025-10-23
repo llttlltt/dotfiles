@@ -4,7 +4,7 @@ email = 16389800+Elliott-Liu@users.noreply.github.com
 signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKVH4UJetevdtRpOv3uC9nvb+ETFlqcw080ywI1JUNPh
 
 [core]
-excludesfile = ~/.dotfiles/dotfiles/gitignore_global
+excludesfile = ~/.dotfiles/home/gitignore_global
 pager = delta
 
 [gpg]

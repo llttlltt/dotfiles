@@ -18,34 +18,34 @@
 
 - link:
     ~/.zshrc:
-      path: dotfiles/zshrc
+      path: home/zshrc
     ~/.zshenv:
-      path: dotfiles/zshenv
+      path: home/zshenv
     ~/.zprofile:
-      path: dotfiles/zprofile
+      path: home/zprofile
     ~/.hushlogin:
-      path: dotfiles/hushlogin
+      path: home/hushlogin
     ~/.gitconfig:
-      path: dotfiles/gitconfig
+      path: home/gitconfig
     ~/.config/ghostty:
-      path: dotfiles/config/ghostty
+      path: home/config/ghostty
     ~/.config/starship.toml:
-      path: dotfiles/config/starship.toml
+      path: home/config/starship.toml
     ~/.config/karabiner:
-      path: dotfiles/config/karabiner
+      path: home/config/karabiner
     ~/.config/tmux:
-      path: dotfiles/config/tmux
+      path: home/config/tmux
     ~/.config/bat:
-      path: dotfiles/config/bat
+      path: home/config/bat
     ~/.config/nvim:
-      path: dotfiles/config/nvim
+      path: home/config/nvim
     ~/.config/powershell:
-      path: dotfiles/config/powershell
+      path: home/config/powershell
     ~/Library/Application Support/lporg:
-      path: dotfiles/Library/Application Support/lporg
+      path: home/Library/Application Support/lporg
     ~/Library/Application Support/Leader Key:
-      path: dotfiles/Library/Application Support/Leader Key
+      path: home/Library/Application Support/Leader Key
     ~/Library/Preferences/flavours:
-      path: dotfiles/Library/Preferences/flavours
+      path: home/Library/Preferences/flavours
     ~/Library/Preferences/kicad:
-      path: dotfiles/Library/Preferences/kicad
+      path: home/Library/Preferences/kicad

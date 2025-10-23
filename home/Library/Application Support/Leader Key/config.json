@@ -49,7 +49,7 @@
 			"key": "d",
 			"label": "Dictate - MacWhisper",
 			"type": "command",
-			"value": "'/Users/elliott/.dotfiles/dotfiles/Library/Application Support/Leader Key/scripts/global_keyboard_shortcut_for_app.sh' MacWhisper d command,control,option,shift"
+			"value": "'/Users/elliott/.dotfiles/home/Library/Application Support/Leader Key/scripts/global_keyboard_shortcut_for_app.sh' MacWhisper d command,control,option,shift"
 		},
 		{
 			"key": "e",
@@ -188,67 +188,67 @@
 					"key": "0",
 					"label": "Volume 0%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 0"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 0"
 				},
 				{
 					"key": "1",
 					"label": "Volume 10%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 10"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 10"
 				},
 				{
 					"key": "2",
 					"label": "Volume 20%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 20"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 20"
 				},
 				{
 					"key": "3",
 					"label": "Volume 30%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 30"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 30"
 				},
 				{
 					"key": "4",
 					"label": "Volume 40%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 40"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 40"
 				},
 				{
 					"key": "5",
 					"label": "Volume 50%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 50"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 50"
 				},
 				{
 					"key": "6",
 					"label": "Volume 60%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 60"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 60"
 				},
 				{
 					"key": "7",
 					"label": "Volume 70%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 70"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 70"
 				},
 				{
 					"key": "8",
 					"label": "Volume 80%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 80"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 80"
 				},
 				{
 					"key": "9",
 					"label": "Volume 90%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh90"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh90"
 				},
 				{
 					"key": "f",
 					"label": "Volume 100%",
 					"type": "command",
-					"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh 100"
+					"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh 100"
 				},
 				{
 					"key": "a",
@@ -739,13 +739,13 @@
 			"key": "-",
 			"label": "Volume -5%",
 			"type": "command",
-			"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh -5"
+			"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh -5"
 		},
 		{
 			"key": "=",
 			"label": "Volume +5%",
 			"type": "command",
-			"value": "$HOME/.dotfiles/dotfiles/config/zsh/custom/scripts/vol.sh +5"
+			"value": "$HOME/.dotfiles/home/config/zsh/custom/scripts/vol.sh +5"
 		}
 	],
 	"type": "group"

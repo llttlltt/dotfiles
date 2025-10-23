@@ -1,13 +1,13 @@
 # -----------------------------
 # --------- DEFAULTS ----------
 # -----------------------------
-source ~/.dotfiles/dotfiles/config/zsh/rc
+source ~/.dotfiles/home/config/zsh/rc
 
 # -----------------------------
 # ---------- CUSTOM -----------
 # -----------------------------
 
-local dotfiles_dir="$HOME/.dotfiles/dotfiles/config/zsh"
+local dotfiles_dir="$HOME/.dotfiles/home/config/zsh"
 local scripts_dir="$dotfiles_dir/custom/scripts"
 
 # bypass MacOS Gatekeeper for cask installs
