@@ -45,8 +45,6 @@
       path: dotfiles/config/nvim
     ~/.config/powershell:
       path: dotfiles/config/powershell
-    ~/.config/amethyst:
-      path: dotfiles/config/amethyst
     ~/Library/Application Support/lporg:
       path: dotfiles/Library/Application Support/lporg
     ~/Library/Application Support/Leader Key:
