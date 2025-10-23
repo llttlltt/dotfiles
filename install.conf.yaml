@@ -33,8 +33,6 @@
       path: dotfiles/config/ghostty
     ~/.config/starship.toml:
       path: dotfiles/config/starship.toml
-    ~/.config/aerospace:
-      path: dotfiles/config/aerospace
     ~/.config/karabiner:
       path: dotfiles/config/karabiner
     ~/.config/tmux:
