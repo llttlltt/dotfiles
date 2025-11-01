@@ -1,7 +1,7 @@
 {
   "appearance": {
     "color_theme": "_builtin_default",
-    "left_frame_width": 279
+    "left_frame_width": 278
   },
   "color_picker": {
     "default_tab": 0
@@ -69,25 +69,25 @@
   "system": {
     "check_for_kicad_updates": true,
     "file_history": [
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/adapters/DB37 to DB25/DB37 to DB25.kicad_pro",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/riboswitch/hardware/Narmerio Riboswitch.kicad_pro",
-      "/Users/elliott/Downloads/RNA/Dock 6/KiCad/35.0.0 V3 100k 10k/Dock 6/Dock 6.kicad_pro",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pro",
-      "/Users/elliott/Downloads/RNA/Oogenesis EQ/Oogenisis/Oogenisis.kicad_pro",
-      "/Users/elliott/Downloads/Dock 6/KiCad/Dock 6.kicad_pro",
-      "/Users/elliott/Downloads/Dock 6/35.0.0 V3 100k 10k/35.0.0 V3 100k 10k.kicad_pro",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/Dock 2/Dock 2.kicad_pro",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/control/Thonkiconn LED/Thonkiconn LED.kicad_pro"
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board/led-board.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/DLMK Faderbank+/DLMK Faderbank+.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/slider-t-lever-adaptor/slider-t-lever-adaptor.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/t-lever-adaptor-board/t-lever-adaptor-board.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/slider-bp-lever-adapter/slider-bp-lever-adapter.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/bp-lever-adapter-board/bp-lever-adapter-board.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/main-board/main-board.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/fader-board/fader-board.kicad_pro",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/Euro Fader PCB/Euro Fader PCB.kicad_pro"
     ],
     "first_run_shown": false,
     "last_design_block_lib_dir": "",
     "last_imperial_units": 0,
     "last_metric_units": 1,
     "last_received_update": "",
-    "last_update_check_time": "2025-10-10T11:02:50",
+    "last_update_check_time": "2025-10-30T15:57:46",
     "max_undo_items": 0,
     "open_projects": [
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/adapters/DB37 to DB25/DB37 to DB25.kicad_pro"
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board/led-board.kicad_pro"
     ],
     "show_import_issues": true,
     "units": 1
@@ -247,9 +247,9 @@
       "user_grid_y": "10 mil"
     },
     "maximized": false,
-    "mru_path": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/adapters/DB37 to DB25/",
-    "perspective": "layout2|name=MainToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=227;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=Project Files;state=1532;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=279;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Editors;caption=Editors;state=508;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=700;besth=590;minw=700;minh=590;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,2,0)=34|dock_size(4,1,0)=279|dock_size(5,0,0)=700|",
-    "pos_x": 1280,
+    "mru_path": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board/",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=227;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=Project Files;state=1532;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=278;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Editors;caption=Editors;state=508;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=700;besth=590;minw=700;minh=590;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,2,0)=34|dock_size(4,1,0)=278|dock_size(5,0,0)=700|",
+    "pos_x": 0,
     "pos_y": 25,
     "size_x": 1280,
     "size_y": 1415,

@@ -123,18 +123,18 @@
     "search_and_replace": false
   },
   "footprint_chooser": {
-    "filter_on_pin_count": false,
-    "height": -1,
-    "sash_h": -1,
-    "sash_v": -1,
+    "filter_on_pin_count": true,
+    "height": 1415,
+    "sash_h": 760,
+    "sash_v": 698,
     "sort_mode": 0,
     "use_fp_filters": false,
-    "width": -1
+    "width": 1280
   },
   "footprint_viewer": {
     "autozoom": true,
     "cursor": {
-      "always_show_cursor": true,
+      "always_show_cursor": false,
       "fullscreen_cursor": false
     },
     "display": 0,
@@ -277,12 +277,12 @@
     },
     "lib_list_width": 200,
     "maximized": false,
-    "mru_path": "",
-    "perspective": "",
-    "pos_x": 0,
-    "pos_y": 0,
-    "size_x": 0,
-    "size_y": 0,
+    "mru_path": "/Users/elliott/Documents/KiCad/9.0/projects",
+    "perspective": "layout2|",
+    "pos_x": 540,
+    "pos_y": 303,
+    "size_x": 1280,
+    "size_y": 1415,
     "zoom": 1.0,
     "zoom_factors": [
       0.13,
@@ -513,10 +513,17 @@
   "lib_tree": {
     "column_width": 360,
     "column_widths": {
+      "Description": 336,
       "Item": 360
     },
-    "columns": [],
-    "open_libs": []
+    "columns": [
+      "Item",
+      "Description"
+    ],
+    "open_libs": [
+      "Potentiometer_SMD",
+      "Potentiometer_THT"
+    ]
   },
   "meta": {
     "version": 5
@@ -621,15 +628,15 @@
   },
   "system": {
     "file_history": [
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/adapters/DB37 to DB25/DB37 to DB25.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/riboswitch/hardware/Narmerio Riboswitch.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/1-release/replicator/hardware/Replicator (1.2)/Replicator (1.2).kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/control/Thonkiconn LED/Thonkiconn LED.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/3-working/spore/hardware/RNA Spore.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/stereo_insert_fx/hardware/stereo_insert_fx.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/microarrays-step_sequencer/hardware/microarrays.kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/rotational_sequencer/hardware/Eurorack - Rotational Sequencer (0.1).kicad_pcb",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/2-ready/transnuclear/hardware_design/pcb/transnuclear_v1.0.1.kicad_pcb"
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board/led-board.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/DLMK Faderbank+/DLMK Faderbank+.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/Euro Fader PCB/Euro Fader PCB.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/BP Lever Adapter/BP Lever Adapter.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/touch-slider-plate-adaptor-board/touch-slider-plate-adaptor-board.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/T Lever Adapter/T Lever Adapter.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/led-slider-30mm/hardware/led-slider-30mm.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/slider-led-qfn/hardware/slider-led-qfn.kicad_pcb",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/db37-db25-adapter/hardware/db37-db25-adapter.kicad_pcb"
     ],
     "first_run_shown": true,
     "last_footprint3d_dir": "${KICAD8_3RD_PARTY}/AudioJacks/AudioJacks.3dshapes",
@@ -661,8 +668,8 @@
       "shove_vias": true,
       "smart_pads": true,
       "smooth_dragged_segments": true,
-      "snap_to_pads": false,
-      "snap_to_tracks": false,
+      "snap_to_pads": true,
+      "snap_to_tracks": true,
       "start_diagonal": false,
       "suggest_finish": false,
       "via_force_prop_iteration_limit": 40,
@@ -820,7 +827,7 @@
     },
     "maximized": true,
     "mru_path": "",
-    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1026;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=5;row=0;pos=0;prop=100000;bestw=1009;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=670;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=739;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Appearance;state=1532;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=200;besth=-1;minw=200;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=440;floath=960|name=SelectionFilter;caption=Selection Filter;state=1532;dir=2;layer=4;row=0;pos=1;prop=0;bestw=209;besth=-1;minw=209;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=209;floath=106|name=PropertiesManager;caption=Properties;state=2098686;dir=4;layer=5;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=NetInspector;caption=Net Inspector;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=100;minw=180;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=34|dock_size(1,5,0)=34|dock_size(3,6,0)=26|dock_size(4,3,0)=34|dock_size(2,3,0)=34|dock_size(2,4,0)=209|dock_size(5,0,0)=402|",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1067;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=5;row=0;pos=0;prop=100000;bestw=1009;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=670;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=739;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Appearance;state=1532;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=200;besth=-1;minw=200;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=440;floath=960|name=SelectionFilter;caption=Selection Filter;state=1532;dir=2;layer=4;row=0;pos=1;prop=0;bestw=209;besth=-1;minw=209;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=209;floath=106|name=PropertiesManager;caption=Properties;state=2098686;dir=4;layer=5;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=NetInspector;caption=Net Inspector;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=100;minw=180;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=34|dock_size(1,5,0)=34|dock_size(3,6,0)=26|dock_size(4,3,0)=34|dock_size(2,3,0)=34|dock_size(2,4,0)=209|dock_size(5,0,0)=402|",
     "pos_x": 224,
     "pos_y": 217,
     "size_x": 1280,
