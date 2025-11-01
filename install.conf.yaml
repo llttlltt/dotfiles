@@ -39,6 +39,8 @@
       path: home/Library/Preferences/flavours
     ~/Library/Preferences/kicad:
       path: home/Library/Preferences/kicad
+    ~/Downloads:
+      path: ~/Library/Mobile Documents/com~apple~CloudDocs/Downloads
 
 - shell:
     - command: ./homebrew/setup_homebrew.zsh
