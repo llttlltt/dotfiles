@@ -29,6 +29,10 @@ These are my personal dotfiles, using zsh and various tools to set up my develop
   - [leader-key](https://github.com/mikker/LeaderKey.app)
   - [karabiner-elements](https://karabiner-elements.pqrs.org/)
 - **premium**
+  - [alfred](https://www.alfredapp.com/)
+    - `cu` : [convert currency](https://alfred.app/workflows/alfredapp/currency-converter/)
+    - `cu` : [convert units](https://alfred.app/workflows/alfredapp/unit-converter/)
+    - `tz` : [time zone](https://github.com/jaroslawhartman/TimeZones-Alfred)
   - [velja](https://sindresorhus.com/velja)
   - [rectangle-pro](https://rectangleapp.com/pro)
   - [macwhisper](https://goodsnooze.gumroad.com/l/macwhisper)
