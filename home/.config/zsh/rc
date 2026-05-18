@@ -1,9 +1,9 @@
 # -----------------------------
 # ---------- SOURCE -----------
 # -----------------------------
-source ~/.dotfiles/home/config/zsh/shell
-source ~/.dotfiles/home/config/zsh/aliases
-source ~/.dotfiles/home/config/zsh/functions
-source ~/.dotfiles/home/config/zsh/prompt
-source ~/.dotfiles/home/config/zsh/init
-source ~/.dotfiles/home/config/zsh/envs
+source ~/.dotfiles/home/.config/zsh/shell
+source ~/.dotfiles/home/.config/zsh/aliases
+source ~/.dotfiles/home/.config/zsh/functions
+source ~/.dotfiles/home/.config/zsh/prompt
+source ~/.dotfiles/home/.config/zsh/init
+source ~/.dotfiles/home/.config/zsh/envs

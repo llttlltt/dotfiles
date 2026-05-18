@@ -1,7 +1,7 @@
 # -----------------------------
 # --------- DEFAULTS ----------
 # -----------------------------
-source ~/.dotfiles/home/config/zsh/rc
+source ~/.dotfiles/home/.config/zsh/rc
 
 # -----------------------------
 # ---------- CUSTOM -----------
@@ -99,3 +99,6 @@ export REQUESTS_CA_BUNDLE="$(python -m certifi)"
 export PATH="$PATH:/Users/elliott/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# pi coding agent
+export PI_CODING_AGENT_DIR="~/.config/pi/agent"
+export PI_TELEMETRY=false
