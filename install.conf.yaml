@@ -21,8 +21,6 @@
       path: home/.gitconfig
     ~/.gitignore_global:
       path: home/.gitignore_global
-    ~/.pi:
-      path: home/.pi
     ~/.config/starship.toml:
       path: home/.config/starship.toml
     ~/.config/ghostty:
@@ -35,6 +33,8 @@
       path: home/.config/bat
     ~/.config/nvim:
       path: home/.config/nvim
+    ~/.config/pi:
+      path: home/.config/pi
     ~/.config/powershell:
       path: home/.config/powershell
     ~/Library/Application Support/Leader Key:
