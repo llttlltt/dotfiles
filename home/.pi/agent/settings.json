@@ -1,0 +1,12 @@
+{
+  "lastChangelogVersion": "0.75.3",
+  "defaultProvider": "lmstudio",
+  "defaultModel": "google/gemma-4-26b-a4b",
+  "defaultThinkingLevel": "off",
+  "hideThinkingBlock": true,
+  "theme": "poimandres",
+  "showHardwareCursor": false,
+  "terminal": {
+    "showTerminalProgress": false
+  }
+}
