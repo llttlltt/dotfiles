@@ -10,29 +10,33 @@
 
 - link:
     ~/.zshrc:
-      path: home/zshrc
+      path: home/.zshrc
     ~/.zshenv:
-      path: home/zshenv
+      path: home/.zshenv
     ~/.zprofile:
-      path: home/zprofile
+      path: home/.zprofile
     ~/.hushlogin:
-      path: home/hushlogin
+      path: home/.hushlogin
     ~/.gitconfig:
-      path: home/gitconfig
+      path: home/.gitconfig
+    ~/.gitignore_global:
+      path: home/.gitignore_global
+    ~/.pi:
+      path: home/.pi
     ~/.config/starship.toml:
-      path: home/config/starship.toml
+      path: home/.config/starship.toml
     ~/.config/ghostty:
-      path: home/config/ghostty
+      path: home/.config/ghostty
     ~/.config/karabiner:
-      path: home/config/karabiner
+      path: home/.config/karabiner
     ~/.config/tmux:
-      path: home/config/tmux
+      path: home/.config/tmux
     ~/.config/bat:
-      path: home/config/bat
+      path: home/.config/bat
     ~/.config/nvim:
-      path: home/config/nvim
+      path: home/.config/nvim
     ~/.config/powershell:
-      path: home/config/powershell
+      path: home/.config/powershell
     ~/Library/Application Support/Leader Key:
       path: home/Library/Application Support/Leader Key
     ~/Library/Preferences/flavours:

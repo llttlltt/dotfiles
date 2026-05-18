@@ -1,0 +1,48 @@
+{
+  "providers": {
+    "lmstudio": {
+      "api": "openai-completions",
+      "apiKey": "key",
+      "baseUrl": "http://localhost:1234/v1",
+      "models": [
+        {
+          "id": "google/gemma-4-26b-a4b",
+          "name": "Gemma 4 26B A4B",
+          "input": ["text", "image"],
+          "contextWindow": 262144,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": null,
+            "low": null,
+            "medium": "medium",
+            "high": null,
+            "xhigh": null
+          }
+        },
+        {
+          "id": "qwen/qwen3.6-35b-a3b",
+          "name": "Qwen3.6 35B A3B",
+          "input": ["text", "image"],
+          "contextWindow": 262144,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": null,
+            "low": null,
+            "medium": "medium",
+            "high": null,
+            "xhigh": null
+          }
+        },
+        {
+          "id": "zai-org/glm-4.6v-flash",
+          "name": "Glm 4.6v Flash",
+          "input": ["text", "image"],
+          "contextWindow": 131072,
+          "reasoning": false
+        }
+      ]
+    }
+  }
+}

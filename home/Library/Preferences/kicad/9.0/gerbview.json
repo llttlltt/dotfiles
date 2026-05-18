@@ -67,7 +67,15 @@
   },
   "system": {
     "drill_file_history": [],
-    "file_history": [],
+    "file_history": [
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_TopSolderMaskLayer.GTS",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_TopSilkscreenLayer.GTO",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_TopLayer.GTL",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_BottomSolderMaskLayer.GBS",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_BottomSilkscreenLayer.GBO",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_BottomLayer.GBL",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel/Gerber_BoardOutlineLayer.GKO"
+    ],
     "first_run_shown": false,
     "job_file_history": [],
     "last_imperial_units": 5,
@@ -84,7 +92,7 @@
     },
     "display": 0,
     "grid": {
-      "axes_enabled": false,
+      "axes_enabled": true,
       "fast_grid_1": 15,
       "fast_grid_2": 16,
       "last_size": 15,
@@ -219,13 +227,13 @@
       "user_grid_x": "",
       "user_grid_y": ""
     },
-    "maximized": false,
-    "mru_path": "",
-    "perspective": "",
-    "pos_x": 0,
-    "pos_y": 0,
-    "size_x": 0,
-    "size_y": 0,
+    "maximized": true,
+    "mru_path": "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/Gerber-seq4022-v3-panel",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=610;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=4;row=0;pos=0;prop=100000;bestw=1011;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=620;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Layers Manager;state=1532;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=278;besth=32;minw=278;minh=32;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=278;floath=32|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(1,4,0)=24|dock_size(3,6,0)=26|dock_size(4,3,0)=34|dock_size(2,3,0)=278|dock_size(5,0,0)=402|",
+    "pos_x": 640,
+    "pos_y": 372,
+    "size_x": 1280,
+    "size_y": 720,
     "zoom_factors": [
       0.022,
       0.035,

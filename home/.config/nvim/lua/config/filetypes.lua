@@ -1,0 +1,12 @@
+vim.filetype.add({
+	pattern = {
+		["openapi.*%.ya?ml"] = "yaml.openapi",
+		["swagger.*%.ya?ml"] = "yaml.openapi",
+		[".*openapi%.ya?ml"] = "yaml.openapi",
+		[".*swagger%.ya?ml"] = "yaml.openapi",
+		["openapi.*%.json"] = "json.openapi",
+		["swagger.*%.json"] = "json.openapi",
+		[".*openapi%.json"] = "json.openapi",
+		[".*swagger%.json"] = "json.openapi",
+	},
+})

@@ -11,7 +11,7 @@
     "on_selection": true,
     "zoom_to_fit": true
   },
-  "filter_footprint": 0,
+  "filter_footprint": 1,
   "filter_footprint_text": "",
   "find_replace": {
     "find_history": [],
@@ -167,9 +167,9 @@
     },
     "maximized": false,
     "mru_path": "",
-    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=565;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=410;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=162;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=32;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(4,3,0)=34|dock_size(5,0,0)=259|dock_size(3,6,0)=32|",
-    "pos_x": 0,
-    "pos_y": 577,
+    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=565;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=410;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(4,3,0)=34|dock_size(5,0,0)=259|dock_size(3,6,0)=26|",
+    "pos_x": 1532,
+    "pos_y": 796,
     "show_graphic_fill": true,
     "show_pad_fill": true,
     "show_pad_number": true,
@@ -177,7 +177,7 @@
     "size_x": 864,
     "size_y": 540,
     "use_45_limit": true,
-    "zoom": 1.0,
+    "zoom": 4.995346431085421,
     "zoom_factors": [
       0.13,
       0.22,
@@ -199,7 +199,7 @@
       300.0
     ]
   },
-  "footprints_pane_width": 0,
+  "footprints_pane_width": 325,
   "graphics": {
     "canvas_type": 1,
     "highlight_factor": 0.5,
@@ -210,7 +210,7 @@
     "columns": [],
     "open_libs": []
   },
-  "libraries_pane_width": 0,
+  "libraries_pane_width": 256,
   "meta": {
     "version": 0
   },
@@ -383,11 +383,11 @@
     },
     "maximized": false,
     "mru_path": "",
-    "perspective": "",
-    "pos_x": 0,
-    "pos_y": 0,
-    "size_x": 0,
-    "size_y": 0,
+    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=724;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Libraries;caption=Footprint Libraries;state=2044;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=256;besth=-1;minw=20;minh=-1;maxw=256;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Symbols;caption=Symbol : Footprint Assignments;state=2044;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=160;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Footprints;caption=Filtered Footprints;state=2044;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=325;besth=-1;minw=20;minh=-1;maxw=325;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Buttons;caption=;state=139644;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=459;besth=87;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(4,1,0)=258|dock_size(5,0,0)=376|dock_size(2,1,0)=327|dock_size(3,6,0)=87|",
+    "pos_x": 157,
+    "pos_y": 106,
+    "size_x": 1256,
+    "size_y": 720,
     "zoom_factors": [
       0.13,
       0.22,

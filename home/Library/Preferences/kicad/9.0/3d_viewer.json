@@ -42,6 +42,10 @@
     {
       "colors": [
         {
+          "color": "rgb(194, 194, 194)",
+          "layer": ""
+        },
+        {
           "color": "rgb(102, 102, 128)",
           "layer": "background_bottom"
         },
@@ -96,186 +100,6 @@
         {
           "color": "rgb(179, 26, 26)",
           "layer": "user_eco2"
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(232, 178, 167)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(89, 148, 220)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(180, 219, 210)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(216, 200, 82)",
-          "layer": ""
-        },
-        {
-          "color": "rgb(194, 194, 194)",
-          "layer": ""
         }
       ],
       "layers": [
@@ -297,6 +121,90 @@
         "3d_axes"
       ],
       "name": "legacy colors"
+    },
+    {
+      "colors": [
+        {
+          "color": "rgb(194, 194, 194)",
+          "layer": ""
+        },
+        {
+          "color": "rgb(102, 102, 128)",
+          "layer": "background_bottom"
+        },
+        {
+          "color": "rgb(204, 204, 230)",
+          "layer": "background_top"
+        },
+        {
+          "color": "rgba(109, 116, 75, 0.965)",
+          "layer": "board"
+        },
+        {
+          "color": "rgb(160, 160, 160)",
+          "layer": "copper"
+        },
+        {
+          "color": "rgb(160, 160, 160)",
+          "layer": "copper_bottom"
+        },
+        {
+          "color": "rgb(245, 245, 245)",
+          "layer": "silkscreen_bottom"
+        },
+        {
+          "color": "rgb(245, 245, 245)",
+          "layer": "silkscreen_top"
+        },
+        {
+          "color": "rgba(11, 11, 11, 0.831)",
+          "layer": "soldermask_bottom"
+        },
+        {
+          "color": "rgba(11, 11, 11, 0.831)",
+          "layer": "soldermask_top"
+        },
+        {
+          "color": "rgb(128, 128, 128)",
+          "layer": "solderpaste"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.000)",
+          "layer": "user_comments"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.000)",
+          "layer": "user_drawings"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.000)",
+          "layer": "user_eco1"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.000)",
+          "layer": "user_eco2"
+        }
+      ],
+      "layers": [
+        "fp_text",
+        "fp_values",
+        "fp_references",
+        "board",
+        "copper",
+        "copper_bottom",
+        "silkscreen_bottom",
+        "silkscreen_top",
+        "soldermask_bottom",
+        "soldermask_top",
+        "solderpaste",
+        "adhesive",
+        "th_models",
+        "smd_models",
+        "virtual_models",
+        "non_pos_file_models",
+        "3d_axes"
+      ],
+      "name": "Raytrace"
     }
   ],
   "lib_tree": {
@@ -390,13 +298,13 @@
     "show_adhesive": true,
     "show_axis": true,
     "show_board_body": true,
-    "show_comments": true,
+    "show_comments": false,
     "show_copper_bottom": true,
     "show_copper_top": true,
-    "show_drawings": true,
+    "show_drawings": false,
     "show_eco": true,
-    "show_eco1": true,
-    "show_eco2": true,
+    "show_eco1": false,
+    "show_eco2": false,
     "show_footprints_dnp": false,
     "show_footprints_insert": true,
     "show_footprints_normal": true,
@@ -617,11 +525,11 @@
       "user_grid_x": "10 mil",
       "user_grid_y": "10 mil"
     },
-    "maximized": false,
+    "maximized": true,
     "mru_path": "",
     "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=738;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Appearance;state=1532;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=190;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=16;besth=16;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(2,3,0)=190|dock_size(5,0,0)=18|",
-    "pos_x": 1280,
-    "pos_y": 25,
+    "pos_x": 388,
+    "pos_y": -86,
     "size_x": 1280,
     "size_y": 1415,
     "zoom_factors": [

@@ -26,6 +26,11 @@
   "drag_pins_along_with_edges": true,
   "edit_component_visible_columns": "0 1 2 3 4 5 6 7",
   "edit_symbol_visible_columns": "0 1 2 3 4 5 6 7",
+  "field_editor": {
+    "field_widths": {},
+    "height": 0,
+    "width": 0
+  },
   "find_replace": {
     "find_history": [],
     "find_string": "",
@@ -62,7 +67,9 @@
       "Item",
       "Description"
     ],
-    "open_libs": []
+    "open_libs": [
+      "Device"
+    ]
   },
   "library": {
     "sort_mode": 0
@@ -70,7 +77,7 @@
   "meta": {
     "version": 1
   },
-  "pin_table_visible_columns": "0 1 2 3 4 8 9",
+  "pin_table_visible_columns": "0 1 2 3 4 8 9 12",
   "plugins": {
     "actions": []
   },
@@ -174,12 +181,12 @@
       "user_grid_y": ""
     },
     "maximized": true,
-    "mru_path": "/Users/elliott/Downloads/Kicad_Akiyuki_Symbol-master",
+    "mru_path": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/db25-trs-patchbay/hardware/libraries/symbol",
     "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=903;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LibraryTree;caption=Libraries;state=1996;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=250;besth=-1;minw=250;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=PropertiesManager;caption=Properties;state=2099148;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=300;floath=400|name=SelectionFilter;caption=Selection Filter;state=2098636;dir=4;layer=3;row=0;pos=2;prop=0;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=378;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=401;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=768;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=34|dock_size(3,6,0)=26|dock_size(4,3,0)=302|dock_size(4,2,0)=34|dock_size(2,2,0)=34|dock_size(5,0,0)=402|",
-    "pos_x": 224,
-    "pos_y": 217,
-    "size_x": 1280,
-    "size_y": 664,
+    "pos_x": 320,
+    "pos_y": 251,
+    "size_x": 1352,
+    "size_y": 885,
     "zoom_factors": [
       0.05,
       0.07,

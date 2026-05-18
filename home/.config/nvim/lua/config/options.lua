@@ -97,3 +97,6 @@ vim.diagnostic.config({
 	update_in_insert = false, -- Don't show diagnostics while in insert mode
 	severity_sort = true, -- Sort diagnostics by severity
 })
+
+-- Prepend mise shims to PATH
+-- vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH

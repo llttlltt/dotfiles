@@ -21,7 +21,7 @@
     "edit_symbol_height": 554,
     "edit_symbol_visible_columns": "0 1 2 3 4 5 6 7",
     "edit_symbol_width": 1106,
-    "erc_severities": 24,
+    "erc_severities": 56,
     "footprint_preview": true,
     "mark_sim_exclusions": true,
     "navigator_stays_open": false,
@@ -159,32 +159,35 @@
   },
   "find_replace": {
     "find_history": [
-      "CH1",
-      "CH2",
-      "CH1_GND",
-      "CH1_INPUT",
-      "CH2_CVB_BUFFER_IN",
-      "e",
-      "CV_A_BUFF_OUT_2",
-      "CVA_BUFF_OUT_1",
-      "CVB_BUFFER_IN",
-      "2swsigin"
+      "XJ102",
+      "RFB101",
+      "J102",
+      "D101",
+      "D102",
+      "Q101",
+      "R118",
+      "r118",
+      "RV102",
+      "VCF_SW"
     ],
-    "find_string": "CH1",
+    "find_string": "XJ102",
     "flags": 1,
     "match_case": false,
     "match_mode": 0,
     "replace_history": [
-      "CH8",
-      "CH7",
-      "CH6",
-      "CH5",
-      "CH4",
-      "CH3",
-      "CH2"
+      "SW3_VCF",
+      "SW1_VCA",
+      "k",
+      "K",
+      "Earth",
+      "_G",
+      "B_S",
+      "T_S",
+      "S",
+      "_gnd"
     ],
     "replace_references": false,
-    "replace_string": "CH8",
+    "replace_string": "SW3_VCF",
     "search_all_fields": false,
     "search_all_pins": false,
     "search_and_replace": false,
@@ -221,8 +224,7 @@
     ],
     "open_libs": [
       "-- Recently Used --",
-      "-- Already Placed --",
-      "Switch"
+      "Isolator"
     ]
   },
   "lib_view": {
@@ -329,11 +331,11 @@
     "export_comment7": false,
     "export_comment8": false,
     "export_comment9": false,
-    "export_company": false,
-    "export_date": false,
-    "export_paper": false,
-    "export_revision": false,
-    "export_title": false
+    "export_company": true,
+    "export_date": true,
+    "export_paper": true,
+    "export_revision": true,
+    "export_title": true
   },
   "plot": {
     "background_color": false,
@@ -354,12 +356,12 @@
   },
   "printing": {
     "background": false,
-    "color_theme": "",
+    "color_theme": "user",
     "layers": [],
-    "monochrome": true,
+    "monochrome": false,
     "scale": 1.0,
-    "title_block": false,
-    "use_theme": false
+    "title_block": true,
+    "use_theme": true
   },
   "search_pane": {
     "search_hidden_fields": true,
@@ -377,8 +379,8 @@
     "thickness": 3
   },
   "simulator": {
-    "cursors_panel_height": 0,
-    "measurements_panel_height": 0,
+    "cursors_panel_height": 218,
+    "measurements_panel_height": 20,
     "mouse_wheel_actions": {
       "horizontal": 0,
       "vertical_unmodified": 4,
@@ -386,9 +388,9 @@
       "vertical_with_ctrl": 1,
       "vertical_with_shift": 3
     },
-    "plot_panel_height": 0,
-    "plot_panel_width": 0,
-    "signal_panel_height": 0,
+    "plot_panel_height": 275,
+    "plot_panel_width": 981,
+    "signal_panel_height": 367,
     "white_background": false,
     "window": {
       "cursor": {
@@ -485,15 +487,15 @@
   },
   "system": {
     "file_history": [
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board/led-board.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/DLMK Faderbank+/DLMK Faderbank+.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/fader-board/fader-board.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/Euro Fader PCB/Euro Fader PCB.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/BP Lever Adapter/BP Lever Adapter.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/T Lever Adapter/T Lever Adapter.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/led-slider-30mm/hardware/led-slider-30mm.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/led-slider-30mm/hardware/rgb-led-driver-tlc5971.kicad_sch",
-      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/slider-led-qfn/hardware/slider-led-qfn.kicad_sch"
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/db25-trs-patchbay/hardware/db25-trs-patchbay.kicad_sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/eurorack/pico-midi/hardware/pico-midi.kicad_sch",
+      "/Users/elliott/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Zen/hostess-main/hardware/Hostess R1/Hostess R1.kicad_sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/eurorack/buchla-lpg/hardware/buchla-lpg.kicad_sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/control/Thonkiconn LED/Thonkiconn LED.kicad_sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/stereo_insert_fx/hardware/stereo_insert_fx.sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/microarrays-step_sequencer/hardware/microarrays.sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/link/hardware/v1.0/link-v1.0.kicad_sch",
+      "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/narmerio/projects/eurorack/5-concept/Dock 2/Dock 2.kicad_sch"
     ],
     "first_run_shown": true,
     "last_imperial_units": 0,
@@ -514,7 +516,7 @@
       "axes_enabled": false,
       "fast_grid_1": 1,
       "fast_grid_2": 2,
-      "last_size": 3,
+      "last_size": 4,
       "line_width": 1.0,
       "min_spacing": 10.0,
       "override_connected": true,
@@ -564,9 +566,9 @@
     "maximized": true,
     "mru_path": "",
     "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1172;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=26;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SchematicHierarchy;caption=Schematic Hierarchy;state=2099148;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=300;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=354;floaty=98;floatw=200;floath=200|name=PropertiesManager;caption=Properties;state=2099148;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=300;floath=400|name=SelectionFilter;caption=Selection Filter;state=2098636;dir=4;layer=3;row=0;pos=2;prop=0;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DesignBlocks;caption=Design Blocks;state=2099148;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=800;floath=600|name=NetNavigator;caption=Net Navigator;state=2099150;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=200;floath=200|name=OptToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=460;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=890;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=168;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=100;minw=180;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=34|dock_size(3,6,0)=26|dock_size(4,3,0)=302|dock_size(2,3,0)=302|dock_size(4,2,0)=34|dock_size(2,2,0)=34|dock_size(5,0,0)=402|",
-    "pos_x": 1281,
+    "pos_x": 0,
     "pos_y": 25,
-    "size_x": 1279,
+    "size_x": 1825,
     "size_y": 1359,
     "zoom_factors": [
       0.05,

@@ -1,752 +1,795 @@
 {
-	"actions": [
-		{
-			"key": "a",
-			"type": "application",
-			"value": "/Applications/Totalmix.app"
-		},
-		{
-			"key": "b",
-			"label": "Browser",
-			"type": "application",
-			"value": "/Applications/Zen Browser.app"
-		},
-		{
-			"actions": [
-				{
-					"key": "b",
-					"type": "application",
-					"value": "/Applications/Beeper Desktop.app"
-				},
-				{
-					"key": "i",
-					"label": "IRC",
-					"type": "application",
-					"value": "/Applications/Textual.app"
-				},
-				{
-					"key": "m",
-					"type": "application",
-					"value": "/System/Applications/Messages.app"
-				},
-				{
-					"key": "t",
-					"label": "Teams",
-					"type": "application",
-					"value": "/Applications/Microsoft Teams.app"
-				},
-				{
-					"key": "w",
-					"type": "application",
-					"value": "/Applications/WhatsApp.app"
-				}
-			],
-			"key": "c",
-			"label": "Chat",
-			"type": "group"
-		},
-		{
-			"key": "d",
-			"label": "Dictate - MacWhisper",
-			"type": "command",
-			"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh MacWhisper d command,control,option,shift"
-		},
-		{
-			"key": "e",
-			"label": "Email",
-			"type": "application",
-			"value": "/System/Applications/Mail.app"
-		},
-		{
-			"key": "f",
-			"type": "application",
-			"value": "/System/Library/CoreServices/Finder.app"
-		},
-		{
-			"key": "i",
-			"label": "IDE",
-			"type": "application",
-			"value": "/Applications/Visual Studio Code.app"
-		},
-		{
-			"actions": [
-				{
-					"key": "m",
-					"type": "application",
-					"value": "/System/Applications/Music.app"
-				},
-				{
-					"key": "s",
-					"type": "application",
-					"value": "/Applications/Spotify.app"
-				}
-			],
-			"key": "m",
-			"label": "Media",
-			"type": "group"
-		},
-		{
-			"actions": [
-				{
-					"actions": [
-						{
-							"key": "a",
-							"type": "application",
-							"value": "/Applications/Arc.app"
-						},
-						{
-							"key": "c",
-							"type": "application",
-							"value": "/Applications/Google Chrome.app"
-						},
-						{
-							"key": "e",
-							"label": "Edge",
-							"type": "application",
-							"value": "/Applications/Microsoft Edge.app"
-						},
-						{
-							"key": "f",
-							"type": "application",
-							"value": "/Applications/Firefox.app"
-						},
-						{
-							"key": "s",
-							"type": "application",
-							"value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-						},
-						{
-							"key": "z",
-							"type": "application",
-							"value": "/Applications/Zen Browser.app"
-						}
-					],
-					"key": "b",
-					"label": "Browser",
-					"type": "group"
-				},
-				{
-					"key": "c",
-					"type": "application",
-					"value": "/Applications/Fantastical.app"
-				},
-				{
-					"key": "i",
-					"type": "application",
-					"value": "/System/Applications/iPhone Mirroring.app"
-				},
-				{
-					"key": "o",
-					"type": "application",
-					"value": "/Applications/Obsidian.app"
-				}
-			],
-			"key": "o",
-			"label": "Open",
-			"type": "group"
-		},
-		{
-			"key": "p",
-			"label": "1Password",
-			"type": "application",
-			"value": "/Applications/1Password.app"
-		},
-		{
-			"actions": [
-				{
-					"key": "n",
-					"label": "Note - Obsidian Quick Add Note",
-					"type": "command",
-					"value": "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
-				},
-				{
-					"key": "p",
-					"label": "Passwords - 1Password Quick Access",
-					"type": "command",
-					"value": "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
-				},
-				{
-					"key": "t",
-					"label": "Task - Todoist Quick Add Task",
-					"type": "url",
-					"value": "todoist://openquickadd"
-				}
-			],
-			"key": "q",
-			"label": "Quick",
-			"type": "group"
-		},
-		{
-			"key": "r",
-			"label": "Reader - Instapaper",
-			"type": "application",
-			"value": "/Applications/Instapaper.app"
-		},
-		{
-			"actions": [
-				{
-					"key": "0",
-					"label": "Volume 0%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 0"
-				},
-				{
-					"key": "1",
-					"label": "Volume 10%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 10"
-				},
-				{
-					"key": "2",
-					"label": "Volume 20%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 20"
-				},
-				{
-					"key": "3",
-					"label": "Volume 30%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 30"
-				},
-				{
-					"key": "4",
-					"label": "Volume 40%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 40"
-				},
-				{
-					"key": "5",
-					"label": "Volume 50%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 50"
-				},
-				{
-					"key": "6",
-					"label": "Volume 60%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 60"
-				},
-				{
-					"key": "7",
-					"label": "Volume 70%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 70"
-				},
-				{
-					"key": "8",
-					"label": "Volume 80%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 80"
-				},
-				{
-					"key": "9",
-					"label": "Volume 90%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh90"
-				},
-				{
-					"key": "f",
-					"label": "Volume 100%",
-					"type": "command",
-					"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 100"
-				},
-				{
-					"key": "a",
-					"type": "application",
-					"value": "/System/Applications/Utilities/Audio MIDI Setup.app"
-				},
-				{
-					"key": "b",
-					"label": "Bluetooth",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.BluetoothSettings"
-				},
-				{
-					"key": "d",
-					"label": "Displays",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Displays-Settings.extension"
-				},
-				{
-					"key": "g",
-					"label": "General",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.systempreferences.GeneralSettings"
-				},
-				{
-					"key": "k",
-					"label": "Keyboard",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Keyboard-Settings.extension"
-				},
-				{
-					"key": "m",
-					"label": "Mouse",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Mouse-Settings.extension"
-				},
-				{
-					"key": "n",
-					"label": "Notifications",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Notifications-Settings.extension"
-				},
-				{
-					"key": "p",
-					"label": "Passwords",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Passwords-Settings.extension"
-				},
-				{
-					"key": "s",
-					"label": "Sound",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Sound-Settings.extension"
-				},
-				{
-					"key": "t",
-					"label": "Trackpad",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.Trackpad-Settings.extension"
-				},
-				{
-					"key": "v",
-					"label": "VPN",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension"
-				},
-				{
-					"key": "w",
-					"label": "Wi-Fi",
-					"type": "command",
-					"value": "open x-apple.systempreferences:com.apple.wifi-settings-extension"
-				}
-			],
-			"key": "s",
-			"label": "System Settings",
-			"type": "group"
-		},
-		{
-			"key": "t",
-			"type": "application",
-			"value": "/Applications/Todoist.app"
-		},
-		{
-			"key": "v",
-			"label": "Browser (Dev)",
-			"type": "application",
-			"value": "/Applications/Google Chrome.app"
-		},
-		{
-			"actions": [
-				{
-					"key": "f",
-					"label": "Fullscreen (Maximize)",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=maximize"
-				},
-				{
-					"key": "c",
-					"label": "Center",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=center"
-				},
-				{
-					"key": "h",
-					"label": "Left half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=left-half"
-				},
-				{
-					"key": "l",
-					"label": "Right half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=right-half"
-				},
-				{
-					"key": "k",
-					"label": "Top half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=top-half"
-				},
-				{
-					"key": "j",
-					"label": "Bottom half",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=bottom-half"
-				},
-				{
-					"actions": [
-						{
-							"key": "1",
-							"label": "First third",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=first-third"
-						},
-						{
-							"key": "2",
-							"label": "Center third",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=center-third"
-						},
-						{
-							"key": "3",
-							"label": "Last third",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=last-third"
-						},
-						{
-							"key": "h",
-							"label": "First two-thirds",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=first-two-thirds"
-						},
-						{
-							"key": "c",
-							"label": "Center two-thirds",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=center-two-thirds"
-						},
-						{
-							"key": "l",
-							"label": "Last two-thirds",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=last-two-thirds"
-						}
-					],
-					"key": "3",
-					"label": "Resize: Three columns",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "1",
-							"label": "Top-left",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-left"
-						},
-						{
-							"key": "2",
-							"label": "Top-right",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-right"
-						},
-						{
-							"key": "3",
-							"label": "Bottom-left",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-left"
-						},
-						{
-							"key": "4",
-							"label": "Bottom-right",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-right"
-						},
-						{
-							"actions": [
-								{
-									"key": "1",
-									"label": "First fourth",
-									"type": "url",
-									"value": "rectangle-pro://execute-action?name=first-fourth"
-								},
-								{
-									"key": "2",
-									"label": "Second fourth",
-									"type": "url",
-									"value": "rectangle-pro://execute-action?name=second-fourth"
-								},
-								{
-									"key": "3",
-									"label": "Third fourth",
-									"type": "url",
-									"value": "rectangle-pro://execute-action?name=third-fourth"
-								},
-								{
-									"key": "4",
-									"label": "Last fourth",
-									"type": "url",
-									"value": "rectangle-pro://execute-action?name=last-fourth"
-								}
-							],
-							"key": "c",
-							"label": "Columns",
-							"type": "group"
-						},
-						{
-							"key": "h",
-							"label": "First three-fourths",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=first-three-fourths"
-						},
-						{
-							"key": "l",
-							"label": "Last three-fourths",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=last-three-fourths"
-						}
-					],
-					"key": "4",
-					"label": "Resize: Fourths",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "1",
-							"label": "Top-left sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-left-sixth"
-						},
-						{
-							"key": "2",
-							"label": "Top-center sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-center-sixth"
-						},
-						{
-							"key": "3",
-							"label": "Top-right sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-right-sixth"
-						},
-						{
-							"key": "4",
-							"label": "Bottom-left sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-left-sixth"
-						},
-						{
-							"key": "5",
-							"label": "Bottom-center sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-center-sixth"
-						},
-						{
-							"key": "6",
-							"label": "Bottom-right sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-right-sixth"
-						},
-						{
-							"key": "h",
-							"label": "First sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=first-sixth"
-						},
-						{
-							"key": "l",
-							"label": "Last sixth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=last-sixth"
-						}
-					],
-					"key": "6",
-					"label": "Resize: Sixths",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "1",
-							"label": "Top-left eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-left-eighth"
-						},
-						{
-							"key": "2",
-							"label": "Top-center-left eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-center-left-eighth"
-						},
-						{
-							"key": "3",
-							"label": "Top-center-right eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-center-right-eighth"
-						},
-						{
-							"key": "4",
-							"label": "Top-right eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=top-right-eighth"
-						},
-						{
-							"key": "5",
-							"label": "Bottom-left eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-left-eighth"
-						},
-						{
-							"key": "6",
-							"label": "Bottom-center-left eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-center-left-eighth"
-						},
-						{
-							"key": "7",
-							"label": "Bottom-center-right eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-center-right-eighth"
-						},
-						{
-							"key": "8",
-							"label": "Bottom-right eighth",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=bottom-right-eighth"
-						}
-					],
-					"key": "8",
-					"label": "Resize: Eighths",
-					"type": "group"
-				},
-				{
-					"key": "p",
-					"label": "Pin",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=pin"
-				},
-				{
-					"actions": [
-						{
-							"key": "l",
-							"label": "Next Display",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=next-display"
-						},
-						{
-							"key": "h",
-							"label": "Previous Display",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=previous-display"
-						},
-						{
-							"key": "L",
-							"label": "App Next Display",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=app-next-display"
-						},
-						{
-							"key": "H",
-							"label": "App Previous Display",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=app-prev-display"
-						},
-						{
-							"key": "n",
-							"label": "Next Display Ratio",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=next-display-ratio"
-						},
-						{
-							"key": "p",
-							"label": "Previous Display Ratio",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=prev-display-ratio"
-						}
-					],
-					"key": "d",
-					"label": "Display",
-					"type": "group"
-				},
-				{
-					"actions": [
-						{
-							"key": "h",
-							"label": "Stash Left",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash-left"
-						},
-						{
-							"key": "k",
-							"label": "Stash Up",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash-up"
-						},
-						{
-							"key": "l",
-							"label": "Stash Right",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash-right"
-						},
-						{
-							"key": "j",
-							"label": "Stash Down",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash-down"
-						},
-						{
-							"key": "-",
-							"label": "Unstash",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=unstash"
-						},
-						{
-							"key": "_",
-							"label": "Unstash All",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=unstash-all"
-						},
-						{
-							"key": "=",
-							"label": "Stash",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash"
-						},
-						{
-							"key": "+",
-							"label": "Stash All",
-							"type": "url",
-							"value": "rectangle-pro://execute-action?name=stash-all"
-						}
-					],
-					"key": "s",
-					"label": "Stash",
-					"type": "group"
-				},
-				{
-					"key": "q",
-					"label": "Quit App",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=quit-app"
-				},
-				{
-					"key": "F",
-					"label": "Fullscreen",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=fullscreen"
-				},
-				{
-					"key": "m",
-					"label": "Minimize",
-					"type": "url",
-					"value": "rectangle-pro://execute-action?name=minimize"
-				}
-			],
-			"key": "w",
-			"label": "Window",
-			"type": "group"
-		},
-		{
-			"key": "x",
-			"label": "Terminal",
-			"type": "application",
-			"value": "/Applications/Ghostty.app"
-		},
-		{
-			"key": "-",
-			"label": "Volume -5%",
-			"type": "command",
-			"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh -5"
-		},
-		{
-			"key": "=",
-			"label": "Volume +5%",
-			"type": "command",
-			"value": "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh +5"
-		}
-	],
-	"type": "group"
+  "actions" : [
+    {
+      "key" : "a",
+      "type" : "application",
+      "value" : "/Applications/Totalmix.app"
+    },
+    {
+      "key" : "b",
+      "label" : "Browser",
+      "type" : "application",
+      "value" : "/Applications/Zen Browser.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "b",
+          "type" : "application",
+          "value" : "/Applications/Beeper Desktop.app"
+        },
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Discord.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/System/Applications/FaceTime.app"
+        },
+        {
+          "key" : "i",
+          "label" : "IRC",
+          "type" : "application",
+          "value" : "/Applications/Textual.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "t",
+          "label" : "Teams",
+          "type" : "application",
+          "value" : "/Applications/Microsoft Teams.app"
+        },
+        {
+          "key" : "w",
+          "type" : "application",
+          "value" : "/Applications/WhatsApp.app"
+        }
+      ],
+      "iconPath" : "message.fill",
+      "key" : "c",
+      "label" : "Chat",
+      "type" : "group"
+    },
+    {
+      "iconPath" : "microphone.badge.ellipsis.fill",
+      "key" : "d",
+      "label" : "Dictate",
+      "type" : "command",
+      "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh MacWhisper d command,control,option,shift"
+    },
+    {
+      "key" : "e",
+      "label" : "Email",
+      "type" : "application",
+      "value" : "/System/Applications/Mail.app"
+    },
+    {
+      "key" : "f",
+      "type" : "application",
+      "value" : "/System/Library/CoreServices/Finder.app"
+    },
+    {
+      "key" : "i",
+      "label" : "IDE",
+      "type" : "application",
+      "value" : "/Applications/Visual Studio Code.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Music.app"
+        },
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/Applications/Plex.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Spotify.app"
+        }
+      ],
+      "iconPath" : "waveform",
+      "key" : "m",
+      "label" : "Media",
+      "type" : "group"
+    },
+    {
+      "key" : "n",
+      "label" : "News",
+      "type" : "application",
+      "value" : "/Applications/Ground News.app"
+    },
+    {
+      "actions" : [
+        {
+          "actions" : [
+            {
+              "key" : "c",
+              "type" : "application",
+              "value" : "/Applications/Google Chrome.app"
+            },
+            {
+              "key" : "e",
+              "label" : "Edge",
+              "type" : "application",
+              "value" : "/Applications/Microsoft Edge.app"
+            },
+            {
+              "key" : "f",
+              "type" : "application",
+              "value" : "/Applications/Firefox.app"
+            },
+            {
+              "key" : "s",
+              "type" : "application",
+              "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+            },
+            {
+              "key" : "z",
+              "type" : "application",
+              "value" : "/Applications/Zen Browser.app"
+            }
+          ],
+          "iconPath" : "network",
+          "key" : "b",
+          "label" : "Browser",
+          "type" : "group"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/System/Applications/iPhone Mirroring.app"
+        },
+        {
+          "key" : "o",
+          "type" : "application",
+          "value" : "/Applications/Obsidian.app"
+        }
+      ],
+      "iconPath" : "circle.grid.3x3.fill",
+      "key" : "o",
+      "label" : "Open",
+      "type" : "group"
+    },
+    {
+      "key" : "p",
+      "label" : "1Password",
+      "type" : "application",
+      "value" : "/Applications/1Password.app"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "note.text.badge.plus",
+          "key" : "n",
+          "label" : "Note - Obsidian Quick Add Note",
+          "type" : "command",
+          "value" : "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
+        },
+        {
+          "iconPath" : "lock.fill",
+          "key" : "p",
+          "label" : "Passwords - 1Password Quick Access",
+          "type" : "command",
+          "value" : "/Applications/1Password.app/Contents/MacOS/1Password --quick-access"
+        },
+        {
+          "iconPath" : "checklist",
+          "key" : "t",
+          "label" : "Task - Todoist Quick Add Task",
+          "type" : "url",
+          "value" : "todoist://openquickadd"
+        }
+      ],
+      "iconPath" : "figure.run",
+      "key" : "q",
+      "label" : "Quick",
+      "type" : "group"
+    },
+    {
+      "key" : "r",
+      "label" : "Reader",
+      "type" : "application",
+      "value" : "/Applications/Instapaper.app"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Fantastical.app"
+    },
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Todoist.app"
+    },
+    {
+      "key" : "v",
+      "type" : "application",
+      "value" : "/Applications/Google Chrome.app"
+    },
+    {
+      "actions" : [
+        {
+          "actions" : [
+            {
+              "iconPath" : "1.lane",
+              "key" : "1",
+              "label" : "First third",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=first-third"
+            },
+            {
+              "iconPath" : "2.lane",
+              "key" : "2",
+              "label" : "Center third",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=center-third"
+            },
+            {
+              "iconPath" : "3.lane",
+              "key" : "3",
+              "label" : "Last third",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=last-third"
+            },
+            {
+              "iconPath" : "inset.filled.center.rectangle",
+              "key" : "c",
+              "label" : "Center two-thirds",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=center-two-thirds"
+            },
+            {
+              "iconPath" : "inset.filled.leftthird.rectangle",
+              "key" : "h",
+              "label" : "First two-thirds",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=first-two-thirds"
+            },
+            {
+              "iconPath" : "inset.filled.rightthird.rectangle",
+              "key" : "l",
+              "label" : "Last two-thirds",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=last-two-thirds"
+            }
+          ],
+          "iconPath" : "rectangle.split.3x1.fill",
+          "key" : "3",
+          "label" : "Thirds",
+          "type" : "group"
+        },
+        {
+          "actions" : [
+            {
+              "iconPath" : "inset.filled.topleft.rectangle",
+              "key" : "1",
+              "label" : "Top-left",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-left"
+            },
+            {
+              "iconPath" : "inset.filled.topright.rectangle",
+              "key" : "2",
+              "label" : "Top-right",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-right"
+            },
+            {
+              "iconPath" : "inset.filled.bottomleft.rectangle",
+              "key" : "3",
+              "label" : "Bottom-left",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-left"
+            },
+            {
+              "iconPath" : "inset.filled.bottomright.rectangle",
+              "key" : "4",
+              "label" : "Bottom-right",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-right"
+            },
+            {
+              "iconPath" : "1.lane",
+              "key" : "a",
+              "label" : "First fourth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=first-fourth"
+            },
+            {
+              "iconPath" : "3.lane",
+              "key" : "d",
+              "label" : "Third fourth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=third-fourth"
+            },
+            {
+              "iconPath" : "4.lane",
+              "key" : "f",
+              "label" : "Last fourth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=last-fourth"
+            },
+            {
+              "iconPath" : "inset.filled.lefthalf.rectangle",
+              "key" : "h",
+              "label" : "First three-fourths",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=first-three-fourths"
+            },
+            {
+              "iconPath" : "inset.filled.righthalf.rectangle",
+              "key" : "l",
+              "label" : "Last three-fourths",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=last-three-fourths"
+            },
+            {
+              "iconPath" : "2.lane",
+              "key" : "s",
+              "label" : "Second fourth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=second-fourth"
+            }
+          ],
+          "iconPath" : "rectangle.split.2x2.fill",
+          "key" : "4",
+          "label" : "Fourths",
+          "type" : "group"
+        },
+        {
+          "actions" : [
+            {
+              "key" : "1",
+              "label" : "Top-left sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-left-sixth"
+            },
+            {
+              "key" : "2",
+              "label" : "Top-center sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-center-sixth"
+            },
+            {
+              "key" : "3",
+              "label" : "Top-right sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-right-sixth"
+            },
+            {
+              "key" : "4",
+              "label" : "Bottom-left sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-left-sixth"
+            },
+            {
+              "key" : "5",
+              "label" : "Bottom-center sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-center-sixth"
+            },
+            {
+              "key" : "6",
+              "label" : "Bottom-right sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-right-sixth"
+            },
+            {
+              "key" : "h",
+              "label" : "First sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=first-sixth"
+            },
+            {
+              "key" : "l",
+              "label" : "Last sixth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=last-sixth"
+            }
+          ],
+          "key" : "6",
+          "label" : "Sixths",
+          "type" : "group"
+        },
+        {
+          "actions" : [
+            {
+              "key" : "1",
+              "label" : "Top-left eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-left-eighth"
+            },
+            {
+              "key" : "2",
+              "label" : "Top-center-left eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-center-left-eighth"
+            },
+            {
+              "key" : "3",
+              "label" : "Top-center-right eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-center-right-eighth"
+            },
+            {
+              "key" : "4",
+              "label" : "Top-right eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=top-right-eighth"
+            },
+            {
+              "key" : "5",
+              "label" : "Bottom-left eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-left-eighth"
+            },
+            {
+              "key" : "6",
+              "label" : "Bottom-center-left eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-center-left-eighth"
+            },
+            {
+              "key" : "7",
+              "label" : "Bottom-center-right eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-center-right-eighth"
+            },
+            {
+              "key" : "8",
+              "label" : "Bottom-right eighth",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=bottom-right-eighth"
+            }
+          ],
+          "key" : "8",
+          "label" : "Eighths",
+          "type" : "group"
+        },
+        {
+          "iconPath" : "inset.filled.center.rectangle",
+          "key" : "c",
+          "label" : "Center",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=center"
+        },
+        {
+          "actions" : [
+            {
+              "iconPath" : "arrow.backward.square.fill",
+              "key" : "h",
+              "label" : "Previous Display",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=previous-display"
+            },
+            {
+              "key" : "H",
+              "label" : "App Previous Display",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=app-prev-display"
+            },
+            {
+              "iconPath" : "arrow.forward.square.fill",
+              "key" : "l",
+              "label" : "Next Display",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=next-display"
+            },
+            {
+              "key" : "L",
+              "label" : "App Next Display",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=app-next-display"
+            },
+            {
+              "key" : "n",
+              "label" : "Next Display Ratio",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=next-display-ratio"
+            },
+            {
+              "key" : "p",
+              "label" : "Previous Display Ratio",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=prev-display-ratio"
+            }
+          ],
+          "iconPath" : "display.2",
+          "key" : "d",
+          "label" : "Display",
+          "type" : "group"
+        },
+        {
+          "iconPath" : "inset.filled.rectangle",
+          "key" : "f",
+          "label" : "Maximise",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=maximize"
+        },
+        {
+          "iconPath" : "arrow.up.backward.and.arrow.down.forward.square.fill",
+          "key" : "F",
+          "label" : "Fullscreen",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=fullscreen"
+        },
+        {
+          "iconPath" : "inset.filled.lefthalf.rectangle",
+          "key" : "h",
+          "label" : "Left half",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=left-half"
+        },
+        {
+          "iconPath" : "inset.filled.bottomhalf.rectangle",
+          "key" : "j",
+          "label" : "Bottom half",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=bottom-half"
+        },
+        {
+          "iconPath" : "inset.filled.tophalf.rectangle",
+          "key" : "k",
+          "label" : "Top half",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=top-half"
+        },
+        {
+          "iconPath" : "inset.filled.righthalf.rectangle",
+          "key" : "l",
+          "label" : "Right half",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=right-half"
+        },
+        {
+          "iconPath" : "pin.fill",
+          "key" : "p",
+          "label" : "Pin",
+          "type" : "url",
+          "value" : "rectangle-pro://execute-action?name=pin"
+        },
+        {
+          "actions" : [
+            {
+              "key" : "_",
+              "label" : "Unstash All",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=unstash-all"
+            },
+            {
+              "key" : "-",
+              "label" : "Unstash",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=unstash"
+            },
+            {
+              "key" : "+",
+              "label" : "Stash All",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash-all"
+            },
+            {
+              "key" : "=",
+              "label" : "Stash",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash"
+            },
+            {
+              "key" : "h",
+              "label" : "Stash Left",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash-left"
+            },
+            {
+              "key" : "j",
+              "label" : "Stash Down",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash-down"
+            },
+            {
+              "key" : "k",
+              "label" : "Stash Up",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash-up"
+            },
+            {
+              "key" : "l",
+              "label" : "Stash Right",
+              "type" : "url",
+              "value" : "rectangle-pro://execute-action?name=stash-right"
+            }
+          ],
+          "key" : "s",
+          "label" : "Stash",
+          "type" : "group"
+        }
+      ],
+      "iconPath" : "macwindow",
+      "key" : "w",
+      "label" : "Window",
+      "type" : "group"
+    },
+    {
+      "key" : "x",
+      "label" : "Terminal",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "0",
+          "label" : "Volume 0%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 0"
+        },
+        {
+          "key" : "1",
+          "label" : "Volume 10%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 10"
+        },
+        {
+          "key" : "2",
+          "label" : "Volume 20%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 20"
+        },
+        {
+          "key" : "3",
+          "label" : "Volume 30%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 30"
+        },
+        {
+          "key" : "4",
+          "label" : "Volume 40%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 40"
+        },
+        {
+          "key" : "5",
+          "label" : "Volume 50%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 50"
+        },
+        {
+          "key" : "6",
+          "label" : "Volume 60%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 60"
+        },
+        {
+          "key" : "7",
+          "label" : "Volume 70%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 70"
+        },
+        {
+          "key" : "8",
+          "label" : "Volume 80%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 80"
+        },
+        {
+          "key" : "9",
+          "label" : "Volume 90%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh90"
+        },
+        {
+          "key" : "a",
+          "type" : "application",
+          "value" : "/System/Applications/Utilities/Audio MIDI Setup.app"
+        },
+        {
+          "key" : "b",
+          "label" : "Bluetooth",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.BluetoothSettings"
+        },
+        {
+          "key" : "d",
+          "label" : "Displays",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Displays-Settings.extension"
+        },
+        {
+          "key" : "f",
+          "label" : "Volume 100%",
+          "type" : "command",
+          "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh 100"
+        },
+        {
+          "key" : "g",
+          "label" : "General",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.systempreferences.GeneralSettings"
+        },
+        {
+          "key" : "k",
+          "label" : "Keyboard",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Keyboard-Settings.extension"
+        },
+        {
+          "key" : "m",
+          "label" : "Mouse",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Mouse-Settings.extension"
+        },
+        {
+          "key" : "n",
+          "label" : "Notifications",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Notifications-Settings.extension"
+        },
+        {
+          "key" : "p",
+          "label" : "Passwords",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Passwords-Settings.extension"
+        },
+        {
+          "key" : "s",
+          "label" : "Sound",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Sound-Settings.extension"
+        },
+        {
+          "key" : "t",
+          "label" : "Trackpad",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.Trackpad-Settings.extension"
+        },
+        {
+          "key" : "v",
+          "label" : "VPN",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension"
+        },
+        {
+          "key" : "w",
+          "label" : "Wi-Fi",
+          "type" : "command",
+          "value" : "open x-apple.systempreferences:com.apple.wifi-settings-extension"
+        }
+      ],
+      "iconPath" : "gear",
+      "key" : ",",
+      "label" : "System Settings",
+      "type" : "group"
+    },
+    {
+      "iconPath" : "speaker.plus.fill",
+      "key" : "=",
+      "label" : "Volume +5%",
+      "type" : "command",
+      "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh +5"
+    },
+    {
+      "iconPath" : "speaker.minus.fill",
+      "key" : "-",
+      "label" : "Volume -5%",
+      "type" : "command",
+      "value" : "$HOME/.dotfiles/home/config/zsh/user/scripts/vol.sh -5"
+    }
+  ],
+  "type" : "group"
 }

@@ -52,7 +52,7 @@
     "auto_pan_acceleration": 5,
     "center_on_zoom": true,
     "focus_follow_sch_pcb": false,
-    "horizontal_pan": false,
+    "horizontal_pan": true,
     "hotkey_feedback": true,
     "immediate_actions": true,
     "mouse_left": -1,
@@ -60,9 +60,9 @@
     "mouse_right": 2,
     "reverse_scroll_pan_h": false,
     "reverse_scroll_zoom": false,
-    "scroll_modifier_pan_h": 308,
-    "scroll_modifier_pan_v": 306,
-    "scroll_modifier_zoom": 0,
+    "scroll_modifier_pan_h": 306,
+    "scroll_modifier_pan_v": 0,
+    "scroll_modifier_zoom": 308,
     "warp_mouse_on_move": true,
     "zoom_acceleration": false,
     "zoom_speed": 5,
@@ -74,15 +74,19 @@
   "netclass_panel": {
     "eeschema_shown_columns": "0 10 11 12 13",
     "pcbnew_shown_columns": "0 1 2 3 4 5 6 7 8 9",
-    "sash_pos": 160
+    "sash_pos": 257
   },
   "package_manager": {
     "sash_pos": 446
   },
   "session": {
     "pinned_design_block_libs": [],
-    "pinned_fp_libs": [],
-    "pinned_symbol_libs": [],
+    "pinned_fp_libs": [
+      "DB25_TRS_Patchbay"
+    ],
+    "pinned_symbol_libs": [
+      "DB25_TRS_Patchbay"
+    ],
     "remember_open_files": false
   },
   "system": {
@@ -94,6 +98,6 @@
     "pdf_viewer_name": "",
     "text_editor": "/usr/bin/open -e",
     "use_system_pdf_viewer": true,
-    "working_dir": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/deopfer-lmk2-faderbank/hardware/led-board"
+    "working_dir": "/Users/elliott/Library/CloudStorage/Dropbox/400 Workspaces/430 Electronics/projects/hardware-utilities/db25-trs-patchbay/hardware"
   }
 }
