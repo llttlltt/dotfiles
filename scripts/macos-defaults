@@ -1,0 +1,23 @@
+#!/bin/sh
+set -eu
+
+[ "$(uname -s)" = "Darwin" ] || {
+    printf '%s\n' 'macos-defaults only runs on macOS.' >&2
+    exit 1
+}
+
+# Safe, user-scoped preferences only. Privileged changes are intentionally manual.
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowScrollBars -string Always
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder NewWindowTarget -string PfHm
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.dock show-recents -bool false
+
+killall Finder 2>/dev/null || true
+killall Dock 2>/dev/null || true

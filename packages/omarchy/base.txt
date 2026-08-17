@@ -1,0 +1,17 @@
+bat
+chezmoi
+eza
+fd
+fzf
+git
+git-delta
+jq
+neovim
+ripgrep
+starship
+tmux
+trash-cli
+zoxide
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting

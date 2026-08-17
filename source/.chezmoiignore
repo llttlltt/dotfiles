@@ -1,0 +1,9 @@
+{{ if ne .chezmoi.os "darwin" }}
+# Darwin-only configuration
+.config/ghostty
+.config/karabiner
+.config/pi
+.config/powershell
+.config/zsh/user
+Library
+{{ end }}

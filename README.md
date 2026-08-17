@@ -1,74 +1,94 @@
-# .dotfiles
+# dotfiles
 
-These are my personal dotfiles, using zsh and various tools to set up my development environment on macOS.
+Personal configuration managed with [chezmoi](https://www.chezmoi.io/). The primary target is an Apple Silicon personal Mac. A portable `base` profile also supports Omarchy/Arch Linux without taking ownership of Omarchy's desktop or system configuration.
 
-![Terminal](/resources/images/ghostty.jpg)
+## Profiles
 
-## Highlights
+Every machine receives the portable base configuration:
 
-- **cli**
-  - [fzf](https://junegunn.github.io/fzf/)
-  - [zoxide](https://github.com/ajeetdsouza/zoxide)
-  - [ripgrep](https://github.com/BurntSushi/ripgrep)
-  - [eza](https://eza.rocks/)
-  - [fd](https://github.com/sharkdp/fd)
-  - [jq](https://jqlang.org/)
-  - [flavours](https://github.com/Misterio77/flavours)
-  - [httpie](https://httpie.io/)
-  - [trash](https://github.com/andreafrancia/trash-cli)
-- **development**
-  - [neovim](https://neovim.io/) : [kickstart.nvim](https://neovim.io/)
-  - [ghostty](https://ghostty.org/)
-  - [homebrew](https://brew.sh/)
-  - [mise](https://mise.jdx.dev/)
-- **tui**
-  - [dua-cli](https://github.com/Byron/dua-cli)
-  - [btop](https://github.com/aristocratos/btop)
-  - [fx](https://fx.wtf/)
-- **extras**
-  - [leader-key](https://github.com/mikker/LeaderKey.app)
-  - [karabiner-elements](https://karabiner-elements.pqrs.org/)
-- **premium**
-  - [alfred](https://www.alfredapp.com/)
-    - `cu` : [convert currency](https://alfred.app/workflows/alfredapp/currency-converter/)
-    - `cu` : [convert units](https://alfred.app/workflows/alfredapp/unit-converter/)
-    - `tz` : [time zone](https://github.com/jaroslawhartman/TimeZones-Alfred)
-  - [velja](https://sindresorhus.com/velja)
-  - [rectangle-pro](https://rectangleapp.com/pro)
-  - [macwhisper](https://goodsnooze.gumroad.com/l/macwhisper)
+- Neovim
+- Git
+- Zsh
+- tmux
+- starship
+- bat and shared CLI configuration
 
-## Installation
+Machine-local chezmoi data selects a role (`personal`, `work`, or `server`) and the `development`, `audio`, `electronics`, and `gitSigning` capabilities. Darwin additionally receives Ghostty, Karabiner, Leader Key, flavours, PowerShell, Pi configuration, and other macOS-specific settings already represented here.
 
-[Dotbot](https://github.com/anishathalye/dotbot) handles the setup:
+## Bootstrap
 
-1. **Clone the repository:**
+### Existing checkout
 
-    ```bash
-    git clone https://github.com/elliott-liu/dotfiles.git ~/.dotfiles
-    ```
+The installer initializes this checkout as the chezmoi source but does not modify live files by default:
 
-2. **Run the installer:**
+```sh
+./install
+chezmoi --source "$PWD" diff
+./install --apply
+```
 
-    ```bash
-    cd ~/.dotfiles
-    ./install
-    ```
+Applying is interactive so existing files are never silently replaced.
 
+Install packages separately:
 
-## TODO
+```sh
+./scripts/install-packages
+```
 
-- [ ] Dock Preferences
-- [ ] Mission Control Preference (Don't Rearrange Spaces)
-- [ ] Add ~/Library/Spelling/LocationDictionary
-- [ ] Finder (Show Path Bar)
-- [ ] Finder (As List)
-- [ ] Alfred (Turn off Spotlight shortcut and use for Alfred)
-- [ ] Calendar:
-  - [ ] Advanced Preferences:
-    - [ ] Turn on timezone support
-    - [ ] Show events in year view
-    - [ ] Show week numbers
+On the primary Mac, the default `personal` role preserves the complete pre-migration Brewfile. Override profile selection for other Macs with `DOTFILES_ROLE`, `DOTFILES_DEVELOPMENT`, `DOTFILES_AUDIO`, and `DOTFILES_ELECTRONICS` when running the package installer.
 
-### Background
+### New machine
 
-My journey began with a [@fireship-io](https://github.com/fireship-io) video ([~/.dotfiles in 100 Seconds](https://youtu.be/r_MpUP6aKiQ)), and a course by [@eieioxyz](https://github.com/eieioxyz) on [Udemy](https://www.udemy.com/share/1043Ta3@hjXwP3uCJlmKqwco8k_3tBHNY9Sue8EcuuWg63c0ROr8UpThvqBfxhlE4IT4CTK_/).
+Install chezmoi, initialize the repository, inspect the diff, and apply interactively:
+
+```sh
+chezmoi init Elliott-Liu/dotfiles
+chezmoi diff
+chezmoi apply --interactive
+```
+
+On Omarchy, chezmoi manages user configuration only. Package installation uses `pacman`; Omarchy's Hyprland and system configuration remain untouched.
+
+## Daily workflow
+
+Edit the source state, inspect, then apply:
+
+```sh
+chezmoi cd
+$EDITOR source/dot_config/nvim/init.lua
+chezmoi diff
+chezmoi apply
+```
+
+Use `chezmoi re-add <target>` only for applications that rewrite a managed configuration file. Never ingest generated state automatically.
+
+Useful checks:
+
+```sh
+./scripts/doctor
+./scripts/validate
+./scripts/package-audit
+./scripts/package-snapshot
+```
+
+`package-audit` only reports drift; it does not uninstall anything. `package-snapshot` replaces the old `./bundle` workflow by generating a temporary Brewfile and showing the difference without overwriting the curated manifest.
+
+Development runtimes are declared in `source/dot_config/mise/config.toml`; run `mise install` (also performed by the explicit package installer) to converge them.
+
+## Secrets
+
+Secrets do not belong in Git. The intended provider is the 1Password CLI (`op`). Non-secret configuration remains usable when `op` is missing or signed out. Chezmoi is configured to reject secrets detected during `chezmoi add`.
+
+The previously committed Plex token must be rotated separately. Removing it from the current tree does not remove it from Git history. See [history sanitization](docs/history-sanitization.md) before undertaking the destructive rewrite.
+
+## macOS preferences
+
+Run `./scripts/macos-defaults` explicitly to apply the curated user-scoped preferences. Privileged changes, security settings, licenses, application logins, and permissions remain manual; see [manual setup](docs/manual-setup.md).
+
+## Recovery and migration
+
+Before the first cutover, follow [migration and recovery](docs/migration.md). In particular, tag the last Dotbot commit and back up affected live files. Dotbot is not used by the new configuration.
+
+## Scope rule
+
+Track authored intent, not incidental state. Do not commit credentials, caches, histories, recent-file lists, automatic backups, device paths, package-manager state, or generated application snapshots.

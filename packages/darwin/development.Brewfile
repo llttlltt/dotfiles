@@ -1,0 +1,16 @@
+tap "azure/functions"
+tap "go-swagger/go-swagger"
+
+brew "azure-cli"
+brew "cmake"
+brew "delve"
+brew "gh"
+brew "llvm"
+brew "shellcheck"
+brew "taplo"
+brew "azure/functions/azure-functions-core-tools@4"
+brew "go-swagger/go-swagger/go-swagger"
+
+cask "docker-desktop"
+cask "postman"
+cask "visual-studio-code"

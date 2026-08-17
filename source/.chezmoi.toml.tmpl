@@ -1,0 +1,24 @@
+{{- $roles := list "personal" "work" "server" -}}
+{{- $defaultRole := "personal" -}}
+{{- if eq .chezmoi.os "linux" -}}
+{{- $defaultRole = "server" -}}
+{{- end -}}
+{{- $role := promptChoiceOnce . "role" "Machine role" $roles $defaultRole -}}
+{{- $development := promptBoolOnce . "development" "Install development tooling" true -}}
+{{- $audio := promptBoolOnce . "audio" "Install audio tooling" (eq .chezmoi.os "darwin") -}}
+{{- $electronics := promptBoolOnce . "electronics" "Install electronics tooling" (eq .chezmoi.os "darwin") -}}
+{{- $gitSigning := promptBoolOnce . "gitSigning" "Use 1Password for Git signing" (eq .chezmoi.os "darwin") -}}
+
+[data]
+role = {{ $role | quote }}
+development = {{ $development }}
+audio = {{ $audio }}
+electronics = {{ $electronics }}
+gitSigning = {{ $gitSigning }}
+
+[git]
+autoCommit = false
+autoPush = false
+
+[add]
+secrets = "error"

@@ -1,0 +1,10 @@
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+not_found_auto_install = false
+go_set_gopath = true
+
+[tools]
+go = "1.25"
+node = "lts"
+python = "latest"
+rust = "latest"

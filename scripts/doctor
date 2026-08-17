@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+failed=0
+
+check_command() {
+    if command -v "$1" >/dev/null 2>&1; then
+        printf 'ok      %s\n' "$1"
+    else
+        printf 'missing %s\n' "$1"
+        failed=1
+    fi
+}
+
+check_command git
+check_command chezmoi
+check_command zsh
+check_command nvim
+check_command tmux
+
+if command -v op >/dev/null 2>&1 && op account list >/dev/null 2>&1; then
+    printf '%s\n' 'ok      1Password CLI is authenticated'
+else
+    printf '%s\n' 'notice  1Password CLI unavailable or signed out; secret-backed files are skipped'
+fi
+
+if command -v chezmoi >/dev/null 2>&1; then
+    chezmoi --source "$repo_dir" status
+fi
+
+exit "$failed"

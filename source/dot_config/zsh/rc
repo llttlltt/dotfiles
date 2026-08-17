@@ -1,0 +1,9 @@
+# -----------------------------
+# ---------- SOURCE -----------
+# -----------------------------
+source "$HOME/.config/zsh/shell"
+source "$HOME/.config/zsh/aliases"
+source "$HOME/.config/zsh/functions"
+source "$HOME/.config/zsh/prompt"
+source "$HOME/.config/zsh/init"
+source "$HOME/.config/zsh/envs"

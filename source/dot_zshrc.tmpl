@@ -1,0 +1,131 @@
+# -----------------------------
+# --------- DEFAULTS ----------
+# -----------------------------
+source "$HOME/.config/zsh/rc"
+
+# -----------------------------
+# ---------- CUSTOM -----------
+# -----------------------------
+
+{{- if eq .chezmoi.os "darwin" }}
+# bypass macOS Gatekeeper for cask installs
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+{{- end }}
+
+# puppeteer
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+if command -v chromium >/dev/null 2>&1; then
+    export PUPPETEER_EXECUTABLE_PATH="$(command -v chromium)"
+fi
+
+# azure-functions-core-tools
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true # opt-out data collection
+
+# vscode
+{{- if eq .chezmoi.os "darwin" }}
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+{{- end }}
+
+# syntax highlighting for grep (search) using bat-extras
+alias grep=batgrep
+
+# shows the path variable, split by newline
+alias trail="<<<${(F)path}"
+
+# control volume from cli
+{{- if eq .chezmoi.os "darwin" }}
+alias vol="$HOME/.config/zsh/user/scripts/vol.sh"
+{{- end }}
+
+# fclones
+if command -v fclones >/dev/null 2>&1; then
+    source <(fclones complete zsh)
+fi
+
+# czkawka
+{{- if eq .chezmoi.os "darwin" }}
+export XDG_DATA_DIRS="/opt/homebrew/share:${XDG_DATA_DIRS:-}"
+
+# beets
+export BEETSDIR="/Volumes/Apps/Beets/Configuration"
+{{- end }}
+
+# -----------------------------
+# ---------- PLUGINS ----------
+# -----------------------------
+
+# flavours
+export FLAVOURS_DATA_DIRECTORY="$HOME/.local/share/flavours"
+{{- if eq .chezmoi.os "darwin" }}
+export FLAVOURS_CONFIG_FILE="$HOME/Library/Preferences/flavours/config.toml"
+{{- end }}
+
+# ghostty
+if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+    source $GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration # load zsh integration
+fi
+
+# 1password
+if command -v op &> /dev/null && [[ -r "$HOME/.config/op/plugins.sh" ]]; then
+    source "$HOME/.config/op/plugins.sh"
+fi
+
+# ngrok
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
+
+# llvm
+{{- if eq .chezmoi.os "darwin" }}
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+{{- end }}
+
+# rust
+if command -v rustup &> /dev/null; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+    source "$HOME/.cargo/env"
+fi
+
+## ocaml
+if command -v opam &> /dev/null; then
+    eval $(opam env --switch=default --set-switch)
+    if [[ ! -r "~/.opam/opam-init/init.zsh" ]]; then
+        source "~/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
+    fi
+fi
+
+# pnpm
+{{- if eq .chezmoi.os "darwin" }}
+export PNPM_HOME="$HOME/Library/pnpm"
+{{- else }}
+export PNPM_HOME="$HOME/.local/share/pnpm"
+{{- end }}
+if [[ "$PATH" != *":$PNPM_HOME:"* ]]; then
+    export PATH="$PNPM_HOME:$PATH"
+fi
+
+# python (via mise)
+{{- if eq .chezmoi.os "darwin" }}
+if command -v brew >/dev/null 2>&1; then
+    CFLAGS="-I$(brew --prefix openssl)/include"
+    LDFLAGS="-L$(brew --prefix openssl)/lib"
+fi
+{{- end }}
+if command -v python >/dev/null 2>&1 && python -m certifi >/dev/null 2>&1; then
+    export SSL_CERT_FILE="$(python -m certifi)"
+    export REQUESTS_CA_BUNDLE="$SSL_CERT_FILE"
+fi
+
+# Added by LM Studio CLI (lms)
+{{- if eq .chezmoi.os "darwin" }}
+export PATH="$PATH:$HOME/.lmstudio/bin"
+{{- end }}
+# End of LM Studio CLI section
+
+# pi coding agent
+{{- if eq .chezmoi.os "darwin" }}
+export PI_CODING_AGENT_DIR="$HOME/.config/pi/agent"
+export PI_TELEMETRY=false
+{{- end }}

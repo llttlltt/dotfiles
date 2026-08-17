@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$repo_dir"
+
+git diff --check
+git diff --cached --check
+
+find scripts tests -type f -perm -u+x -print0 | xargs -0 -n1 sh -n
+
+if command -v shellcheck >/dev/null 2>&1; then
+    shellcheck install scripts/* tests/*.sh
+fi
+
+if command -v chezmoi >/dev/null 2>&1; then
+    tests/render.sh
+else
+    printf '%s\n' 'notice: chezmoi not installed; skipping render tests' >&2
+fi
+
+tests/secrets.sh

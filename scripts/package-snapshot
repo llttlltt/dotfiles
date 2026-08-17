@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+
+[ "$(uname -s)" = "Darwin" ] || {
+    printf '%s\n' 'package-snapshot currently supports Homebrew on macOS only.' >&2
+    exit 1
+}
+
+snapshot_dir=$(mktemp -d)
+snapshot="$snapshot_dir/Brewfile"
+brew bundle dump --force --file="$snapshot" >/dev/null
+
+printf 'Fresh package snapshot: %s\n' "$snapshot"
+printf '%s\n' 'Review the following diff; the managed manifest is not overwritten:'
+diff -u "$repo_dir/packages/darwin/personal.Brewfile" "$snapshot" || true

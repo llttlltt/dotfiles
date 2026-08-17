@@ -1,0 +1,63 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+os_name=$(uname -s)
+
+install_brewfile() {
+    manifest=$1
+    [ -f "$manifest" ] || return 0
+    brew bundle --file="$manifest"
+}
+
+profile_data() {
+    chezmoi --source "$repo_dir" data --format json
+}
+
+if [ "$os_name" = "Darwin" ]; then
+    if ! command -v brew >/dev/null 2>&1; then
+        printf '%s\n' 'Homebrew is required. Install it from https://brew.sh and rerun.' >&2
+        exit 1
+    fi
+
+    install_brewfile "$repo_dir/packages/darwin/base.Brewfile"
+
+    data=$(profile_data)
+    role=${DOTFILES_ROLE:-$(printf '%s' "$data" | jq -r '.role // "personal"')}
+    development=${DOTFILES_DEVELOPMENT:-$(printf '%s' "$data" | jq -r '.development // true')}
+    audio=${DOTFILES_AUDIO:-$(printf '%s' "$data" | jq -r '.audio // false')}
+    electronics=${DOTFILES_ELECTRONICS:-$(printf '%s' "$data" | jq -r '.electronics // false')}
+
+    if [ "$development" = true ] && command -v mise >/dev/null 2>&1; then
+        mise install
+    fi
+
+    if [ "$role" = "personal" ]; then
+        # Preserve the complete package set from the pre-chezmoi configuration.
+        install_brewfile "$repo_dir/packages/darwin/personal.Brewfile"
+    fi
+    [ "$development" = true ] && install_brewfile "$repo_dir/packages/darwin/development.Brewfile"
+    [ "$audio" = true ] && install_brewfile "$repo_dir/packages/darwin/audio.Brewfile"
+    [ "$electronics" = true ] && install_brewfile "$repo_dir/packages/darwin/electronics.Brewfile"
+elif [ "$os_name" = "Linux" ] && command -v pacman >/dev/null 2>&1; then
+    base_manifest="$repo_dir/packages/omarchy/base.txt"
+    # shellcheck disable=SC2086
+    packages=$(sed '/^[[:space:]]*#/d; /^[[:space:]]*$/d' "$base_manifest" | sort -u | tr '\n' ' ')
+    # shellcheck disable=SC2086
+    sudo pacman -Syu --needed $packages
+
+    data=$(profile_data)
+    development=${DOTFILES_DEVELOPMENT:-$(printf '%s' "$data" | jq -r '.development // true')}
+    if [ "$development" = true ]; then
+        development_manifest="$repo_dir/packages/omarchy/development.txt"
+        packages=$(sed '/^[[:space:]]*#/d; /^[[:space:]]*$/d' "$development_manifest" | sort -u | tr '\n' ' ')
+        # shellcheck disable=SC2086
+        sudo pacman -S --needed $packages
+    fi
+    if [ "$development" = true ] && command -v mise >/dev/null 2>&1; then
+        mise install
+    fi
+else
+    printf '%s\n' 'Supported package targets are macOS/Homebrew and Omarchy/Arch/pacman.' >&2
+    exit 1
+fi

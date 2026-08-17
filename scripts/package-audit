@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+
+case $(uname -s) in
+    Darwin)
+        audit_dir=$(mktemp -d)
+        trap 'rm -rf "$audit_dir"' EXIT HUP INT TERM
+        cat "$repo_dir"/packages/darwin/*.Brewfile >"$audit_dir/Brewfile"
+        brew bundle cleanup --file="$audit_dir/Brewfile"
+        ;;
+    Linux)
+        command -v pacman >/dev/null 2>&1 || exit 0
+        audit_dir=$(mktemp -d)
+        trap 'rm -rf "$audit_dir"' EXIT HUP INT TERM
+        pacman -Qqen | sort >"$audit_dir/installed"
+        cat "$repo_dir"/packages/omarchy/*.txt | sed '/^#/d; /^$/d' | sort -u >"$audit_dir/managed"
+        comm -23 "$audit_dir/installed" "$audit_dir/managed"
+        ;;
+esac

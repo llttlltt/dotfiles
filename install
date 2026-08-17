@@ -1,15 +1,37 @@
-#!/usr/bin/env zsh
+#!/bin/sh
+set -eu
 
-set -e
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+if ! command -v chezmoi >/dev/null 2>&1; then
+    case $(uname -s) in
+        Darwin)
+            command -v brew >/dev/null 2>&1 || {
+                printf '%s\n' 'Install Homebrew from https://brew.sh first.' >&2
+                exit 1
+            }
+            brew install chezmoi
+            ;;
+        Linux)
+            command -v pacman >/dev/null 2>&1 || {
+                printf '%s\n' 'Only Omarchy/Arch Linux is currently supported.' >&2
+                exit 1
+            }
+            sudo pacman -S --needed chezmoi
+            ;;
+        *)
+            printf '%s\n' 'Supported targets are macOS and Omarchy/Arch Linux.' >&2
+            exit 1
+            ;;
+    esac
+fi
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+chezmoi init --source "$repo_dir"
 
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
-
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+if [ "${1:-}" = "--apply" ]; then
+    chezmoi --source "$repo_dir" apply --interactive
+else
+    printf '%s\n' 'Source initialized. Review proposed changes with:'
+    printf '  chezmoi --source %s diff\n' "$repo_dir"
+    printf '%s\n' 'Then apply interactively with: ./install --apply'
+fi

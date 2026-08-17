@@ -1,0 +1,7 @@
+base-devel
+github-cli
+mise
+nodejs
+npm
+rustup
+shellcheck
