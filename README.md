@@ -39,7 +39,7 @@ These are my personal dotfiles, using zsh and various tools to set up my develop
 
 ## Installation
 
-[Dotbot](https://github.com/anishathalye/dotbot) handles the setup. Simply clone the repository and run the `install` script.
+[Dotbot](https://github.com/anishathalye/dotbot) handles the setup:
 
 1. **Clone the repository:**
 
@@ -47,12 +47,13 @@ These are my personal dotfiles, using zsh and various tools to set up my develop
     git clone https://github.com/elliott-liu/dotfiles.git ~/.dotfiles
     ```
 
-2. **Run the Dotbot installer:**
+2. **Run the installer:**
 
     ```bash
     cd ~/.dotfiles
     ./install
     ```
+
 
 ## TODO
 
