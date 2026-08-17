@@ -133,8 +133,6 @@ brew "pandoc"
 brew "pi-coding-agent"
 # Friendly PIL fork (Python Imaging Library)
 brew "pillow"
-# Fast, disk space efficient package manager
-brew "pnpm"
 # Command-line shell and scripting language
 brew "powershell"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
@@ -167,10 +165,6 @@ brew "taplo"
 brew "tmux"
 # World's fastest OpenAPI & Swagger linter
 brew "vacuum"
-# Command-line interface for Vercel
-brew "vercel"
-# Language servers for HTML, CSS, JavaScript, and JSON extracted from vscode
-brew "vscode-langservers-extracted"
 # Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
 # Shell extension to navigate your filesystem faster
@@ -561,17 +555,4 @@ vscode "yutengjing.open-in-external-app"
 vscode "yzhang.markdown-all-in-one"
 vscode "zainchen.json"
 vscode "zignd.html-css-class-completion"
-go "github.com/elliott-liu/advent-of-code/2025_go"
 go "github.com/llttlltt/dj-library-tools/cmd/djlt"
-go "github.com/go-delve/delve/cmd/dlv"
-go "cmd/go"
-go "cmd/gofmt"
-go "golang.org/x/tools/gopls"
-go "rekordbox-metadata-sync"
-go "honnef.co/go/tools/cmd/staticcheck"
-go "github.com/wailsapp/wails/v2/cmd/wails"
-cargo "cargo-generate"
-cargo "elf2uf2-rs"
-cargo "flip-link"
-npm "trash-cli"
-npm "typescript"

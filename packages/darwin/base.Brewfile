@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-
 brew "bat"
 brew "chezmoi"
 brew "eza"
@@ -13,7 +11,6 @@ brew "neovim"
 brew "ripgrep"
 brew "starship"
 brew "tmux"
-brew "trash"
 brew "zoxide"
 brew "zsh"
 brew "zsh-autosuggestions"

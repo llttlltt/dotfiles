@@ -5,6 +5,10 @@ go_set_gopath = true
 
 [tools]
 go = "1.25"
+"go:github.com/wailsapp/wails/v2/cmd/wails" = "latest"
+"go:honnef.co/go/tools/cmd/staticcheck" = "latest"
 node = "lts"
+pnpm = "latest"
 python = "latest"
 rust = "latest"
+vercel = "latest"
