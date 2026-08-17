@@ -4,10 +4,6 @@ if [[ -x /opt/homebrew/bin/brew ]]; then
 fi
 {{- end }}
 
-if command -v mise >/dev/null 2>&1; then
-    eval "$(mise activate zsh --shims)"
-fi
-
 {{- if eq .chezmoi.os "darwin" }}
 # Added by Obsidian
 export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"

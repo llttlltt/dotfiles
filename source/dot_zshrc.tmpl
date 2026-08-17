@@ -46,8 +46,6 @@ fi
 {{- if eq .chezmoi.os "darwin" }}
 export XDG_DATA_DIRS="/opt/homebrew/share:${XDG_DATA_DIRS:-}"
 
-# beets
-export BEETSDIR="/Volumes/Apps/Beets/Configuration"
 {{- end }}
 
 # -----------------------------
@@ -129,3 +127,10 @@ export PATH="$PATH:$HOME/.lmstudio/bin"
 export PI_CODING_AGENT_DIR="$HOME/.config/pi/agent"
 export PI_TELEMETRY=false
 {{- end }}
+
+# Activate mise after every other PATH modification so configured runtimes win.
+if command -v mise >/dev/null 2>&1; then
+    eval "$(mise activate zsh)"
+    eval "$(mise env --shell zsh)"
+    rehash
+fi

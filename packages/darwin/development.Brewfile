@@ -8,6 +8,7 @@ brew "gh"
 brew "llvm"
 brew "shellcheck"
 brew "taplo"
+brew "uv"
 brew "azure/functions/azure-functions-core-tools@4"
 brew "go-swagger/go-swagger/go-swagger"
 

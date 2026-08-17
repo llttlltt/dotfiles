@@ -5,3 +5,4 @@ nodejs
 npm
 rustup
 shellcheck
+uv

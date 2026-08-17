@@ -20,3 +20,4 @@ else
 fi
 
 tests/secrets.sh
+tests/portability.sh
