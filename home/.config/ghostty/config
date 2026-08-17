@@ -13,7 +13,7 @@ bold-is-bright = true
 
 adjust-underline-position = 10
 
-background-opacity = 0.90
+background-opacity = 0.9
 background-blur-radius = 100
 
 window-padding-x = 10
