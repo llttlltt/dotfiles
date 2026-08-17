@@ -8,6 +8,12 @@
 {{- $audio := promptBoolOnce . "audio" "Install audio tooling" (eq .chezmoi.os "darwin") -}}
 {{- $electronics := promptBoolOnce . "electronics" "Install electronics tooling" (eq .chezmoi.os "darwin") -}}
 {{- $gitSigning := promptBoolOnce . "gitSigning" "Use 1Password for Git signing" (eq .chezmoi.os "darwin") -}}
+{{- $leaderKeyObsidianVault := "Elliott Liu" -}}
+{{- $leaderKeyObsidianQuickAddId := "bea8aca1-73dd-4abb-8cc3-41a7a0a984ed" -}}
+{{- if eq .chezmoi.os "darwin" -}}
+{{- $leaderKeyObsidianVault = promptStringOnce . "leaderKeyObsidianVault" "Leader Key Obsidian vault" $leaderKeyObsidianVault -}}
+{{- $leaderKeyObsidianQuickAddId = promptStringOnce . "leaderKeyObsidianQuickAddId" "Leader Key Obsidian QuickAdd choice ID" $leaderKeyObsidianQuickAddId -}}
+{{- end -}}
 
 [data]
 role = {{ $role | quote }}
@@ -15,6 +21,8 @@ development = {{ $development }}
 audio = {{ $audio }}
 electronics = {{ $electronics }}
 gitSigning = {{ $gitSigning }}
+leaderKeyObsidianVault = {{ $leaderKeyObsidianVault | quote }}
+leaderKeyObsidianQuickAddId = {{ $leaderKeyObsidianQuickAddId | quote }}
 
 [git]
 autoCommit = false

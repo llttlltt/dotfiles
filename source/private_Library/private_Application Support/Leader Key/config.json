@@ -184,7 +184,7 @@
           "key" : "n",
           "label" : "Note - Obsidian Quick Add Note",
           "type" : "command",
-          "value" : "open -a '/Applications/Obsidian.app' && open -g 'obsidian://adv-uri?vault=Elliott%20Liu&commandid=quickadd%3Achoice%3Abea8aca1-73dd-4abb-8cc3-41a7a0a984ed'"
+          "value" : "$HOME/.config/zsh/user/scripts/leader_key_obsidian_quick_add.sh"
         },
         {
           "iconPath" : "lock.fill",
@@ -696,7 +696,7 @@
           "key" : "9",
           "label" : "Volume 90%",
           "type" : "command",
-          "value" : "$HOME/.config/zsh/user/scripts/vol.sh90"
+          "value" : "$HOME/.config/zsh/user/scripts/vol.sh 90"
         },
         {
           "key" : "a",

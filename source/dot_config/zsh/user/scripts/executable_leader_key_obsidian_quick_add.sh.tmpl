@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+open -a '/Applications/Obsidian.app'
+open -g 'obsidian://adv-uri?vault={{ index . "leaderKeyObsidianVault" | default "Elliott Liu" | urlquery }}&commandid=quickadd%3Achoice%3A{{ index . "leaderKeyObsidianQuickAddId" | default "bea8aca1-73dd-4abb-8cc3-41a7a0a984ed" }}'
