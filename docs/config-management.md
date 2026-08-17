@@ -35,6 +35,12 @@ Use `./scripts/capture all` after changing several applications. Each capture up
 
 Always inspect `./scripts/status` and `git diff` after capture. Commit only deliberate changes.
 
+Every capture runs the repository validation and prints a diff summary. Verify the allowlist remains usable without changing anything:
+
+```sh
+./scripts/capture check
+```
+
 The authoritative current group list is available from:
 
 ```sh

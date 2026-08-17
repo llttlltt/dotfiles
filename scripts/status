@@ -2,8 +2,32 @@
 set -eu
 
 repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+os_name=${DOTFILES_OS:-$(uname -s)}
 
-printf '%s\n' 'Repository changes (edit these directly in ~/.dotfiles/source):'
+printf '%s\n' 'Application-owned source changes (capture through the named app group):'
+if [ "$os_name" = Darwin ]; then
+    app_status=$(
+        for app in leader-key karabiner kicad flavours; do
+            "$repo_dir/scripts/capture" _targets "$app" | while IFS= read -r target; do
+                source_path=$(chezmoi --source "$repo_dir" source-path "$target")
+                relative_path=${source_path#"$repo_dir"/}
+                if ! git -C "$repo_dir" diff --quiet -- "$relative_path" || \
+                    ! git -C "$repo_dir" diff --cached --quiet -- "$relative_path"; then
+                    printf '  %-12s %s\n' "$app" "$relative_path"
+                fi
+            done
+        done
+    )
+else
+    app_status='  none on this platform'
+fi
+if [ -n "$app_status" ]; then
+    printf '%s\n' "$app_status"
+else
+    printf '%s\n' '  none'
+fi
+
+printf '\n%s\n' 'Complete repository status (edit repository-owned files under ~/.dotfiles/source):'
 if [ -n "$(git -C "$repo_dir" status --short)" ]; then
     git -C "$repo_dir" status --short
 else
@@ -19,6 +43,10 @@ else
 fi
 
 printf '\n%s\n' 'App-owned capture groups:'
-"$repo_dir/scripts/capture" list
+if [ "$os_name" = Darwin ]; then
+    "$repo_dir/scripts/capture" list
+else
+    printf '%s\n' '  none on this platform'
+fi
 
 printf '\n%s\n' 'Generated caches, histories, recent files, backups, and application state are intentionally local.'

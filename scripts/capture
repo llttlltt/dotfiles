@@ -4,7 +4,7 @@ set -eu
 repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 
 usage() {
-    printf '%s\n' 'Usage: ./scripts/capture <leader-key|karabiner|kicad|flavours|all|list>' >&2
+    printf '%s\n' 'Usage: ./scripts/capture <leader-key|karabiner|kicad|flavours|all|list|check>' >&2
 }
 
 list_apps() {
@@ -45,22 +45,41 @@ capture_app() {
     app=$1
     printf 'Capturing %s:\n' "$app"
     targets "$app" | while IFS= read -r target; do
-        if [ ! -e "$target" ]; then
-            printf 'missing  %s\n' "$target" >&2
-            exit 1
-        fi
-
-        source_path=$(chezmoi --source "$repo_dir" source-path "$target")
-        case $source_path in
-            *.tmpl)
-                printf 'refusing templated app-owned target: %s\n' "$target" >&2
-                exit 1
-                ;;
-        esac
-
+        check_target "$target"
         chezmoi --source "$repo_dir" re-add "$target"
         printf 'updated  %s\n' "$target"
     done
+}
+
+check_target() {
+    target=$1
+    if [ ! -e "$target" ]; then
+        printf 'missing  %s\n' "$target" >&2
+        return 1
+    fi
+
+    source_path=$(chezmoi --source "$repo_dir" source-path "$target")
+    case $source_path in
+        *.tmpl)
+            printf 'refusing templated app-owned target: %s\n' "$target" >&2
+            return 1
+            ;;
+    esac
+}
+
+check_all() {
+    for app in leader-key karabiner kicad flavours; do
+        targets "$app" | while IFS= read -r target; do
+            check_target "$target"
+        done
+    done
+    printf '%s\n' 'All application capture targets are present, managed, and non-templated.'
+}
+
+finish_capture() {
+    "$repo_dir/scripts/validate"
+    printf '%s\n' 'Capture validated. Review these repository changes:'
+    git -C "$repo_dir" diff --stat
 }
 
 command=${1:-}
@@ -72,9 +91,18 @@ case $command in
         for app in leader-key karabiner kicad flavours; do
             capture_app "$app"
         done
+        finish_capture
         ;;
     leader-key|karabiner|kicad|flavours)
         capture_app "$command"
+        finish_capture
+        ;;
+    check)
+        check_all
+        ;;
+    _targets)
+        [ "$#" -eq 2 ] || exit 2
+        targets "$2"
         ;;
     *)
         usage
