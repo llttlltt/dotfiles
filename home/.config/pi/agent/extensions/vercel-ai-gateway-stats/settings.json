@@ -1,0 +1,13 @@
+{
+  "showBalance": true,
+  "showTotal": false,
+  "showInputPrice": true,
+  "showOutputPrice": true,
+  "showCacheReadPrice": true,
+  "showCacheWritePrice": true,
+  "showImagePrice": false,
+  "showWebSearchPrice": false,
+  "showMapsSearchPrice": false,
+  "precision": 8,
+  "flashDuration": 1
+}
