@@ -1,0 +1,30 @@
+{
+	"name": "pi-theme-preview",
+	"version": "0.1.0",
+	"description": "Live theme component previewer for developing and testing Pi themes",
+	"author": "Elliott",
+	"license": "MIT",
+	"type": "module",
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"keywords": [
+		"pi",
+		"extension",
+		"theme",
+		"preview",
+		"ui",
+		"tui",
+		"components"
+	],
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"@types/node": "*"
+	},
+	"engines": {
+		"pi": ">=0.74.0"
+	}
+}
