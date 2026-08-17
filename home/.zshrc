@@ -35,9 +35,6 @@ source <(fclones complete zsh)
 # czkawka
 export XDG_DATA_DIRS="/opt/homebrew/share:$XDG_DATA_DIRS"
 
-# plex2rekordbox
-export PLEX_URL="http://10.0.10.151:32400"
-
 # beets
 export BEETSDIR="/Volumes/Apps/Beets/Configuration"
 
