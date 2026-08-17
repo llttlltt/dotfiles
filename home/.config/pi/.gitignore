@@ -39,3 +39,10 @@ yarn-error.log*
 sessions
 skills
 auth.json
+.pi/
+git/
+missions/
+models-store.json
+npm/
+run-history.jsonl
+trust.json
