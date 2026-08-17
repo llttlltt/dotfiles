@@ -1,0 +1,268 @@
+{
+  "$schema": "https://unpkg.com/@aliou/pi-guardrails@0.17.0/schema.json",
+  "applyBuiltinDefaults": true,
+  "version": "0.16.2",
+  "onboarding": {
+    "completed": true,
+    "completedAt": "2026-05-19T06:28:17.470Z",
+    "version": "0.9.0-20260327"
+  },
+  "features": {
+    "pathAccess": true,
+    "policies": true,
+    "permissionGate": true
+  },
+  "pathAccess": {
+    "mode": "ask",
+    "allowedPaths": [
+      {
+        "kind": "directory",
+        "path": "~/.agent_references"
+      },
+      {
+        "kind": "directory",
+        "path": "~/.agents/skills"
+      },
+      {
+        "kind": "directory",
+        "path": "/opt/homebrew/Cellar/pi-coding-agent/0.74.1/libexec/lib/node_modules/@earendil-works/pi-coding-agent"
+      },
+      {
+        "kind": "directory",
+        "path": "~/.config/pi"
+      },
+      {
+        "kind": "directory",
+        "path": "/tmp"
+      },
+      {
+        "kind": "directory",
+        "path": "/private/var/folders"
+      },
+      {
+        "kind": "directory",
+        "path": "/var/folders"
+      },
+      {
+        "kind": "directory",
+        "path": "/dev"
+      },
+      {
+        "kind": "file",
+        "path": "/dev/null"
+      }
+    ]
+  },
+  "policies": {
+    "rules": [
+      {
+        "id": "example-secret-env-files",
+        "name": "Secret env files",
+        "description": "Block .env files and variants",
+        "patterns": [
+          {
+            "pattern": ".env"
+          },
+          {
+            "pattern": ".env.*"
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": ".env.example"
+          },
+          {
+            "pattern": "*.sample.env"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-log-files",
+        "name": "Log files",
+        "description": "Treat log files as read-only",
+        "patterns": [
+          {
+            "pattern": "*.log"
+          },
+          {
+            "pattern": "*.out"
+          }
+        ],
+        "protection": "readOnly",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-regex-env",
+        "name": "Regex env files",
+        "description": "Regex example for env files",
+        "patterns": [
+          {
+            "pattern": "^\\.env(\\..+)?$",
+            "regex": true
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": "^\\.env\\.example$",
+            "regex": true
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-ssh-keys",
+        "name": "SSH keys",
+        "description": "Block SSH private key files",
+        "patterns": [
+          {
+            "pattern": "*.pem"
+          },
+          {
+            "pattern": "*_rsa"
+          },
+          {
+            "pattern": "*_ed25519"
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": "*.pub"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-aws-credentials",
+        "name": "AWS credentials",
+        "description": "Block AWS credentials and config files",
+        "patterns": [
+          {
+            "pattern": ".aws/credentials"
+          },
+          {
+            "pattern": ".aws/config"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-database-files",
+        "name": "Database files",
+        "description": "Protect database files from modification",
+        "patterns": [
+          {
+            "pattern": "*.db"
+          },
+          {
+            "pattern": "*.sqlite"
+          },
+          {
+            "pattern": "*.sqlite3"
+          }
+        ],
+        "protection": "readOnly",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-k8s-secrets",
+        "name": "Kubernetes secrets",
+        "description": "Block kubectl config and secrets",
+        "patterns": [
+          {
+            "pattern": ".kube/config"
+          },
+          {
+            "pattern": "*kubeconfig*"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "example-certificates",
+        "name": "Certificates",
+        "description": "Block certificate and key files",
+        "patterns": [
+          {
+            "pattern": "*.crt"
+          },
+          {
+            "pattern": "*.key"
+          },
+          {
+            "pattern": "*.p12"
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": "*.csr"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      }
+    ]
+  },
+  "permissionGate": {
+    "patterns": [
+      {
+        "pattern": "docker inspect",
+        "description": "Docker inspect (may expose env vars)"
+      },
+      {
+        "pattern": "docker system prune",
+        "description": "Docker system cleanup"
+      },
+      {
+        "pattern": "git push --force",
+        "description": "Git force push"
+      },
+      {
+        "pattern": "npm publish",
+        "description": "NPM package publishing"
+      },
+      {
+        "pattern": "yarn publish",
+        "description": "Yarn package publishing"
+      },
+      {
+        "pattern": "pnpm publish",
+        "description": "PNPM package publishing"
+      },
+      {
+        "pattern": "DROP DATABASE",
+        "description": "SQL database drop"
+      },
+      {
+        "pattern": "DROP TABLE",
+        "description": "SQL table drop"
+      },
+      {
+        "pattern": "docker rm",
+        "description": "Docker container removal"
+      },
+      {
+        "pattern": "docker rmi",
+        "description": "Docker image removal"
+      },
+      {
+        "pattern": "docker compose down",
+        "description": "Docker Compose service teardown"
+      }
+    ],
+    "requireConfirmation": false
+  }
+}
