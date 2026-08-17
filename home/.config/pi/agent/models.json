@@ -9,7 +9,7 @@
           "id": "google/gemma-4-26b-a4b",
           "name": "Gemma 4 26B A4B",
           "input": ["text", "image"],
-          "contextWindow": 262144,
+          "contextWindow": 256000,
           "reasoning": true,
           "thinkingLevelMap": {
             "off": "none",
@@ -21,10 +21,10 @@
           }
         },
         {
-          "id": "qwen/qwen3.6-35b-a3b",
-          "name": "Qwen3.6 35B A3B",
+          "id": "google/gemma-4-12b",
+          "name": "Gemma 4 12B",
           "input": ["text", "image"],
-          "contextWindow": 262144,
+          "contextWindow": 128000,
           "reasoning": true,
           "thinkingLevelMap": {
             "off": "none",
@@ -36,11 +36,34 @@
           }
         },
         {
-          "id": "zai-org/glm-4.6v-flash",
-          "name": "Glm 4.6v Flash",
+          "id": "google/gemma-4-e4b",
+          "name": "Gemma 4 E4B",
           "input": ["text", "image"],
-          "contextWindow": 131072,
-          "reasoning": false
+          "contextWindow": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": null,
+            "low": null,
+            "medium": "medium",
+            "high": null,
+            "xhigh": null
+          }
+        },
+        {
+          "id": "google/gemma-4-e2b",
+          "name": "Gemma 4 E2B",
+          "input": ["text", "image"],
+          "contextWindow": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": null,
+            "low": null,
+            "medium": "medium",
+            "high": null,
+            "xhigh": null
+          }
         }
       ]
     }

@@ -1,12 +1,46 @@
 {
-  "lastChangelogVersion": "0.75.3",
-  "defaultProvider": "lmstudio",
-  "defaultModel": "google/gemma-4-26b-a4b",
-  "defaultThinkingLevel": "off",
-  "hideThinkingBlock": true,
+  "lastChangelogVersion": "0.83.0",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "medium",
+  "subagents": {
+    "agentOverrides": {
+      "researcher": {
+        "thinking": "medium"
+      },
+      "worker": {
+        "thinking": "medium"
+      }
+    }
+  },
+  "hideThinkingBlock": false,
   "theme": "poimandres",
   "showHardwareCursor": false,
   "terminal": {
     "showTerminalProgress": false
-  }
+  },
+  "editorPaddingX": 0,
+  "packages": [
+    "git:github.com/aliou/pi-guardrails",
+    "git:github.com/gsanhueza/pi-token-speed",
+    "git:github.com/llttlltt/poimandres-pi",
+    "npm:pi-subagents",
+    "npm:pi-intercom"
+  ],
+  "enableInstallTelemetry": true,
+  "enabledModels": [
+    "lmstudio/google/gemma-4-e4b",
+    "lmstudio/google/gemma-4-e2b",
+    "lmstudio/google/gemma-4-12b",
+    "lmstudio/google/gemma-4-26b-a4b",
+    "vercel-ai-gateway/google/gemini-3-flash",
+    "vercel-ai-gateway/google/gemini-3.5-flash",
+    "vercel-ai-gateway/anthropic/claude-haiku-4.5",
+    "vercel-ai-gateway/anthropic/claude-sonnet-4.6",
+    "vercel-ai-gateway/anthropic/claude-opus-4.8",
+    "vercel-ai-gateway/openai/gpt-oss-120b",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-luna",
+    "openai-codex/gpt-5.6-terra"
+  ]
 }
