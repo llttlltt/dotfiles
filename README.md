@@ -51,21 +51,27 @@ On Omarchy, chezmoi manages user configuration only. Package installation uses `
 
 ## Daily workflow
 
-Edit the source state, inspect, then apply:
+There are two supported workflows. For repository-owned configuration, edit files directly under `source`, then run:
 
 ```sh
-chezmoi cd
-$EDITOR source/dot_config/nvim/init.lua
-chezmoi diff
-chezmoi apply
+./scripts/status
+./scripts/apply
 ```
 
-Use `chezmoi re-add <target>` only for applications that rewrite a managed configuration file. Never ingest generated state automatically.
+For configuration written by Leader Key, Karabiner, KiCad, or Flavours, edit it in the application and capture only its approved files:
+
+```sh
+./scripts/capture list
+./scripts/capture leader-key
+```
+
+Do not call `chezmoi re-add` directly or ingest generated state automatically. The complete ownership rules, capture groups, and extension checklist are in [configuration management workflow](docs/config-management.md).
 
 Useful checks:
 
 ```sh
 ./scripts/doctor
+./scripts/status
 ./scripts/validate
 ./scripts/package-audit
 ./scripts/package-snapshot

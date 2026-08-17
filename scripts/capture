@@ -1,0 +1,83 @@
+#!/bin/sh
+set -eu
+
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+
+usage() {
+    printf '%s\n' 'Usage: ./scripts/capture <leader-key|karabiner|kicad|flavours|all|list>' >&2
+}
+
+list_apps() {
+    printf '%-12s %s\n' 'leader-key' 'Leader Key actions edited in the app'
+    printf '%-12s %s\n' 'karabiner' 'Karabiner-Elements configuration edited in the app'
+    printf '%-12s %s\n' 'kicad' 'Curated KiCad 10 hotkeys, libraries, and colour theme'
+    printf '%-12s %s\n' 'flavours' 'Flavours configuration and generated tmux theme'
+}
+
+targets() {
+    case $1 in
+        leader-key)
+            printf '%s\n' "$HOME/Library/Application Support/Leader Key/config.json"
+            ;;
+        karabiner)
+            printf '%s\n' "$HOME/.config/karabiner/karabiner.json"
+            ;;
+        kicad)
+            printf '%s\n' \
+                "$HOME/Library/Preferences/kicad/10.0/user.hotkeys" \
+                "$HOME/Library/Preferences/kicad/10.0/fp-lib-table" \
+                "$HOME/Library/Preferences/kicad/10.0/sym-lib-table" \
+                "$HOME/Library/Preferences/kicad/10.0/design-block-lib-table" \
+                "$HOME/Library/Preferences/kicad/10.0/colors/user.json"
+            ;;
+        flavours)
+            printf '%s\n' \
+                "$HOME/Library/Preferences/flavours/config.toml" \
+                "$HOME/.config/tmux/tmux-ostentus.conf"
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+capture_app() {
+    app=$1
+    printf 'Capturing %s:\n' "$app"
+    targets "$app" | while IFS= read -r target; do
+        if [ ! -e "$target" ]; then
+            printf 'missing  %s\n' "$target" >&2
+            exit 1
+        fi
+
+        source_path=$(chezmoi --source "$repo_dir" source-path "$target")
+        case $source_path in
+            *.tmpl)
+                printf 'refusing templated app-owned target: %s\n' "$target" >&2
+                exit 1
+                ;;
+        esac
+
+        chezmoi --source "$repo_dir" re-add "$target"
+        printf 'updated  %s\n' "$target"
+    done
+}
+
+command=${1:-}
+case $command in
+    list)
+        list_apps
+        ;;
+    all)
+        for app in leader-key karabiner kicad flavours; do
+            capture_app "$app"
+        done
+        ;;
+    leader-key|karabiner|kicad|flavours)
+        capture_app "$command"
+        ;;
+    *)
+        usage
+        exit 2
+        ;;
+esac
