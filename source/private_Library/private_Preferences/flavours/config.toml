@@ -7,11 +7,6 @@ shell = "zsh -c '{}'"
 # hook = "reloadnvim"
 
 [[item]]
-file = "~/.config/alacritty/alacritty.toml"
-template = "alacritty"
-subtemplate = "poimandres-256"
-
-[[item]]
 file = "~/.config/tmux/tmux-ostentus.conf"
 template = "tmux"
 subtemplate = "ostentus-poimandres"
