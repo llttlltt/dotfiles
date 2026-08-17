@@ -21,6 +21,8 @@
       path: home/.gitconfig
     ~/.gitignore_global:
       path: home/.gitignore_global
+    ~/.config/git/allowed_signers:
+      path: home/.config/git/allowed_signers
     ~/.config/starship.toml:
       path: home/.config/starship.toml
     ~/.config/ghostty:
