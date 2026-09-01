@@ -1,6 +1,12 @@
 [catalogs]
 searchPriorities = []
-sortOrders = []
+
+    [[catalogs.globalScopes]]
+    catalogIdentifier = 'obsidian'
+
+        [catalogs.globalScopes.scope]
+        itemIDs = []
+        kind = 'excluding'
 
     [[catalogs.globalScopes]]
     catalogIdentifier = 'obsidian.notes'
@@ -9,16 +15,38 @@ sortOrders = []
         kind = 'none'
 
     [[catalogs.globalScopes]]
+    catalogIdentifier = 'tuna.clipboard'
+
+        [catalogs.globalScopes.scope]
+        itemIDs = [ 'clipboard.history.root' ]
+        kind = 'excluding'
+
+    [[catalogs.globalScopes]]
+    catalogIdentifier = 'tuna.commands'
+
+        [catalogs.globalScopes.scope]
+        itemIDs = [ 'openDocumentation', 'openSettings', 'sendFeedback', 'showOnboarding' ]
+        kind = 'excluding'
+
+    [[catalogs.globalScopes]]
     catalogIdentifier = 'tuna.effects'
 
         [catalogs.globalScopes.scope]
-        kind = 'none'
+        itemIDs = [ 'Confetti', 'Confetti Rain', 'WASTED' ]
+        kind = 'only'
 
     [[catalogs.globalScopes]]
     catalogIdentifier = 'tuna.emoji'
 
         [catalogs.globalScopes.scope]
         kind = 'none'
+
+    [[catalogs.globalScopes]]
+    catalogIdentifier = 'tuna.modes'
+
+        [catalogs.globalScopes.scope]
+        itemIDs = [ 'combo', 'search', 'talk', 'text' ]
+        kind = 'excluding'
 
     [[catalogs.globalScopes]]
     catalogIdentifier = 'tuna.recents'
@@ -31,6 +59,10 @@ sortOrders = []
 
         [catalogs.globalScopes.scope]
         kind = 'none'
+
+    [[catalogs.sortOrders]]
+    catalogIdentifier = 'tuna.clipboard'
+    sortOrder = 'capturedAt.desc'
 
 [[comboMode.bindings]]
 key = 'a'
@@ -1724,21 +1756,50 @@ label = 'Volume -5%'
         subjectIdentifiers = [ 'text:$HOME/.config/zsh/user/scripts/vol.sh -5' ]
         type = 'savedCommand'
 
-[hotkeys]
-custom = []
+[hotkeys.app.activate]
+carbonKeyCode = 49
+carbonModifiers = 256
 
-    [hotkeys.app.activate]
+[hotkeys.app.comboMode]
+carbonKeyCode = 111
+carbonModifiers = 6912
+
+[[hotkeys.custom]]
+id = '0CC02ACC-D4F4-4BA3-A898-E8DA98EB46AB'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'tuna.common-actions/browse'
+    behavior = 'run'
+    presentation = 'automatic'
+    subjectIdentifiers = [ 'tuna.emoji.search/emoji.search' ]
+    type = 'savedCommand'
+
+    [hotkeys.custom.shortcut]
     carbonKeyCode = 49
-    carbonModifiers = 256
+    carbonModifiers = 4352
 
-    [hotkeys.app.comboMode]
-    carbonKeyCode = 111
-    carbonModifiers = 6912
+[[hotkeys.custom]]
+id = '72837AF4-7E1E-49EE-89AD-10B1ED630414'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'tuna.common-actions/browse'
+    behavior = 'run'
+    presentation = 'automatic'
+    subjectIdentifiers = [ 'tuna.clipboard/clipboard.history.root' ]
+    type = 'savedCommand'
+
+    [hotkeys.custom.shortcut]
+    carbonKeyCode = 8
+    carbonModifiers = 2304
 
 [settings]
+backspaceBehavior = 'deleteCharacters'
 comboModeBackspaceBehavior = 'stepBack'
 comboModeCheatsheetBehavior = 'always'
 comboModeCheatsheetShowDetails = false
+comboModeModifierTrigger = 'hyper'
 comboModeThemeStyle = 'cheatsheet'
+comboModeTriggerType = 'modifier'
 physicalHyperKeyQuickPressBehavior = 'togglesCapsLock'
 physicalHyperKeySource = 'capsLock'
+showResultsImmediatelyOnActivation = true

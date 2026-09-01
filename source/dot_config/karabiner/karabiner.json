@@ -4,6 +4,49 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Search key: Open Tuna (command+space)",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f4" },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "apple_vendor_keyboard_key_code": "spotlight" },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn+e: Open Tuna instead of Apple emoji picker",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Microphone key: Toggle TypeWhisper dictation",
                         "manipulators": [
                             {
@@ -31,6 +74,7 @@
                     },
                     {
                         "description": "caps_lock: Tap for Hyper + F12, Hold for caps_lock",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
