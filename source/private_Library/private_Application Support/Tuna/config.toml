@@ -317,9 +317,9 @@ label = 'Media'
                 type = 'savedCommand'
 
 [[comboMode.bindings]]
-iconPath = 'note.text.badge.plus'
+iconPath = '/Applications/Obsidian.app'
 key = 'n'
-label = 'Obsidian QuickAdd'
+label = 'Obsidian - Add to Daily Note'
 
     [comboMode.bindings.destination]
     type = 'command'
@@ -328,7 +328,7 @@ label = 'Obsidian QuickAdd'
         actionIdentifier = 'tuna.smart-links.actions/open-smart-link'
         behavior = 'stage'
         presentation = 'automatic'
-        subjectIdentifiers = [ 'tuna.smart-links/Obsidian QuickAdd' ]
+        subjectIdentifiers = [ 'tuna.smart-links/Obsidian - Add to Daily Note' ]
         type = 'savedCommand'
 
 [[comboMode.bindings]]
@@ -454,23 +454,10 @@ label = 'Open'
                 subjectIdentifiers = [ 'path:/Applications/Ground News.app' ]
                 type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        key = 'o'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'path:/Applications/Obsidian.app' ]
-                type = 'savedCommand'
-
 [[comboMode.bindings]]
-iconPath = 'lock.fill'
+iconPath = '/Applications/1Password.app'
 key = 'p'
-label = '1Password Quick Access'
+label = '1Password - Quick Access'
 
     [comboMode.bindings.destination]
     type = 'command'
@@ -524,9 +511,9 @@ key = 's'
         type = 'savedCommand'
 
 [[comboMode.bindings]]
-iconPath = 'checklist'
+iconPath = '/Applications/Todoist.app'
 key = 't'
-label = 'Todoist QuickAdd'
+label = 'Todoist - Quick Add'
 
     [comboMode.bindings.destination]
     type = 'command'
@@ -1832,7 +1819,7 @@ template = 'https://www.google.com/search?q={{input}}'
 
 [[smartLinks.entries]]
 enabled = true
-name = 'Obsidian QuickAdd'
+name = 'Obsidian - Add to Daily Note'
 requiresInput = true
 template = 'obsidian://quickadd?vault=Elliott%20Liu&choice=Capture%20-%20Log%20in%20Daily%20Note&value-Note={{input}}'
 
