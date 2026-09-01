@@ -74,7 +74,6 @@
                     },
                     {
                         "description": "caps_lock: Tap for Hyper + F12, Hold for caps_lock",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
