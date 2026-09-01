@@ -1801,3 +1801,4 @@ comboModeModifierTrigger = 'disabled'
 comboModeTriggerType = 'shortcut'
 physicalHyperKeySource = 'off'
 showResultsImmediatelyOnActivation = true
+themeIdentifier = 'com.brnbw.tuna.themes.Notch'
