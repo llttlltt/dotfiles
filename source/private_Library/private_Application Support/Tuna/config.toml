@@ -1,5 +1,4 @@
 [catalogConfiguration]
-customItems = []
 folderDepthOverrides = []
 scriptsDirectories = []
 
@@ -9,6 +8,330 @@ scriptsDirectories = []
     filterMode = 'folders'
     id = '45484273-3939-406D-AEA1-4AA48B695CC5'
     path = '~/Dropbox'
+
+    [[catalogConfiguration.customItems]]
+    id = '0B34A2A2-2E68-475C-86B5-C9935BF1BABD'
+    kind = 'url'
+    label = 'Window - Column 1 of 3'
+    value = 'rectangle-pro://execute-action?name=first-third'
+
+    [[catalogConfiguration.customItems]]
+    id = 'DA7538C4-D035-4DBF-9FB8-0EBF66CD1A42'
+    kind = 'url'
+    label = 'Window - Column 2 of 3'
+    value = 'rectangle-pro://execute-action?name=center-third'
+
+    [[catalogConfiguration.customItems]]
+    id = '0E6F1486-6874-45C0-8412-30571A62702F'
+    kind = 'url'
+    label = 'Window - Column 3 of 3'
+    value = 'rectangle-pro://execute-action?name=last-third'
+
+    [[catalogConfiguration.customItems]]
+    id = 'CE308451-71B0-4A9D-B175-EB5523E13A7C'
+    kind = 'url'
+    label = 'Window - Centered Two-Thirds Width'
+    value = 'rectangle-pro://execute-action?name=center-two-thirds'
+
+    [[catalogConfiguration.customItems]]
+    id = 'A1F3DAFC-9B4A-4A76-9FE7-731B4117C007'
+    kind = 'url'
+    label = 'Window - First Two-Thirds Span'
+    value = 'rectangle-pro://execute-action?name=first-two-thirds'
+
+    [[catalogConfiguration.customItems]]
+    id = '67922F6C-9EBF-4BB1-9939-11E2C1D3D772'
+    kind = 'url'
+    label = 'Window - Last Two-Thirds Span'
+    value = 'rectangle-pro://execute-action?name=last-two-thirds'
+
+    [[catalogConfiguration.customItems]]
+    id = '1A4157F6-8BDC-49F8-B8A1-FF1503465AD6'
+    kind = 'url'
+    label = 'Window - Grid 1 of 4 (Top Left)'
+    value = 'rectangle-pro://execute-action?name=top-left'
+
+    [[catalogConfiguration.customItems]]
+    id = '5415D6E5-FE8C-4309-94E4-8BC6A5C2B2E3'
+    kind = 'url'
+    label = 'Window - Grid 2 of 4 (Top Right)'
+    value = 'rectangle-pro://execute-action?name=top-right'
+
+    [[catalogConfiguration.customItems]]
+    id = '10016618-743D-40BB-98EB-D15A8AFC23E8'
+    kind = 'url'
+    label = 'Window - Grid 3 of 4 (Bottom Left)'
+    value = 'rectangle-pro://execute-action?name=bottom-left'
+
+    [[catalogConfiguration.customItems]]
+    id = '3B1435FD-8455-47B5-BB05-FA157704DB03'
+    kind = 'url'
+    label = 'Window - Grid 4 of 4 (Bottom Right)'
+    value = 'rectangle-pro://execute-action?name=bottom-right'
+
+    [[catalogConfiguration.customItems]]
+    id = '3C859C28-CCCB-4777-991F-FF68E0C41498'
+    kind = 'url'
+    label = 'Window - Column 1 of 4'
+    value = 'rectangle-pro://execute-action?name=first-fourth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'F9690099-95D7-4E11-BE7F-AA8ADDAB8DBA'
+    kind = 'url'
+    label = 'Window - Column 2 of 4'
+    value = 'rectangle-pro://execute-action?name=second-fourth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'D253DED1-B95F-43B7-A96A-5D969840A426'
+    kind = 'url'
+    label = 'Window - Column 3 of 4'
+    value = 'rectangle-pro://execute-action?name=third-fourth'
+
+    [[catalogConfiguration.customItems]]
+    id = '53576178-F2EF-4805-B258-3CA3DFB0E49D'
+    kind = 'url'
+    label = 'Window - Column 4 of 4'
+    value = 'rectangle-pro://execute-action?name=last-fourth'
+
+    [[catalogConfiguration.customItems]]
+    id = '2111AF60-4DE1-4510-AEC5-C956EA49C86E'
+    kind = 'url'
+    label = 'Window - First Three-Fourths Span'
+    value = 'rectangle-pro://execute-action?name=first-three-fourths'
+
+    [[catalogConfiguration.customItems]]
+    id = '0059F5DB-4EC3-41CA-896B-3C47FA32E5D2'
+    kind = 'url'
+    label = 'Window - Last Three-Fourths Span'
+    value = 'rectangle-pro://execute-action?name=last-three-fourths'
+
+    [[catalogConfiguration.customItems]]
+    id = '78F68E7C-02AA-4D6D-8FD3-19D7676CAD5B'
+    kind = 'url'
+    label = 'Window - Grid 1 of 6 (Top Left)'
+    value = 'rectangle-pro://execute-action?name=top-left-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '5A8D88AB-E562-460B-8B6E-F616444A9057'
+    kind = 'url'
+    label = 'Window - Grid 2 of 6 (Top Center)'
+    value = 'rectangle-pro://execute-action?name=top-center-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '1F25B38E-186E-4A1D-AAC5-01CBC763FF4A'
+    kind = 'url'
+    label = 'Window - Grid 3 of 6 (Top Right)'
+    value = 'rectangle-pro://execute-action?name=top-right-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '82A531D2-234D-48DF-B333-06BFB3FC187D'
+    kind = 'url'
+    label = 'Window - Grid 4 of 6 (Bottom Left)'
+    value = 'rectangle-pro://execute-action?name=bottom-left-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '3F6B66AD-73F2-4356-8006-FD4C9452D001'
+    kind = 'url'
+    label = 'Window - Grid 5 of 6 (Bottom Center)'
+    value = 'rectangle-pro://execute-action?name=bottom-center-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '8CDB623D-968A-45AD-BF98-F93C8BEC7F14'
+    kind = 'url'
+    label = 'Window - Grid 6 of 6 (Bottom Right)'
+    value = 'rectangle-pro://execute-action?name=bottom-right-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'A0875815-B788-4CD2-A96B-3D1967C04E4E'
+    kind = 'url'
+    label = 'Window - Column 1 of 6'
+    value = 'rectangle-pro://execute-action?name=first-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'D5871F51-D490-457B-8757-289D3C18FBBD'
+    kind = 'url'
+    label = 'Window - Column 6 of 6'
+    value = 'rectangle-pro://execute-action?name=last-sixth'
+
+    [[catalogConfiguration.customItems]]
+    id = '074D7BA2-F0B0-4575-B0B2-2893ADEC779F'
+    kind = 'url'
+    label = 'Window - Grid 1 of 8 (Top Left)'
+    value = 'rectangle-pro://execute-action?name=top-left-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '7DD5F558-01B1-4F53-8959-341D91FF843A'
+    kind = 'url'
+    label = 'Window - Grid 2 of 8 (Top Center Left)'
+    value = 'rectangle-pro://execute-action?name=top-center-left-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'B34DA7C2-6235-4C2D-B91D-9FEB917BA38D'
+    kind = 'url'
+    label = 'Window - Grid 3 of 8 (Top Center Right)'
+    value = 'rectangle-pro://execute-action?name=top-center-right-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '5E5A0E44-4643-4BD2-8895-608875284F6E'
+    kind = 'url'
+    label = 'Window - Grid 4 of 8 (Top Right)'
+    value = 'rectangle-pro://execute-action?name=top-right-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '862AB1CC-289A-4418-81D5-4770402CE011'
+    kind = 'url'
+    label = 'Window - Grid 5 of 8 (Bottom Left)'
+    value = 'rectangle-pro://execute-action?name=bottom-left-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '173F6A71-5DAB-4E1D-9C0B-20692F5D41B4'
+    kind = 'url'
+    label = 'Window - Grid 6 of 8 (Bottom Center Left)'
+    value = 'rectangle-pro://execute-action?name=bottom-center-left-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '8B18CA44-F09B-4057-B2EB-355B7AD3BA40'
+    kind = 'url'
+    label = 'Window - Grid 7 of 8 (Bottom Center Right)'
+    value = 'rectangle-pro://execute-action?name=bottom-center-right-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = '2B25922C-4870-4974-BD8E-57359DE9E1F6'
+    kind = 'url'
+    label = 'Window - Grid 8 of 8 (Bottom Right)'
+    value = 'rectangle-pro://execute-action?name=bottom-right-eighth'
+
+    [[catalogConfiguration.customItems]]
+    id = 'B301D0D2-298E-474B-9804-DDB025A843C6'
+    kind = 'url'
+    label = 'Window - Center'
+    value = 'rectangle-pro://execute-action?name=center'
+
+    [[catalogConfiguration.customItems]]
+    id = 'A4BE3A04-DD28-42CA-B119-05E269AA9DE7'
+    kind = 'url'
+    label = 'Window - Previous Display'
+    value = 'rectangle-pro://execute-action?name=previous-display'
+
+    [[catalogConfiguration.customItems]]
+    id = '141DF34B-7800-4F13-9F5E-2FB0D5C2E4A5'
+    kind = 'url'
+    label = 'Window - App Previous Display'
+    value = 'rectangle-pro://execute-action?name=app-prev-display'
+
+    [[catalogConfiguration.customItems]]
+    id = '9E914612-1C12-4F64-9AF3-9E3D0CEFC80D'
+    kind = 'url'
+    label = 'Window - Next Display'
+    value = 'rectangle-pro://execute-action?name=next-display'
+
+    [[catalogConfiguration.customItems]]
+    id = 'FC19E0AC-9B5D-4E81-AECA-6A7E170233A4'
+    kind = 'url'
+    label = 'Window - App Next Display'
+    value = 'rectangle-pro://execute-action?name=app-next-display'
+
+    [[catalogConfiguration.customItems]]
+    id = '665F4F79-1603-47D5-A2C8-724E3960EDC6'
+    kind = 'url'
+    label = 'Window - Next Display Ratio'
+    value = 'rectangle-pro://execute-action?name=next-display-ratio'
+
+    [[catalogConfiguration.customItems]]
+    id = '07CABD89-D3FD-466B-B539-5973CAE62854'
+    kind = 'url'
+    label = 'Window - Previous Display Ratio'
+    value = 'rectangle-pro://execute-action?name=prev-display-ratio'
+
+    [[catalogConfiguration.customItems]]
+    id = 'B0BFD43D-1A86-4CD9-8DFC-7BEED1B9CDA9'
+    kind = 'url'
+    label = 'Window - Maximize'
+    value = 'rectangle-pro://execute-action?name=maximize'
+
+    [[catalogConfiguration.customItems]]
+    id = '9E00A48D-43BE-4A59-935C-EC100E9437E6'
+    kind = 'url'
+    label = 'Window - Fullscreen'
+    value = 'rectangle-pro://execute-action?name=fullscreen'
+
+    [[catalogConfiguration.customItems]]
+    id = '7EFB5589-57E2-4FE1-978B-6AF73DEE2468'
+    kind = 'url'
+    label = 'Window - Left Half'
+    value = 'rectangle-pro://execute-action?name=left-half'
+
+    [[catalogConfiguration.customItems]]
+    id = '660F5E28-0D70-4505-AF3A-9905ADE81E27'
+    kind = 'url'
+    label = 'Window - Bottom Half'
+    value = 'rectangle-pro://execute-action?name=bottom-half'
+
+    [[catalogConfiguration.customItems]]
+    id = 'E20F9FDD-2799-445A-9B21-CB0BF2961ABB'
+    kind = 'url'
+    label = 'Window - Top Half'
+    value = 'rectangle-pro://execute-action?name=top-half'
+
+    [[catalogConfiguration.customItems]]
+    id = '4150912B-B984-401F-B243-334E0AF1520A'
+    kind = 'url'
+    label = 'Window - Right Half'
+    value = 'rectangle-pro://execute-action?name=right-half'
+
+    [[catalogConfiguration.customItems]]
+    id = '6DEEE95D-2FAF-4762-93FA-E4DD1EA4B9D8'
+    kind = 'url'
+    label = 'Window - Pin'
+    value = 'rectangle-pro://execute-action?name=pin'
+
+    [[catalogConfiguration.customItems]]
+    id = 'E4387A9F-1D60-4ED5-8135-A60A356F9BA4'
+    kind = 'url'
+    label = 'Window - Unstash All'
+    value = 'rectangle-pro://execute-action?name=unstash-all'
+
+    [[catalogConfiguration.customItems]]
+    id = 'A9FE3982-A1CF-4BEB-8FA2-C3542072A871'
+    kind = 'url'
+    label = 'Window - Unstash'
+    value = 'rectangle-pro://execute-action?name=unstash'
+
+    [[catalogConfiguration.customItems]]
+    id = '87DC7FCB-0817-4CAC-A6DD-1814ADA5C568'
+    kind = 'url'
+    label = 'Window - Stash All'
+    value = 'rectangle-pro://execute-action?name=stash-all'
+
+    [[catalogConfiguration.customItems]]
+    id = '06C0F690-A56E-4C2D-B597-81712E52FDFC'
+    kind = 'url'
+    label = 'Window - Stash'
+    value = 'rectangle-pro://execute-action?name=stash'
+
+    [[catalogConfiguration.customItems]]
+    id = 'B30E63D5-624B-4513-A1CA-5D552E258C4B'
+    kind = 'url'
+    label = 'Window - Stash Left'
+    value = 'rectangle-pro://execute-action?name=stash-left'
+
+    [[catalogConfiguration.customItems]]
+    id = '0EDA65AF-3C60-48CC-9B40-11D858428D6E'
+    kind = 'url'
+    label = 'Window - Stash Down'
+    value = 'rectangle-pro://execute-action?name=stash-down'
+
+    [[catalogConfiguration.customItems]]
+    id = 'AF47A015-8542-4E52-8343-88BBC2B815F8'
+    kind = 'url'
+    label = 'Window - Stash Up'
+    value = 'rectangle-pro://execute-action?name=stash-up'
+
+    [[catalogConfiguration.customItems]]
+    id = 'D1E151B5-4302-4025-A82F-AD92D3EDEF83'
+    kind = 'url'
+    label = 'Window - Stash Right'
+    value = 'rectangle-pro://execute-action?name=stash-right'
 
 [[catalogs.globalScopes]]
 catalogIdentifier = 'obsidian.notes'
@@ -560,833 +883,881 @@ label = 'Window'
     [comboMode.bindings.destination]
     type = 'group'
 
-        [[comboMode.bindings.destination.bindings]]
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'square.grid.3x3.fill'
+    key = 'g'
+    label = 'Grid'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'group'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '1.square.fill'
+        key = '1'
+        label = 'Position 1'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.topleft.rectangle'
+            key = '4'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/1A4157F6-8BDC-49F8-B8A1-FF1503465AD6' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '1.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/78F68E7C-02AA-4D6D-8FD3-19D7676CAD5B' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '1.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/074D7BA2-F0B0-4575-B0B2-2893ADEC779F' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '2.square.fill'
+        key = '2'
+        label = 'Position 2'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.topright.rectangle'
+            key = '4'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/5415D6E5-FE8C-4309-94E4-8BC6A5C2B2E3' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '2.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/5A8D88AB-E562-460B-8B6E-F616444A9057' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '2.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/7DD5F558-01B1-4F53-8959-341D91FF843A' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '3.square.fill'
+        key = '3'
+        label = 'Position 3'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.bottomleft.rectangle'
+            key = '4'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/10016618-743D-40BB-98EB-D15A8AFC23E8' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '3.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/1F25B38E-186E-4A1D-AAC5-01CBC763FF4A' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '3.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/B34DA7C2-6235-4C2D-B91D-9FEB917BA38D' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '4.square.fill'
+        key = '4'
+        label = 'Position 4'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.bottomright.rectangle'
+            key = '4'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/3B1435FD-8455-47B5-BB05-FA157704DB03' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '4.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/82A531D2-234D-48DF-B333-06BFB3FC187D' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '4.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/5E5A0E44-4643-4BD2-8895-608875284F6E' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '5.square.fill'
+        key = '5'
+        label = 'Position 5'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '5.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/3F6B66AD-73F2-4356-8006-FD4C9452D001' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '5.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/862AB1CC-289A-4418-81D5-4770402CE011' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '6.square.fill'
+        key = '6'
+        label = 'Position 6'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '6.square.fill'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/8CDB623D-968A-45AD-BF98-F93C8BEC7F14' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '6.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/173F6A71-5DAB-4E1D-9C0B-20692F5D41B4' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '7.square.fill'
+        key = '7'
+        label = 'Position 7'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '7.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/8B18CA44-F09B-4057-B2EB-355B7AD3BA40' ]
+                    type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '8.square.fill'
+        key = '8'
+        label = 'Position 8'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'group'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '8.square.fill'
+            key = '8'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/2B25922C-4870-4974-BD8E-57359DE9E1F6' ]
+                    type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'rectangle.split.3x1.fill'
+    key = 'c'
+    label = 'Columns'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'group'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'inset.filled.center.rectangle'
+        key = 'c'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/B301D0D2-298E-474B-9804-DDB025A843C6' ]
+                type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
         iconPath = 'rectangle.split.3x1.fill'
         key = '3'
         label = 'Thirds'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'group'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '1.lane'
-                key = '1'
-                label = 'First third'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '1.lane'
+            key = '1'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=first-third' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/0B34A2A2-2E68-475C-86B5-C9935BF1BABD' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '2.lane'
-                key = '2'
-                label = 'Center third'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '2.lane'
+            key = '2'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=center-third' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/DA7538C4-D035-4DBF-9FB8-0EBF66CD1A42' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '3.lane'
-                key = '3'
-                label = 'Last third'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '3.lane'
+            key = '3'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=last-third' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/0E6F1486-6874-45C0-8412-30571A62702F' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.center.rectangle'
-                key = 'c'
-                label = 'Center two-thirds'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.leftthird.rectangle'
+            key = 'f'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=center-two-thirds' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/A1F3DAFC-9B4A-4A76-9FE7-731B4117C007' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.leftthird.rectangle'
-                key = 'h'
-                label = 'First two-thirds'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.center.rectangle'
+            key = 'c'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=first-two-thirds' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/CE308451-71B0-4A9D-B175-EB5523E13A7C' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.rightthird.rectangle'
-                key = 'l'
-                label = 'Last two-thirds'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.rightthird.rectangle'
+            key = 'l'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=last-two-thirds' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/67922F6C-9EBF-4BB1-9939-11E2C1D3D772' ]
+                    type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'rectangle.split.2x2.fill'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = '4.square.fill'
         key = '4'
         label = 'Fourths'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'group'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.topleft.rectangle'
-                key = '1'
-                label = 'Top-left'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '1.lane'
+            key = '1'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-left' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/3C859C28-CCCB-4777-991F-FF68E0C41498' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.topright.rectangle'
-                key = '2'
-                label = 'Top-right'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '2.lane'
+            key = '2'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-right' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/F9690099-95D7-4E11-BE7F-AA8ADDAB8DBA' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.bottomleft.rectangle'
-                key = '3'
-                label = 'Bottom-left'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '3.lane'
+            key = '3'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-left' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/D253DED1-B95F-43B7-A96A-5D969840A426' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.bottomright.rectangle'
-                key = '4'
-                label = 'Bottom-right'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '4.lane'
+            key = '4'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-right' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/53576178-F2EF-4805-B258-3CA3DFB0E49D' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '1.lane'
-                key = 'a'
-                label = 'First fourth'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.lefthalf.rectangle'
+            key = 'f'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=first-fourth' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/2111AF60-4DE1-4510-AEC5-C956EA49C86E' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '3.lane'
-                key = 'd'
-                label = 'Third fourth'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = 'inset.filled.righthalf.rectangle'
+            key = 'l'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=third-fourth' ]
-                        type = 'savedCommand'
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/0059F5DB-4EC3-41CA-896B-3C47FA32E5D2' ]
+                    type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '4.lane'
-                key = 'f'
-                label = 'Last fourth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=last-fourth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.lefthalf.rectangle'
-                key = 'h'
-                label = 'First three-fourths'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=first-three-fourths' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.righthalf.rectangle'
-                key = 'l'
-                label = 'Last three-fourths'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=last-three-fourths' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = '2.lane'
-                key = 's'
-                label = 'Second fourth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=second-fourth' ]
-                        type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'rectangle.split.3x1.fill'
         key = '6'
         label = 'Sixths'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'group'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '1'
-                label = 'Top-left sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-left-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '2'
-                label = 'Top-center sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-center-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '3'
-                label = 'Top-right sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-right-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '4'
-                label = 'Bottom-left sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-left-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '5'
-                label = 'Bottom-center sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-center-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '6'
-                label = 'Bottom-right sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-right-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'h'
-                label = 'First sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=first-sixth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'l'
-                label = 'Last sixth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=last-sixth' ]
-                        type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        key = '8'
-        label = 'Eighths'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'group'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '1'
-                label = 'Top-left eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-left-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '2'
-                label = 'Top-center-left eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-center-left-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '3'
-                label = 'Top-center-right eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-center-right-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '4'
-                label = 'Top-right eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-right-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '5'
-                label = 'Bottom-left eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-left-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '6'
-                label = 'Bottom-center-left eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-center-left-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '7'
-                label = 'Bottom-center-right eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-center-right-eighth' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '8'
-                label = 'Bottom-right eighth'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-right-eighth' ]
-                        type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.center.rectangle'
-        key = 'c'
-        label = 'Center'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open-url'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=center' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'display.2'
-        key = 'd'
-        label = 'Display'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'group'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'arrow.backward.square.fill'
-                key = 'h'
-                label = 'Previous Display'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=previous-display' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'H'
-                label = 'App Previous Display'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=app-prev-display' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'arrow.forward.square.fill'
-                key = 'l'
-                label = 'Next Display'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=next-display' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'L'
-                label = 'App Next Display'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=app-next-display' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'n'
-                label = 'Next Display Ratio'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=next-display-ratio' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'p'
-                label = 'Previous Display Ratio'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=prev-display-ratio' ]
-                        type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.rectangle'
-        key = 'f'
-        label = 'Maximise'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open-url'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=maximize' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'arrow.up.backward.and.arrow.down.forward.square.fill'
-        key = 'F'
-        label = 'Fullscreen'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open-url'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=fullscreen' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.lefthalf.rectangle'
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '1.lane'
+            key = '1'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/A0875815-B788-4CD2-A96B-3D1967C04E4E' ]
+                    type = 'savedCommand'
+
+            [[comboMode.bindings.destination.bindings.destination.bindings.destination.bindings]]
+            iconPath = '6.lane'
+            key = '6'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination]
+                type = 'command'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination.bindings.destination.command]
+                    actionIdentifier = 'tuna.common-actions/open-url'
+                    behavior = 'run'
+                    presentation = 'automatic'
+                    subjectIdentifiers = [ 'tuna.custom-items/D5871F51-D490-457B-8757-289D3C18FBBD' ]
+                    type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'inset.filled.lefthalf.rectangle'
+    key = 'h'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/7EFB5589-57E2-4FE1-978B-6AF73DEE2468' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'inset.filled.bottomhalf.rectangle'
+    key = 'j'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/660F5E28-0D70-4505-AF3A-9905ADE81E27' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'inset.filled.tophalf.rectangle'
+    key = 'k'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/E20F9FDD-2799-445A-9B21-CB0BF2961ABB' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'inset.filled.righthalf.rectangle'
+    key = 'l'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/4150912B-B984-401F-B243-334E0AF1520A' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'inset.filled.rectangle'
+    key = 'f'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/B0BFD43D-1A86-4CD9-8DFC-7BEED1B9CDA9' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'arrow.up.backward.and.arrow.down.forward.square.fill'
+    key = 'x'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/9E00A48D-43BE-4A59-935C-EC100E9437E6' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'pin.fill'
+    key = 'p'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'command'
+
+            [comboMode.bindings.destination.bindings.destination.command]
+            actionIdentifier = 'tuna.common-actions/open-url'
+            behavior = 'run'
+            presentation = 'automatic'
+            subjectIdentifiers = [ 'tuna.custom-items/6DEEE95D-2FAF-4762-93FA-E4DD1EA4B9D8' ]
+            type = 'savedCommand'
+
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'display.2'
+    key = 'd'
+    label = 'Display'
+
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'group'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.backward.square.fill'
         key = 'h'
-        label = 'Left half'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'command'
 
-                [comboMode.bindings.destination.bindings.destination.command]
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
                 actionIdentifier = 'tuna.common-actions/open-url'
                 behavior = 'run'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=left-half' ]
+                subjectIdentifiers = [ 'tuna.custom-items/A4BE3A04-DD28-42CA-B119-05E269AA9DE7' ]
                 type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.bottomhalf.rectangle'
-        key = 'j'
-        label = 'Bottom half'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.backward.square.fill'
+        key = 'H'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'command'
 
-                [comboMode.bindings.destination.bindings.destination.command]
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
                 actionIdentifier = 'tuna.common-actions/open-url'
                 behavior = 'run'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=bottom-half' ]
+                subjectIdentifiers = [ 'tuna.custom-items/141DF34B-7800-4F13-9F5E-2FB0D5C2E4A5' ]
                 type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.tophalf.rectangle'
-        key = 'k'
-        label = 'Top half'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open-url'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=top-half' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'inset.filled.righthalf.rectangle'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.forward.square.fill'
         key = 'l'
-        label = 'Right half'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'command'
 
-                [comboMode.bindings.destination.bindings.destination.command]
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
                 actionIdentifier = 'tuna.common-actions/open-url'
                 behavior = 'run'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=right-half' ]
+                subjectIdentifiers = [ 'tuna.custom-items/9E914612-1C12-4F64-9AF3-9E3D0CEFC80D' ]
                 type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'pin.fill'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.forward.square.fill'
+        key = 'L'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/FC19E0AC-9B5D-4E81-AECA-6A7E170233A4' ]
+                type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.clockwise.square.fill'
+        key = 'n'
+
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
+
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/665F4F79-1603-47D5-A2C8-724E3960EDC6' ]
+                type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.counterclockwise.square.fill'
         key = 'p'
-        label = 'Pin'
 
-            [comboMode.bindings.destination.bindings.destination]
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
             type = 'command'
 
-                [comboMode.bindings.destination.bindings.destination.command]
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
                 actionIdentifier = 'tuna.common-actions/open-url'
                 behavior = 'run'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=pin' ]
+                subjectIdentifiers = [ 'tuna.custom-items/07CABD89-D3FD-466B-B539-5973CAE62854' ]
                 type = 'savedCommand'
 
-        [[comboMode.bindings.destination.bindings]]
-        key = 's'
-        label = 'Stash'
+    [[comboMode.bindings.destination.bindings]]
+    iconPath = 'tray.full.fill'
+    key = 's'
+    label = 'Stash'
 
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'group'
+        [comboMode.bindings.destination.bindings.destination]
+        type = 'group'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '_'
-                label = 'Unstash All'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'square.stack.3d.up.fill'
+        key = '_'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=unstash-all' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/E4387A9F-1D60-4ED5-8135-A60A356F9BA4' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '-'
-                label = 'Unstash'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'tray.and.arrow.up.fill'
+        key = '-'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=unstash' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/A9FE3982-A1CF-4BEB-8FA2-C3542072A871' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '+'
-                label = 'Stash All'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'square.stack.3d.down.right.fill'
+        key = '+'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash-all' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/87DC7FCB-0817-4CAC-A6DD-1814ADA5C568' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = '='
-                label = 'Stash'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'tray.and.arrow.down.fill'
+        key = '='
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/06C0F690-A56E-4C2D-B597-81712E52FDFC' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'h'
-                label = 'Stash Left'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.left.to.line.square.fill'
+        key = 'h'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash-left' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/B30E63D5-624B-4513-A1CA-5D552E258C4B' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'j'
-                label = 'Stash Down'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.down.to.line.square.fill'
+        key = 'j'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash-down' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/0EDA65AF-3C60-48CC-9B40-11D858428D6E' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'k'
-                label = 'Stash Up'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.up.to.line.square.fill'
+        key = 'k'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash-up' ]
-                        type = 'savedCommand'
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/AF47A015-8542-4E52-8343-88BBC2B815F8' ]
+                type = 'savedCommand'
 
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
-                key = 'l'
-                label = 'Stash Right'
+        [[comboMode.bindings.destination.bindings.destination.bindings]]
+        iconPath = 'arrow.right.to.line.square.fill'
+        key = 'l'
 
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
+            [comboMode.bindings.destination.bindings.destination.bindings.destination]
+            type = 'command'
 
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'url:rectangle-pro://execute-action?name=stash-right' ]
-                        type = 'savedCommand'
-
+                [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open-url'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'tuna.custom-items/D1E151B5-4302-4025-A82F-AD92D3EDEF83' ]
+                type = 'savedCommand'
 [[comboMode.bindings]]
 key = 'x'
 label = 'Terminal'
