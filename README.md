@@ -58,11 +58,11 @@ There are two supported workflows. For repository-owned configuration, edit file
 ./scripts/apply
 ```
 
-For configuration written by Leader Key, Karabiner, KiCad, or Flavours, edit it in the application and capture only its approved files:
+For configuration written by Tuna, Leader Key, Karabiner, KiCad, or Flavours, edit it in the application and capture only its approved files:
 
 ```sh
 ./scripts/capture list
-./scripts/capture leader-key
+./scripts/capture tuna
 ```
 
 Do not call `chezmoi re-add` directly or ingest generated state automatically. The complete ownership rules, capture groups, and extension checklist are in [configuration management workflow](docs/config-management.md).

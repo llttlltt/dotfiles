@@ -19,6 +19,7 @@ Edit these through their application, then capture the approved subset:
 
 ```sh
 ./scripts/capture leader-key
+./scripts/capture tuna
 ./scripts/capture karabiner
 ./scripts/capture kicad
 ./scripts/capture flavours
@@ -29,6 +30,7 @@ Use `./scripts/capture all` after changing several applications. Each capture up
 | Capture group | Managed state |
 | --- | --- |
 | `leader-key` | Leader Key actions JSON |
+| `tuna` | Tuna configuration TOML |
 | `karabiner` | Karabiner-Elements configuration JSON |
 | `kicad` | KiCad 10 hotkeys, library tables, and the custom colour theme |
 | `flavours` | Flavours configuration and its generated tmux theme |
@@ -59,4 +61,4 @@ Whenever a new configuration is added, decide its ownership explicitly:
 2. Application-owned: add only the authored subset, add a named allowlist entry to `scripts/capture`, and update the table above.
 3. Generated/local: ignore it and document an exception only if its purpose is unclear.
 
-Never make an application-owned target a chezmoi template. Put machine-specific behavior in a small repository-owned templated helper, as Leader Key does for its Obsidian action. This keeps application capture safe and predictable.
+Never make an application-owned target a chezmoi template. Put machine-specific behavior in a small repository-owned templated helper when needed. This keeps application capture safe and predictable.

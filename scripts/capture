@@ -4,11 +4,12 @@ set -eu
 repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 
 usage() {
-    printf '%s\n' 'Usage: ./scripts/capture <leader-key|karabiner|kicad|flavours|all|list|check>' >&2
+    printf '%s\n' 'Usage: ./scripts/capture <leader-key|tuna|karabiner|kicad|flavours|all|list|check>' >&2
 }
 
 list_apps() {
     printf '%-12s %s\n' 'leader-key' 'Leader Key actions edited in the app'
+    printf '%-12s %s\n' 'tuna' 'Tuna configuration edited in the app'
     printf '%-12s %s\n' 'karabiner' 'Karabiner-Elements configuration edited in the app'
     printf '%-12s %s\n' 'kicad' 'Curated KiCad 10 hotkeys, libraries, and colour theme'
     printf '%-12s %s\n' 'flavours' 'Flavours configuration and generated tmux theme'
@@ -18,6 +19,9 @@ targets() {
     case $1 in
         leader-key)
             printf '%s\n' "$HOME/Library/Application Support/Leader Key/config.json"
+            ;;
+        tuna)
+            printf '%s\n' "$HOME/Library/Application Support/Tuna/config.toml"
             ;;
         karabiner)
             printf '%s\n' "$HOME/.config/karabiner/karabiner.json"
@@ -68,7 +72,7 @@ check_target() {
 }
 
 check_all() {
-    for app in leader-key karabiner kicad flavours; do
+    for app in leader-key tuna karabiner kicad flavours; do
         targets "$app" | while IFS= read -r target; do
             check_target "$target"
         done
@@ -88,12 +92,12 @@ case $command in
         list_apps
         ;;
     all)
-        for app in leader-key karabiner kicad flavours; do
+        for app in leader-key tuna karabiner kicad flavours; do
             capture_app "$app"
         done
         finish_capture
         ;;
-    leader-key|karabiner|kicad|flavours)
+    leader-key|tuna|karabiner|kicad|flavours)
         capture_app "$command"
         finish_capture
         ;;

@@ -375,6 +375,8 @@ cask "teensy"
 cask "textual"
 # To-do list
 cask "todoist-app"
+# Application launcher
+cask "tuna"
 # Speech-to-text and AI text processing
 cask "typewhisper"
 # Unicode keyboard layout editor

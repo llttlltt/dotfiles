@@ -23,6 +23,7 @@ seed_file() {
 }
 
 seed_file 'private_Library/private_Application Support/Leader Key/config.json' 'Library/Application Support/Leader Key/config.json'
+seed_file 'private_Library/private_Application Support/Tuna/config.toml' 'Library/Application Support/Tuna/config.toml'
 seed_file 'dot_config/karabiner/karabiner.json' '.config/karabiner/karabiner.json'
 seed_file 'private_Library/private_Preferences/kicad/10.0/user.hotkeys' 'Library/Preferences/kicad/10.0/user.hotkeys'
 seed_file 'private_Library/private_Preferences/kicad/10.0/fp-lib-table' 'Library/Preferences/kicad/10.0/fp-lib-table'
@@ -43,6 +44,11 @@ HOME="$test_home" "$test_repo/scripts/capture" leader-key >/dev/null
 cmp "$test_repo/source/private_Library/private_Application Support/Leader Key/config.json" \
     "$test_home/Library/Application Support/Leader Key/config.json"
 [ -f "$test_home/validated" ]
+
+printf '%s\n' changed >"$test_home/Library/Application Support/Tuna/config.toml"
+HOME="$test_home" "$test_repo/scripts/capture" tuna >/dev/null
+cmp "$test_repo/source/private_Library/private_Application Support/Tuna/config.toml" \
+    "$test_home/Library/Application Support/Tuna/config.toml"
 
 for file in user.hotkeys fp-lib-table sym-lib-table design-block-lib-table colors/user.json; do
     printf 'changed %s\n' "$file" >"$test_home/Library/Preferences/kicad/10.0/$file"
