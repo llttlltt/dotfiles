@@ -317,8 +317,23 @@ label = 'Media'
                 type = 'savedCommand'
 
 [[comboMode.bindings]]
+iconPath = 'note.text.badge.plus'
 key = 'n'
-label = 'News'
+label = 'Obsidian QuickAdd'
+
+    [comboMode.bindings.destination]
+    type = 'command'
+
+        [comboMode.bindings.destination.command]
+        actionIdentifier = 'tuna.smart-links.actions/open-smart-link'
+        behavior = 'stage'
+        presentation = 'automatic'
+        subjectIdentifiers = [ 'tuna.smart-links/Obsidian QuickAdd' ]
+        type = 'savedCommand'
+
+[[comboMode.bindings]]
+key = 'N'
+label = 'Obsidian'
 
     [comboMode.bindings.destination]
     type = 'command'
@@ -327,7 +342,7 @@ label = 'News'
         actionIdentifier = 'tuna.common-actions/open'
         behavior = 'run'
         presentation = 'automatic'
-        subjectIdentifiers = [ 'path:/Applications/Ground News.app' ]
+        subjectIdentifiers = [ 'path:/Applications/Obsidian.app' ]
         type = 'savedCommand'
 
 [[comboMode.bindings]]
@@ -426,6 +441,20 @@ label = 'Open'
                 type = 'savedCommand'
 
         [[comboMode.bindings.destination.bindings]]
+        key = 'n'
+        label = 'News'
+
+            [comboMode.bindings.destination.bindings.destination]
+            type = 'command'
+
+                [comboMode.bindings.destination.bindings.destination.command]
+                actionIdentifier = 'tuna.common-actions/open'
+                behavior = 'run'
+                presentation = 'automatic'
+                subjectIdentifiers = [ 'path:/Applications/Ground News.app' ]
+                type = 'savedCommand'
+
+        [[comboMode.bindings.destination.bindings]]
         key = 'o'
 
             [comboMode.bindings.destination.bindings.destination]
@@ -439,7 +468,22 @@ label = 'Open'
                 type = 'savedCommand'
 
 [[comboMode.bindings]]
+iconPath = 'lock.fill'
 key = 'p'
+label = '1Password Quick Access'
+
+    [comboMode.bindings.destination]
+    type = 'command'
+
+        [comboMode.bindings.destination.command]
+        actionIdentifier = 'tuna.common-actions/run-text-as-shell-command'
+        behavior = 'run'
+        presentation = 'automatic'
+        subjectIdentifiers = [ 'text:/Applications/1Password.app/Contents/MacOS/1Password --quick-access' ]
+        type = 'savedCommand'
+
+[[comboMode.bindings]]
+key = 'P'
 label = '1Password'
 
     [comboMode.bindings.destination]
@@ -451,59 +495,6 @@ label = '1Password'
         presentation = 'automatic'
         subjectIdentifiers = [ 'path:/Applications/1Password.app' ]
         type = 'savedCommand'
-
-[[comboMode.bindings]]
-iconPath = 'figure.run'
-key = 'q'
-label = 'Quick'
-
-    [comboMode.bindings.destination]
-    type = 'group'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'note.text.badge.plus'
-        key = 'n'
-        label = 'Note - Obsidian Quick Add Note'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.smart-links.actions/open-smart-link'
-                behavior = 'stage'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'tuna.smart-links/Obsidian QuickAdd' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'lock.fill'
-        key = 'p'
-        label = 'Passwords - 1Password Quick Access'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/run-text-as-shell-command'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'text:/Applications/1Password.app/Contents/MacOS/1Password --quick-access' ]
-                type = 'savedCommand'
-
-        [[comboMode.bindings.destination.bindings]]
-        iconPath = 'checklist'
-        key = 't'
-        label = 'Task - Todoist Quick Add Task'
-
-            [comboMode.bindings.destination.bindings.destination]
-            type = 'command'
-
-                [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/open-url'
-                behavior = 'run'
-                presentation = 'automatic'
-                subjectIdentifiers = [ 'url:todoist://openquickadd' ]
-                type = 'savedCommand'
 
 [[comboMode.bindings]]
 key = 'r'
@@ -533,7 +524,23 @@ key = 's'
         type = 'savedCommand'
 
 [[comboMode.bindings]]
+iconPath = 'checklist'
 key = 't'
+label = 'Todoist QuickAdd'
+
+    [comboMode.bindings.destination]
+    type = 'command'
+
+        [comboMode.bindings.destination.command]
+        actionIdentifier = 'tuna.common-actions/open-url'
+        behavior = 'run'
+        presentation = 'automatic'
+        subjectIdentifiers = [ 'url:todoist://openquickadd' ]
+        type = 'savedCommand'
+
+[[comboMode.bindings]]
+key = 'T'
+label = 'Todoist'
 
     [comboMode.bindings.destination]
     type = 'command'
