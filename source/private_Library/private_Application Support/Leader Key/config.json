@@ -62,13 +62,6 @@
       "type" : "group"
     },
     {
-      "iconPath" : "microphone.badge.ellipsis.fill",
-      "key" : "d",
-      "label" : "Dictate",
-      "type" : "command",
-      "value" : "$HOME/.config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh TypeWhisper d command,control,option,shift"
-    },
-    {
       "key" : "e",
       "label" : "Email",
       "type" : "application",

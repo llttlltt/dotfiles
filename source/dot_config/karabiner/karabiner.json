@@ -4,6 +4,32 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Microphone key: Toggle TypeWhisper dictation",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f5" },
+                                "to": [
+                                    {
+                                        "shell_command": "$HOME/.config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh TypeWhisper d command,control,option,shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "consumer_key_code": "dictation",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "$HOME/.config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh TypeWhisper d command,control,option,shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "caps_lock: Tap for Hyper + F12, Hold for caps_lock",
                         "manipulators": [
                             {
