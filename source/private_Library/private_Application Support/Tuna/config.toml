@@ -1,68 +1,78 @@
-[catalogs]
-searchPriorities = []
+[catalogConfiguration]
+customItems = []
+folderDepthOverrides = []
+scriptsDirectories = []
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'obsidian'
+    [[catalogConfiguration.customFolders]]
+    depthRawValue = 3
+    entryType = 'directory'
+    filterMode = 'folders'
+    id = '45484273-3939-406D-AEA1-4AA48B695CC5'
+    path = '~/Dropbox'
 
-        [catalogs.globalScopes.scope]
-        itemIDs = []
-        kind = 'excluding'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'obsidian.notes'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'obsidian.notes'
+    [catalogs.globalScopes.scope]
+    kind = 'none'
 
-        [catalogs.globalScopes.scope]
-        kind = 'none'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.clipboard'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.clipboard'
+    [catalogs.globalScopes.scope]
+    itemIDs = [ 'clipboard.history.root' ]
+    kind = 'excluding'
 
-        [catalogs.globalScopes.scope]
-        itemIDs = [ 'clipboard.history.root' ]
-        kind = 'excluding'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.commands'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.commands'
+    [catalogs.globalScopes.scope]
+    itemIDs = [ 'openDocumentation', 'openSettings', 'sendFeedback', 'showOnboarding' ]
+    kind = 'excluding'
 
-        [catalogs.globalScopes.scope]
-        itemIDs = [ 'openDocumentation', 'openSettings', 'sendFeedback', 'showOnboarding' ]
-        kind = 'excluding'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.effects'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.effects'
+    [catalogs.globalScopes.scope]
+    itemIDs = [ 'Confetti', 'Confetti Rain', 'WASTED' ]
+    kind = 'only'
 
-        [catalogs.globalScopes.scope]
-        itemIDs = [ 'Confetti', 'Confetti Rain', 'WASTED' ]
-        kind = 'only'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.emoji'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.emoji'
+    [catalogs.globalScopes.scope]
+    kind = 'none'
 
-        [catalogs.globalScopes.scope]
-        kind = 'none'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.modes'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.modes'
+    [catalogs.globalScopes.scope]
+    itemIDs = [ 'combo', 'search', 'talk', 'text' ]
+    kind = 'excluding'
 
-        [catalogs.globalScopes.scope]
-        itemIDs = [ 'combo', 'search', 'talk', 'text' ]
-        kind = 'excluding'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.recents'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.recents'
+    [catalogs.globalScopes.scope]
+    kind = 'none'
 
-        [catalogs.globalScopes.scope]
-        kind = 'none'
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.windows'
 
-    [[catalogs.globalScopes]]
-    catalogIdentifier = 'tuna.windows'
+    [catalogs.globalScopes.scope]
+    kind = 'none'
 
-        [catalogs.globalScopes.scope]
-        kind = 'none'
+[[catalogs.searchPriorities]]
+catalogIdentifier = 'tuna.combo-actions'
+level = 2
 
-    [[catalogs.sortOrders]]
-    catalogIdentifier = 'tuna.clipboard'
-    sortOrder = 'capturedAt.desc'
+[[catalogs.searchPriorities]]
+catalogIdentifier = 'tuna.custom-folder.ff7662c4-0365-4058-970b-304930cca14f'
+level = -1
+
+[[catalogs.sortOrders]]
+catalogIdentifier = 'tuna.clipboard'
+sortOrder = 'capturedAt.desc'
 
 [[comboMode.bindings]]
 key = 'a'
@@ -1797,8 +1807,42 @@ backspaceBehavior = 'deleteCharacters'
 comboModeBackspaceBehavior = 'stepBack'
 comboModeCheatsheetBehavior = 'always'
 comboModeCheatsheetShowDetails = false
-comboModeModifierTrigger = 'disabled'
-comboModeTriggerType = 'shortcut'
-physicalHyperKeySource = 'off'
-showResultsImmediatelyOnActivation = true
+switchToTextModeWhenNoResults = true
 themeIdentifier = 'com.brnbw.tuna.themes.Notch'
+typingTimeoutDuration = 2.5000000000000004
+
+[[smartLinks.entries]]
+enabled = true
+name = 'Google Maps'
+requiresInput = true
+template = 'https://www.google.com/maps/search/{{input}}'
+
+[[smartLinks.entries]]
+enabled = true
+name = 'Google Search'
+requiresInput = true
+template = 'https://www.google.com/search?q={{input}}'
+
+[[smartLinks.entries]]
+enabled = true
+name = 'T3 Chat'
+requiresInput = true
+template = 'https://www.t3.chat/new?q={{input}}'
+
+[[smartLinks.entries]]
+enabled = true
+name = 'Wikipedia'
+requiresInput = true
+template = 'https://en.wikipedia.org/wiki/Special:Search?search={{input}}'
+
+[[smartLinks.entries]]
+enabled = true
+name = 'YouTube'
+requiresInput = true
+template = 'https://www.youtube.com/results?search_query={{input}}'
+
+[[catalogSettings]]
+catalogIdentifier = 'tuna.smart-links'
+
+    [catalogSettings.values]
+    UseFavicone = 'true'
