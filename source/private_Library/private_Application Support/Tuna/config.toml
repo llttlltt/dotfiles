@@ -469,10 +469,10 @@ label = 'Quick'
             type = 'command'
 
                 [comboMode.bindings.destination.bindings.destination.command]
-                actionIdentifier = 'tuna.common-actions/run-text-as-shell-command'
-                behavior = 'run'
+                actionIdentifier = 'tuna.smart-links.actions/open-smart-link'
+                behavior = 'stage'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'text:$HOME/.config/zsh/user/scripts/leader_key_obsidian_quick_add.sh' ]
+                subjectIdentifiers = [ 'tuna.smart-links/Obsidian QuickAdd' ]
                 type = 'savedCommand'
 
         [[comboMode.bindings.destination.bindings]]
@@ -1822,6 +1822,12 @@ enabled = true
 name = 'Google Search'
 requiresInput = true
 template = 'https://www.google.com/search?q={{input}}'
+
+[[smartLinks.entries]]
+enabled = true
+name = 'Obsidian QuickAdd'
+requiresInput = true
+template = 'obsidian://quickadd?vault=Elliott%20Liu&choice=Capture%20-%20Log%20in%20Daily%20Note&value-Note={{input}}'
 
 [[smartLinks.entries]]
 enabled = true

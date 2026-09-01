@@ -13,7 +13,6 @@ The repository source has migrated from Dotbot symlinks to chezmoi-managed files
    backup_dir="$HOME/dotfiles-backup-$(date +%Y%m%d-%H%M%S)"
    mkdir -p "$backup_dir"
    rsync -aL "$HOME/.config/" "$backup_dir/config/"
-   rsync -aL "$HOME/Library/Application Support/Leader Key/" "$backup_dir/leader-key/"
    rsync -aL "$HOME/Library/Preferences/flavours/" "$backup_dir/flavours/"
    cp -L "$HOME/.zshrc" "$HOME/.zprofile" "$HOME/.zshenv" \
        "$HOME/.gitconfig" "$HOME/.gitignore_global" "$backup_dir/"

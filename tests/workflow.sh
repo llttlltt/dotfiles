@@ -22,7 +22,6 @@ seed_file() {
     printf '%s\n' original >"$test_home/$target_path"
 }
 
-seed_file 'private_Library/private_Application Support/Leader Key/config.json' 'Library/Application Support/Leader Key/config.json'
 seed_file 'private_Library/private_Application Support/Tuna/config.toml' 'Library/Application Support/Tuna/config.toml'
 seed_file 'dot_config/karabiner/karabiner.json' '.config/karabiner/karabiner.json'
 seed_file 'private_Library/private_Preferences/kicad/10.0/user.hotkeys' 'Library/Preferences/kicad/10.0/user.hotkeys'
@@ -39,16 +38,11 @@ git -C "$test_repo" -c user.name=Test -c user.email=test@example.com commit --qu
 
 HOME="$test_home" "$test_repo/scripts/capture" check >/dev/null
 
-printf '%s\n' changed >"$test_home/Library/Application Support/Leader Key/config.json"
-HOME="$test_home" "$test_repo/scripts/capture" leader-key >/dev/null
-cmp "$test_repo/source/private_Library/private_Application Support/Leader Key/config.json" \
-    "$test_home/Library/Application Support/Leader Key/config.json"
-[ -f "$test_home/validated" ]
-
 printf '%s\n' changed >"$test_home/Library/Application Support/Tuna/config.toml"
 HOME="$test_home" "$test_repo/scripts/capture" tuna >/dev/null
 cmp "$test_repo/source/private_Library/private_Application Support/Tuna/config.toml" \
     "$test_home/Library/Application Support/Tuna/config.toml"
+[ -f "$test_home/validated" ]
 
 for file in user.hotkeys fp-lib-table sym-lib-table design-block-lib-table colors/user.json; do
     printf 'changed %s\n' "$file" >"$test_home/Library/Preferences/kicad/10.0/$file"
@@ -61,14 +55,14 @@ for file in user.hotkeys fp-lib-table sym-lib-table design-block-lib-table color
 done
 [ ! -e "$test_repo/source/private_Library/private_Preferences/kicad/10.0/recent.json" ]
 
-leader_source="$test_repo/source/private_Library/private_Application Support/Leader Key/config.json"
-mv "$leader_source" "$leader_source.tmpl"
-if HOME="$test_home" "$test_repo/scripts/capture" leader-key >/dev/null 2>&1; then
+tuna_source="$test_repo/source/private_Library/private_Application Support/Tuna/config.toml"
+mv "$tuna_source" "$tuna_source.tmpl"
+if HOME="$test_home" "$test_repo/scripts/capture" tuna >/dev/null 2>&1; then
     printf '%s\n' 'capture accepted an application-owned template' >&2
     exit 1
 fi
-mv "$leader_source.tmpl" "$leader_source"
+mv "$tuna_source.tmpl" "$tuna_source"
 
-printf '%s\n' repository-change >>"$leader_source"
+printf '%s\n' repository-change >>"$tuna_source"
 HOME="$test_home" DOTFILES_OS=Darwin "$test_repo/scripts/status" | \
-    grep -Eq 'leader-key[[:space:]]+source/.+Leader Key/config.json'
+    grep -Eq 'tuna[[:space:]]+source/.+Tuna/config.toml'

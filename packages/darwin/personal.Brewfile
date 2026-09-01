@@ -294,8 +294,6 @@ cask "izotope-product-portal"
 cask "karabiner-elements"
 # Electronics design automation suite
 cask "kicad"
-# Application launcher
-cask "leader-key"
 # NDI SDK
 cask "libndi"
 # Discover, download, and run local LLMs

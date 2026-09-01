@@ -7,7 +7,7 @@ os_name=${DOTFILES_OS:-$(uname -s)}
 printf '%s\n' 'Application-owned source changes (capture through the named app group):'
 if [ "$os_name" = Darwin ]; then
     app_status=$(
-        for app in leader-key tuna karabiner kicad flavours; do
+        for app in tuna karabiner kicad flavours; do
             "$repo_dir/scripts/capture" _targets "$app" | while IFS= read -r target; do
                 source_path=$(chezmoi --source "$repo_dir" source-path "$target")
                 relative_path=${source_path#"$repo_dir"/}

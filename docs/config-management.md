@@ -18,7 +18,6 @@ Shell, Git, Neovim, tmux, helper scripts, package manifests, and similar authore
 Edit these through their application, then capture the approved subset:
 
 ```sh
-./scripts/capture leader-key
 ./scripts/capture tuna
 ./scripts/capture karabiner
 ./scripts/capture kicad
@@ -29,7 +28,6 @@ Use `./scripts/capture all` after changing several applications. Each capture up
 
 | Capture group | Managed state |
 | --- | --- |
-| `leader-key` | Leader Key actions JSON |
 | `tuna` | Tuna configuration TOML |
 | `karabiner` | Karabiner-Elements configuration JSON |
 | `kicad` | KiCad 10 hotkeys, library tables, and the custom colour theme |

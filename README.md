@@ -13,7 +13,7 @@ Every machine receives the portable base configuration:
 - starship
 - bat and shared CLI configuration
 
-Machine-local chezmoi data selects a role (`personal`, `work`, or `server`) and the `development`, `audio`, `electronics`, and `gitSigning` capabilities. Darwin additionally receives Ghostty, Karabiner, Leader Key, flavours, PowerShell, Pi configuration, and other macOS-specific settings already represented here.
+Machine-local chezmoi data selects a role (`personal`, `work`, or `server`) and the `development`, `audio`, `electronics`, and `gitSigning` capabilities. Darwin additionally receives Ghostty, Karabiner, flavours, PowerShell, Pi configuration, and other macOS-specific settings already represented here.
 
 ## Bootstrap
 
@@ -58,7 +58,7 @@ There are two supported workflows. For repository-owned configuration, edit file
 ./scripts/apply
 ```
 
-For configuration written by Tuna, Leader Key, Karabiner, KiCad, or Flavours, edit it in the application and capture only its approved files:
+For configuration written by Tuna, Karabiner, KiCad, or Flavours, edit it in the application and capture only its approved files:
 
 ```sh
 ./scripts/capture list
