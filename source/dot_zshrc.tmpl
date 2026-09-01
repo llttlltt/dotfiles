@@ -32,11 +32,6 @@ alias grep=batgrep
 # shows the path variable, split by newline
 alias trail="<<<${(F)path}"
 
-# control volume from cli
-{{- if eq .chezmoi.os "darwin" }}
-alias vol="$HOME/.config/zsh/user/scripts/vol.sh"
-{{- end }}
-
 # fclones
 if command -v fclones >/dev/null 2>&1; then
     source <(fclones complete zsh)
