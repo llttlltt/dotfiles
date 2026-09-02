@@ -999,20 +999,6 @@ label = 'Window'
                         type = 'savedCommand'
 
                 [[comboMode.bindings.destination.bindings.destination.bindings]]
-                iconPath = 'inset.filled.rightthird.rectangle'
-                key = 'l'
-
-                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
-                    type = 'command'
-
-                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
-                        actionIdentifier = 'tuna.common-actions/open-url'
-                        behavior = 'run'
-                        presentation = 'automatic'
-                        subjectIdentifiers = [ 'tuna.custom-items/67922F6C-9EBF-4BB1-9939-11E2C1D3D772' ]
-                        type = 'savedCommand'
-
-                [[comboMode.bindings.destination.bindings.destination.bindings]]
                 iconPath = '1.lane'
                 key = 'F'
 
@@ -1024,6 +1010,20 @@ label = 'Window'
                         behavior = 'run'
                         presentation = 'automatic'
                         subjectIdentifiers = [ 'tuna.custom-items/A0875815-B788-4CD2-A96B-3D1967C04E4E' ]
+                        type = 'savedCommand'
+
+                [[comboMode.bindings.destination.bindings.destination.bindings]]
+                iconPath = 'inset.filled.rightthird.rectangle'
+                key = 'l'
+
+                    [comboMode.bindings.destination.bindings.destination.bindings.destination]
+                    type = 'command'
+
+                        [comboMode.bindings.destination.bindings.destination.bindings.destination.command]
+                        actionIdentifier = 'tuna.common-actions/open-url'
+                        behavior = 'run'
+                        presentation = 'automatic'
+                        subjectIdentifiers = [ 'tuna.custom-items/67922F6C-9EBF-4BB1-9939-11E2C1D3D772' ]
                         type = 'savedCommand'
 
                 [[comboMode.bindings.destination.bindings.destination.bindings]]
@@ -1634,7 +1634,7 @@ label = 'Window'
 
         [[comboMode.bindings.destination.bindings]]
         iconPath = 'power'
-        key = 'P'
+        key = 'p'
         label = 'Window - Toggle Pin Mode'
 
             [comboMode.bindings.destination.bindings.destination]
@@ -1644,12 +1644,14 @@ label = 'Window'
                 actionIdentifier = 'tuna.common-actions/run-text-as-shell-command'
                 behavior = 'run'
                 presentation = 'automatic'
-                subjectIdentifiers = [ 'text:$HOME/.config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh "Rectangle Pro" p command,control,option,shift' ]
+                subjectIdentifiers = [
+                    'text:$HOME/.config/zsh/user/scripts/global_keyboard_shortcut_for_app.sh "Rectangle Pro" p command,control,option,shift'
+                ]
                 type = 'savedCommand'
 
         [[comboMode.bindings.destination.bindings]]
         iconPath = 'pin.fill'
-        key = 'p'
+        key = 'P'
 
             [comboMode.bindings.destination.bindings.destination]
             type = 'command'
