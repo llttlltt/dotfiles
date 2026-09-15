@@ -6,3 +6,4 @@ npm
 rustup
 shellcheck
 uv
+worktrunk

@@ -81,6 +81,20 @@ Useful checks:
 
 Development runtimes are declared in `source/dot_config/mise/config.toml`; run `mise install` (also performed by the explicit package installer) to converge them.
 
+### Git worktrees
+
+[Worktrunk](https://worktrunk.dev/) is included in the development packages for macOS and Arch. Zsh loads its directory-switching integration and completions when `wt` is installed.
+
+Its repository-owned configuration lives in `source/dot_config/worktrunk/config.toml`. Use ordinary clones with sibling worktrees: branch `refactor/effect-rpc` in `cantoflip` becomes `../cantoflip-effect-rpc`. The directory name uses the final slash-separated branch component; the Git branch name stays intact. Choose distinct suffixes for simultaneous worktrees (for example, `feature/auth` and `fix/auth` both map to `cantoflip-auth`).
+
+```sh
+wt switch --create refactor/effect-rpc
+wt list
+wt switch main
+```
+
+Edit Worktrunk preferences in the source file and apply with chezmoi. Runtime state and hook approvals remain local.
+
 ## Secrets
 
 Secrets do not belong in Git. The intended provider is the 1Password CLI (`op`). Non-secret configuration remains usable when `op` is missing or signed out. Chezmoi is configured to reject secrets detected during `chezmoi add`.

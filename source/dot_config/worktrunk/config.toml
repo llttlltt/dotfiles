@@ -1,0 +1,3 @@
+# Sibling worktrees: cantoflip + refactor/effect-rpc -> cantoflip-effect-rpc.
+# Use the final branch component; branches with the same suffix share a path.
+worktree-path = "{{ repo_path }}/../{{ repo }}-{{ branch | basename | sanitize }}"
