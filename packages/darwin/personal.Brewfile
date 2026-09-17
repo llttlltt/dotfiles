@@ -125,8 +125,6 @@ brew "nmap"
 # Open-source, cross-platform JavaScript runtime environment
 # Utility that provides fast incremental file transfer
 brew "rsync"
-# OCaml package manager
-brew "opam"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # AI agent toolkit

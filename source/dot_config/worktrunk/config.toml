@@ -1,3 +1,7 @@
 # Sibling worktrees: cantoflip + refactor/effect-rpc -> cantoflip-effect-rpc.
 # Use the final branch component; branches with the same suffix share a path.
 worktree-path = "{{ repo_path }}/../{{ repo }}-{{ branch | basename | sanitize }}"
+
+# Generate commit messages with a fast, tool-less Claude call.
+[commit.generation]
+command = "MAX_THINKING_TOKENS=0 claude -p --no-session-persistence --model=haiku --tools='' --safe-mode --setting-sources='user' --system-prompt=''"
