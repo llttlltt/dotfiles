@@ -74,6 +74,9 @@ return {
 					map("grt", require("telescope.builtin").lsp_type_definitions, "[G]oto [T]ype Definition")
 
 					local client = vim.lsp.get_client_by_id(event.data.client_id)
+					if client and client.name == "ruff" then
+						client.server_capabilities.hoverProvider = false
+					end
 					if
 						client
 						and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf)
@@ -163,11 +166,10 @@ return {
 				basedpyright = {
 					settings = {
 						basedpyright = {
+							disableOrganizeImports = true,
 							analysis = {
 								autoImportCompletions = true,
-								autoSearchPaths = false,
 								diagnosticMode = "openFilesOnly",
-								useLibraryCodeForTypes = true,
 								typeCheckingMode = "basic",
 							},
 						},
@@ -222,7 +224,6 @@ return {
 				"stylua", -- Used to format Lua code
 				"taplo", -- Used to format TOML files
 				"prettier", -- Formats filetypes not covered by Biome
-				"ruff", -- Used to format Python code
 				"markdownlint", -- Used to format Markdown
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
@@ -277,8 +278,8 @@ return {
 				lua = { "stylua" },
 				python = {
 					"ruff_fix", -- To fix auto-fixable lint errors.
-					"ruff_format", -- To run the Ruff formatter.
 					"ruff_organize_imports", -- To organize the imports.
+					"ruff_format", -- Format after all fixes and import edits.
 				},
 				rust = { "rustfmt" },
 				go = { "gofmt" },
