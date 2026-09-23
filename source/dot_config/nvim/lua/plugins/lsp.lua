@@ -183,7 +183,6 @@ return {
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				ts_ls = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},
@@ -219,7 +218,11 @@ return {
 			--
 			-- You can add other tools here that you want Mason to install
 			-- for you, so that they are available from within Neovim.
-			local ensure_installed = vim.tbl_keys(servers or {})
+			servers = vim.tbl_extend("force", servers, require("config.web").servers())
+			-- Native TypeScript is project-local; Biome already comes from the project or PATH.
+			local ensure_installed = vim.tbl_filter(function(name)
+				return name ~= "tsc" and name ~= "biome"
+			end, vim.tbl_keys(servers))
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
 				"taplo", -- Used to format TOML files
@@ -237,6 +240,7 @@ return {
 				ensure_installed = {},
 				automatic_enable = vim.tbl_keys(servers),
 			})
+			vim.lsp.enable({ "tsc", "biome" })
 		end,
 	},
 	{ -- Autoformat
@@ -247,7 +251,10 @@ return {
 			{
 				"<leader>f",
 				function()
-					require("conform").format({ async = true, lsp_format = "fallback" })
+					require("conform").format({
+						async = true,
+						lsp_format = require("config.web").is_web_buffer(0) and "never" or "fallback",
+					})
 				end,
 				mode = "",
 				desc = "[F]ormat buffer",
@@ -256,6 +263,15 @@ return {
 		opts = {
 			notify_on_error = true,
 			format_on_save = function(bufnr)
+				local web = require("config.web")
+				if web.is_web_buffer(bufnr) then
+					local formatter = web.formatter(bufnr)
+					if not formatter then
+						return nil
+					end
+					return { timeout_ms = 500, formatters = { formatter }, lsp_format = "never" }
+				end
+
 				-- Disable "format_on_save lsp_fallback" for languages that don't
 				-- have a well standardized coding style. You can add additional
 				-- languages here or re-enable it for the disabled ones.
@@ -274,6 +290,9 @@ return {
 					lsp_format = lsp_format_opt,
 				}
 			end,
+			formatters = {
+				prettier = { prepend_args = require("config.web").prettier_plugins },
+			},
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = {
@@ -283,21 +302,23 @@ return {
 				},
 				rust = { "rustfmt" },
 				go = { "gofmt" },
-				javascript = { "biome" },
-				typescript = { "biome" },
-				javascriptreact = { "biome" },
-				typescriptreact = { "biome" },
-				vue = { "prettier" },
-				css = { "biome" },
-				scss = { "prettier" },
-				less = { "prettier" },
-				html = { "prettier" },
-				json = { "biome" },
-				jsonc = { "biome" },
-				yaml = { "prettier" },
-				markdown = { "prettier" },
+				javascript = require("config.web").formatters,
+				typescript = require("config.web").formatters,
+				javascriptreact = require("config.web").formatters,
+				typescriptreact = require("config.web").formatters,
+				vue = require("config.web").formatters,
+				astro = require("config.web").formatters,
+				svelte = require("config.web").formatters,
+				css = require("config.web").formatters,
+				scss = require("config.web").formatters,
+				less = require("config.web").formatters,
+				html = require("config.web").formatters,
+				json = require("config.web").formatters,
+				jsonc = require("config.web").formatters,
+				yaml = require("config.web").formatters,
+				markdown = require("config.web").formatters,
 				toml = { "taplo" },
-				["markdown.mdx"] = { "prettier" },
+				["markdown.mdx"] = require("config.web").formatters,
 			},
 		},
 	},

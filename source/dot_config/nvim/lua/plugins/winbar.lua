@@ -33,7 +33,8 @@ return {
 				},
 				lsp = {
 					auto_attach = true,
-					preference = nil,
+					-- Vue uses two servers; prefer its component outline.
+					preference = { "vue_ls", "tsc", "ts_ls" },
 				},
 				highlight = true,
 				separator = " > ",
