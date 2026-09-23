@@ -8,6 +8,7 @@
 {{- $audio := promptBoolOnce . "audio" "Install audio tooling" (eq .chezmoi.os "darwin") -}}
 {{- $electronics := promptBoolOnce . "electronics" "Install electronics tooling" (eq .chezmoi.os "darwin") -}}
 {{- $gitSigning := promptBoolOnce . "gitSigning" "Use 1Password for Git signing" (eq .chezmoi.os "darwin") -}}
+sourceDir = "~/.dotfiles"
 [data]
 role = {{ $role | quote }}
 development = {{ $development }}
