@@ -6,6 +6,6 @@ return {
 			highlight = true,
 			hl_group = "Underlined",
 		})
-		vim.keymap.set("n", "gx", lsplinks.gx)
+		vim.keymap.set("n", "gx", lsplinks.gx, { desc = "Open e[x]ternal link" })
 	end,
 }

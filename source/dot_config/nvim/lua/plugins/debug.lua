@@ -19,54 +19,61 @@ return {
 	keys = {
 		-- Basic debugging keymaps, feel free to change to your liking!
 		{
-			"<F5>",
+			"<leader>dc",
 			function()
 				require("dap").continue()
 			end,
-			desc = "Debug: Start/Continue",
+			desc = "Start/[c]ontinue debugging",
 		},
 		{
-			"<F1>",
+			"<leader>di",
 			function()
 				require("dap").step_into()
 			end,
-			desc = "Debug: Step Into",
+			desc = "Step [i]nto",
 		},
 		{
-			"<F2>",
+			"<leader>do",
 			function()
 				require("dap").step_over()
 			end,
-			desc = "Debug: Step Over",
+			desc = "Step [o]ver",
 		},
 		{
-			"<F3>",
+			"<leader>dO",
 			function()
 				require("dap").step_out()
 			end,
-			desc = "Debug: Step Out",
+			desc = "Step [O]ut",
 		},
 		{
-			"<leader>b",
+			"<leader>db",
 			function()
 				require("dap").toggle_breakpoint()
 			end,
-			desc = "Debug: Toggle Breakpoint",
+			desc = "Toggle [b]reakpoint",
 		},
 		{
-			"<leader>B",
+			"<leader>dB",
 			function()
 				require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
 			end,
-			desc = "Debug: Set Breakpoint",
+			desc = "Set conditional [B]reakpoint",
 		},
 		-- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
 		{
-			"<F7>",
+			"<leader>du",
 			function()
 				require("dapui").toggle()
 			end,
-			desc = "Debug: See last session result.",
+			desc = "Toggle debug [u]ser interface",
+		},
+		{
+			"<leader>dt",
+			function()
+				require("dap").terminate()
+			end,
+			desc = "Session [t]erminate",
 		},
 	},
 	config = function()

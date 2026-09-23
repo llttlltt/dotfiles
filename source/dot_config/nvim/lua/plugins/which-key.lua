@@ -1,6 +1,15 @@
 return { -- Useful plugin to show you pending keybinds.
 	"folke/which-key.nvim",
 	event = "VimEnter", -- Sets the loading event to 'VimEnter'
+	keys = {
+		{
+			"<leader>?",
+			function()
+				require("which-key").show({ global = false })
+			end,
+			desc = "Show cheatsheet",
+		},
+	},
 	---@class wk.Opts
 	opts = {
 		notify = true,
@@ -59,15 +68,18 @@ return { -- Useful plugin to show you pending keybinds.
 				g = true, -- bindings for prefixed with g
 			},
 		},
-		-- Document existing key chains
+		-- Document existing key chains and Mini text objects without replacing mappings.
 		spec = {
-			{ "<leader>c", group = "[C]ode", mode = { "n", "x" } },
-			{ "<leader>d", group = "[D]ocument" },
-			{ "<leader>r", group = "[R]ename" },
-			{ "<leader>s", group = "[S]earch" },
-			{ "<leader>w", group = "[W]orkspace" },
-			{ "<leader>t", group = "[T]oggle" },
-			{ "<leader>h", group = "Git [H]unk", mode = { "n", "v" } },
+			{ "af", desc = "Around [f]unction", mode = { "o", "x" } },
+			{ "if", desc = "Inside [f]unction", mode = { "o", "x" } },
+			{ "aa", desc = "Around [a]rgument", mode = { "o", "x" } },
+			{ "ia", desc = "Inside [a]rgument", mode = { "o", "x" } },
+			{ "<leader>c", group = "[c]ode", mode = { "n", "x" } },
+			{ "<leader>d", group = "[d]ebug" },
+			{ "<leader>x", group = "Diagnostics" },
+			{ "<leader>s", group = "[s]earch" },
+			{ "<leader>t", group = "[t]oggle" },
+			{ "<leader>h", group = "Git [h]unk", mode = { "n", "x" } },
 		},
 		win = {
 			border = "rounded", -- Options: "single", "double", "rounded", "solid", "none"
