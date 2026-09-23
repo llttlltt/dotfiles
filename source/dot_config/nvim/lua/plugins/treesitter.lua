@@ -46,9 +46,7 @@ return {
 						return
 					end
 
-					if vim.bo[event.buf].filetype ~= "ruby" then
-						vim.bo[event.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-					end
+					vim.bo[event.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 				end,
 			})
 		end,
