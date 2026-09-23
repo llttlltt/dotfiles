@@ -8,13 +8,9 @@ return {
 		opts = {
 			library = {
 				-- Load luvit types when the `vim.uv` word is found
-				{ path = "luvit-meta/library", words = { "vim%.uv" } },
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
 			},
 		},
-	},
-	{
-		"Bilal2453/luvit-meta",
-		lazy = true,
 	},
 	{
 		-- Main LSP Configuration
@@ -78,8 +74,12 @@ return {
 					map("grt", require("telescope.builtin").lsp_type_definitions, "[G]oto [T]ype Definition")
 
 					local client = vim.lsp.get_client_by_id(event.data.client_id)
-					if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
-						local highlight_augroup = vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
+					if
+						client
+						and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf)
+					then
+						local highlight_augroup =
+							vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
 						vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 							buffer = event.buf,
 							group = highlight_augroup,
@@ -101,9 +101,12 @@ return {
 						})
 					end
 
-					if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf) then
+					if
+						client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf)
+					then
 						map("<leader>th", function()
-							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
+							local filter = { bufnr = event.buf }
+							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(filter), filter)
 						end, "[T]oggle Inlay [H]ints")
 					end
 				end,
@@ -113,42 +116,27 @@ return {
 			-- See :help vim.diagnostic.Opts
 			vim.diagnostic.config({
 				severity_sort = true,
-				float = { border = "rounded", source = "if_many" },
-				underline = { severity = vim.diagnostic.severity.ERROR },
-				signs = vim.g.have_nerd_font and {
+				update_in_insert = false,
+				virtual_text = false,
+				virtual_lines = true,
+				float = {
+					border = "rounded",
+					source = "if_many",
+				},
+				underline = {
+					severity = vim.diagnostic.severity.ERROR,
+				},
+				signs = {
 					text = {
 						[vim.diagnostic.severity.ERROR] = "󰅚 ",
 						[vim.diagnostic.severity.WARN] = "󰀪 ",
 						[vim.diagnostic.severity.INFO] = "󰋽 ",
 						[vim.diagnostic.severity.HINT] = "󰌶 ",
 					},
-				} or {},
-				virtual_text = {
-					source = "if_many",
-					spacing = 2,
-					format = function(diagnostic)
-						local diagnostic_message = {
-							[vim.diagnostic.severity.ERROR] = diagnostic.message,
-							[vim.diagnostic.severity.WARN] = diagnostic.message,
-							[vim.diagnostic.severity.INFO] = diagnostic.message,
-							[vim.diagnostic.severity.HINT] = diagnostic.message,
-						}
-						return diagnostic_message[diagnostic.severity]
-					end,
 				},
 			})
 
-			local capabilities = vim.lsp.protocol.make_client_capabilities()
-			capabilities = vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
-
-			capabilities = vim.tbl_deep_extend("force", capabilities, {
-				textDocument = {
-					foldingRange = {
-						dynamicRegistration = false,
-						lineFoldingOnly = true,
-					},
-				},
-			})
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 			-- Enable the following language servers
 			--  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
@@ -163,17 +151,18 @@ return {
 				-- clangd = {},
 				gopls = {
 					settings = {
-						completeUnimported = true,
-						usePlaceholders = true,
-						analysis = {
-							unusedparams = true,
+						gopls = {
+							completeUnimported = true,
+							usePlaceholders = true,
+							analyses = {
+								unusedparams = true,
+							},
 						},
 					},
 				},
 				basedpyright = {
 					settings = {
 						basedpyright = {
-
 							analysis = {
 								autoImportCompletions = true,
 								autoSearchPaths = false,
@@ -215,6 +204,8 @@ return {
 						"json.openapi",
 					},
 				},
+				yamlls = {},
+				ruff = {},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -230,26 +221,20 @@ return {
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
 				"taplo", -- Used to format TOML files
-				"prettierd", -- Used to format JavaScript, TypeScript, HTML, JSON, CSS, Markdown, YAML
-				"prettier", -- Used to format JavaScript, TypeScript, HTML, JSON, CSS, Markdown, YAML
+				"prettier", -- Formats filetypes not covered by Biome
 				"ruff", -- Used to format Python code
+				"markdownlint", -- Used to format Markdown
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
+			for name, server in pairs(servers) do
+				server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+				vim.lsp.config(name, server)
+			end
+
 			require("mason-lspconfig").setup({
-				ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
-				automatic_installation = false,
-				handlers = {
-					function(server_name)
-						local server = servers[server_name] or {}
-						-- This handles overriding only values explicitly passed
-						-- by the server configuration above. Useful when disabling
-						-- certain features of an LSP (for example, turning off formatting for ts_ls)
-						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-						vim.lsp.config(server_name, server)
-						vim.lsp.enable(server_name)
-					end,
-				},
+				ensure_installed = {},
+				automatic_enable = vim.tbl_keys(servers),
 			})
 		end,
 	},
@@ -268,7 +253,7 @@ return {
 			},
 		},
 		opts = {
-			notify_on_error = false,
+			notify_on_error = true,
 			format_on_save = function(bufnr)
 				-- Disable "format_on_save lsp_fallback" for languages that don't
 				-- have a well standardized coding style. You can add additional
@@ -297,20 +282,21 @@ return {
 				},
 				rust = { "rustfmt" },
 				go = { "gofmt" },
-				javascript = { "prettierd", "prettier", stop_after_first = true },
-				typescript = { "prettierd", "prettier", stop_after_first = true },
-				javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-				vue = { "prettierd", "prettier", stop_after_first = true },
-				css = { "prettierd", "prettier", stop_after_first = true },
-				scss = { "prettierd", "prettier", stop_after_first = true },
-				less = { "prettierd", "prettier", stop_after_first = true },
-				html = { "prettierd", "prettier", stop_after_first = true },
-				json = { "prettierd", "prettier", stop_after_first = true },
-				jsonc = { "prettierd", "prettier", stop_after_first = true },
-				yaml = { "prettierd", "prettier", stop_after_first = true },
-				markdown = { "prettierd", "prettier", stop_after_first = true },
-				["markdown.mdx"] = { "prettierd", "prettier", stop_after_first = true },
+				javascript = { "biome" },
+				typescript = { "biome" },
+				javascriptreact = { "biome" },
+				typescriptreact = { "biome" },
+				vue = { "prettier" },
+				css = { "biome" },
+				scss = { "prettier" },
+				less = { "prettier" },
+				html = { "prettier" },
+				json = { "biome" },
+				jsonc = { "biome" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
+				toml = { "taplo" },
+				["markdown.mdx"] = { "prettier" },
 			},
 		},
 	},

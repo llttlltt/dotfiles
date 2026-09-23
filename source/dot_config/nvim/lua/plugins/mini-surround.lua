@@ -1,7 +1,12 @@
 return {
-	"echasnovski/mini.surround",
+	"nvim-mini/mini.surround",
 	event = "VeryLazy",
 	opts = {
+		-- Add/delete/replace surroundings (brackets, quotes, etc.)
+		--
+		-- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
+		-- - sd'   - [S]urround [D]elete [']quotes
+		-- - sr)'  - [S]urround [R]eplace [)] [']
 		mappings = {
 			add = "sa", -- Add surrounding in Normal and Visual modes
 			delete = "sd", -- Delete surrounding
