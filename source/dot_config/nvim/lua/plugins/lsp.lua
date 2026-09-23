@@ -77,16 +77,11 @@ return {
 					if client and client.name == "ruff" then
 						client.server_capabilities.hoverProvider = false
 					end
-					if
-						client
-						and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf)
-					then
+					if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
 						require("config.lsp-highlight").attach(event.buf)
 					end
 
-					if
-						client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf)
-					then
+					if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf) then
 						map("<leader>th", function()
 							local filter = { bufnr = event.buf }
 							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(filter), filter)
@@ -219,6 +214,9 @@ return {
 		opts = {
 			notify_on_error = true,
 			format_on_save = function(bufnr)
+				if require("config.largefile").is_large(bufnr) then
+					return nil
+				end
 				local web = require("config.web")
 				if web.is_web_buffer(bufnr) then
 					local formatter = web.formatter(bufnr)

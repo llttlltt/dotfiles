@@ -78,6 +78,8 @@ return { -- Useful plugin to show you pending keybinds.
 			{ "<leader>d", group = "[d]ebug" },
 			{ "<leader>x", group = "Diagnostics" },
 			{ "<leader>s", group = "[s]earch" },
+			{ "<leader>sp", group = "[p]ackage" },
+			{ "<leader>r", group = "[r]un tests" },
 			{ "<leader>t", group = "[t]oggle" },
 			{ "<leader>h", group = "Git [h]unk", mode = { "n", "x" } },
 		},

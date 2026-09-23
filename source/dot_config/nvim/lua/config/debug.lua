@@ -4,13 +4,17 @@ local function root()
 	return vim.fs.root(0, { "package.json", "pyproject.toml", "setup.cfg", ".git" }) or vim.fn.getcwd()
 end
 
-function M.python()
+function M.python(project_root)
+	-- A background test run for another project must not inherit this buffer's venv.
+	local current_project = type(project_root) ~= "string" or project_root == root()
 	local selector = package.loaded["venv-selector"]
-	local selected = selector and selector.python()
+	local selected = current_project and selector and selector.python()
 	if selected and vim.fn.executable(selected) == 1 then
 		return selected
 	end
-	for _, env in ipairs({ vim.env.VIRTUAL_ENV or "", root() .. "/.venv", root() .. "/venv" }) do
+	-- DAP can pass a configuration table; Neotest passes the test project root.
+	local directory = type(project_root) == "string" and project_root or root()
+	for _, env in ipairs({ current_project and vim.env.VIRTUAL_ENV or "", directory .. "/.venv", directory .. "/venv" }) do
 		if env ~= "" and vim.fn.executable(env .. "/bin/python") == 1 then
 			return env .. "/bin/python"
 		end

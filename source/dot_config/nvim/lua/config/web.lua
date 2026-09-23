@@ -86,17 +86,41 @@ function M.tailwind_root(bufnr, on_dir)
 	end
 end
 
-function M.native_command(root)
+local native_commands = {}
+local pending_native = {}
+
+-- Resolve before calling root_dir's continuation: Neovim need not block while
+-- Effect selects its versioned binary. Concurrent buffer opens share the lookup.
+function M.resolve_native(root, callback)
 	local effect = root .. "/node_modules/.bin/effect-tsgo"
-	if vim.fn.executable(effect) == 1 then
-		local result = vim.system({ effect, "get-exe-path" }, { cwd = root, text = true }):wait(10000)
-		local executable = vim.trim(result.stdout or "")
-		if result.code ~= 0 or vim.fn.executable(executable) ~= 1 then
-			error("Cannot resolve the project Effect TypeScript server: " .. (result.stderr or ""))
-		end
-		return executable
+	if vim.fn.executable(effect) ~= 1 then
+		native_commands[root] = root .. "/node_modules/.bin/tsc"
+		callback(native_commands[root])
+		return
 	end
-	return root .. "/node_modules/.bin/tsc"
+	if pending_native[root] then
+		table.insert(pending_native[root], callback)
+		return
+	end
+	pending_native[root] = { callback }
+	local function finish(result)
+		local executable = vim.trim(result.stdout or "")
+		local callbacks = pending_native[root]
+		pending_native[root] = nil
+		if result.code ~= 0 or vim.fn.executable(executable) ~= 1 then
+			native_commands[root] = nil
+			vim.notify("Cannot resolve the project Effect TypeScript server: " .. (result.stderr or "invalid executable"), vim.log.levels.ERROR)
+			return
+		end
+		native_commands[root] = executable
+		for _, done in ipairs(callbacks) do
+			done(executable)
+		end
+	end
+	local ok, err = pcall(vim.system, { effect, "get-exe-path" }, { cwd = root, text = true, timeout = 10000 }, vim.schedule_wrap(finish))
+	if not ok then
+		finish({ code = -1, stderr = tostring(err) })
+	end
 end
 
 function M.servers()
@@ -118,8 +142,7 @@ function M.servers()
 				plugins = {
 					{
 						name = "@vue/typescript-plugin",
-						location = vim.fn.stdpath("data")
-							.. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
+						location = vim.fn.stdpath("data") .. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
 						languages = { "vue" },
 						configNamespace = "typescript",
 					},
@@ -134,20 +157,29 @@ function M.servers()
 					major
 					and major >= 7
 					and root
-					and (
-						vim.fn.executable(root .. "/node_modules/.bin/tsc") == 1
-						or vim.fn.executable(root .. "/node_modules/.bin/effect-tsgo") == 1
-					)
+					and (vim.fn.executable(root .. "/node_modules/.bin/tsc") == 1 or vim.fn.executable(root .. "/node_modules/.bin/effect-tsgo") == 1)
 				then
-					on_dir(root)
+					local path = vim.api.nvim_buf_get_name(bufnr)
+					-- An attached server already owns this root and executable.
+					for _, client in ipairs(vim.lsp.get_clients({ name = "tsc" })) do
+						if client.config.root_dir == root then
+							on_dir(root)
+							return
+						end
+					end
+					M.resolve_native(root, function()
+						if vim.api.nvim_buf_is_valid(bufnr) and vim.api.nvim_buf_get_name(bufnr) == path then
+							on_dir(root)
+						end
+					end)
 				end
 			end,
 			cmd = function(dispatchers, config)
-				return vim.lsp.rpc.start(
-					{ M.native_command(config.root_dir), "--lsp", "--stdio" },
-					dispatchers,
-					{ cwd = config.root_dir }
-				)
+				return vim.lsp.rpc.start({
+					assert(native_commands[config.root_dir], "Native TypeScript command has not been resolved"),
+					"--lsp",
+					"--stdio",
+				}, dispatchers, { cwd = config.root_dir })
 			end,
 		},
 		biome = {}, -- Upstream only attaches in projects with Biome configuration.
