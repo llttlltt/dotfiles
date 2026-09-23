@@ -16,15 +16,15 @@ return {
 			"RainbowCyan",
 		}
 
-		-- Define fallback hardcoded colors in the same order as the highlight groups
-		local fallback_colors = {
-			"#E06C75", -- Red
-			"#E5C07B", -- Yellow
-			"#61AFEF", -- Blue
-			"#D19A66", -- Orange
-			"#98C379", -- Green
-			"#C678DD", -- Violet
-			"#56B6C2", -- Cyan
+		-- theme.lua owns the colours; these links are fallbacks for other themes.
+		local fallback_groups = {
+			"DiagnosticError",
+			"DiagnosticWarn",
+			"Function",
+			"Constant",
+			"String",
+			"Statement",
+			"Type",
 		}
 
 		local hooks = require("ibl.hooks")
@@ -32,36 +32,10 @@ return {
 			return not require("config.largefile").is_large(buf)
 		end)
 
-		local function get_hl_attrs(name)
-			local hl_id = vim.api.nvim_get_hl_id_by_name(name)
-			if hl_id ~= 0 then
-				local hl = vim.api.nvim_get_hl(0, { id = hl_id })
-				if hl then
-					return { fg = hl.fg, ctermfg = hl.ctermfg }
-				end
-			end
-			return nil
-		end
-
-		-- Create or re-apply the highlight groups in the HIGHLIGHT_SETUP hook.
-		-- This ensures they are reset and re-evaluated every time the colorscheme changes.
+		-- Reapply only missing groups when the colourscheme changes.
 		hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 			for i, hl_name in ipairs(rainbow_highlight_groups) do
-				local hl_attrs = get_hl_attrs(hl_name)
-				local color_found = false
-
-				-- Check if the theme already defined this highlight group with a foreground color
-				if hl_attrs and (hl_attrs.fg or hl_attrs.ctermfg) then
-					color_found = true
-				end
-
-				-- If the theme didn't provide it, use our fallback
-				if not color_found then
-					local fallback_color = fallback_colors[i]
-					if fallback_color then
-						vim.api.nvim_set_hl(0, hl_name, { fg = fallback_color })
-					end
-				end
+				vim.api.nvim_set_hl(0, hl_name, { default = true, link = fallback_groups[i] })
 			end
 		end)
 
