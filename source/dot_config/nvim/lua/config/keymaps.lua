@@ -21,11 +21,7 @@ vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result (centered)" }
 -- vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down (centered)" })
 -- vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up (centered)" })
 
--- Better window navigation
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Focus left window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Focus right window" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Focus lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Focus upper window" })
+-- Use native <C-w>h/j/k/l for window navigation; keep normal Ctrl keys unchanged.
 
 -- Move lines up/down
 vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
