@@ -81,27 +81,7 @@ return {
 						client
 						and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf)
 					then
-						local highlight_augroup =
-							vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
-						vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-							buffer = event.buf,
-							group = highlight_augroup,
-							callback = vim.lsp.buf.document_highlight,
-						})
-
-						vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-							buffer = event.buf,
-							group = highlight_augroup,
-							callback = vim.lsp.buf.clear_references,
-						})
-
-						vim.api.nvim_create_autocmd("LspDetach", {
-							group = vim.api.nvim_create_augroup("kickstart-lsp-detach", { clear = true }),
-							callback = function(event2)
-								vim.lsp.buf.clear_references()
-								vim.api.nvim_clear_autocmds({ group = "kickstart-lsp-highlight", buffer = event2.buf })
-							end,
-						})
+						require("config.lsp-highlight").attach(event.buf)
 					end
 
 					if
@@ -113,30 +93,6 @@ return {
 						end, "[T]oggle Inlay [H]ints")
 					end
 				end,
-			})
-
-			-- Diagnostic Config
-			-- See :help vim.diagnostic.Opts
-			vim.diagnostic.config({
-				severity_sort = true,
-				update_in_insert = false,
-				virtual_text = false,
-				virtual_lines = true,
-				float = {
-					border = "rounded",
-					source = "if_many",
-				},
-				underline = {
-					severity = vim.diagnostic.severity.ERROR,
-				},
-				signs = {
-					text = {
-						[vim.diagnostic.severity.ERROR] = "󰅚 ",
-						[vim.diagnostic.severity.WARN] = "󰀪 ",
-						[vim.diagnostic.severity.INFO] = "󰋽 ",
-						[vim.diagnostic.severity.HINT] = "󰌶 ",
-					},
-				},
 			})
 
 			local capabilities = require("blink.cmp").get_lsp_capabilities()

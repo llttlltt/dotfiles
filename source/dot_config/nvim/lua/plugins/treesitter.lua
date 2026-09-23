@@ -36,6 +36,11 @@ return {
 			vim.api.nvim_create_autocmd("FileType", {
 				group = vim.api.nvim_create_augroup("UserTreesitter", { clear = true }),
 				callback = function(event)
+					if require("config.largefile").is_large(event.buf) then
+						-- Built-in ftplugins can start Treesitter before this callback.
+						vim.treesitter.stop(event.buf)
+						return
+					end
 					-- Some filetypes have no installed parser.
 					if not pcall(vim.treesitter.start, event.buf) then
 						return
@@ -51,7 +56,11 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter-context",
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
-		opts = {},
+		opts = {
+			on_attach = function(buf)
+				return not require("config.largefile").is_large(buf)
+			end,
+		},
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",

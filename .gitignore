@@ -2,7 +2,6 @@ Brewfile.lock.json
 /home/
 node_modules/
 source/dot_config/tmux/plugins/
-source/dot_config/nvim/lazy-lock.json
 source/dot_config/pi/.pi/
 source/dot_config/pi/private_agent/.pi/
 source/dot_config/pi/private_agent/auth.json

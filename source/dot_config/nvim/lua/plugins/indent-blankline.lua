@@ -28,6 +28,9 @@ return {
 		}
 
 		local hooks = require("ibl.hooks")
+		hooks.register(hooks.type.ACTIVE, function(buf)
+			return not require("config.largefile").is_large(buf)
+		end)
 
 		local function get_hl_attrs(name)
 			local hl_id = vim.api.nvim_get_hl_id_by_name(name)

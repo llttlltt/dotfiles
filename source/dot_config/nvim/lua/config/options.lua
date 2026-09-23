@@ -22,7 +22,7 @@ vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 vim.opt.tabstop = 2 -- Tab width
 vim.opt.shiftwidth = 2 -- Indent width
 vim.opt.softtabstop = 2 -- Soft tab stop
-vim.opt.expandtab = false -- Use spaces instead of tabs
+vim.opt.expandtab = false -- Use tabs by default; project indentation can override this
 vim.opt.smartindent = true -- Smart auto-indenting
 vim.opt.autoindent = true
 vim.opt.breakindent = true -- Enable break indent
@@ -30,7 +30,7 @@ vim.opt.breakindent = true -- Enable break indent
 -- Search settings
 vim.opt.ignorecase = true -- Case insensitive search
 vim.opt.smartcase = true -- Case sensitive if uppercase in search
-vim.opt.hlsearch = true -- Don't highlight search results
+vim.opt.hlsearch = true -- Highlight search results
 vim.opt.incsearch = true -- Show matches as you type
 vim.opt.inccommand = "split" -- Show substitutions as you type
 
@@ -91,11 +91,28 @@ vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 end)
 
+-- Diagnostic Config
+-- See :help vim.diagnostic.Opts
 vim.diagnostic.config({
+	severity_sort = true,
+	update_in_insert = false,
 	virtual_text = false,
 	virtual_lines = true,
-	update_in_insert = false, -- Don't show diagnostics while in insert mode
-	severity_sort = true, -- Sort diagnostics by severity
+	float = {
+		border = "rounded",
+		source = "if_many",
+	},
+	underline = {
+		severity = vim.diagnostic.severity.ERROR,
+	},
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "󰅚 ",
+			[vim.diagnostic.severity.WARN] = "󰀪 ",
+			[vim.diagnostic.severity.INFO] = "󰋽 ",
+			[vim.diagnostic.severity.HINT] = "󰌶 ",
+		},
+	},
 })
 
 -- Prepend mise shims to PATH

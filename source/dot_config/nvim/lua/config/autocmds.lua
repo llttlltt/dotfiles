@@ -25,3 +25,11 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 		end
 	end,
 })
+
+-- Navic documents this buffer-local switch for large files.
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufEnter" }, {
+	group = augroup,
+	callback = function(event)
+		vim.b[event.buf].navic_lazy_update_context = require("config.largefile").is_large(event.buf)
+	end,
+})
