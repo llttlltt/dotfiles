@@ -70,6 +70,14 @@ return { -- Useful plugin to show you pending keybinds.
 		},
 		-- Document existing key chains and Mini text objects without replacing mappings.
 		spec = {
+			-- Prefix names also appear in the popup heading/breadcrumb.
+			{ "<leader>", group = "Shortcuts", mode = { "n", "x" } },
+			{ "g", group = "Go to / text actions", mode = { "n", "x", "o" } },
+			{ "z", group = "Folds / view", mode = { "n", "x" } },
+			{ "[", group = "Previous", mode = { "n", "x", "o" } },
+			{ "]", group = "Next", mode = { "n", "x", "o" } },
+			{ "s", group = "[s]urround", mode = { "n", "x", "o" } },
+			{ "gr", group = "LSP", mode = { "n", "x" } },
 			{ "af", desc = "Around [f]unction", mode = { "o", "x" } },
 			{ "if", desc = "Inside [f]unction", mode = { "o", "x" } },
 			{ "aa", desc = "Around [a]rgument", mode = { "o", "x" } },
