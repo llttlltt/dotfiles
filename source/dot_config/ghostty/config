@@ -25,3 +25,6 @@ macos-icon = "official"
 macos-icon-frame = "aluminum"
 macos-icon-ghost-color = "#A6ACCD"
 macos-icon-screen-color = "#5DE4C7"
+
+custom-shader = shader-presets/faded_warp.glsl
+custom-shader = shader-presets/ripple.glsl

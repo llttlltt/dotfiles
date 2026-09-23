@@ -1,0 +1,6 @@
+["shaders"]
+    type = "archive"
+    url = "https://github.com/sahaj-b/ghostty-cursor-shaders/archive/0a274beac8b93ee6ce6b94402b7313a0417b8e38.tar.gz"
+    checksum.sha256 = "280b787d5f1fbd67a61dcef488043024c723af46201d8528e0756aab8f73ebbd"
+    exact = true
+    stripComponents = 1
