@@ -5,7 +5,87 @@ worktree-path = "{{ repo_path }}/../{{ repo }}-{{ branch | basename | sanitize }
 # Generate commit messages with a fast, tool-less Claude call.
 [commit.generation]
 command = "op run --no-masking --env-file=\"$HOME/.config/ai-proxy/claude.env\" -- env MAX_THINKING_TOKENS=0 claude -p --no-session-persistence --model=haiku --tools='' --safe-mode --setting-sources='user' --system-prompt=''"
+template = """
+<task>Write a concise git commit message for the staged changes below.</task>
+<format>
+- Output only the commit message, with no quotes, labels, or code blocks
+- Put the subject on the first line
+- The subject must be imperative, at most 72 characters, and have no trailing period
+- The body may be empty or contain short bullet points after a blank line
+</format>
+<style>
+- Capture the primary user-visible or developer-visible change
+- Describe the change without inventing details not supported by the diff
+</style>
+{% if user_guidance %}
+<user-guidance>
+{{ user_guidance }}
+</user-guidance>
+{% endif %}
+{% if project_guidance %}
+<project-guidance>
+{{ project_guidance }}
+</project-guidance>
+{% endif %}
+<context>
+Branch: {{ branch }}
+</context>
+<staged-files>
+{{ git_diff_stat }}
+</staged-files>
+<staged-patch>
+{{ git_diff }}
+</staged-patch>
+"""
+squash-template = """
+<task>Write a concise git commit message for the combined effect of these commits.</task>
+<format>
+- Output only the commit message, with no quotes, labels, or code blocks
+- Put the subject on the first line
+- The subject must be imperative, at most 72 characters, and have no trailing period
+- The body may be empty or contain short bullet points after a blank line
+</format>
+<style>
+- Capture the primary user-visible or developer-visible change
+- Describe the combined change without inventing details not supported by the commits or diff
+</style>
+{% if user_guidance %}
+<user-guidance>
+{{ user_guidance }}
+</user-guidance>
+{% endif %}
+{% if project_guidance %}
+<project-guidance>
+{{ project_guidance }}
+</project-guidance>
+{% endif %}
+<context>
+Branch: {{ branch }}
+Target branch: {{ target_branch }}
+</context>
+<commits>
+{% for commit in commit_details %}- {{ commit }}
+{% endfor %}</commits>
+<diffstat>
+{{ git_diff_stat }}
+</diffstat>
+<diff>
+{{ git_diff }}
+</diff>
+"""
 template-append = """
-- Use conventional commits (feat:, fix:, docs:, …)
-- Reference the related issue ID in the body (if applicable)
+<conventional-commits>
+- Format the subject as `<type>[optional scope][!]: <description>`
+- Use exactly one type: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, or `revert`
+- Choose the type that best describes the primary effect of the complete diff
+- Use `feat` for a new capability and `fix` for a defect correction
+- Use `style` only for formatting changes that do not affect behavior
+- Use `refactor` only when behavior is preserved
+- Include a short scope only when a single component or area is obvious from the diff
+- Write a concise, imperative description without a trailing period
+- Add a body only when it provides useful context beyond the subject
+- Mark a breaking change with `!` before the colon and, when explanation is needed, add a `BREAKING CHANGE: <details>` footer
+- Put issue references in the footer, such as `Refs: #123` or `Closes: #123`, only when they appear in the supplied context
+- Never invent a scope, issue reference, breaking change, or implementation detail
+</conventional-commits>
 """
