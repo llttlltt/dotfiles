@@ -13,4 +13,6 @@ source/dot_config/pi/private_agent/run-history.jsonl
 source/dot_config/pi/private_agent/sessions/
 source/dot_config/pi/private_agent/skills/
 source/dot_config/pi/private_agent/trust.json
+source/dot_config/ai-proxy/claude.env
+source/dot_config/ai-proxy/codex.env
 .DS_Store

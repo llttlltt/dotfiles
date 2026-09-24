@@ -4,7 +4,7 @@ worktree-path = "{{ repo_path }}/../{{ repo }}-{{ branch | basename | sanitize }
 
 # Generate commit messages with a fast, tool-less Claude call.
 [commit.generation]
-command = "MAX_THINKING_TOKENS=0 claude -p --no-session-persistence --model=haiku --tools='' --safe-mode --setting-sources='user' --system-prompt=''"
+command = "op run --no-masking --env-file=\"$HOME/.config/ai-proxy/claude.env\" -- env MAX_THINKING_TOKENS=0 claude -p --no-session-persistence --model=haiku --tools='' --safe-mode --setting-sources='user' --system-prompt=''"
 template-append = """
 - Use conventional commits (feat:, fix:, docs:, …)
 - Reference the related issue ID in the body (if applicable)

@@ -1,3 +1,6 @@
+.config/ai-proxy/claude.env
+.config/ai-proxy/codex.env
+
 {{ if ne .chezmoi.os "darwin" }}
 # Darwin-only configuration
 .config/ghostty

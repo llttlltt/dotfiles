@@ -120,3 +120,57 @@ function tidynode() {
     print '\n✨ Successfully trashed selected folders!'
     print "💾 Reclaimed approximately ${total_display} of disk space."
 }
+
+# Run AI CLIs with secrets resolved from machine-local 1Password references.
+function claude() {
+    local env_file="$HOME/.config/ai-proxy/claude.env"
+    local executable
+
+    executable="$(whence -p claude)" || {
+        print -u2 'claude: executable not found'
+        return 127
+    }
+    [[ -r "$env_file" ]] || {
+        print -u2 "claude: missing or unreadable environment file: $env_file"
+        return 1
+    }
+    command -v op >/dev/null 2>&1 || {
+        print -u2 'claude: 1Password CLI not found'
+        return 127
+    }
+
+    # Output masking pipes stdout/stderr, which breaks interactive terminal detection.
+    command op run --no-masking --env-file="$env_file" -- "$executable" "$@"
+}
+
+function codex() {
+    local env_file="$HOME/.config/ai-proxy/codex.env"
+    local executable
+
+    executable="$(whence -p codex)" || {
+        print -u2 'codex: executable not found'
+        return 127
+    }
+    [[ -r "$env_file" ]] || {
+        print -u2 "codex: missing or unreadable environment file: $env_file"
+        return 1
+    }
+    command -v op >/dev/null 2>&1 || {
+        print -u2 'codex: 1Password CLI not found'
+        return 127
+    }
+
+    # Output masking pipes stdout/stderr, which breaks interactive terminal detection.
+    command op run --no-masking --env-file="$env_file" -- zsh -c '
+        set -eu
+        : "${CLIPROXY_API_KEY:?CLIPROXY_API_KEY is not set}"
+        : "${CLIPROXY_BASE_URL:?CLIPROXY_BASE_URL is not set}"
+        exec "$1" \
+            -c model_provider=cliproxy \
+            -c model_providers.cliproxy.name=cliproxy \
+            -c "model_providers.cliproxy.base_url=${CLIPROXY_BASE_URL%/}/v1" \
+            -c model_providers.cliproxy.wire_api=responses \
+            -c model_providers.cliproxy.env_key=CLIPROXY_API_KEY \
+            "${@:2}"
+    ' zsh "$executable" "$@"
+}

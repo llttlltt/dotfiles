@@ -101,6 +101,8 @@ Edit Worktrunk preferences in the source file and apply with chezmoi. Runtime st
 
 Secrets do not belong in Git. The intended provider is the 1Password CLI (`op`). Non-secret configuration remains usable when `op` is missing or signed out. Chezmoi is configured to reject secrets detected during `chezmoi add`.
 
+Claude and Codex proxy credentials are resolved at launch from 1Password references in machine-local files under `~/.config/ai-proxy`. These files are excluded from both chezmoi management and Git; the committed zsh wrappers scope credentials to the corresponding CLI process.
+
 The previously committed Plex token must be rotated separately. Removing it from the current tree does not remove it from Git history. See [history sanitization](docs/history-sanitization.md) before undertaking the destructive rewrite.
 
 ## macOS preferences
