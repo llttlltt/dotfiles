@@ -160,6 +160,13 @@ return {
 					},
 				},
 				yamlls = {},
+				harper_ls = {
+					settings = {
+						["harper-ls"] = {
+							dialect = "British",
+						},
+					},
+				},
 				ruff = {},
 			}
 
@@ -175,9 +182,10 @@ return {
 			servers = vim.tbl_extend("force", servers, require("config.web").servers())
 			-- Native TypeScript is project-local; Biome already comes from the project or PATH.
 			local ensure_installed = vim.tbl_filter(function(name)
-				return name ~= "tsc" and name ~= "biome"
+				return name ~= "tsc" and name ~= "biome" and name ~= "harper_ls"
 			end, vim.tbl_keys(servers))
 			vim.list_extend(ensure_installed, {
+				"harper-ls", -- Grammar and spelling language server
 				"stylua", -- Used to format Lua code
 				"taplo", -- Used to format TOML files
 				"prettier", -- Formats filetypes not covered by Biome
@@ -194,7 +202,7 @@ return {
 				ensure_installed = {},
 				automatic_enable = vim.tbl_keys(servers),
 			})
-			vim.lsp.enable({ "tsc", "biome" })
+			vim.lsp.enable({ "tsc", "biome", "harper_ls" })
 		end,
 	},
 	{ -- Autoformat
