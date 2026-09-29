@@ -180,18 +180,30 @@ return {
 			-- You can add other tools here that you want Mason to install
 			-- for you, so that they are available from within Neovim.
 			servers = vim.tbl_extend("force", servers, require("config.web").servers())
-			-- Native TypeScript is project-local; Biome already comes from the project or PATH.
-			local ensure_installed = vim.tbl_filter(function(name)
-				return name ~= "tsc" and name ~= "biome" and name ~= "harper_ls"
-			end, vim.tbl_keys(servers))
-			vim.list_extend(ensure_installed, {
+
+			-- LSP server names omitted from the automatically derived Mason package list.
+			local mason_excluded_server_names = {
+				"tsc", -- Project-local TypeScript
+				"biome", -- Project dependency or PATH
+				"harper_ls", -- Mason package is listed explicitly as harper-ls
+			}
+
+			-- Mason package names that do not come directly from the server table.
+			local mason_ensure_installed = {
 				"harper-ls", -- Grammar and spelling language server
 				"stylua", -- Used to format Lua code
 				"taplo", -- Used to format TOML files
 				"prettier", -- Formats filetypes not covered by Biome
 				"markdownlint", -- Used to format Markdown
-			})
-			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+			}
+
+			vim.list_extend(
+				mason_ensure_installed,
+				vim.tbl_filter(function(name)
+					return not vim.tbl_contains(mason_excluded_server_names, name)
+				end, vim.tbl_keys(servers))
+			)
+			require("mason-tool-installer").setup({ ensure_installed = mason_ensure_installed })
 
 			for name, server in pairs(servers) do
 				server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
