@@ -12,6 +12,13 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>xq", vim.diagnostic.setloclist, { desc = "Diagnostics location list" })
 
+vim.api.nvim_create_autocmd("CursorHold", {
+	group = vim.api.nvim_create_augroup("diagnostic-float", { clear = true }),
+	callback = function()
+		vim.diagnostic.open_float(nil, { focus = false, scope = "cursor" })
+	end,
+})
+
 -- Normal mode mappings
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlighting" })
 

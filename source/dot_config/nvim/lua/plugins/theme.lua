@@ -36,7 +36,6 @@ return {
 			local widget_border = blend(palette.white, palette.background2, 0x10 / 255)
 			local selection = blend(palette.selection, palette.background2, 0x25 / 255)
 			local search = blend(palette.blue2, palette.background2, 0x40 / 255)
-			local hint = blend(palette.blue4, palette.background2, 0xB3 / 255)
 			require("poimandres").setup({
 				bold_vert_split = false, -- use bold vertical separators
 				-- Inactive-window dimming requires an opaque background; keep transparency.
@@ -44,7 +43,7 @@ return {
 				disable_float_background = true, -- disable background for floats
 				disable_italics = false, -- disable italics
 				-- Diagnostic families are generated from these colours by Poimandres.
-				groups = { info = palette.blue2, hint = hint },
+				groups = { info = palette.blue2, hint = palette.blue2 },
 				highlight_groups = {
 					-- Editor chrome: editor.foreground, line numbers, cursor and current line.
 					Normal = { fg = palette.blueGray1 },

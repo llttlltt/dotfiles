@@ -94,16 +94,14 @@ end)
 -- See :help vim.diagnostic.Opts
 vim.diagnostic.config({
 	severity_sort = true,
-	update_in_insert = false,
+	update_in_insert = true,
 	virtual_text = false,
-	virtual_lines = true,
+	virtual_lines = false,
 	float = {
 		border = "rounded",
 		source = "if_many",
 	},
-	underline = {
-		severity = vim.diagnostic.severity.ERROR,
-	},
+	underline = true,
 	signs = {
 		text = {
 			[vim.diagnostic.severity.ERROR] = "󰅚 ",
