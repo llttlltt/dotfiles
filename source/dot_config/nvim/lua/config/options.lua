@@ -56,7 +56,6 @@ vim.opt.listchars = {
 	tab = "→ ",
 	trail = "·",
 	nbsp = "␣",
-	space = "·",
 } --  and `:help 'listchars'`
 
 -- File handling
