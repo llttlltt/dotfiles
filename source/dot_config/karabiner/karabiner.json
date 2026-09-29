@@ -4,32 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Search key: Open Tuna (command+space)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "f4" },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "apple_vendor_keyboard_key_code": "spotlight" },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "fn+e: Open Tuna instead of Apple emoji picker",
+                        "description": "Emoji: fn + e",
                         "manipulators": [
                             {
                                 "from": {
@@ -47,7 +22,7 @@
                         ]
                     },
                     {
-                        "description": "Microphone key: Toggle TypeWhisper dictation",
+                        "description": "Microphone: Hyper + D",
                         "manipulators": [
                             {
                                 "from": { "key_code": "f5" },
