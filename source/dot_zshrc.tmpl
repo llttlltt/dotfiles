@@ -32,6 +32,13 @@ alias grep=batgrep
 # shows the path variable, split by newline
 alias trail="<<<${(F)path}"
 
+# claude code harness with a gpt model, routed via a proxy set in ~/.claude/settings.json
+alias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-6.1-sol \
+  CLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \
+  CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \
+  ENABLE_TOOL_SEARCH=false \
+  claude --model gpt-6.1-sol'
+
 # fclones
 if command -v fclones >/dev/null 2>&1; then
     source <(fclones complete zsh)
