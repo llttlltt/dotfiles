@@ -19,7 +19,12 @@ zd() {
         z "$@" && printf "\U000F17A9 " && pwd || echo "Error: Directory not found"
     fi
 }
-alias rm="trash"
+# rmtrash accepts rm's flags (-rf, -i, ...); fall back to trash-cli on Omarchy.
+if (( $+commands[rmtrash] )); then
+    alias rm="rmtrash"
+else
+    alias rm="trash"
+fi
 alias cat="bat"
 
 # Directories
