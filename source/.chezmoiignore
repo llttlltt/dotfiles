@@ -6,7 +6,6 @@
 .config/ghostty
 .config/karabiner
 .config/pi
-.config/powershell
 .config/zsh/user
 Library
 {{ end }}

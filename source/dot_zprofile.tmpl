@@ -8,3 +8,10 @@ fi
 # Added by Obsidian
 export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 {{- end }}
+
+{{- if eq .chezmoi.os "darwin" }}
+# Added by Docker Desktop
+if [[ -d "$HOME/.docker/bin" ]]; then
+    export PATH="$PATH:$HOME/.docker/bin"
+fi
+{{- end }}

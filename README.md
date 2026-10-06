@@ -13,7 +13,7 @@ Every machine receives the portable base configuration:
 - starship
 - bat and shared CLI configuration
 
-Machine-local chezmoi data selects a role (`personal`, `work`, or `server`) and the `development`, `audio`, `electronics`, and `gitSigning` capabilities. Darwin additionally receives Ghostty, Karabiner, flavours, PowerShell, Pi configuration, and other macOS-specific settings already represented here.
+Machine-local chezmoi data selects a role (`personal`, `work`, or `server`) and the `development`, `audio`, `electronics`, and `gitSigning` capabilities. Darwin additionally receives Ghostty, Karabiner, flavours, Pi configuration, and other macOS-specific settings already represented here.
 
 ## Bootstrap
 

@@ -40,3 +40,15 @@ conflictstyle = diff3
 
 [diff]
 colorMoved = default
+
+{{- if .development }}
+
+# Authenticate HTTPS GitHub remotes with the gh CLI's login.
+[credential "https://github.com"]
+helper =
+helper = !gh auth git-credential
+
+[credential "https://gist.github.com"]
+helper =
+helper = !gh auth git-credential
+{{- end }}

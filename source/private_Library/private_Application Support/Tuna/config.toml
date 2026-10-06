@@ -9,6 +9,27 @@ scriptsDirectories = []
     id = '45484273-3939-406D-AEA1-4AA48B695CC5'
     path = '~/Dropbox'
 
+    [[catalogConfiguration.customFolders]]
+    depthRawValue = 1
+    entryType = 'directory'
+    filterMode = 'folders'
+    id = '5E23EEF3-BF48-4689-A5C3-0CD216DA4935'
+    path = '~/Dropbox/Personal/120 Documents'
+
+    [[catalogConfiguration.customFolders]]
+    depthRawValue = 4
+    entryType = 'directory'
+    filterMode = 'folders'
+    id = 'D432BB5E-29D2-4CE3-AF7E-982538EA5DDE'
+    path = '~/Dropbox/Workspaces/Audio'
+
+    [[catalogConfiguration.customFolders]]
+    depthRawValue = 2
+    entryType = 'directory'
+    filterMode = 'folders'
+    id = 'F2096CEB-FE37-4613-A041-3E2F513E9E2E'
+    path = '~/Dropbox/Workspaces/Development'
+
     [[catalogConfiguration.customItems]]
     id = '0B34A2A2-2E68-475C-86B5-C9935BF1BABD'
     kind = 'url'
@@ -371,6 +392,13 @@ catalogIdentifier = 'tuna.emoji'
 
     [catalogs.globalScopes.scope]
     kind = 'none'
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'tuna.finder-favorites'
+
+    [catalogs.globalScopes.scope]
+    itemIDs = [ '/Users/elliott/Dropbox/400 Workspaces/410 Audio', '/Users/elliott/Dropbox/400 Workspaces/420 Development' ]
+    kind = 'excluding'
 
 [[catalogs.globalScopes]]
 catalogIdentifier = 'tuna.modes'
@@ -1866,7 +1894,10 @@ backspaceBehavior = 'deleteCharacters'
 comboModeBackspaceBehavior = 'stepBack'
 comboModeCheatsheetBehavior = 'always'
 comboModeCheatsheetShowDetails = false
+mainWindowAnimationsEnabled = false
 switchToTextModeWhenNoResults = true
+talkModeModifierTrigger = 'rightCommand'
+talkModeTriggerType = 'disabled'
 themeIdentifier = 'com.brnbw.tuna.themes.Notch'
 typingTimeoutDuration = 2.5000000000000004
 
